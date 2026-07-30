@@ -1616,13 +1616,13 @@ document.addEventListener('DOMContentLoaded', function(){
         end: function(){
           /* Course du défilé, en hauteurs d'écran. Onze marques passent une
              par une : c'est ce rapport qui fait le ressenti, pas la valeur
-             brute. Mobile porté de 2.3 à 4.4 puis à 6.6 le 30/07/2026, sur
-             essai réel de Lucas au téléphone — à 2.3 chaque marque ne tenait
-             que 0,21 écran et passait avant d'être lue ; à 4.4 (0,40 écran)
-             c'était encore trop rapide. À 6.6 on est à 0,60 écran par marque.
-             Le doigt parcourt plus de distance que la molette : il faut PLUS
-             de course sur mobile, pas moins. */
-          var course = matchMedia('(max-width: 760px)').matches ? 6.6 : 2.9;
+             brute. Réglé au doigt par Lucas le 30/07/2026, en trois essais :
+             2.3 (0,21 écran par marque) filait avant qu'on ait lu ; 4.4 (0,40)
+             restait rapide ; 6.6 (0,60) devenait trop long. Valeur retenue :
+             5.3, soit 0,53 écran par marque. Le doigt parcourt plus de
+             distance que la molette : il faut PLUS de course sur mobile que
+             sur desktop, pas moins. */
+          var course = matchMedia('(max-width: 760px)').matches ? 5.3 : 2.9;
           return '+=' + Math.round(innerHeight * course);
         },
         invalidateOnRefresh: true,
