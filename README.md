@@ -15,7 +15,7 @@ dont 67 articles de blog. Aucun framework, aucun rendu côté serveur — le dos
 | `tools/sources/` | Codes fournis servant de source de vérité (expertises SEA, GEO, Média, Automatisation). |
 | `tools/snapshots/` | Captures de référence par rendu réel, utilisées comme juge de parité. |
 | `tools/reference/` | Textes gelés : un générateur échoue si un mot bouge. |
-| `vercel.json` | Redirections 301 de production. |
+| `REDIRECTIONS.md` | Les 301 à poser chez l'hébergeur, traduites pour nginx, Apache, Netlify et Caddy. |
 
 ## Régénérer le site
 
@@ -23,10 +23,18 @@ dont 67 articles de blog. Aucun framework, aucun rendu côté serveur — le dos
 node tools/build.mjs
 ```
 
-La chaîne enchaîne les 12 générateurs dans l'ordre. Cet ordre n'est pas
+La chaîne enchaîne les 14 générateurs dans l'ordre. Cet ordre n'est pas
 cosmétique : `ajoute-entites-geo` doit passer après tous les autres (sinon les
-entités GEO du schéma se perdent en silence), et `normalise-urls` ferme la
-marche pour qu'aucune URL sans `www` ne subsiste.
+entités GEO du schéma se perdent en silence), `valeurs-officielles` aligne les
+prix et délais tranchés par Lucas sur les pages produites, et `normalise-urls`
+ferme la marche pour qu'aucune URL sans `www` ne subsiste.
+
+> Le script npm s'appelle **`regenere`**, pas `build`. Ce n'est pas un caprice :
+> Railpack, le builder de Railway, exécute automatiquement un script nommé
+> `build` au déploiement. Or régénérer au déploiement n'aurait aucun sens —
+> `site/` EST le livrable, versionné et vérifié, et la régénération réclame
+> l'ancien code React qui ne fait plus partie du dépôt. Sans script `build`,
+> Railway installe et démarre, point.
 
 ## Servir le site en local
 
@@ -34,8 +42,26 @@ marche pour qu'aucune URL sans `www` ne subsiste.
 node tools/serveur-site.mjs
 ```
 
-Sert `site/` sur le port 8090 en reproduisant la résolution d'un hébergeur
-statique (`/a/b` → `/a/b/index.html`) et les redirections 301 de `vercel.json`.
+## Déploiement
+
+```
+Cloudflare (DNS + proxy)  →  Railway  →  npm start  →  tools/serveur-site.mjs  →  site/
+```
+
+Railway est connecté à ce dépôt et redéploie **à chaque push**. Il ne construit
+rien ([`railway.json`](railway.json) le lui dit explicitement) : `site/` est le
+livrable, déjà généré et versionné. Il lance `npm start`.
+
+`tools/serveur-site.mjs` est donc le serveur de **production** autant que celui
+de développement. Il porte : la résolution d'URL (`/faq` → `/faq/index.html`,
+sans redirection), les 301, `site/404.html` avec un vrai code 404, le cache
+(30 jours sur les assets, revalidation sur le HTML), la compression brotli/gzip
+(−73 % sur l'accueil, −94 % sur le sitemap) et les en-têtes de sécurité. En
+local il se met en `no-store` pour toujours servir le dernier build.
+
+Tout est dans [REDIRECTIONS.md](REDIRECTIONS.md), y compris les trois réglages
+à faire côté Cloudflare (proxy activé, redirection apex → www, purge du cache
+après un déploiement qui touche `/assets/`).
 
 ## Ce qui est figé — à savoir avant d'y toucher
 

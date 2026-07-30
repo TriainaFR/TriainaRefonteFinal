@@ -21,6 +21,10 @@ const RACINE = fileURLToPath(new URL('..', import.meta.url));
 const SITE = path.join(RACINE, 'site');
 const DOMAINE = 'https://www.triaina.fr';
 
+/* Date de la refonte : plancher des lastmod (voir la boucle plus bas).
+   Le jour où le site changera à nouveau en profondeur, avancer cette date. */
+const DATE_REFONTE = '2026-07-30';
+
 /** Toutes les URL servies par le site, déduites des index.html présents. */
 async function urlsDuSite(dir = SITE, base = '') {
   const urls = [];
@@ -130,9 +134,16 @@ async function ecritLlmsTxt(urls) {
 }
 
 async function main() {
-  /* ── robots.txt : copie fidèle ── */
-  const robots = await readFile(path.join(RACINE, 'public/robots.txt'), 'utf8');
-  await writeFile(path.join(SITE, 'robots.txt'), robots);
+  /* ── robots.txt : copie fidèle ──
+     Même précaution que pour le sitemap : `public/` a quitté le dépôt. Si le
+     fichier d'origine n'est plus là, on garde celui déjà servi plutôt que
+     d'écraser un actif GEO (les autorisations de crawlers IA) par du vide. */
+  try {
+    const robots = await readFile(path.join(RACINE, 'public/robots.txt'), 'utf8');
+    await writeFile(path.join(SITE, 'robots.txt'), robots);
+  } catch {
+    console.log('  (robots.txt d’origine absent : celui de site/ est conservé)');
+  }
 
   /* ── sitemap ── */
   const toutes = (await urlsDuSite()).sort();
@@ -151,8 +162,13 @@ async function main() {
   for (const [u, c] of ecartees) console.log(`  écartée du sitemap : ${u} (canonical → ${c})`);
 
   /* lastmod hérités de l'ancien sitemap, pour ne pas prétendre que tout le
-     corpus a été modifié aujourd'hui. */
-  const ancien = await readFile(path.join(RACINE, 'public/sitemap.xml'), 'utf8');
+     corpus a été modifié aujourd'hui.
+     ⚠︎ `public/` appartient à l'ancienne application, retirée du dépôt le
+     30/07/2026 : sur un clone neuf le fichier est absent, et son absence ne
+     doit pas faire échouer le build — on repart alors des dates de fichier. */
+  let ancien = '';
+  try { ancien = await readFile(path.join(RACINE, 'public/sitemap.xml'), 'utf8'); }
+  catch { console.log('  (ancien sitemap absent : lastmod calculés depuis les fichiers)'); }
   const connus = new Map();
   /* on isole chaque bloc <url> avant d'y chercher loc et lastmod : une regex
      globale unique laissait le groupe optionnel vide et perdait toutes les dates. */
@@ -167,7 +183,14 @@ async function main() {
   const lignes = [];
   let herites = 0, nouveaux = 0;
   for (const u of urls) {
-    const lastmod = connus.get(u) ?? await dateFichier(u);
+    /* Plancher au 30/07/2026 : ce jour-là, TOUTE page a changé — nouveau
+       design, nouveau balisage, nouvelle tête. Une date héritée antérieure
+       serait fausse et dissuaderait Google de recrawler au moment précis où
+       on veut qu'il le fasse (demande explicite de Lucas avant soumission à
+       Search Console). Les dates postérieures, elles, sont conservées : le
+       plancher ne rajeunit rien, il ne fait que rattraper le passé. */
+    const brut = connus.get(u) ?? await dateFichier(u);
+    const lastmod = brut < DATE_REFONTE ? DATE_REFONTE : brut;
     connus.has(u) ? herites++ : nouveaux++;
     const priorite = u === '/' ? '1.0' : u === '/blog' ? '0.9' : '0.8';
     lignes.push(`  <url>

@@ -470,7 +470,7 @@ async function main() {
 <meta name="geo.position" content="48.8464;2.2758">
 <meta name="ICBM" content="48.8464, 2.2758">
 <meta name="msvalidate.01" content="4C58C9622B2DBB31ECD9A463E3DCAF66">
-<link rel="alternate" hreflang="fr" href="https://www.triaina.fr/">
+<link rel="alternate" hreflang="fr" href="${CANONICAL}">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/logo.svg">
 <meta property="og:type" content="website">
@@ -484,6 +484,8 @@ async function main() {
 <meta name="twitter:title" content="${ech(TITRE_BRUT)}">
 <meta name="twitter:description" content="${ech(DESCRIPTION)}">
 <meta name="twitter:image" content="${IMAGE}">
+<link rel="preload" href="/assets/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/da31.css">
 <style>${STYLE}</style>
@@ -521,7 +523,7 @@ ${barreNav('/expertise-seo')}
       <div class="tx">
         <p>Confiez votre <strong>stratégie de référencement naturel</strong> à une <strong>agence SEO</strong> expérimentée.
         Notre équipe vous accompagne pour positionner votre site en tête des premiers résultats sur Google.</p>
-        <p>Depuis plus de 25 ans, nous aidons les entreprises à dominer leur marché grâce à une
+        <p>Depuis plus de 26 ans, nous aidons les entreprises à dominer leur marché grâce à une
         <strong>expertise SEO</strong> éprouvée et des résultats mesurables.</p>
       </div>
     </section>
@@ -602,7 +604,7 @@ ${OUTILS.map(o => `          <span>${ech(o)}</span>`).join('\n')}
         <p>Nos consultants ne sont pas de simples exécutants. Ils sont stratèges, data-analysts et
         experts en sémantique. Ils anticipent les mises à jour (Core Updates) et intègrent le GEO
         (Generative Engine Optimization) pour vous garder en tête.</p>
-        <p class="sceau"><b class="nb">25 ans</b> d'expérience cumulée</p>
+        <p class="sceau"><b class="nb">26 ans</b> d'expérience cumulée</p>
       </div>
     </section>
 

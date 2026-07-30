@@ -29,6 +29,7 @@
  *         (puis node tools/ajoute-entites-geo.mjs && node tools/genere-robots-sitemap.mjs)
  */
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { ech, barreNav, pieds, titreDePage } from './genere-blog.mjs';
@@ -67,6 +68,14 @@ export const PAGES = [
   { cle: 'agence-geo-paris', captures: 'ancien-seoia' },
   { cle: 'mentions-legales', captures: 'ancien-divers' },
   { cle: 'annuaire', captures: 'ancien-divers' },
+  /* /recrutement : page vivante en production, oubliée à la migration —
+     l'audit du 30/07/2026 l'a rattrapée avant qu'elle ne tombe en 404. Sa
+     capture vient du rendu réel de la prod, à deux champs près : le canonical
+     et og:url y désignaient /carrieres, une URL qui n'existe pas et répond
+     404 noindex. Les reconduire aurait exclu la page du sitemap (le générateur
+     écarte toute page dont le canonical pointe ailleurs) tout en demandant à
+     Google d'indexer une page noindex. Ils sont auto-référençants. */
+  { cle: 'recrutement', captures: 'prod-recrutement' },
 ];
 
 /**
@@ -241,6 +250,28 @@ const ECARTS_HN = {
   },
 };
 
+/**
+ * Corrections de TEXTE assumées face à la capture de l'ancien site.
+ * Format : page → [{ avant, apres, pourquoi }].
+ *
+ * Même principe que ECARTS_HN : le garde-fou de parité reste actif sur tout le
+ * reste du texte, et la capture n'est PAS retouchée — elle doit rester le
+ * témoin fidèle de ce que servait l'ancien site. On déclare l'écart ici, avec
+ * sa raison, et le générateur applique la même correction à la référence avant
+ * de comparer.
+ */
+const ECARTS_TEXTE = {
+  'agence-seo-paris': [{
+    avant: "Nous avons travaillé avec des centaines d'entreprises parisiennes dans tous les secteurs.",
+    apres: 'Nous accompagnons des entreprises parisiennes dans tous les secteurs.',
+    pourquoi: "« des centaines d'entreprises » est invérifiable et contredit le reste "
+      + 'du site : /references publie 13 dossiers, /expertise-media parle de deux cas '
+      + 'documentés, et la société est immatriculée depuis 2025. Une affirmation de '
+      + 'volume qu\'on ne peut pas étayer abîme l\'E-E-A-T au lieu de le servir. '
+      + '(Audit du 30/07/2026.)',
+  }],
+};
+
 /* ══ garde-fous bloquants ══ */
 function verifie(cle, html, blocs, cap) {
   const decode = s => s.replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ')
@@ -248,8 +279,16 @@ function verifie(cle, html, blocs, cap) {
   const plat = s => decode(s.replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim();
   const main = /<main[\s\S]*?<\/main>/.exec(html)[0];
 
-  /* 1 · chaque bloc, débalisé, doit exister dans le texte capturé */
-  const texCap = decode(cap.texteIntegral).replace(/\s+/g, ' ');
+  /* 1 · chaque bloc, débalisé, doit exister dans le texte capturé —
+         aux écarts déclarés près (voir ECARTS_TEXTE). */
+  let texCap = decode(cap.texteIntegral).replace(/\s+/g, ' ');
+  for (const e of ECARTS_TEXTE[cle] ?? []) {
+    const avant = e.avant.replace(/\s+/g, ' ');
+    if (!texCap.includes(avant))
+      throw new Error(`${cle} : écart de texte déclaré introuvable dans la capture — « ${avant.slice(0, 60)} ». `
+        + 'Le texte d’origine a changé : revoir ECARTS_TEXTE.');
+    texCap = texCap.split(avant).join(e.apres.replace(/\s+/g, ' '));
+  }
   for (const b of blocs) {
     const t = plat(b.html);
     if (t && !texCap.includes(t))
@@ -353,21 +392,50 @@ function dedoublonneSchemas(schemas, cle) {
   });
 }
 
+/**
+ * Les captures de l'ancien site reconduisent des `og:image` / `twitter:image`
+ * qui désignent des fichiers jamais déposés (ex. /images/agence-seo-paris.jpg) :
+ * l'aperçu LinkedIn de ces pages était vide, et rien ne le signalait puisque
+ * l'ancien domaine répond 200 en text/html à toute URL inconnue. On retombe
+ * sur l'image de partage du site, qui existe et est au bon format 1200×630.
+ * Règle générale : toute URL d'image qui ne résout pas est remplacée.
+ */
+const IMAGE_SOCIALE_DEFAUT = 'https://www.triaina.fr/og-image.jpg';
+function reparImagesSociales(cle, cap) {
+  const existe = u => {
+    if (typeof u !== 'string') return true;
+    const chemin = u.replace(/^https?:\/\/[^/]+/, '').split(/[?#]/)[0];
+    return chemin.startsWith('/') && existsSync(path.join(RACINE, 'site', chemin));
+  };
+  for (const [sac, clef] of [[cap.og, 'og:image'], [cap.twitter, 'twitter:image']]) {
+    if (!sac || !sac[clef] || existe(sac[clef])) continue;
+    console.log(`  ${cle} : ${clef} « ${sac[clef]} » introuvable → image de partage du site`);
+    sac[clef] = IMAGE_SOCIALE_DEFAUT;
+  }
+}
+
 /* ══ page complète ══ */
 function pageHTML(cle, cap, mainInterne, mod, grapheSite) {
   const meta = o => Object.entries(o)
     .map(([k, v]) => `<meta ${k.startsWith('og:') ? 'property' : 'name'}="${k}" content="${ech(v)}">`).join('\n');
+  reparImagesSociales(cle, cap);
   /* Une page peut fournir SA tête complète (mod.TETE) — cas d'une page dont
      Lucas remplace lui-même les signaux. Sinon on reconduit ceux de la
      capture de l'ancien site, schémas compris. */
-  const teteSignaux = mod.TETE !== undefined ? `${mod.TETE}\n${grapheSite}` : [
+  /* Les têtes fournies par Lucas (mod.TETE) ne déclarent pas de hreflang : sans
+     ce complément, 5 pages sur 85 n'en ont aucun alors que les 80 autres en ont
+     un, auto-référençant. On l'ajoute seulement s'il manque, jamais en double. */
+  const hreflangSiAbsent = t => /hreflang=/.test(t) ? ''
+    : `\n<link rel="alternate" hreflang="fr" href="${ech(cap.canonical)}">`;
+  const teteSignaux = mod.TETE !== undefined
+    ? `${mod.TETE}${hreflangSiAbsent(mod.TETE)}\n${grapheSite}` : [
     `<title>${ech(titreDePage(cle, cap.title))}</title>`,
     `<meta name="description" content="${ech(cap.description)}">`,
     cap.keywords ? `<meta name="keywords" content="${ech(cap.keywords)}">` : '',
     `<link rel="canonical" href="${ech(cap.canonical)}">`,
     `<meta name="ICBM" content="${ech((cap.geo['geo.position'] ?? '').replace(';', ', '))}">`,
     `<meta name="msvalidate.01" content="4C58C9622B2DBB31ECD9A463E3DCAF66">`,
-    `<link rel="alternate" hreflang="fr" href="https://www.triaina.fr/">`,
+    `<link rel="alternate" hreflang="fr" href="${ech(cap.canonical)}">`,
     meta(cap.geo), meta(cap.og), meta(cap.twitter),
     dedoublonneSchemas(cap.schemas, cle)
       .map(x => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join('\n'),
@@ -380,6 +448,8 @@ function pageHTML(cle, cap, mainInterne, mod, grapheSite) {
 ${teteSignaux}
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/logo.svg">
+<link rel="preload" href="/assets/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/da31.css">
 <style>

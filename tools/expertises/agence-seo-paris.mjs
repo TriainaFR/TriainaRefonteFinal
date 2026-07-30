@@ -225,3 +225,24 @@ export const JS = `
   }, { threshold: .4 });
   if (fen.length) ioSky.observe(fen[0].parentElement);
 `;
+
+/* ── correction de schéma demandée par Lucas le 30/07/2026 ──────────────────
+ * La capture de l'ancien site (tools/snapshots/ancien-seoia/) contient un
+ * aggregateRating « 4,9 sur 52 avis » sur le nœud LocalBusiness. Aucun avis
+ * n'existe nulle part sur le site : c'est exactement le motif d'action
+ * manuelle Google « Problème lié aux données structurées ». On le retire ici
+ * plutôt que dans la capture, pour que celle-ci reste un témoin fidèle de
+ * l'ancien site (c'est elle qui sert de référence au diff de non-régression).
+ * À rétablir le jour où de vrais avis, visibles sur la page, existeront. */
+export function transformeSchemas(schemas) {
+  let retires = 0;
+  const visite = o => {
+    if (Array.isArray(o)) return o.forEach(visite);
+    if (!o || typeof o !== 'object') return;
+    if (o.aggregateRating) { delete o.aggregateRating; retires++; }
+    for (const v of Object.values(o)) visite(v);
+  };
+  visite(schemas);
+  if (retires) console.log(`  agence-seo-paris : ${retires} aggregateRating retiré(s) (aucun avis réel)`);
+  return schemas;
+}

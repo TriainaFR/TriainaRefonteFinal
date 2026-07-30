@@ -56,6 +56,25 @@ function carte(p, i) {
       </article>`;
 }
 
+/**
+ * Titres d'article renommés depuis la capture de l'ancienne page /blog.
+ * Format : « titre capturé » → « titre actuel dans BLOG_DATA ».
+ *
+ * Le garde-fou exige une correspondance exacte entre les h3 de la capture et
+ * BLOG_DATA — c'est ce qui garantit qu'aucune carte ne disparaît en silence.
+ * Un titre qui change VOLONTAIREMENT doit donc être déclaré ici, comme les
+ * écarts de Hn et de texte le sont dans genere-expertises.mjs.
+ *
+ * 30/07/2026 : Lucas a ajouté Webconversion en 3e position du comparatif
+ * « Meilleure agence GEO France ». L'article compare désormais 6 agences et
+ * non 5 — le titre, la meta description et le corps ont suivi. L'URL, elle,
+ * n'a pas bougé : /blog/meilleure-agence-gso-france-2026.
+ */
+const TITRES_RENOMMES = {
+  'Meilleure agence GEO France 2026 : top 5 comparatif':
+    'Meilleure agence GEO France 2026 : top 6 comparatif',
+};
+
 async function main() {
   const [donnees, ref] = await Promise.all([
     chargeBlogData(),
@@ -67,7 +86,8 @@ async function main() {
   const parTitre = new Map(donnees.map(p => [p.title.replace(/\s+/g, ' ').trim(), p]));
   const ordonnes = [];
   for (const t of ref.titres.filter(t => t.niveau === 3)) {
-    const cle = t.texte.replace(/\s+/g, ' ').trim();
+    let cle = t.texte.replace(/\s+/g, ' ').trim();
+    cle = TITRES_RENOMMES[cle] ?? cle;
     const p = parTitre.get(cle);
     if (!p) { console.error(`✗ titre de la référence introuvable dans BLOG_DATA : « ${cle} »`); process.exit(1); }
     ordonnes.push(p);
@@ -105,9 +125,12 @@ async function main() {
 <meta name="description" content="${ech(ref.description)}">
 <meta name="keywords" content="${ech(ref.keywords)}">
 <link rel="canonical" href="${ech(ref.canonical)}">
+<link rel="alternate" hreflang="fr" href="${ech(ref.canonical)}">
 ${meta(ref.geo)}
 ${meta(ref.og)}
 ${meta(ref.twitter)}
+<link rel="preload" href="/assets/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/da31.css">
 ${ref.schemas.map(s => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n')}

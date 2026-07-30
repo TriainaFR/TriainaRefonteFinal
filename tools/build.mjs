@@ -38,6 +38,15 @@ const CHAINE = [
   /* avant le sitemap : celui-ci écarte les pages non canoniques en comparant
      les canonicals, autant qu'ils soient déjà tous sur le même hôte */
   'normalise-urls.mjs',
+  /* la page 404 reprend la nav et le pied des autres pages : sans elle dans la
+     chaîne, elle se met à diverger dès qu'un lien ou une mention change (c'est
+     arrivé : elle a gardé « Triaina Global Systems » une génération de trop). */
+  'genere-404.mjs',
+  /* les valeurs commerciales tranchées par Lucas (prix, délais, horaires) sont
+     dispersées dans les contenus figés ET dans les captures de l'ancien site,
+     qu'on ne retouche pas : cette passe les aligne sur les pages produites.
+     Elle passe AVANT le sitemap, qui relit titres et descriptions pour llms.txt. */
+  'valeurs-officielles.mjs',
   'genere-robots-sitemap.mjs',
 ];
 

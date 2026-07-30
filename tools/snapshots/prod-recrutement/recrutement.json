@@ -1,0 +1,193 @@
+{
+  "title": "Recrutement Triaina | Carrière SEO & GEO | Triaina",
+  "description": "Rejoignez Triaina, l'agence pionnière du GSO. Offres d'emploi SEO, développeur IA, rédacteur web et consultant marketing à Paris.",
+  "keywords": "recrutement seo, emploi gso, carrière marketing digital, offre emploi paris",
+  "robots": null,
+  "canonical": "https://www.triaina.fr/recrutement",
+  "og": {
+    "og:type": "website",
+    "og:url": "https://www.triaina.fr/recrutement",
+    "og:title": "Recrutement Triaina | Carrière SEO & GEO",
+    "og:description": "Rejoignez Triaina, l'agence pionnière du GSO. Offres d'emploi SEO, développeur IA, rédacteur web et consultant marketing à Paris.",
+    "og:image": "https://www.triaina.fr/og-image.jpg",
+    "og:locale": "fr_FR",
+    "og:site_name": "Triaina"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Recrutement Triaina | Carrière SEO & GEO",
+    "twitter:description": "Rejoignez Triaina, l'agence pionnière du GSO. Offres d'emploi SEO, développeur IA, rédacteur web et consultant marketing à Paris.",
+    "twitter:image": "https://www.triaina.fr/og-image.jpg"
+  },
+  "geo": {
+    "geo.region": "FR-75",
+    "geo.placename": "Paris",
+    "geo.position": "48.8464;2.2758"
+  },
+  "titres": [
+    {
+      "niveau": 1,
+      "texte": "REJOINDRE L'UNITÉ"
+    },
+    {
+      "niveau": 3,
+      "texte": "Candidature Spontanée"
+    },
+    {
+      "niveau": 4,
+      "texte": "Agence"
+    },
+    {
+      "niveau": 4,
+      "texte": "Expertises"
+    },
+    {
+      "niveau": 4,
+      "texte": "Localisation"
+    },
+    {
+      "niveau": 4,
+      "texte": "Infos"
+    }
+  ],
+  "h1": [
+    "REJOINDRE L'UNITÉ"
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@id": "https://www.triaina.fr/#organization",
+          "@type": [
+            "LocalBusiness",
+            "Organization"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "postalCode": "75016",
+            "streetAddress": "50 quai Louis Bleriot"
+          },
+          "alternateName": [
+            "Triaina",
+            "Triaina Agency",
+            "Agence GSO Paris",
+            "Agence Référencement IA"
+          ],
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "description": "Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.8464,
+            "longitude": 2.2758
+          },
+          "hasMap": "https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris",
+          "image": "https://www.triaina.fr/logo.svg",
+          "knowsAbout": [
+            "SEO",
+            "GSO",
+            "Generative Search Optimization",
+            "Référencement IA",
+            "Stratégie Média",
+            "Agence SEO Paris",
+            "Search Engine Optimization (SEO)",
+            "Large Language Models (LLM)",
+            "Agence GSO",
+            "Google SGE Optimization",
+            "Knowledge Graph Construction",
+            "Entity SEO",
+            "Optimisation ChatGPT",
+            "Digital PR"
+          ],
+          "logo": "https://www.triaina.fr/logo.svg",
+          "name": "Triaina - Agence SEO & GEO Paris",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "closes": "19:00",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00"
+          },
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.linkedin.com/company/triaina",
+            "https://www.instagram.com/triaina_agency"
+          ],
+          "url": "https://www.triaina.fr"
+        },
+        {
+          "@id": "https://www.triaina.fr/#website",
+          "@type": "WebSite",
+          "description": "Domination IA et Visibilité Totale",
+          "inLanguage": "fr-FR",
+          "name": "Triaina | Agence SEO & GEO Paris",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "query-input": "required name=search_term_string",
+            "target": "https://www.triaina.fr/recherche?q={search_term_string}"
+          },
+          "publisher": {
+            "@id": "https://www.triaina.fr/#organization"
+          },
+          "url": "https://www.triaina.fr/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://www.triaina.fr/",
+          "name": "Accueil",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://www.triaina.fr/recrutement",
+          "name": "Recrutement",
+          "position": 2
+        }
+      ]
+    }
+  ],
+  "typesSchema": [
+    null,
+    "BreadcrumbList"
+  ],
+  "liensInternes": [
+    "/",
+    "/agence",
+    "/agence-geo-paris",
+    "/agence-referencement-ia",
+    "/agence-referencement-ia-paris",
+    "/agence-seo-paris",
+    "/annuaire",
+    "/blog",
+    "/contact",
+    "/expertise-ai-overview",
+    "/expertise-contenu",
+    "/expertise-geo",
+    "/expertise-gsa",
+    "/expertise-media",
+    "/expertise-sea",
+    "/expertise-seo",
+    "/faq",
+    "/mentions-legales",
+    "/references",
+    "/sitemap.xml"
+  ],
+  "nbMots": 203,
+  "texteIntegral": "TRIAINA SEO - GEO - Média ACCUEIL TRIAINA EXPERTISE Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview SEO/IA Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris RÉFÉRENCES BLOG CONTACT ANNUAIRE FAQ Retour à l'Agence &amp; Histoire REJOINDRE L'UNITÉ // Missions Ouvertes Triaina recherche des esprits analytiques et créatifs pour façonner le futur de la recherche générative. Si vous comprenez que le SEO est mort et que le GSO est l'avenir, vous êtes au bon endroit. PROFIL RECHERCHÉ Audace Technique Vision Systémique Rigueur Éditoriale Aucune offre spécifique pour le moment, mais... Candidature Spontanée Votre profil ne correspond à aucune offre ? Nous sommes toujours à la recherche de talents singuliers pour enrichir notre laboratoire. Envoyer mon profil TRIAINA SEO - GEO - Média Agence spécialisée en architecture SEO, domination GEO et autorité Média. LinkedIn Agence ACCUEIL TRIAINA RÉFÉRENCES BLOG ANNUAIRE FAQ CONTACT Expertises Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Localisation Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris Infos 50 Quai Louis Blériot 75016 Paris France © 2026 Triaina Global Systems. Mentions Légales Sitemap"
+}

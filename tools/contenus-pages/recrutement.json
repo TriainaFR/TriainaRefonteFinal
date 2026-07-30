@@ -1,0 +1,55 @@
+{
+ "page": "recrutement",
+ "blocs": [
+  {
+   "t": "p",
+   "html": "<a href=\"/agence\">Retour à l'Agence &amp; Histoire</a>",
+   "groupe": "s0"
+  },
+  {
+   "t": "h1",
+   "html": "REJOINDRE L'UNITÉ",
+   "groupe": "s0"
+  },
+  {
+   "t": "p",
+   "html": "// Missions Ouvertes",
+   "groupe": "s0"
+  },
+  {
+   "t": "p",
+   "html": "Triaina recherche des esprits analytiques et créatifs pour façonner le futur de la recherche générative. Si vous comprenez que le SEO est mort et que le GSO est l'avenir, vous êtes au bon endroit.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "PROFIL RECHERCHÉ",
+   "groupe": "s1"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li>Audace Technique</li><li>Vision Systémique</li><li>Rigueur Éditoriale</li></ul>",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Aucune offre spécifique pour le moment, mais...",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Candidature Spontanée",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Votre profil ne correspond à aucune offre&nbsp;? Nous sommes toujours à la recherche de talents singuliers pour enrichir notre laboratoire.",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"mailto:lucas@triaina.fr?subject=Candidature%20Spontanée%20-%20Triaina\">Envoyer mon profil</a>",
+   "groupe": "s3"
+  }
+ ]
+}

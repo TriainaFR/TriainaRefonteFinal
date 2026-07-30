@@ -4,10 +4,15 @@
   "private": true,
   "type": "module",
   "description": "Site statique triaina.fr — 85 pages générées, servies telles quelles",
+  "_pourquoi-pas-de-script-build": "Railpack (le builder Railway) exécute automatiquement le script `build` s'il en trouve un. Or régénérer le site au déploiement n'a aucun sens ici : site/ EST le livrable, versionné et vérifié, et la régénération réclamerait l'ancien code React qui ne fait plus partie du dépôt. Le script s'appelle donc `regenere` — même commande, mais aucun builder ne la déclenche tout seul.",
   "scripts": {
-    "build": "node tools/build.mjs",
+    "start": "node tools/serveur-site.mjs",
+    "regenere": "node tools/build.mjs",
     "serve": "node tools/serveur-site.mjs",
     "verifie-urls": "node tools/normalise-urls.mjs --verifie"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "devDependencies": {
     "esbuild": "^0.28.0",

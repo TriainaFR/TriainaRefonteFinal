@@ -9,6 +9,7 @@
  * Usage : node tools/genere-blog.mjs [--seul=geo-definition-2026]
  */
 import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import ts from 'typescript';
@@ -22,6 +23,26 @@ const SORTIE = path.join(RACINE, 'site/blog');
 /* Valeurs servies par l'ancien site sur toutes les pages — reprises telles quelles. */
 export const MOTS_CLES = 'agence seo, agence gso, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative search optimization';
 const IMAGE_OG_DEFAUT = 'https://www.triaina.fr/og-image.jpg';
+
+/**
+ * URL absolue de l'image de partage, en vérifiant que le fichier EXISTE.
+ * Un `og:image` qui répond 404 laisse un aperçu vide sur LinkedIn, Slack et
+ * Facebook — et sur ce domaine, un 404 est servi en `text/html` avec un code
+ * 200, donc rien ne le signale. Ordre : l'override de la balise <SEO>, puis
+ * l'illustration réelle de l'article, puis l'image par défaut du site.
+ */
+function resoutImageOg(override, illustration, slug) {
+  const existe = u => {
+    if (!u) return false;
+    const chemin = u.replace(/^https?:\/\/[^/]+/, '').split(/[?#]/)[0];
+    return chemin.startsWith('/') && existsSync(path.join(RACINE, 'site', chemin));
+  };
+  const absolu = u => (/^https?:\/\//.test(u) ? u : 'https://www.triaina.fr' + u);
+  if (existe(override)) return absolu(override);
+  if (override) console.log(`  ${slug} : og:image « ${override} » introuvable → repli`);
+  if (existe(illustration)) return absolu(illustration);
+  return IMAGE_OG_DEFAUT;
+}
 
 /** Mois français → numéro, pour convertir « 02 MARS 2026 » en 2026-03-02. */
 const MOIS = { janvier: 1, fevrier: 2, mars: 3, avril: 4, mai: 5, juin: 6,
@@ -500,7 +521,11 @@ ${entreesMobile.join('\n')}
 const FOOTER_COLONNES = [
   ['Agence', [
     ['/', 'ACCUEIL'], ['/agence', 'NOTRE HISTOIRE'], ['/references', 'RÉFÉRENCES'],
-    ['/blog', 'BLOG'], ['/annuaire', 'ANNUAIRE'], ['/faq', 'FAQ'], ['/contact', 'CONTACT'],
+    ['/blog', 'BLOG'], ['/annuaire', 'ANNUAIRE'], ['/faq', 'FAQ'],
+    /* /recrutement était liée sur l'ancien site ; recréée le 30/07/2026, elle
+       n'était plus référencée nulle part — orpheline au sens strict, donc
+       invisible pour un crawler qui n'a que le maillage pour la trouver. */
+    ['/recrutement', 'RECRUTEMENT'], ['/contact', 'CONTACT'],
   ]],
   ['Expertises', [
     ['/expertise-seo', 'Expertise SEO'], ['/expertise-sea', 'Expertise SEA'],
@@ -544,7 +569,7 @@ ${liens.map(([u, l]) => `        <li><a href="${u}">${l}</a></li>`).join('\n')}
     </div>
   </div>
   <div class="pied-bas">
-    <p>© 2026 Triaina Global Systems.</p>
+    <p>© 2026 Triaina SAS.</p>
     <div class="liens">
       <a href="/mentions-legales">Mentions Légales</a>
       <a href="/sitemap.xml" target="_blank">Sitemap</a>
@@ -597,8 +622,14 @@ function gabarit(d, schemaGlobal) {
      quand la signature de marque est déjà là. */
   const title = /[-|]\s*Triaina\s*$/.test(d.title) ? d.title : `${d.title} | Triaina`;
   /* og:image ne suit PAS l'illustration de l'article : l'ancien site servait
-     l'image par défaut du composant SEO, sauf override explicite. */
-  const imageOg = d.imageOgOverride ?? IMAGE_OG_DEFAUT;
+     l'image par défaut du composant SEO, sauf override explicite.
+     30/07/2026 — mais 6 de ces overrides désignaient un fichier INEXISTANT
+     (chemin /images/… alors que le visuel vit dans /images/articles/…) :
+     l'aperçu LinkedIn/Facebook de ces pages était vide. On retombe donc, dans
+     l'ordre, sur l'illustration réelle de l'article puis sur l'image par
+     défaut. Règle générale, pas une liste en dur : un override qui cesse de
+     résoudre se répare tout seul au prochain build. */
+  const imageOg = resoutImageOg(d.imageOgOverride, d.image, d.id);
   return `<!doctype html>
 <html lang="fr">
 <head>
@@ -624,9 +655,11 @@ function gabarit(d, schemaGlobal) {
 <meta name="twitter:image" content="${ech(imageOg)}">
 <meta name="ICBM" content="48.8464, 2.2758">
 <meta name="msvalidate.01" content="4C58C9622B2DBB31ECD9A463E3DCAF66">
-<link rel="alternate" hreflang="fr" href="https://www.triaina.fr/">
+<link rel="alternate" hreflang="fr" href="${ech(d.canonical)}">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/logo.svg">
+<link rel="preload" href="/assets/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/da31.css">
 ${jsonld.map(s => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n')}
@@ -678,6 +711,7 @@ ${d.html}
           <p class="rassure">Sans engagement · réponse sous 24&nbsp;h ouvrées</p>
         </aside>
 
+${d.articlesLies}
         <div class="art-partage">
           <span>Partager cet article</span>
           <div class="liens">
@@ -705,6 +739,47 @@ ${pieds()}
 <script src="/assets/da31.js" defer></script>
 </body>
 </html>
+`;
+}
+
+/**
+ * « Sur le même sujet » — trois articles proches, en fin d'article.
+ *
+ * L'audit du 30/07/2026 a mesuré que 38 des 66 articles ne liaient AUCUN autre
+ * article : chacun était un cul-de-sac pour un crawler comme pour un lecteur.
+ * Le maillage du blog reposait à 88 % sur la nav et le pied, c'est-à-dire sur
+ * du boilerplate qui ne dit rien de la proximité entre deux sujets.
+ *
+ * Choix de la sélection, sans base de données ni tags manuels : même `tag`
+ * d'abord, puis proximité lexicale des titres (mots signifiants communs), puis
+ * les plus récents pour compléter. Aucun contenu inventé, aucune phrase
+ * ajoutée — seulement des titres réels et leurs URL canoniques.
+ */
+const VIDES = new Set(['agence', 'seo', 'geo', 'gso', 'guide', 'complet', 'pour', 'les', 'des',
+  'une', 'comment', 'quoi', 'avec', 'dans', 'son', 'sur', 'est', 'que', 'qui', 'top',
+  'meilleure', 'meilleures', 'france', 'paris', 'ia', 'référencement', 'referencement']);
+const motsCles = titre => new Set(
+  String(titre ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .split(/[^a-z0-9]+/).filter(m => m.length > 3 && !VIDES.has(m)));
+
+function articlesLies(courant, tous) {
+  const mots = motsCles(courant.titre);
+  const candidats = tous
+    .filter(p => p.url !== courant.url && p.canonique !== false)
+    .map(p => {
+      const communs = [...motsCles(p.titre)].filter(m => mots.has(m)).length;
+      return { p, score: (p.tag === courant.tag ? 2 : 0) + communs };
+    })
+    .sort((a, b) => b.score - a.score || (b.p.date ?? '').localeCompare(a.p.date ?? ''))
+    .slice(0, 3).map(x => x.p);
+  if (candidats.length < 2) return '';
+  return `
+        <nav class="art-lies" aria-label="Articles sur le même sujet">
+          <p class="k">Sur le même sujet</p>
+          <ul>
+${candidats.map(p => `            <li><a href="${ech(p.url)}">${ech(p.titre)}</a></li>`).join('\n')}
+          </ul>
+        </nav>
 `;
 }
 
@@ -743,6 +818,14 @@ async function main() {
     if (bloc) for (const m of bloc[0].matchAll(/'([^']+)':\s*'([^']+)'/g)) urlsParId[m[1]] = m[2];
   }
 
+  /* Métadonnées de TOUS les articles, chargées avant la boucle : c'est ce qui
+     permet de calculer « Sur le même sujet » sans relire 66 fichiers par page. */
+  const tousArticles = [];
+  for (const f of fichiers) {
+    const { titre, url, tag, date } = JSON.parse(await readFile(path.join(CONTENUS, f), 'utf8'));
+    tousArticles.push({ titre, url, tag, date });
+  }
+
   let ok = 0; const rates = [];
   for (const f of fichiers.sort()) {
     const d = JSON.parse(await readFile(path.join(CONTENUS, f), 'utf8'));
@@ -778,6 +861,7 @@ async function main() {
     const avecFaq = rendFaqManquante(sansMorts, seo.schemas, slug);
     const { html: corps, sommaire } = prepareCorps(avecFaq, urlsParId);
     const html = gabarit({ ...d, ...seo, html: corps, sommaire,
+                           articlesLies: articlesLies(d, tousArticles),
                            ficheAuteur: ficheAuteur(auteur) }, schemaGlobal);
 
     /* Garde-fous : ces trois défauts sont passés inaperçus une fois, ils ne

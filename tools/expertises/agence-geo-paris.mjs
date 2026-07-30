@@ -169,3 +169,26 @@ export const JS = `
   }, { threshold: .15, rootMargin: '0px 0px -8% 0px' });
   cibles.forEach(function (el) { el.classList.add('bv'); io.observe(el); });
 `;
+
+/* ── correction de schéma demandée par Lucas le 30/07/2026 ──────────────────
+ * La capture de l'ancien site porte un téléphone bouchon « +33100000000 »
+ * dans le nœud LocalBusiness — un numéro publié en données structurées doit
+ * être joignable. Remplacé par le vrai numéro fourni par Lucas. Corrigé ici
+ * et non dans la capture, qui doit rester le témoin fidèle de l'ancien site. */
+const TEL_BOUCHON = '+33100000000';
+const TEL_REEL = '+33614916295';
+
+export function transformeSchemas(schemas) {
+  let corriges = 0;
+  const visite = o => {
+    if (Array.isArray(o)) return o.forEach(visite);
+    if (!o || typeof o !== 'object') return;
+    if (typeof o.telephone === 'string' && o.telephone.replace(/[\s.-]/g, '') === TEL_BOUCHON) {
+      o.telephone = TEL_REEL; corriges++;
+    }
+    for (const v of Object.values(o)) visite(v);
+  };
+  visite(schemas);
+  if (corriges) console.log(`  agence-geo-paris : ${corriges} téléphone bouchon remplacé`);
+  return schemas;
+}

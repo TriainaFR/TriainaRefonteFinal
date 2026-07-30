@@ -67,7 +67,7 @@ const INTRO = `<p>
   <strong>Triaina</strong>, c'est le trident de Poséidon : trois pointes, une seule prise. <strong>SEO</strong>, <strong>GEO</strong>, <strong>Média propriétaire</strong>. Une agence SEO &amp; GEO à Paris qui n'a pas attendu la vague pour apprendre à nager. Elle l'a générée.
 </p>
 <p>
-  Voici l'histoire de 25 ans de terrain, de deux cessions d'agences, de huit médias construits de zéro - et d'une conviction forgée bien avant que ChatGPT ne change la donne.
+  Voici l'histoire de 26 ans de terrain, de deux cessions d'agences, de huit médias construits de zéro - et d'une conviction forgée bien avant que ChatGPT ne change la donne.
 </p>`;
 
 /* Les quatre époques : jalons de la frise (l'ancien design). */
@@ -132,7 +132,7 @@ const EPOQUES = [
   Le secteur SEO est obsédé par les liens. Tout le monde achète, loue, échange. Héphaïstos, lui, ne commande pas ses armes : il les forge. La nôtre vient d'être allumée - et elle brûle déjà.
 </p>
 <p>
-  En 2026, nos associés font un choix délibéré et stratégique : <strong>créer un groupe média propriétaire pour offrir aux clients de Triaina une solution de visibilité complète et intégrée</strong> - de l'optimisation SEO/GEO jusqu'à la publication dans des médias à autorité réelle. Ce n'est pas un heureux hasard. C'est la pièce manquante d'une offre pensée de bout en bout.
+  En 2026, nos associés font un choix délibéré et stratégique : <strong>adosser à Triaina le groupe média propriétaire construit depuis 2014, pour offrir aux clients une solution de visibilité complète et intégrée</strong> - de l'optimisation SEO/GEO jusqu'à la publication dans des médias à autorité réelle. Ce n'est pas un heureux hasard. C'est la pièce manquante d'une offre pensée de bout en bout.
 </p>
 <p>
   <strong>Pendant que le secteur achète des liens, nous publions dans nos propres sources.</strong>
@@ -171,7 +171,7 @@ const SECTIONS = [
   ['nh-philo', `<h2>Notre Philosophie - Travailler en Bonne Intelligence</h2>
 
 <p>
-  25 ans de terrain enseignent une chose avant tout : <strong>les meilleures stratégies naissent de l'écoute, pas des slides</strong>.
+  26 ans de terrain enseignent une chose avant tout : <strong>les meilleures stratégies naissent de l'écoute, pas des slides</strong>.
 </p>
 <p>
   On n'arrive pas chez un client avec une recette toute faite. On arrive avec des questions. Quels sont vos vrais enjeux de visibilité ? Où perdez-vous du terrain ? Qu'est-ce que votre audience cherche vraiment - sur Google, sur Perplexity, dans une réponse ChatGPT ?
@@ -180,7 +180,7 @@ const SECTIONS = [
   Notre approche : <strong>proximité, écoute des besoins réels, solutions sur-mesure</strong>. Pas de jargon condescendant, pas de relation professeur-élève. On aime travailler en bonne intelligence, construire ensemble des stratégies qui correspondent vraiment aux enjeux de chaque client.
 </p>
 <p>
-  Une approche forgée sur 25 ans de terrain. Pas sur des certifications.
+  Une approche forgée sur 26 ans de terrain. Pas sur des certifications.
 </p>`],
 
   ['nh-vision', `<h2>Notre Vision 2025+</h2>
@@ -243,7 +243,7 @@ const SECTIONS = [
 
 <dl>
   <dt><strong>Depuis quand Triaina existe-t-elle ?</strong></dt>
-  <dd>L'agence Triaina a été fondée en 2025, mais ses associés exercent le métier du référencement naturel depuis 2000 - soit 25 ans de terrain continu, à travers plusieurs structures créées et cédées.</dd>
+  <dd>L'agence Triaina a été fondée en 2025, mais ses associés exercent le métier du référencement naturel depuis 2000 - soit 26 ans de terrain continu, à travers plusieurs structures créées et cédées.</dd>
 
   <dt><strong>Qu'est-ce que le GEO et pourquoi Triaina s'y est spécialisée ?</strong></dt>
   <dd>Le GEO (Generative Engine Optimization) désigne l'optimisation de la visibilité d'une marque dans les réponses des IA génératives : ChatGPT, Gemini, Perplexity, Claude. Triaina a anticipé ce virage dès 2024, en s'appuyant sur un groupe média propriétaire déjà cité par ces moteurs.</dd>
@@ -271,7 +271,7 @@ const SECTIONS = [
 /* FAQ du contenu, texte identique, pour le schéma FAQPage. */
 const FAQ_SCHEMA = [
   ["Depuis quand Triaina existe-t-elle ?",
-   "L'agence Triaina a été fondée en 2025, mais ses associés exercent le métier du référencement naturel depuis 2000 - soit 25 ans de terrain continu, à travers plusieurs structures créées et cédées."],
+   "L'agence Triaina a été fondée en 2025, mais ses associés exercent le métier du référencement naturel depuis 2000 - soit 26 ans de terrain continu, à travers plusieurs structures créées et cédées."],
   ["Qu'est-ce que le GEO et pourquoi Triaina s'y est spécialisée ?",
    "Le GEO (Generative Engine Optimization) désigne l'optimisation de la visibilité d'une marque dans les réponses des IA génératives : ChatGPT, Gemini, Perplexity, Claude. Triaina a anticipé ce virage dès 2024, en s'appuyant sur un groupe média propriétaire déjà cité par ces moteurs."],
   ["Quels sont les médias propriétaires de Triaina ?",
@@ -446,12 +446,14 @@ ${t.keywords ? `<meta name="keywords" content="${ech(t.keywords)}">` : ''}
 <link rel="canonical" href="${ech(t.canonical)}">
 <meta name="ICBM" content="48.8464, 2.2758">
 <meta name="msvalidate.01" content="4C58C9622B2DBB31ECD9A463E3DCAF66">
-<link rel="alternate" hreflang="fr" href="https://www.triaina.fr/">
+<link rel="alternate" hreflang="fr" href="${ech(t.canonical)}">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/logo.svg">
 ${meta(t.geo)}
 ${meta(t.og)}
 ${meta(t.twitter)}
+<link rel="preload" href="/assets/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/da31.css">
 <style>${STYLE}</style>

@@ -272,12 +272,14 @@ ${cap.keywords ? `<meta name="keywords" content="${ech(cap.keywords)}">` : ''}
 <link rel="canonical" href="${ech(cap.canonical)}">
 <meta name="ICBM" content="${ech((cap.geo['geo.position'] ?? '').replace(';', ', '))}">
 <meta name="msvalidate.01" content="4C58C9622B2DBB31ECD9A463E3DCAF66">
-<link rel="alternate" hreflang="fr" href="https://www.triaina.fr/">
+<link rel="alternate" hreflang="fr" href="${ech(cap.canonical)}">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/logo.svg">
 ${meta(cap.geo)}
 ${meta(cap.og)}
 ${meta(cap.twitter)}
+<link rel="preload" href="/assets/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/da31.css">
 <style>${STYLE}</style>

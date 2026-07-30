@@ -598,3 +598,21 @@ footer{
 .ag-cta p{color:#CBD5E1; max-width:44em; margin:0 auto 2rem}
 .ag-cta strong{color:#fff}
 .ag-cta .ag-actions{justify-content:center}
+
+/* ── « Sur le même sujet » : 3 articles proches, en fin d'article ──
+   Ajouté le 30/07/2026. 38 articles sur 66 ne liaient aucun autre article :
+   chacun était un cul-de-sac, pour le lecteur comme pour un crawler. */
+.art-lies{margin:3.5rem 0 2.5rem; padding-top:1.6rem;
+  border-top:1px solid rgba(148,163,184,.18)}
+.art-lies .k{font-family:ui-monospace,monospace; font-size:.66rem;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--bleu-c);
+  margin-bottom:.9rem}
+.art-lies ul{list-style:none; margin:0; padding:0; display:grid; gap:.5rem}
+.art-lies li a{display:block; padding:.8rem 1rem; text-decoration:none;
+  color:#E2E8F0; font-size:.95rem; line-height:1.45;
+  border:1px solid rgba(148,163,184,.16); border-radius:.6rem;
+  transition:border-color .35s, color .35s, transform .35s}
+.art-lies li a:hover{border-color:rgba(255,233,184,.5); color:#fff;
+  transform:translateY(-2px)}
+@media(prefers-reduced-motion:reduce){.art-lies li a{transition:none}
+  .art-lies li a:hover{transform:none}}
