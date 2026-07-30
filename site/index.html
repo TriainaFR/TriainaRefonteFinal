@@ -1613,8 +1613,17 @@ document.addEventListener('DOMContentLoaded', function(){
     var tlRevue = gsap.timeline({
       scrollTrigger: {
         trigger: '.defile', pin: true, scrub: .55, start: 'top 12%',
-        end: function(){ return '+=' + Math.round(innerHeight *
-          (matchMedia('(max-width: 760px)').matches ? 2.3 : 2.9)); },
+        end: function(){
+          /* Course du défilé, en hauteurs d'écran. Onze marques passent une
+             par une : c'est ce rapport qui fait le ressenti, pas la valeur
+             brute. Mobile porté de 2.3 à 4.4 le 30/07/2026 — à 2.3, chaque
+             marque ne tenait que 0,21 écran et le défilé passait avant qu'on
+             l'ait lu. À 4.4 on est à 0,40 écran par marque. Le doigt parcourt
+             plus de distance que la molette : il faut PLUS de course sur
+             mobile, pas moins. */
+          var course = matchMedia('(max-width: 760px)').matches ? 4.4 : 2.9;
+          return '+=' + Math.round(innerHeight * course);
+        },
         invalidateOnRefresh: true,
         onUpdate: function(self){
           jauge.firstChild.style.width = (self.progress * 100).toFixed(2) + '%';
