@@ -20,8 +20,16 @@ dont 67 articles de blog. Aucun framework, aucun rendu côté serveur — le dos
 ## Régénérer le site
 
 ```bash
+npm i -D esbuild typescript   # une seule fois, en local
 node tools/build.mjs
 ```
+
+> `esbuild` et `typescript` ne sont **pas** déclarés dans `package.json`, et
+> c'est volontaire : Railway les installait à chaque déploiement — esbuild y
+> télécharge un binaire par script `postinstall` — pour deux outils que la
+> production n'exécute jamais. C'était le seul maillon du déploiement capable
+> d'échouer. Le dépôt n'a désormais **aucune dépendance** : Railway clone,
+> et démarre.
 
 La chaîne enchaîne les 14 générateurs dans l'ordre. Cet ordre n'est pas
 cosmétique : `ajoute-entites-geo` doit passer après tous les autres (sinon les
