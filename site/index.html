@@ -1616,13 +1616,14 @@ document.addEventListener('DOMContentLoaded', function(){
         end: function(){
           /* Course du défilé, en hauteurs d'écran. Onze marques passent une
              par une : c'est ce rapport qui fait le ressenti, pas la valeur
-             brute. Réglé au doigt par Lucas le 30/07/2026, en trois essais :
-             2.3 (0,21 écran par marque) filait avant qu'on ait lu ; 4.4 (0,40)
-             restait rapide ; 6.6 (0,60) devenait trop long. Valeur retenue :
-             5.3, soit 0,53 écran par marque. Le doigt parcourt plus de
-             distance que la molette : il faut PLUS de course sur mobile que
-             sur desktop, pas moins. */
-          var course = matchMedia('(max-width: 760px)').matches ? 5.3 : 2.9;
+             brute. Réglé au doigt par Lucas le 30/07/2026, par essais
+             successifs : 2.3 (0,21 écran par marque) filait avant qu'on ait
+             lu ; 4.4 (0,40) était jugé encore rapide ; 6.6 (0,60) trop long ;
+             5.3 (0,53) trop long encore. Valeur retenue : 4.5, soit 0,45
+             écran par marque — l'encadrement s'est resserré autour de cette
+             zone. Le doigt parcourt plus de distance que la molette : il faut
+             PLUS de course sur mobile que sur desktop, pas moins. */
+          var course = matchMedia('(max-width: 760px)').matches ? 4.5 : 2.9;
           return '+=' + Math.round(innerHeight * course);
         },
         invalidateOnRefresh: true,
