@@ -616,3 +616,30 @@ footer{
   transform:translateY(-2px)}
 @media(prefers-reduced-motion:reduce){.art-lies li a{transition:none}
   .art-lies li a:hover{transform:none}}
+
+/* ── /blog sur mobile : les filtres sur UNE ligne qui défile ────────────────
+   Mesuré au lancement (30/07/2026) sur un écran de 375×812 : les 12 filtres
+   se répartissaient sur 5 rangées, et l'en-tête de page occupait 338 px. La
+   première carte d'article commençait à 523 px, soit 64 % de l'écran passés
+   à regarder des filtres avant de voir un seul article.
+   Une ligne unique glissable au doigt est la convention mobile : elle rend
+   ~110 px et fait remonter le premier article au-dessus de la ligne de
+   flottaison. Aucun filtre n'est retiré, ils défilent. */
+@media (max-width: 640px) {
+  .filtres{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding-bottom:.15rem;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .filtres::-webkit-scrollbar{display:none}
+  /* pas de scroll-snap : l'ancrage du filtre actif sur le bord absorbait la
+     marge du conteneur et collait « TOUS » au bord de l'écran, désaligné du
+     titre et du champ de recherche. Le défilement libre suffit. */
+  .filtres .filtre{flex:0 0 auto}
+  /* la recherche prend toute la largeur : à côté des filtres elle était
+     comprimée à 256 px sur 375 */
+  .blog-outils{gap:.75rem}
+  .blog-outils .recherche{width:100%}
+}
