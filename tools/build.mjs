@@ -48,6 +48,11 @@ const CHAINE = [
      Elle passe AVANT le sitemap, qui relit titres et descriptions pour llms.txt. */
   'valeurs-officielles.mjs',
   'genere-robots-sitemap.mjs',
+  /* EN DERNIER, une fois que plus personne ne réécrit de HTML : l'empreinte
+     posée sur /assets/*.css et *.js. Sans elle, les assets sont servis avec un
+     cache de 30 jours sur une URL qui ne change jamais — un correctif CSS
+     déployé n'atteint pas les visiteurs déjà venus, et rien ne le signale. */
+  'version-assets.mjs',
 ];
 
 /**
