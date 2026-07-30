@@ -232,7 +232,15 @@ body.menu-ouvert{overflow:hidden}
 .retour:hover{color:var(--lueur)}
 
 .art-grille{display:grid; grid-template-columns:minmax(0,1fr) 16rem; gap:3.5rem; align-items:start}
-@media(max-width:1080px){.art-grille{grid-template-columns:1fr}}
+/* `minmax(0,1fr)` et NON `1fr` : c'est tout le sujet. Un `1fr` nu vaut
+   `minmax(auto,1fr)`, et ce `auto` prend pour minimum la largeur mini du
+   contenu — celle d'un TABLEAU d'article, qui ne se plie pas. La colonne
+   passait alors à 733 px dans un écran de 402 : sur iPhone, le texte sortait
+   du cadre et il fallait pincer pour dézoomer, sur les 54 articles qui ont un
+   tableau. Le garde-fou était posé sur desktop et oublié ici, où il compte.
+   Avec un minimum à 0, la colonne suit l'écran et c'est l'`overflow-x:auto`
+   du tableau qui fait son travail : lui seul défile, latéralement. */
+@media(max-width:1080px){.art-grille{grid-template-columns:minmax(0,1fr)}}
 
 .art-meta{display:flex; flex-wrap:wrap; align-items:center; gap:1rem; margin-bottom:1.5rem;
   font-family:ui-monospace,monospace; font-size:.66rem; letter-spacing:.16em; text-transform:uppercase; color:var(--brume)}
@@ -241,7 +249,17 @@ body.menu-ouvert{overflow:hidden}
 h1.art-titre{
   font-family:var(--syne); font-weight:800; color:#fff;
   font-size:clamp(2rem,4.6vw,3.6rem); line-height:1.05; letter-spacing:-.015em; margin-bottom:1.5rem;
+  /* « Référencement » en Syne 800 à 32 px mesure 400 px : plus large que la
+     colonne d'un iPhone (362 px). Sans coupure possible, le mot sortait du
+     cadre et emportait toute la page avec lui — 5 articles concernés, tous
+     titrés « Référencement … ». La césure française coupe proprement
+     (Référence-ment) ; `break-word` reste le filet pour un mot qu'aucun
+     dictionnaire ne saurait couper. Invisible tant que le texte tient. */
+  hyphens:auto; -webkit-hyphens:auto;
+  overflow-wrap:break-word;
 }
+/* Même filet dans le corps : un titre de section peut porter un mot aussi long. */
+.art-corps h2, .art-corps h3, .art-corps h4{hyphens:auto; -webkit-hyphens:auto; overflow-wrap:break-word}
 .art-chapo{font-size:1.15rem; color:#CBD5E1; max-width:44em; line-height:1.65}
 
 .art-image{
