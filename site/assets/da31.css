@@ -394,6 +394,12 @@ h1.art-titre{
 
 .cb-image{position:relative; aspect-ratio:16/8.4; overflow:hidden; background:var(--nuit-2)}
 .carte-blog.grande .cb-image{aspect-ratio:16/6.6}
+/* …mais sur une colonne la carte de tête n'est plus large : ce cadrage ne
+   laissait qu'un bandeau de 136 px qui décapitait le sujet de la photo. Sous
+   640 px elle reprend donc le cadrage des autres cartes. La règle vient APRÈS
+   celle du dessus : une media query n'ajoute aucune spécificité, seul l'ordre
+   les départage. */
+@media(max-width:640px){.carte-blog.grande .cb-image{aspect-ratio:16/8.4}}
 .cb-image img{width:100%; height:100%; object-fit:cover; transition:transform .8s cubic-bezier(.22,.9,.24,1); filter:saturate(.9)}
 .carte-blog:hover .cb-image img{transform:scale(1.05)}
 .cb-image::after{content:''; position:absolute; inset:0;
@@ -642,4 +648,17 @@ footer{
      comprimée à 256 px sur 375 */
   .blog-outils{gap:.75rem}
   .blog-outils .recherche{width:100%}
+}
+
+/* ── Champs de saisie sur écran tactile : 16 px, pas moins ──────────────────
+   Safari iOS AGRANDIT la page dès qu'on touche un champ dont le texte fait
+   moins de 16 px — et il ne revient jamais en arrière tout seul. La page reste
+   zoomée, cartes du blog comprises, et il faut pincer pour dézoomer.
+   C'était le cas des trois formulaires du site : la recherche du blog
+   (.85 rem), le formulaire de l'accueil (.95 rem) et celui de /contact
+   (.98 rem). 16 px est un SEUIL de plate-forme, pas un choix de design : d'où
+   le !important, seul moyen de passer devant les styles inline de ces pages,
+   déclarés après cette feuille. Rien ne change au clavier-souris. */
+@media (pointer: coarse){
+  input, textarea, select{font-size:16px!important}
 }
