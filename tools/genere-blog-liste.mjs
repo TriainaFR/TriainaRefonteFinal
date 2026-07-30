@@ -121,8 +121,29 @@ async function main() {
 
   if (recents.length) {
     ordonnes.unshift(...recents);
-    console.log(`  ${recents.length} article(s) hors capture ajouté(s) en tête : ${recents.map(p => p.url).join(', ')}`);
+    console.log(`  ${recents.length} article(s) hors capture ajouté(s) : ${recents.map(p => p.url).join(', ')}`);
   }
+
+  /* Tri final : du plus récent au plus ancien.
+     L'ordre venait jusqu'ici de la capture de l'ancienne page, complété par
+     les articles récents empilés en tête dans leur ordre d'arrivée. Résultat
+     le 30/07/2026 : un article publié le 30 juillet se retrouvait en 6e
+     position, derrière des articles du 27. Sur une liste d'actualités, la
+     date est le seul ordre que le lecteur attend — et c'est aussi celui qui
+     met le contenu frais devant les crawlers.
+     Le tri est STABLE : à date égale, l'ordre de la capture est conservé. */
+  const MOIS = { janvier: 1, fevrier: 2, mars: 3, avril: 4, mai: 5, juin: 6,
+                 juillet: 7, aout: 8, septembre: 9, octobre: 10, novembre: 11, decembre: 12 };
+  const rang = p => {
+    const m = /(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})/.exec(String(p.date ?? ''));
+    if (!m) return 0;                       // date illisible : renvoyée en fin de liste
+    const mois = MOIS[m[2].toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')];
+    return mois ? Number(m[3]) * 10000 + mois * 100 + Number(m[1]) : 0;
+  };
+  const sansDate = ordonnes.filter(p => !rang(p));
+  if (sansDate.length) console.log(`  ⚠ ${sansDate.length} article(s) sans date lisible, placés en fin : ${sansDate.map(p => p.url).join(', ')}`);
+  ordonnes.sort((a, b) => rang(b) - rang(a));
+  console.log(`  liste triée par date : la plus récente est « ${ordonnes[0].title} » (${ordonnes[0].date})`);
 
   /* Libellés de filtres = TOUS + tags dans l'ordre du tableau BLOG_DATA :
      c'est ainsi que l'ancienne page les affichait (GUIDE, ANALYSE, AGENCE
