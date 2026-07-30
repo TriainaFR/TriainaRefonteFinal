@@ -37,6 +37,21 @@ async function chargeBlogData() {
   return mod.BLOG_DATA;
 }
 
+/**
+ * Heure de publication déclarée par l'article (schéma Article `datePublished`).
+ * Sert uniquement à départager deux articles du MÊME jour dans la liste : la
+ * date affichée, elle, reste au jour près. Renvoie null si l'article n'en
+ * déclare pas — c'est le cas des 66 articles hérités.
+ */
+function datePubliee(d) {
+  const schemas = [].concat(d.seo?.schemas ?? []);
+  for (const s of schemas) {
+    const types = [].concat(s?.['@type'] ?? []);
+    if (types.some(t => /Article|BlogPosting/.test(t)) && s.datePublished) return s.datePublished;
+  }
+  return null;
+}
+
 function carte(p, i) {
   const grande = i === 0 ? ' grande' : '';
   return `      <article class="carte-blog${grande}" data-tag="${ech(p.tag)}">
@@ -114,7 +129,8 @@ async function main() {
     if (!d.url?.startsWith('/blog/') || connus.has(d.url)) continue;
     if (!existsSync(path.join(RACINE, 'site', d.url.replace(/^\//, ''), 'index.html'))) continue;
     recents.push({ id: d.id, url: d.url, title: d.titre, excerpt: d.excerpt,
-                   date: d.date, tag: d.tag, image: d.image, source: d.source ?? 'TRIAINA' });
+                   date: d.date, tag: d.tag, image: d.image, source: d.source ?? 'TRIAINA',
+                   publie: datePubliee(d) });
     connus.add(d.url);
     console.log(`  article hors BLOG_DATA ajouté : ${d.url}`);
   }
@@ -131,14 +147,24 @@ async function main() {
      position, derrière des articles du 27. Sur une liste d'actualités, la
      date est le seul ordre que le lecteur attend — et c'est aussi celui qui
      met le contenu frais devant les crawlers.
-     Le tri est STABLE : à date égale, l'ordre de la capture est conservé. */
+     Le tri est STABLE : à date égale, l'ordre de la capture est conservé.
+
+     La date AFFICHÉE n'a qu'une précision au jour : deux articles publiés le
+     même jour étaient donc départagés par leur ordre alphabétique de fichier,
+     ce qui n'a aucun sens pour un lecteur. Quand l'article déclare une heure
+     de publication dans son schéma Article (`datePublished`), c'est elle qui
+     fait foi — au jour près sinon, comme avant. */
   const MOIS = { janvier: 1, fevrier: 2, mars: 3, avril: 4, mai: 5, juin: 6,
                  juillet: 7, aout: 8, septembre: 9, octobre: 10, novembre: 11, decembre: 12 };
   const rang = p => {
+    if (p.publie) {
+      const t = Date.parse(p.publie);
+      if (!Number.isNaN(t)) return t;
+    }
     const m = /(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})/.exec(String(p.date ?? ''));
     if (!m) return 0;                       // date illisible : renvoyée en fin de liste
     const mois = MOIS[m[2].toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')];
-    return mois ? Number(m[3]) * 10000 + mois * 100 + Number(m[1]) : 0;
+    return mois ? new Date(Number(m[3]), mois - 1, Number(m[1])).getTime() : 0;
   };
   const sansDate = ordonnes.filter(p => !rang(p));
   if (sansDate.length) console.log(`  ⚠ ${sansDate.length} article(s) sans date lisible, placés en fin : ${sansDate.map(p => p.url).join(', ')}`);
