@@ -12,7 +12,19 @@
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+  /* Safari iOS grossit de lui-même le texte des blocs qu'il juge « larges » —
+     c'est l'autoredimensionnement, actif par défaut (valeur `auto`). Sur une
+     page d'article, une colonne de lecture pleine largeur, il gonfle le corps
+     de texte bien au-delà des 17 px demandés : la page paraît zoomée et il
+     faut pincer pour revenir à une taille normale. On lui demande donc de
+     servir les tailles telles qu'elles sont écrites.
+     ⚠ Ce n'est PAS `user-scalable=no` : le zoom manuel reste possible, et
+     doit le rester. */
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
 body{
   background:var(--nuit); color:var(--papier);
   font-family:var(--manrope); font-weight:300; line-height:1.6;
