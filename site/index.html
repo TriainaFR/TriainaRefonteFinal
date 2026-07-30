@@ -1619,11 +1619,12 @@ document.addEventListener('DOMContentLoaded', function(){
              brute. Réglé au doigt par Lucas le 30/07/2026, par essais
              successifs : 2.3 (0,21 écran par marque) filait avant qu'on ait
              lu ; 4.4 (0,40) était jugé encore rapide ; 6.6 (0,60) trop long ;
-             5.3 (0,53) trop long encore. Valeur retenue : 4.5, soit 0,45
-             écran par marque — l'encadrement s'est resserré autour de cette
-             zone. Le doigt parcourt plus de distance que la molette : il faut
-             PLUS de course sur mobile que sur desktop, pas moins. */
-          var course = matchMedia('(max-width: 760px)').matches ? 4.5 : 2.9;
+             5.3 (0,53) trop long encore ; 4.5 (0,45) trop rapide. Valeur
+             retenue : 4.9, soit 0,49 écran par marque — le milieu de la zone
+             4,5–5,3, dans laquelle l'encadrement a fini par se resserrer.
+             Le doigt parcourt plus de distance que la molette : il faut PLUS
+             de course sur mobile que sur desktop, pas moins. */
+          var course = matchMedia('(max-width: 760px)').matches ? 4.9 : 2.9;
           return '+=' + Math.round(innerHeight * course);
         },
         invalidateOnRefresh: true,
