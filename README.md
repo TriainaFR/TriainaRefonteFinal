@@ -1,6 +1,6 @@
 # Triaina — site statique
 
-Le site de [triaina.fr](https://www.triaina.fr) en HTML statique : **85 pages**,
+Le site de [triaina.fr](https://www.triaina.fr) en HTML statique : **86 pages**,
 dont 67 articles de blog. Aucun framework, aucun rendu côté serveur — le dossier
 `site/` se dépose tel quel sur n'importe quel hébergeur statique.
 
@@ -8,7 +8,7 @@ dont 67 articles de blog. Aucun framework, aucun rendu côté serveur — le dos
 
 | Dossier | Rôle |
 |---|---|
-| `site/` | **Le site livré.** 191 fichiers, autonome : aucune ressource n'y pointe hors du dossier. |
+| `site/` | **Le site livré.** 198 fichiers, autonome : aucune ressource n'y pointe hors du dossier. |
 | `tools/` | Les générateurs qui produisent `site/` à partir des contenus figés. |
 | `tools/contenus/` | Contenu HTML des articles, extrait une fois pour toutes. |
 | `tools/contenus-pages/` | Blocs de contenu des pages hors blog. |
@@ -70,6 +70,27 @@ local il se met en `no-store` pour toujours servir le dernier build.
 Tout est dans [REDIRECTIONS.md](REDIRECTIONS.md), y compris les trois réglages
 à faire côté Cloudflare (proxy activé, redirection apex → www, purge du cache
 après un déploiement qui touche `/assets/`).
+
+## Prévenir Bing après un déploiement (IndexNow)
+
+```bash
+node tools/indexnow.mjs          # les 86 URLs du sitemap
+node tools/indexnow.mjs --essai  # montre sans envoyer
+node tools/indexnow.mjs --url=https://www.triaina.fr/blog/mon-article
+```
+
+À lancer **après** le déploiement, jamais avant : la notification vaut pour ce
+qui est en ligne, et le script refuse d'envoyer tant que le fichier de clé ne
+répond pas sur le domaine. IndexNow alimente l'index Bing, lui-même source des
+citations de Microsoft Copilot — c'est un levier GEO autant que SEO.
+
+> La clé est `f077fac3a598ab5dc3e0ae0f7da7ab7e`, servie par
+> `site/f077fac3a598ab5dc3e0ae0f7da7ab7e.txt`. Elle est **différente** de
+> `4C58C9622B2DBB31ECD9A463E3DCAF66.txt`, que le site sert aussi : cette
+> valeur-là est le jeton de vérification Bing Webmaster, et Bing la refuse
+> comme clé IndexNow (403 `UserForbiddedToAccessSite`) parce qu'il la rattache
+> à un compte. Une clé IndexNow s'auto-délivre : n'importe quelle chaîne hexa
+> convient tant que le domaine la sert en `text/plain`.
 
 ## Ce qui est figé — à savoir avant d'y toucher
 
