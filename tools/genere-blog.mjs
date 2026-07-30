@@ -832,13 +832,24 @@ async function main() {
     const slug = d.url.replace(/^\/blog\//, '');
     if (seul && slug !== seul) continue;
 
-    const texte = await readFile(path.join(BLOG_SRC, d.composant + '.tsx'), 'utf8');
-    const source = ts.createSourceFile(d.composant, texte, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
-    /* Les sources interpolent `post.title`, `post.excerpt`… : on présente les
-       champs sous leurs noms d'origine, sinon les substitutions rendent vide. */
-    const post = { id: d.id, title: d.titre, excerpt: d.excerpt, url: d.url,
-                   image: d.image, date: d.date, tag: d.tag };
-    const seo = litSeo(source, texte, post);
+    /* Deux origines possibles pour les signaux SEO d'un article :
+       · `d.seo` dans le JSON — c'est le cas des articles écrits DEPUIS la
+         suppression de l'application React (30/07/2026). Ils ne dépendent
+         d'aucun code disparu, et un clone neuf du dépôt peut les régénérer ;
+       · à défaut, la balise <SEO> du composant .tsx d'origine, pour les 66
+         articles hérités. */
+    let seo;
+    if (d.seo) {
+      seo = { ...d.seo, schemas: d.seo.schemas ?? null };
+    } else {
+      const texte = await readFile(path.join(BLOG_SRC, d.composant + '.tsx'), 'utf8');
+      const source = ts.createSourceFile(d.composant, texte, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
+      /* Les sources interpolent `post.title`, `post.excerpt`… : on présente les
+         champs sous leurs noms d'origine, sinon les substitutions rendent vide. */
+      const post = { id: d.id, title: d.titre, excerpt: d.excerpt, url: d.url,
+                     image: d.image, date: d.date, tag: d.tag };
+      seo = litSeo(source, texte, post);
+    }
     /* `image` de la balise <SEO> ne concerne QUE og:image. L'illustration de
        l'article vient de BLOG_DATA : sans cette séparation, les 58 articles
        sans override se retrouvaient avec <img src=""> (régression corrigée). */

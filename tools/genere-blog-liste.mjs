@@ -13,7 +13,7 @@
  * Usage : node tools/genere-blog-liste.mjs
  */
 import { build } from 'esbuild';
-import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
@@ -102,6 +102,23 @@ async function main() {
   const recents = donnees.filter(p =>
     p.url?.startsWith('/blog/') && !dejaLa.has(p.url) &&
     existsSync(path.join(RACINE, 'site', p.url.replace(/^\//, ''), 'index.html')));
+
+  /* Articles écrits DEPUIS la suppression de l'application React : ils
+     n'existent que dans tools/contenus/ et ne sont donc pas dans BLOG_DATA,
+     qui vit dans constants.ts. Sans ce rattrapage, un nouvel article serait
+     publié mais absent de la liste — donc sans le moindre lien entrant. */
+  const connus = new Set([...dejaLa, ...recents.map(p => p.url)]);
+  for (const f of (await readdir(path.join(RACINE, 'tools/contenus'))).sort()) {
+    if (!f.endsWith('.json')) continue;
+    const d = JSON.parse(await readFile(path.join(RACINE, 'tools/contenus', f), 'utf8'));
+    if (!d.url?.startsWith('/blog/') || connus.has(d.url)) continue;
+    if (!existsSync(path.join(RACINE, 'site', d.url.replace(/^\//, ''), 'index.html'))) continue;
+    recents.push({ id: d.id, url: d.url, title: d.titre, excerpt: d.excerpt,
+                   date: d.date, tag: d.tag, image: d.image, source: d.source ?? 'TRIAINA' });
+    connus.add(d.url);
+    console.log(`  article hors BLOG_DATA ajouté : ${d.url}`);
+  }
+
   if (recents.length) {
     ordonnes.unshift(...recents);
     console.log(`  ${recents.length} article(s) hors capture ajouté(s) en tête : ${recents.map(p => p.url).join(', ')}`);
