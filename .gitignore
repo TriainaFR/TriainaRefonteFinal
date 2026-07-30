@@ -31,3 +31,56 @@ dist-ssr
 #   tools/snapshots/ → captures « ancien-* », impossibles à refaire
 tools/.tmp-extraction/
 tools/.tmp-liste/
+
+# ─── Ancienne application React ───────────────────────────────────────────────
+# Retirée du dépôt le 30/07/2026, mais TOUJOURS PRÉSENTE sur le disque, et
+# volontairement : `tools/genere-blog.mjs` lit encore `views/blog/*.tsx` et
+# `constants.ts` pour reconstruire les 66 articles. Sans eux, la chaîne passe
+# de 14/14 à 12/14 étapes et les pages d'article deviennent figées.
+#
+# On les ignore donc au lieu de les supprimer : ils restent utilisables en
+# local, ils ne peuvent plus partir sur GitHub par accident, et l'éditeur
+# cesse de les compter comme 30 000 lignes en attente.
+# Copie de sûreté : ~/Desktop/Triaina/SAUVEGARDE-avant-nettoyage-20260730-0844
+App.tsx
+index.tsx
+index.html
+constants.ts
+constants.cjs
+types.ts
+server.ts
+metadata.json
+tsconfig.json
+vite.config.ts
+package-lock.json
+views/
+components/
+src/
+mocks/
+public/
+mockups/
+
+# scripts jetables de la migration (fix_*, add_*, get_*, update_*, test_*…)
+*.cjs
+*.mts
+check_*.js
+check_*.py
+check_*.ts
+fix_*.js
+fix_*.ts
+get_*.js
+get_*.py
+update_*.js
+move_blog.cjs
+generate-image.ts
+replace_synthesis.ts
+test.py
+check_urls.py
+
+# sorties de travail de la migration
+AUDIT.md
+blog_mapping.json
+extracted_text.txt
+temp_blog_data.txt
+text2.txt
+user_prompt.txt

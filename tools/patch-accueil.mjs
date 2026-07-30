@@ -31,7 +31,17 @@ function retirePanneauMobile(html) {
   let profondeur = 0, m;
   while ((m = jeton.exec(html))) {
     profondeur += m[0] === '</div>' ? -1 : 1;
-    if (profondeur === 0) return html.slice(0, debut) + html.slice(jeton.lastIndex);
+    if (profondeur === 0) {
+      /* On recolle les deux bords sur UNE seule ligne vide. Sans ça, chaque
+         build laissait les sauts de ligne qui entouraient le panneau retiré et
+         en réinjectait autant avec le nouveau : site/index.html grossissait de
+         deux lignes vides à chaque exécution (≈150 accumulées avant qu'on ne
+         s'en aperçoive). Un générateur doit être idempotent — sinon « le build
+         a-t-il changé quelque chose ? » n'a plus de réponse fiable. */
+      const avant = html.slice(0, debut).replace(/(?:[ \t]*\r?\n)+$/, '\n');
+      const apres = html.slice(jeton.lastIndex).replace(/^(?:[ \t]*\r?\n)+/, '\n');
+      return avant + apres;
+    }
   }
   throw new Error('panneau de menu mobile non refermé dans site/index.html');
 }
