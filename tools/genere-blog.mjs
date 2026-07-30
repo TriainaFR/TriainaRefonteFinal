@@ -642,13 +642,13 @@ function gabarit(d, schemaGlobal) {
 <meta name="geo.region" content="${ech(d.geoRegion ?? 'FR-75')}">
 <meta name="geo.placename" content="${ech(d.geoPlacename ?? 'Paris')}">
 <meta name="geo.position" content="${ech(d.geoPosition ?? '48.8464;2.2758')}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:url" content="${ech(d.canonical)}">
 <meta property="og:title" content="${ech(d.title)}">
 <meta property="og:description" content="${ech(d.description)}">
 <meta property="og:image" content="${ech(imageOg)}">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Triaina">
+<meta property="og:site_name" content="Triaina">${metasArticle(d)}${metasSupplementaires(d)}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${ech(d.title)}">
 <meta name="twitter:description" content="${ech(d.description)}">
@@ -740,6 +740,49 @@ ${pieds()}
 </body>
 </html>
 `;
+}
+
+/**
+ * Métas Open Graph propres aux articles.
+ *
+ * `og:type` valait « website » sur les 66 articles, alors qu'ils portent tous
+ * un schéma Article : c'est une contradiction que l'audit du 30/07/2026 a
+ * relevée. Les dates ne sont pas ressaisies — elles sont lues dans le schéma
+ * Article, donc impossible de les désynchroniser.
+ */
+function metasArticle(d) {
+  const art = [];
+  const visite = o => {
+    if (Array.isArray(o)) return o.forEach(visite);
+    if (!o || typeof o !== 'object') return;
+    if ([].concat(o['@type'] ?? []).some(t => /Article|BlogPosting/.test(t))) art.push(o);
+    if (o['@graph']) visite(o['@graph']);
+  };
+  visite(d.schemas ?? []);
+  const a = art[0];
+  if (!a) return '';
+  const lignes = [];
+  if (a.datePublished) lignes.push(`<meta property="article:published_time" content="${ech(a.datePublished)}">`);
+  if (a.dateModified) lignes.push(`<meta property="article:modified_time" content="${ech(a.dateModified)}">`);
+  const url = a.author?.url ?? (Array.isArray(a.author) ? a.author[0]?.url : null);
+  if (url) lignes.push(`<meta property="article:author" content="${ech(url)}">`);
+  return lignes.length ? '\n' + lignes.join('\n') : '';
+}
+
+/**
+ * Métas libres déclarées par l'article lui-même (`seo.metas`).
+ *
+ * Sert aux codes fournis par Lucas, qui portent leurs propres balises de
+ * cadrage : topic, category, coverage, target, article:section, article:tag…
+ * Aucun moteur de recherche ne les exploite aujourd'hui — elles sont là par
+ * cohérence avec le code d'origine, et parce qu'elles ne coûtent rien.
+ */
+function metasSupplementaires(d) {
+  const m = d.metas;
+  if (!m || typeof m !== 'object') return '';
+  const balise = (k, v) => `<meta ${k.startsWith('article:') || k.startsWith('og:') ? 'property' : 'name'}="${ech(k)}" content="${ech(v)}">`;
+  const lignes = Object.entries(m).map(([k, v]) => balise(k, v));
+  return lignes.length ? '\n' + lignes.join('\n') : '';
 }
 
 /**
