@@ -653,7 +653,7 @@ function gabarit(d, schemaGlobal) {
 <meta name="twitter:title" content="${ech(d.title)}">
 <meta name="twitter:description" content="${ech(d.description)}">
 <meta name="twitter:image" content="${ech(imageOg)}">
-<meta name="ICBM" content="48.8464, 2.2758">
+<meta name="ICBM" content="${ech((d.geoPosition ?? '48.8464;2.2758').replace(';', ', '))}">
 <meta name="msvalidate.01" content="4C58C9622B2DBB31ECD9A463E3DCAF66">
 <link rel="alternate" hreflang="fr" href="${ech(d.canonical)}">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
