@@ -31,11 +31,23 @@ node tools/build.mjs
 > d'échouer. Le dépôt n'a désormais **aucune dépendance** : Railway clone,
 > et démarre.
 
-La chaîne enchaîne les 14 générateurs dans l'ordre. Cet ordre n'est pas
+La chaîne enchaîne les 15 générateurs dans l'ordre. Cet ordre n'est pas
 cosmétique : `ajoute-entites-geo` doit passer après tous les autres (sinon les
 entités GEO du schéma se perdent en silence), `valeurs-officielles` aligne les
-prix et délais tranchés par Lucas sur les pages produites, et `normalise-urls`
-ferme la marche pour qu'aucune URL sans `www` ne subsiste.
+prix et délais tranchés par Lucas sur les pages produites, `normalise-urls`
+veille à ce qu'aucune URL sans `www` ne subsiste, et `version-assets` ferme la
+marche.
+
+> **Pourquoi `version-assets` en dernier.** Les assets sont servis avec un cache
+> de 30 jours sur des URLs qui ne changent jamais : un visiteur déjà venu garde
+> l'ancien `da31.css` pendant un mois, et un correctif déployé ne l'atteint
+> pas — sans que rien ne le signale. L'étape appose une empreinte de contenu
+> (`/assets/da31.css?v=e4f02c15`) : le contenu change, l'URL change, le
+> navigateur retélécharge. Elle passe après tout ce qui écrit du HTML, sinon
+> l'empreinte est effacée par le générateur suivant. Les polices en sont
+> exclues à dessein — leur URL est écrite à la fois dans le `<link
+> rel="preload">` et dans `fonts.css`, et deux URLs différentes feraient
+> télécharger la police deux fois.
 
 > Le script npm s'appelle **`regenere`**, pas `build`. Ce n'est pas un caprice :
 > Railpack, le builder de Railway, exécute automatiquement un script nommé
