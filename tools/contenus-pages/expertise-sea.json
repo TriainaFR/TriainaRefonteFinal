@@ -1,0 +1,360 @@
+{
+ "page": "expertise-sea",
+ "blocs": [
+  {
+   "t": "breadcrumb",
+   "groupe": "bc",
+   "html": "<ol><li><a href=\"/\">Accueil</a></li><li aria-current=\"page\">Expertise SEA</li></ol>"
+  },
+  {
+   "t": "h1",
+   "html": "Expertise SEA Paris - Campagnes Google Ads & Bing Ads",
+   "groupe": "hero"
+  },
+  {
+   "t": "p",
+   "html": "<strong>En résumé :</strong> Triaina est une agence SEA Paris lancée en 2025 qui pilote vos campagnes Google Ads et Bing Ads en les connectant directement à votre stratégie SEO et GEO. Pas de silos, pas de double budget - une seule boucle de données pour maximiser le retour sur investissement global.",
+   "groupe": "hero"
+  },
+  {
+   "t": "p",
+   "html": "Gestion à partir de <strong>500 €/mois</strong>. Budget publicitaire recommandé : 1 000 €/mois minimum pour le Search.",
+   "groupe": "hero"
+  },
+  {
+   "t": "h2",
+   "html": "Le SEA chez Triaina : acquisition payante pilotée par la data",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "La plupart des agences SEA gèrent un compte Google Ads. Triaina gère un <em>système d'acquisition</em>.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Fondée début 2025, Triaina combine trois leviers que les agences spécialisées traitent encore séparément :",
+   "groupe": "s1"
+  },
+  {
+   "t": "ul",
+   "groupe": "s1",
+   "html": "<ul><li><strong>SEA</strong> - campagnes Google Ads, Microsoft Advertising (Bing Ads), Meta Ads, LinkedIn Ads</li><li><strong>SEO</strong> - référencement naturel technique et éditorial (<a href=\"/expertise-seo\">voir notre expertise SEO</a>)</li><li><strong>GEO</strong> - optimisation pour les moteurs de recherche génératifs et l'IA (<a href=\"/expertise-geo\">voir notre expertise GEO</a>)</li></ul>"
+  },
+  {
+   "t": "p",
+   "html": "Ce qui change concrètement pour vous : les mots-clés qui convertissent en Ads alimentent directement les briefs de contenu SEO. Les pages qui performent en organique deviennent les landing pages des campagnes payantes. Les données de comportement issues de nos <strong>8 médias propriétaires</strong> (Les Hardis, Yonder, Le Journal de la Tech, Le Journal des Écoles, Le Journal du Vin, Best Restaurants Paris, Séminaire Hôtels, Les Meilleurs Hôtels Spa) affinent le ciblage et les messages publicitaires.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Résultat : un CPA qui baisse à mesure que l'organique monte. Pas l'inverse.",
+   "groupe": "s1"
+  },
+  {
+   "t": "h2",
+   "html": "Nos services SEA",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Google Ads",
+   "groupe": "s2"
+  },
+  {
+   "t": "ul",
+   "groupe": "s2",
+   "html": "<ul><li><strong>Search Ads</strong> - annonces textuelles sur requêtes à intention d'achat ou de contact</li><li><strong>Shopping Ads</strong> - flux produits optimisés, segmentation par marge et par catégorie</li><li><strong>Display & YouTube Ads</strong> - notoriété et remarketing sur le réseau Google</li><li><strong>Performance Max</strong> - campagnes multi-canal pilotées par les objectifs de conversion</li><li><strong>Demand Gen</strong> - ciblage d'audiences similaires sur YouTube, Gmail, Discover</li></ul>"
+  },
+  {
+   "t": "h3",
+   "html": "Microsoft Advertising (Bing Ads)",
+   "groupe": "s2"
+  },
+  {
+   "t": "ul",
+   "groupe": "s2",
+   "html": "<ul><li>Campagnes Search et Shopping sur Bing, Yahoo, DuckDuckGo</li><li>Import et adaptation des campagnes Google Ads - avec ajustements spécifiques à l'audience Bing (CSP+, 35-54 ans, décideurs B2B)</li></ul>"
+  },
+  {
+   "t": "h3",
+   "html": "Social Ads",
+   "groupe": "s2"
+  },
+  {
+   "t": "ul",
+   "groupe": "s2",
+   "html": "<ul><li><strong>Meta Ads</strong> (Facebook & Instagram) - acquisition et retargeting e-commerce, B2C</li><li><strong>LinkedIn Ads</strong> - lead generation B2B, ciblage par fonction, secteur, taille d'entreprise</li></ul>"
+  },
+  {
+   "t": "h3",
+   "html": "Tracking & mesure",
+   "groupe": "s2"
+  },
+  {
+   "t": "ul",
+   "groupe": "s2",
+   "html": "<ul><li>Implémentation et audit du suivi des conversions (GA4, Google Tag Manager, Consent Mode v2)</li><li>Attribution multi-touch - modèles data-driven vs last-click</li><li>Tableaux de bord en temps réel (Looker Studio)</li></ul>"
+  },
+  {
+   "t": "h2",
+   "html": "Notre processus en 4 étapes",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Audit & diagnostic (semaine 1)",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Analyse complète du compte existant ou benchmark concurrentiel si vous partez de zéro. On identifie les fuites budgétaires, les mots-clés négatifs manquants, les Quality Scores dégradés et les problèmes de tracking. Livrable : rapport PDF avec plan d'action priorisé.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Stratégie & architecture (semaine 2)",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Définition de la structure de compte (campagnes, groupes d'annonces, correspondances), sélection des types de campagnes, choix de la stratégie d'enchères (Target CPA, Target ROAS, Maximize Conversions), et rédaction des annonces avec tests A/B intégrés dès le lancement.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Lancement & phase d'apprentissage (semaines 3–6)",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Mise en ligne des campagnes, surveillance quotidienne des indicateurs critiques (CTR, CPC, taux de conversion, CPA), ajustements d'enchères et d'audiences. L'algorithme Smart Bidding a besoin de 30 à 50 conversions par campagne pour se stabiliser - on ne touche pas aux enchères pendant cette période.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Optimisation continue (mois 2+)",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Revues mensuelles avec rapport de performance détaillé, tests de nouvelles annonces et extensions, expansion ou réduction des mots-clés selon les données, et synchronisation avec la stratégie SEO/GEO pour éviter la cannibalisation des requêtes.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h2",
+   "html": "Pourquoi combiner SEA + SEO/GEO ?",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "C'est le différenciateur central de Triaina. Voici pourquoi ça change les chiffres.",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "Le problème du SEA isolé",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Une agence SEA pure optimise le compte Ads. Elle ne sait pas que votre page de destination se positionne déjà en organique sur la même requête - et que vous payez donc deux fois pour le même clic. Elle ne sait pas non plus que vos concurrents ont une autorité de domaine 40 points au-dessus de la vôtre, ce qui explique pourquoi votre Quality Score stagne.",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "La boucle SEA ↔ SEO",
+   "groupe": "s4"
+  },
+  {
+   "t": "ul",
+   "groupe": "s4",
+   "html": "<ul><li><strong>Données Ads → SEO :</strong> les requêtes qui convertissent en payant deviennent des cibles de contenu organique. En quelques mois, le trafic naturel prend le relais et le CPA global baisse.</li><li><strong>Données SEO → Ads :</strong> les pages qui rankent bien en organique ont un Quality Score plus élevé en Ads. Moins de CPC, meilleure position.</li><li><strong>GEO → Ads :</strong> les réponses générées par l'IA (ChatGPT, Gemini, Perplexity) citent vos contenus - ce qui renforce la notoriété de marque et réduit le coût des campagnes brand.</li></ul>"
+  },
+  {
+   "t": "h3",
+   "html": "Le réseau de médias propriétaires comme levier SEA",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Triaina opère 8 médias spécialisés couvrant l'hôtellerie haut de gamme, la restauration, la tech, l'éducation et le voyage. Ces médias génèrent des données comportementales réelles sur des audiences qualifiées. Nous les croisons avec les données de conversion Ads pour construire des audiences similaires (lookalike) et des segments de remarketing que vous ne trouverez pas dans un compte Google Ads standard.",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "C'est une infrastructure qu'une agence SEA classique ne peut pas répliquer.",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Pour aller plus loin sur l'approche organique : <a href=\"/expertise-seo\">Expertise SEO</a> - <a href=\"/expertise-geo\">Expertise GEO & référencement IA</a> - <a href=\"/agence-referencement-ia\">Agence référencement IA</a>.",
+   "groupe": "s4"
+  },
+  {
+   "t": "h2",
+   "html": "Cas clients",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "E-commerce mode & accessoires",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Contexte :</strong> boutique en ligne avec un compte Google Ads actif mais non structuré - Shopping et Search mélangés dans les mêmes campagnes, pas de segmentation par marge produit, ROAS moyen de 1,8.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Actions :</strong> restructuration complète du compte, séparation Shopping par catégorie de marge, implémentation du suivi des conversions avec valeur de panier, lancement de campagnes Performance Max sur les best-sellers.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Résultat en quelques mois :</strong> ROAS passé de 1,8 à 4,2. CPA réduit de 38 %. Le trafic organique sur les fiches produits a progressé en parallèle grâce à la synergie SEO.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Cabinet de conseil B2B",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Contexte :</strong> cabinet sans présence payante, dépendant à 100 % du bouche-à-oreille. Objectif : générer des leads qualifiés (DG, DAF, DRH) à un coût maîtrisé.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Actions :</strong> campagnes LinkedIn Ads sur ciblage fonction/taille d'entreprise + Google Search sur requêtes à forte intention (comparatifs, appels d'offres). Landing pages dédiées avec formulaire court et preuve sociale.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Résultat en quelques mois :</strong> 18 leads qualifiés par mois en régime de croisière, CPL inférieur à 120 €. Le contenu SEO produit en parallèle a réduit de moitié le budget Ads nécessaire à 6 mois.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Agence de services locaux (Paris)",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Contexte :</strong> agence avec un budget Ads limité (800 €/mois) et une concurrence locale forte. Chaque euro devait être justifié.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Actions :</strong> campagnes Search géolocalisées sur Paris + petite couronne, extensions d'appel et de lieu, mots-clés négatifs agressifs pour éliminer le trafic non qualifié, couplage avec une fiche Google Business Profile optimisée.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Résultat en quelques mois :</strong> taux de conversion des clics en appels : +67 %. Coût par appel qualifié : 14 €. Zéro budget gaspillé sur des requêtes hors zone.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h2",
+   "html": "FAQ - Vos questions sur notre expertise SEA",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-q",
+   "html": "<strong>Quel est le budget minimum pour lancer une campagne Google Ads avec Triaina ?</strong>",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-a",
+   "html": "La gestion de campagne démarre à <strong>500 €/mois</strong>. Pour obtenir des résultats significatifs en Search, nous recommandons un budget publicitaire minimum de 1 000 €/mois - hors frais de gestion. En dessous, le volume de données est insuffisant pour optimiser les enchères et les annonces de façon fiable.",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-q",
+   "html": "<strong>Quelle est la différence entre Triaina et une agence SEA classique ?</strong>",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-a",
+   "html": "Triaina n'est pas une agence SEA pure. Nous pilotons le payant et l'organique (SEO + GEO) depuis une seule interface de données. Résultat : les insights des campagnes Ads alimentent la stratégie de contenu, et inversement. Pas de double budget, pas de silos entre équipes, un ROI global optimisé.",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-q",
+   "html": "<strong>Quelles plateformes gérez-vous en dehors de Google Ads ?</strong>",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-a",
+   "html": "Nous gérons Google Ads (Search, Display, Shopping, YouTube, Performance Max), Microsoft Advertising (Bing Ads), Meta Ads (Facebook/Instagram) et LinkedIn Ads. La sélection des plateformes dépend du secteur et du funnel cible définis lors de l'audit initial.",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-q",
+   "html": "<strong>En combien de temps peut-on voir des résultats sur les campagnes payantes ?</strong>",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-a",
+   "html": "Les premières données exploitables arrivent dès les deux premières semaines. Une optimisation stable du CPA et du ROAS prend généralement 4 à 8 semaines, le temps que l'algorithme Smart Bidding accumule suffisamment de conversions (minimum 30 à 50 par mois par campagne).",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-q",
+   "html": "<strong>Comment Triaina utilise-t-elle ses médias propriétaires dans une stratégie SEA ?</strong>",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-a",
+   "html": "Triaina gère un réseau de 8 médias spécialisés (hôtellerie, tech, gastronomie, éducation, voyage…). Ces médias génèrent des données de comportement éditorial réel que nous croisons avec les performances Ads pour affiner le ciblage, les messages et les landing pages - un avantage structurel impossible à répliquer avec un compte Google Ads isolé.",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-q",
+   "html": "<strong>Proposez-vous un audit SEA avant de signer un contrat ?</strong>",
+   "groupe": "s6"
+  },
+  {
+   "t": "faq-a",
+   "html": "Oui. Nous réalisons un audit de compte gratuit lors de la consultation initiale : analyse de la structure des campagnes, du Quality Score, des taux de conversion par groupe d'annonces, des mots-clés négatifs manquants et du suivi des conversions. Cet audit est remis en PDF, sans engagement.",
+   "groupe": "s6"
+  },
+  {
+   "t": "h2",
+   "html": "Demandez votre consultation gratuite",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Vous avez un compte Google Ads qui tourne sans résultats clairs ? Vous partez de zéro et voulez éviter les erreurs classiques ? Ou vous cherchez une agence qui pilote le payant <em>et</em> l'organique ensemble ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "On commence par un audit gratuit de votre situation - sans engagement, sans pitch commercial. Juste un diagnostic honnête et un plan d'action concret.",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/contact\"><strong>Prendre rendez-vous - consultation gratuite</strong></a>",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Vous pouvez aussi en apprendre plus sur <a href=\"/agence\">l'histoire et la vision de Triaina</a>, ou explorer nos autres expertises : <a href=\"/expertise-seo\">SEO</a> · <a href=\"/expertise-geo\">GEO</a> · <a href=\"/agence-referencement-ia\">Référencement IA</a>.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h2",
+   "html": "Sources utiles",
+   "groupe": "s8"
+  },
+  {
+   "t": "ul",
+   "groupe": "s8",
+   "html": "<ul><li><a href=\"https://support.google.com/google-ads/answer/6167122\" target=\"_blank\" rel=\"noopener noreferrer\">Google Ads - Guide Smart Bidding (support.google.com)</a></li><li><a href=\"https://about.ads.microsoft.com/fr-fr/resources/training/microsoft-advertising-learning-lab\" target=\"_blank\" rel=\"noopener noreferrer\">Microsoft Advertising Learning Lab (about.ads.microsoft.com)</a></li><li><a href=\"https://developers.google.com/tag-platform/tag-manager/consent\" target=\"_blank\" rel=\"noopener noreferrer\">Google Tag Manager - Consent Mode v2 (developers.google.com)</a></li></ul>"
+  }
+ ]
+}

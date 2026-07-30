@@ -1,0 +1,130 @@
+{
+ "page": "annuaire",
+ "blocs": [
+  {
+   "t": "h1",
+   "html": "Agences SEO & GEO par ville : <br><span>annuaire complet 2026</span>",
+   "groupe": "s0"
+  },
+  {
+   "t": "p",
+   "html": "// Réseau National // Expertise IA",
+   "groupe": "s0"
+  },
+  {
+   "t": "h2",
+   "html": "Pourquoi cet annuaire ?",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Le référencement naturel a changé en 2026. Trouver une agence SEO capable de vous positionner sur Google ne suffit plus : il faut aussi être cité par ChatGPT, Perplexity, Gemini et l'AI Overview de Google. Cet annuaire centralise l'accès aux comparatifs d'agences SEO et GEO par ville, aux guides pratiques pour chaque plateforme IA, et aux ressources fondamentales du GEO (Generative Engine Optimization). Notre objectif : renforcer l'autorité thématique du cluster « agence GEO » en regroupant en un seul endroit tous les contenus qui aident une entreprise française à choisir le bon partenaire et à comprendre les enjeux du référencement pour les moteurs génératifs.",
+   "groupe": "s1"
+  },
+  {
+   "t": "h2",
+   "html": "Comparatifs locaux",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Découvrez les meilleures agences de votre territoire, avec des comparatifs détaillés et des cas clients.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Villes (A-Z)",
+   "groupe": "s2"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><a href=\"/blog/agence-seo-angers-2026\">Agence SEO & GEO Angers : top 5 en 2026</a></li><li><a href=\"/blog/agence-seo-avignon-2026\">Agence SEO & GEO Avignon : top 5 en 2026</a></li><li><a href=\"/blog/agence-seo-bordeaux\">Agence SEO & GEO Bordeaux</a></li><li><a href=\"/blog/agence-seo-la-rochelle-2026\">Agence SEO & GEO La Rochelle : top 5 en 2026</a></li><li><a href=\"/blog/agence-seo-lille\">Agence SEO & GEO Lille</a></li><li><a href=\"/blog/agence-seo-lyon\">Agence SEO & GEO Lyon</a></li><li><a href=\"/blog/agence-seo-marseille\">Agence SEO & GEO Marseille</a></li><li><a href=\"/blog/agence-seo-toulon-2026\">Agence SEO & GEO Toulon : top 5 en 2026</a></li><li><a href=\"/blog/agence-seo-vannes-2026\">Agence SEO & GEO Vannes : top 5 en 2026</a></li></ul>",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Comparatifs Nationaux",
+   "groupe": "s2"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><a href=\"/blog/top-agences-seo-geo-paris\">Meilleure agence GEO Paris 2026</a></li><li><a href=\"#\">Meilleure agence référencement IA France</a></li><li><a href=\"/blog/meilleure-agence-geo-france-2026\">Meilleure agence GEO France</a></li></ul>",
+   "groupe": "s2"
+  },
+  {
+   "t": "h2",
+   "html": "Guides par IA",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Chaque moteur génératif fonctionne différemment. Découvrez comment être cité et recommandé.",
+   "groupe": "s3"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><a href=\"/blog/etre-cite-par-chatgpt\"> Comment être cité par ChatGPT en 2026 </a></li><li><a href=\"/blog/ranker-chatgpt-2026\"> Comment ranker sur ChatGPT en 2026 </a></li><li><a href=\"/blog/10-conseils-marque-visible-chatgpt\"> 10 conseils visibilité ChatGPT </a></li><li><a href=\"/blog/referencement-gemini-2026\"> Référencement Gemini </a></li><li><a href=\"/blog/perplexity-seo\"> Perplexity SEO : comment apparaître </a></li><li><a href=\"/blog/microsoft-copilot-seo\"> Microsoft Copilot SEO </a></li><li><a href=\"/blog/grok-seo\"> Grok SEO : être cité </a></li><li><a href=\"/blog/google-ai-overview-france\"> Apparaître sur Google AI Overview </a></li><li><a href=\"/blog/agence-google-ai-overview\"> Agence Google AI Overview : être recommandé </a></li><li><a href=\"/blog/ai-overview-ecommerce-france-2026\"> Google AI Overview et e-commerce </a></li></ul>",
+   "groupe": "s3"
+  },
+  {
+   "t": "h2",
+   "html": "Fondamentaux GEO & SEO",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "GEO / GSO",
+   "groupe": "s4"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><a href=\"/blog/geo-definition-2026\"> Qu'est-ce que le GEO</a></li><li><a href=\"/blog/gso-definition-2026\"> GSO Définition 2026</a></li><li><a href=\"/blog/gso-2026-guide-complet\"> GSO 2026 Guide Complet</a></li><li><a href=\"/blog/seo-gso-geo-aeo-differences-2026\"> SEO vs GSO vs AEO</a></li><li><a href=\"/blog/agence-seo-vs-agence-gso\"> Agence SEO vs agence GSO comment choisir</a></li><li><a href=\"/blog/seo-vs-referencement-ia\"> SEO vs Référencement IA quelles différences</a></li><li><a href=\"/blog/optimiser-site-llm-guide-seo-complet-2026\"> Comment optimiser son site pour les LLM</a></li><li><a href=\"/blog/strategie-contenu-ia-first\"> Stratégie de contenu IA-first</a></li><li><a href=\"/blog/prompt-engineering-seo\"> Prompt engineering pour le SEO</a></li><li><a href=\"/blog/citations-ia-generatives\"> Citations IA Génératives</a></li><li><a href=\"/blog/audit-geo\"> Audit GEO qu'est-ce que c'est</a></li></ul>",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "SEO Classique",
+   "groupe": "s4"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><a href=\"/blog/backlinks-seo-guide\"> Backlinks SEO Guide Complet</a></li><li><a href=\"/blog/agence-netlinking\"> Agence netlinking comment choisir</a></li><li><a href=\"/blog/eeat-seo-guide-complet\"> E-E-A-T SEO Guide Complet</a></li><li><a href=\"/blog/audit-seo-guide-complet\"> Audit SEO Guide Complet</a></li><li><a href=\"/blog/schema-org-donnees-structurees-gso\"> Données structurées JSON-LD</a></li><li><a href=\"/blog/seo-technique-vs-seo-contenu\"> SEO Technique vs SEO Contenu</a></li><li><a href=\"/blog/tendances-seo-gso-2026\"> Tendances SEO GSO 2026</a></li></ul>",
+   "groupe": "s4"
+  },
+  {
+   "t": "h2",
+   "html": "Guides locaux Paris",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Paris concentre la plus forte densité de décideurs B2B et tech. Découvrez les spécificités du SEO et GEO en Île-de-France.",
+   "groupe": "s5"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><a href=\"/blog/seo-local-paris-2026\"> SEO Local Paris 2026</a></li><li><a href=\"/blog/audit-seo-paris-2026\"> Audit SEO Paris 2026</a></li><li><a href=\"/blog/referencement-ia-paris-guide-local\"> Référencement IA Paris Guide Local</a></li></ul>",
+   "groupe": "s5"
+  },
+  {
+   "t": "h2",
+   "html": "Notre méthode : Triaina",
+   "groupe": "s6"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Triaina est une agence de référencement IA basée à Paris</strong>. Nous combinons trois leviers rarement réunis sous un même toit :",
+   "groupe": "s6"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><strong>Média propriétaire :</strong> pour placer des citations là où les IA les cherchent.</li><li><strong>Régie publicitaire :</strong> accès direct à des espaces partenaires.</li><li><strong>Expertise SEA/Paid :</strong> sécuriser votre trafic pendant que le SEO monte en puissance.</li></ul>",
+   "groupe": "s6"
+  },
+  {
+   "t": "cta",
+   "html": "<a href=\"/agence-referencement-ia-paris\">Découvrir notre agence Parisienne</a>",
+   "groupe": "s6"
+  }
+ ]
+}

@@ -1,0 +1,296 @@
+{
+  "title": "Références Clients & Cas Pratiques | Triaina",
+  "description": "Découvrez comment Triaina accompagne ses clients (Yonder, Best Restaurants, Hôtellerie...) vers la domination SEO et GSO. Études de cas et résultats.",
+  "keywords": "agence seo, agence gso, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative search optimization",
+  "robots": null,
+  "canonical": "https://www.triaina.fr/references",
+  "og": {
+    "og:type": "website",
+    "og:url": "https://www.triaina.fr/references",
+    "og:title": "Références Clients & Cas Pratiques",
+    "og:description": "Découvrez comment Triaina accompagne ses clients (Yonder, Best Restaurants, Hôtellerie...) vers la domination SEO et GSO. Études de cas et résultats.",
+    "og:image": "https://www.triaina.fr/og-image.jpg",
+    "og:locale": "fr_FR",
+    "og:site_name": "Triaina"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Références Clients & Cas Pratiques",
+    "twitter:description": "Découvrez comment Triaina accompagne ses clients (Yonder, Best Restaurants, Hôtellerie...) vers la domination SEO et GSO. Études de cas et résultats.",
+    "twitter:image": "https://www.triaina.fr/og-image.jpg"
+  },
+  "geo": {
+    "geo.region": "FR-75",
+    "geo.placename": "Paris",
+    "geo.position": "48.8464;2.2758"
+  },
+  "titres": [
+    {
+      "niveau": 1,
+      "texte": "DOSSIERS CLIENTS"
+    },
+    {
+      "niveau": 3,
+      "texte": "Younight Hospitality"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Bomporto Hotels"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Bernard Magrez"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Tamtam AI"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "YourSunlife"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Les Hardis"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Talis Education Group"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Lazuli Travel Bureau"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Skilink"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Yonder"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Lazuli Nil"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Best Restaurants Paris"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 3,
+      "texte": "Groupe Hôtelier"
+    },
+    {
+      "niveau": 4,
+      "texte": "Impact & Résultats"
+    },
+    {
+      "niveau": 4,
+      "texte": "Agence"
+    },
+    {
+      "niveau": 4,
+      "texte": "Expertises"
+    },
+    {
+      "niveau": 4,
+      "texte": "Localisation"
+    },
+    {
+      "niveau": 4,
+      "texte": "Infos"
+    }
+  ],
+  "h1": [
+    "DOSSIERS CLIENTS"
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@id": "https://www.triaina.fr/#organization",
+          "@type": [
+            "LocalBusiness",
+            "Organization"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "postalCode": "75016",
+            "streetAddress": "50 quai Louis Bleriot"
+          },
+          "alternateName": [
+            "Triaina",
+            "Triaina Agency",
+            "Agence GSO Paris",
+            "Agence Référencement IA",
+            "Agence GEO Paris"
+          ],
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "description": "Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.8464,
+            "longitude": 2.2758
+          },
+          "hasMap": "https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris",
+          "image": "https://www.triaina.fr/logo.svg",
+          "knowsAbout": [
+            "SEO",
+            "GSO",
+            "Generative Search Optimization",
+            "Référencement IA",
+            "Stratégie Média",
+            "Agence SEO Paris",
+            "Search Engine Optimization (SEO)",
+            "Large Language Models (LLM)",
+            "Agence GSO",
+            "Google SGE Optimization",
+            "Knowledge Graph Construction",
+            "Entity SEO",
+            "Optimisation ChatGPT",
+            "Digital PR",
+            "GEO",
+            "Generative Engine Optimization"
+          ],
+          "logo": "https://www.triaina.fr/logo.svg",
+          "name": "Triaina - Agence SEO & GEO Paris",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "closes": "19:00",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00"
+          },
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.linkedin.com/company/triaina",
+            "https://www.instagram.com/triaina_agency"
+          ],
+          "url": "https://www.triaina.fr"
+        },
+        {
+          "@id": "https://www.triaina.fr/#website",
+          "@type": "WebSite",
+          "description": "Domination IA et Visibilité Totale",
+          "inLanguage": "fr-FR",
+          "name": "Triaina | Agence SEO & GEO Paris",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "query-input": "required name=search_term_string",
+            "target": "https://www.triaina.fr/recherche?q={search_term_string}"
+          },
+          "publisher": {
+            "@id": "https://www.triaina.fr/#organization"
+          },
+          "url": "https://www.triaina.fr/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://www.triaina.fr/",
+          "name": "Accueil",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://www.triaina.fr/references",
+          "name": "Références",
+          "position": 2
+        }
+      ]
+    }
+  ],
+  "typesSchema": [
+    null,
+    "BreadcrumbList"
+  ],
+  "liensInternes": [
+    "/",
+    "/agence",
+    "/agence-geo-paris",
+    "/agence-referencement-ia",
+    "/agence-referencement-ia-paris",
+    "/agence-seo-paris",
+    "/annuaire",
+    "/blog",
+    "/contact",
+    "/expertise-ai-overview",
+    "/expertise-automatisation-contenu",
+    "/expertise-geo",
+    "/expertise-gsa",
+    "/expertise-media",
+    "/expertise-sea",
+    "/expertise-seo",
+    "/faq",
+    "/mentions-legales",
+    "/references",
+    "/sitemap.xml"
+  ],
+  "nbMots": 443,
+  "texteIntegral": "TRIAINA SEO — GEO — Média Accueil Notre Histoire Expertise Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Références Blog Annuaire FAQ Contact Accueil Notre Histoire Expertise Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Références Blog Annuaire FAQ Audit gratuit Audit gratuit DOSSIERS CLIENTS // Base de Performance TOTAL DOSSIERS: 13 STATUT: PUBLIC NOTE DE CONFIDENTIALITÉ : Seules nos références sans accord de confidentialité sont affichées publiquement. Nos use cases détaillés et nos données de suivi de performance sont présentés de vive voix lors de nos premiers rendez-vous. GEO SEO Younight Hospitality Audit GEO &amp; SEO Impact &amp; Résultats Audit GEO &amp; SEO GEO SEO Bomporto Hotels Stratégie SEO &amp; GEO Impact &amp; Résultats Audit GEO + SEO Accompagnement mensuel en cours. GSO En cours Bernard Magrez Chantier GEO/GSO Impact &amp; Résultats Chantier GSO en cours. SaaS IA Tamtam AI Stratégie SEO &amp; GEO Impact &amp; Résultats Élaboration d'une stratégie GSO sur-mesure. Augmentation de la part de voix (Share of Voice). SEO GEO YourSunlife Stratégie SEO &amp; GEO Impact &amp; Résultats Accompagnement SEO et GEO en cours. Lifestyle Audit SEO Les Hardis Stratégie SEO &amp; GEO Impact &amp; Résultats Audit Technique &amp; Sémantique Complet Correction de la dette technique GEO/GSO En cours Talis Education Group Stratégie GEO/GSO Impact &amp; Résultats Chantier GEO/GSO en cours SEA Travel Lazuli Travel Bureau Gestion Campagne SEA Impact &amp; Résultats Optimisation des coûts d'acquisition Augmentation des conversions ciblées SaaS B2B Tech Skilink Gestion GEO Impact &amp; Résultats Captation de trafic décisionnel B2B Accélération du volume de démos qualifiées Média GSO Leadership Yonder Stratégie SEO &amp; GEO Impact &amp; Résultats Leader thématique sur les moteurs IA Hausse significative du trafic SEO qualifié SEA Luxe Lazuli Nil Gestion Campagne SEA Impact &amp; Résultats Hausse du ROAS Ciblage d'audience qualifiée Gastronomie SEO Local Best Restaurants Paris Stratégie SEO &amp; GEO Impact &amp; Résultats Positionnement Top 3 Google Intégration dans les recommandations IA Hotels Technical SEO Groupe Hôtelier Architecture SEO Internationale Impact &amp; Résultats 0% à 70% de citation IA en 3 mois Top 3 Google et cité parmi 8 sites sur la 1ère page via nos médias partenaires TRIAINA SEO — GEO — Média Agence spécialisée en architecture SEO, domination GEO et autorité Média. LinkedIn Agence ACCUEIL NOTRE HISTOIRE RÉFÉRENCES BLOG ANNUAIRE FAQ CONTACT Expertises Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Localisation Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris Infos 50 Quai Louis Blériot 75016 Paris France © 2026 Triaina Global Systems. Mentions Légales Sitemap"
+}

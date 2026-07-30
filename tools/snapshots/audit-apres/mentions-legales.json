@@ -1,0 +1,208 @@
+{
+  "title": "Mentions Légales | Triaina",
+  "description": "Mentions légales de la société TRIAINA, Agence SEO & GEO.",
+  "keywords": "agence seo, agence gso, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative search optimization",
+  "robots": null,
+  "canonical": "https://www.triaina.fr/mentions-legales",
+  "og": {
+    "og:type": "website",
+    "og:url": "https://www.triaina.fr/mentions-legales",
+    "og:title": "Mentions Légales",
+    "og:description": "Mentions légales de la société TRIAINA, Agence SEO & GEO.",
+    "og:image": "https://www.triaina.fr/og-image.jpg",
+    "og:locale": "fr_FR",
+    "og:site_name": "Triaina"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Mentions Légales",
+    "twitter:description": "Mentions légales de la société TRIAINA, Agence SEO & GEO.",
+    "twitter:image": "https://www.triaina.fr/og-image.jpg"
+  },
+  "geo": {
+    "geo.region": "FR-75",
+    "geo.placename": "Paris",
+    "geo.position": "48.8464;2.2758"
+  },
+  "titres": [
+    {
+      "niveau": 1,
+      "texte": "MENTIONS LÉGALES"
+    },
+    {
+      "niveau": 2,
+      "texte": "1. Édition du site"
+    },
+    {
+      "niveau": 2,
+      "texte": "2. Responsable de la publication"
+    },
+    {
+      "niveau": 2,
+      "texte": "3. Hébergement"
+    },
+    {
+      "niveau": 2,
+      "texte": "4. Propriété intellectuelle et contrefaçons"
+    },
+    {
+      "niveau": 2,
+      "texte": "5. Description des services fournis"
+    },
+    {
+      "niveau": 2,
+      "texte": "6. Données personnelles (RGPD)"
+    },
+    {
+      "niveau": 2,
+      "texte": "7. Limitations de responsabilité"
+    },
+    {
+      "niveau": 2,
+      "texte": "8. Droit applicable et attribution de juridiction"
+    }
+  ],
+  "h1": [
+    "MENTIONS LÉGALES"
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@id": "https://www.triaina.fr/#organization",
+          "@type": [
+            "LocalBusiness",
+            "Organization"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "postalCode": "75016",
+            "streetAddress": "50 quai Louis Bleriot"
+          },
+          "alternateName": [
+            "Triaina",
+            "Triaina Agency",
+            "Agence GSO Paris",
+            "Agence Référencement IA",
+            "Agence GEO Paris"
+          ],
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "description": "Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.8464,
+            "longitude": 2.2758
+          },
+          "hasMap": "https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris",
+          "image": "https://www.triaina.fr/logo.svg",
+          "knowsAbout": [
+            "SEO",
+            "GSO",
+            "Generative Search Optimization",
+            "Référencement IA",
+            "Stratégie Média",
+            "Agence SEO Paris",
+            "Search Engine Optimization (SEO)",
+            "Large Language Models (LLM)",
+            "Agence GSO",
+            "Google SGE Optimization",
+            "Knowledge Graph Construction",
+            "Entity SEO",
+            "Optimisation ChatGPT",
+            "Digital PR",
+            "GEO",
+            "Generative Engine Optimization"
+          ],
+          "logo": "https://www.triaina.fr/logo.svg",
+          "name": "Triaina - Agence SEO & GEO Paris",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "closes": "19:00",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00"
+          },
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.linkedin.com/company/triaina",
+            "https://www.instagram.com/triaina_agency"
+          ],
+          "url": "https://www.triaina.fr"
+        },
+        {
+          "@id": "https://www.triaina.fr/#website",
+          "@type": "WebSite",
+          "description": "Domination IA et Visibilité Totale",
+          "inLanguage": "fr-FR",
+          "name": "Triaina | Agence SEO & GEO Paris",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "query-input": "required name=search_term_string",
+            "target": "https://www.triaina.fr/recherche?q={search_term_string}"
+          },
+          "publisher": {
+            "@id": "https://www.triaina.fr/#organization"
+          },
+          "url": "https://www.triaina.fr/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://www.triaina.fr/",
+          "name": "Accueil",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://www.triaina.fr/mentions-legales",
+          "name": "Mentions Légales",
+          "position": 2
+        }
+      ]
+    }
+  ],
+  "typesSchema": [
+    null,
+    "BreadcrumbList"
+  ],
+  "liensInternes": [
+    "/",
+    "/agence",
+    "/agence-geo-paris",
+    "/agence-referencement-ia",
+    "/agence-referencement-ia-paris",
+    "/agence-seo-paris",
+    "/annuaire",
+    "/blog",
+    "/contact",
+    "/expertise-ai-overview",
+    "/expertise-automatisation-contenu",
+    "/expertise-geo",
+    "/expertise-gsa",
+    "/expertise-media",
+    "/expertise-sea",
+    "/expertise-seo",
+    "/faq",
+    "/mentions-legales",
+    "/references",
+    "/sitemap.xml"
+  ],
+  "nbMots": 704,
+  "texteIntegral": "TRIAINA SEO — GEO — Média Accueil Notre Histoire Expertise Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Références Blog Annuaire FAQ Contact Accueil Notre Histoire Expertise Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Références Blog Annuaire FAQ Audit gratuit Audit gratuit MENTIONS LÉGALES // Informations Juridiques Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site internet de la société TRIAINA l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi. 1. Édition du site Le présent site est édité par la société TRIAINA, Société par Actions Simplifiée (SAS) au capital social de 1 000,00 euros. Siège social : 50 Quai Louis Blériot, 75016 Paris Immatriculation : Inscrite au RCS de Paris sous le numéro 999 402 654 SIRET : 999 402 654 00019 Numéro de TVA Intracommunautaire : FR54999402654 Code NAF/APE : 70.22Z (Conseil pour les affaires et autres conseils de gestion) Nous contacter : Par email : lucas@triaina.fr Par téléphone : 06 14 91 62 95 2. Responsable de la publication Le Directeur de la publication est Monsieur Lucas LECOQ-PELLIZZON, en qualité de Président de la société TRIAINA. 3. Hébergement Le site est hébergé par la société OVH SAS. Adresse : 2 rue Kellermann - 59100 Roubaix - France Site web : www.ovhcloud.com 4. Propriété intellectuelle et contrefaçons La société TRIAINA est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site, notamment les textes, images, graphismes, logo, icônes, sons et logiciels. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de la société TRIAINA. Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle. 5. Description des services fournis Le site a pour objet de fournir une information concernant l’ensemble des activités de la société. TRIAINA est spécialisée dans : Le conseil en marketing ; La prestation de services en marketing digital ; Le référencement (SEO, GSO) ; L'activité de pôle média. La société s’efforce de fournir sur le site des informations aussi précises que possible. Toutefois, elle ne pourra être tenue responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. 6. Données personnelles (RGPD) Conformément au Règlement Général sur la Protection des Données (RGPD), l'utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant. Pour exercer ce droit, l'utilisateur peut adresser sa demande par email à : lucas@triaina.fr . Aucune information personnelle de l'utilisateur du site n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. 7. Limitations de responsabilité La société TRIAINA ne pourra être tenue responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site. Des espaces interactifs (possibilité de poser des questions dans l’espace contact) peuvent être à la disposition des utilisateurs. La société se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France. 8. Droit applicable et attribution de juridiction Tout litige en relation avec l’utilisation du site est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de PARIS. TRIAINA SEO — GEO — Média Agence spécialisée en architecture SEO, domination GEO et autorité Média. LinkedIn Agence ACCUEIL NOTRE HISTOIRE RÉFÉRENCES BLOG ANNUAIRE FAQ CONTACT Expertises Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Localisation Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris Infos 50 Quai Louis Blériot 75016 Paris France © 2026 Triaina Global Systems. Mentions Légales Sitemap"
+}

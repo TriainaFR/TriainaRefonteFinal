@@ -1,0 +1,42 @@
+{
+  "headers": [
+    {
+      "source": "/.well-known/oauth-protected-resource",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/api-catalog",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/linkset+json"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/expertise-contenu",
+      "destination": "/expertise-automatisation-contenu",
+      "permanent": true
+    },
+    {
+      "source": "/expertise-gsa",
+      "destination": "/expertise-sea",
+      "permanent": true
+    }
+  ]
+}

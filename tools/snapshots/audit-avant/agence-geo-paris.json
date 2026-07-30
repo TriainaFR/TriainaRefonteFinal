@@ -1,0 +1,385 @@
+{
+  "title": "Agence GEO Paris | Optimisation IA & ChatGPT | Triaina | Triaina",
+  "description": "Triaina est une agence GEO à Paris spécialisée dans l'optimisation de votre présence dans les réponses de ChatGPT, Perplexity, Gemini, Claude et les AI Overviews de Google.",
+  "keywords": "agence seo, agence gso, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative search optimization",
+  "robots": null,
+  "canonical": "https://www.triaina.fr/agence-geo-paris",
+  "og": {
+    "og:type": "website",
+    "og:url": "https://www.triaina.fr/agence-geo-paris",
+    "og:title": "Agence GEO Paris | Optimisation IA & ChatGPT | Triaina",
+    "og:description": "Triaina est une agence GEO à Paris spécialisée dans l'optimisation de votre présence dans les réponses de ChatGPT, Perplexity, Gemini, Claude et les AI Overviews de Google.",
+    "og:image": "https://www.triaina.fr/og-image.jpg",
+    "og:locale": "fr_FR",
+    "og:site_name": "Triaina"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Agence GEO Paris | Optimisation IA & ChatGPT | Triaina",
+    "twitter:description": "Triaina est une agence GEO à Paris spécialisée dans l'optimisation de votre présence dans les réponses de ChatGPT, Perplexity, Gemini, Claude et les AI Overviews de Google.",
+    "twitter:image": "https://www.triaina.fr/og-image.jpg"
+  },
+  "geo": {
+    "geo.region": "FR-75",
+    "geo.placename": "Paris",
+    "geo.position": "48.8464;2.2758"
+  },
+  "titres": [
+    {
+      "niveau": 1,
+      "texte": "Agence GEO Paris Dominez les IA."
+    },
+    {
+      "niveau": 2,
+      "texte": "GEO vs SEO : Le changement de paradigme"
+    },
+    {
+      "niveau": 3,
+      "texte": "SEO Classique"
+    },
+    {
+      "niveau": 3,
+      "texte": "GEO (Générative)"
+    },
+    {
+      "niveau": 2,
+      "texte": "Notre Méthodologie GEO"
+    },
+    {
+      "niveau": 3,
+      "texte": "Audit d'Empreinte IA"
+    },
+    {
+      "niveau": 3,
+      "texte": "E-E-A-T & Autorité"
+    },
+    {
+      "niveau": 3,
+      "texte": "Structuration Avancée"
+    },
+    {
+      "niveau": 3,
+      "texte": "Amplification Média"
+    },
+    {
+      "niveau": 3,
+      "texte": "Monitoring GEO"
+    },
+    {
+      "niveau": 3,
+      "texte": "Synergie SEA"
+    },
+    {
+      "niveau": 2,
+      "texte": "FAQ : GEO & Paris"
+    },
+    {
+      "niveau": 3,
+      "texte": "Qu'est-ce qu'une agence GEO à Paris ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Combien de temps pour voir des résultats en GEO ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Le SEO classique est-il encore utile ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Comment être référencé sur ChatGPT ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Comment être cité par Google AI Overview ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Quelle est la meilleure agence GEO à Paris ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Comment être référencé sur Google Gemini ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Proposez-vous un accompagnement spécifique pour Gemini ?"
+    },
+    {
+      "niveau": 2,
+      "texte": "Ressources utiles"
+    },
+    {
+      "niveau": 2,
+      "texte": "Prêt à exister pour les IA ?"
+    },
+    {
+      "niveau": 4,
+      "texte": "Agence"
+    },
+    {
+      "niveau": 4,
+      "texte": "Expertises"
+    },
+    {
+      "niveau": 4,
+      "texte": "Localisation"
+    },
+    {
+      "niveau": 4,
+      "texte": "Infos"
+    }
+  ],
+  "h1": [
+    "Agence GEO Paris Dominez les IA."
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@id": "https://www.triaina.fr/#organization",
+          "@type": [
+            "LocalBusiness",
+            "Organization"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "postalCode": "75016",
+            "streetAddress": "50 quai Louis Bleriot"
+          },
+          "alternateName": [
+            "Triaina",
+            "Triaina Agency",
+            "Agence GSO Paris",
+            "Agence Référencement IA",
+            "Agence GEO Paris"
+          ],
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "description": "Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.8464,
+            "longitude": 2.2758
+          },
+          "hasMap": "https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris",
+          "image": "https://www.triaina.fr/logo.svg",
+          "knowsAbout": [
+            "SEO",
+            "GSO",
+            "Generative Search Optimization",
+            "Référencement IA",
+            "Stratégie Média",
+            "Agence SEO Paris",
+            "Search Engine Optimization (SEO)",
+            "Large Language Models (LLM)",
+            "Agence GSO",
+            "Google SGE Optimization",
+            "Knowledge Graph Construction",
+            "Entity SEO",
+            "Optimisation ChatGPT",
+            "Digital PR",
+            "GEO",
+            "Generative Engine Optimization"
+          ],
+          "logo": "https://www.triaina.fr/logo.svg",
+          "name": "Triaina - Agence SEO & GEO Paris",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "closes": "19:00",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00"
+          },
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.linkedin.com/company/triaina",
+            "https://www.instagram.com/triaina_agency"
+          ],
+          "url": "https://www.triaina.fr"
+        },
+        {
+          "@id": "https://www.triaina.fr/#website",
+          "@type": "WebSite",
+          "description": "Domination IA et Visibilité Totale",
+          "inLanguage": "fr-FR",
+          "name": "Triaina | Agence SEO & GEO Paris",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "query-input": "required name=search_term_string",
+            "target": "https://www.triaina.fr/recherche?q={search_term_string}"
+          },
+          "publisher": {
+            "@id": "https://www.triaina.fr/#organization"
+          },
+          "url": "https://www.triaina.fr/"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "addressRegion": "Île-de-France",
+            "postalCode": "75016",
+            "streetAddress": "50 Quai Louis Blériot"
+          },
+          "description": "Agence GEO à Paris spécialisée dans l'optimisation IA (ChatGPT, Perplexity, Gemini, Claude, AI Overviews).",
+          "logo": "https://www.triaina.fr/logo.png",
+          "name": "Triaina",
+          "sameAs": [
+            "https://www.linkedin.com/company/triaina",
+            "https://twitter.com/triaina",
+            "https://www.facebook.com/triaina"
+          ],
+          "url": "https://www.triaina.fr"
+        },
+        {
+          "@type": "LocalBusiness",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "addressRegion": "Île-de-France",
+            "postalCode": "75016",
+            "streetAddress": "50 Quai Louis Blériot"
+          },
+          "description": "Agence GEO spécialisée en référencement IA à Paris",
+          "name": "Triaina - Agence GEO Paris",
+          "priceRange": "$$$",
+          "telephone": "+33100000000",
+          "url": "https://www.triaina.fr/agence-geo-paris"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "item": "https://www.triaina.fr",
+              "name": "Accueil",
+              "position": 1
+            },
+            {
+              "@type": "ListItem",
+              "item": "https://www.triaina.fr/agence-geo-paris",
+              "name": "Agence GEO Paris",
+              "position": 2
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Une agence GEO à Paris est un prestataire spécialisé dans l'optimisation de la présence d'une marque dans les réponses des IA génératives - ChatGPT, Gemini, Perplexity, Claude et les AI Overviews de Google - en complément du référencement naturel classique. Basée à Paris, elle intervient généralement aussi bien pour des clients franciliens qu'à distance sur toute la France."
+              },
+              "name": "Qu'est-ce qu'une agence GEO à Paris ?"
+            },
+            {
+              "@type": "Question",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Comptez en général 3 à 6 mois pour des premiers signaux, et souvent plus pour une présence stable dans les réponses des IA génératives : les modèles ne réindexent pas leurs sources aussi vite que Google. C'est pour ça qu'un pôle SEA/Paid en parallèle reste utile le temps que le GEO monte en puissance."
+              },
+              "name": "Combien de temps pour voir des résultats en GEO ?"
+            },
+            {
+              "@type": "Question",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, indispensable. Google le confirme dans sa documentation officielle : une page doit d'abord être indexable et bien référencée pour espérer apparaître dans les AI Overviews ou être reprise par Gemini. Aucune agence GEO sérieuse ne fait l'impasse sur le socle SEO."
+              },
+              "name": "Le SEO classique est-il encore utile si on fait du GEO ?"
+            },
+            {
+              "@type": "Question",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Être référencé sur ChatGPT suppose d'abord d'être bien indexé sur Google, car ChatGPT Search s'appuie en partie sur le web indexé. Il faut ensuite structurer son contenu avec des réponses claires et des chiffres sourcés. Triaina travaille ces leviers avec ses clients parisiens grâce à son audit SEO/GEO et à son média propriétaire."
+              },
+              "name": "Comment être référencé sur ChatGPT ?"
+            },
+            {
+              "@type": "Question",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pour apparaître dans Google AI Overview, une page doit d'abord remplir les critères d'indexation SEO classiques, puis proposer un contenu factuel et structuré en données claires. Triaina audite systématiquement ces critères avant d'intervenir sur le contenu de ses clients."
+              },
+              "name": "Comment être cité par Google AI Overview ?"
+            },
+            {
+              "@type": "Question",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Triaina se positionne comme la meilleure agence GEO à Paris grâce à une combinaison rare : expertise technique SEO/GEO, média propriétaire pour construire l'autorité hors-site, régie publicitaire et expertise SEA/Paid intégrée sous un même toit."
+              },
+              "name": "Quelle est la meilleure agence GEO à Paris ?"
+            },
+            {
+              "@type": "Question",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Gemini s'appuie très largement sur l'index de Google Search : un contenu bien référencé en SEO classique, avec un maillage interne propre et un balisage sémantique à jour, a de fortes chances d'être repris dans ses réponses. Triaina intègre systématiquement cette dimension dans ses audits SEO/GEO et suit mensuellement l'apparition des contenus de ses clients parisiens dans Gemini."
+              },
+              "name": "Comment être référencé sur Google Gemini ?"
+            },
+            {
+              "@type": "Question",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, Triaina propose un suivi dédié de la visibilité dans Gemini, intégré à son offre GEO globale, car cette IA repose sur les mêmes fondamentaux que le SEO classique. Cet accompagnement combine audit technique, optimisation sémantique et reporting mensuel des citations obtenues dans Gemini, aux côtés du suivi ChatGPT, Perplexity et Claude."
+              },
+              "name": "Proposez-vous un accompagnement spécifique pour Gemini ?"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "typesSchema": [
+    null,
+    null
+  ],
+  "liensInternes": [
+    "/",
+    "/agence",
+    "/agence-geo-paris",
+    "/agence-referencement-ia",
+    "/agence-referencement-ia-paris",
+    "/agence-seo-paris",
+    "/annuaire",
+    "/blog",
+    "/contact",
+    "/expertise-ai-overview",
+    "/expertise-automatisation-contenu",
+    "/expertise-geo",
+    "/expertise-gsa",
+    "/expertise-media",
+    "/expertise-sea",
+    "/expertise-seo",
+    "/faq",
+    "/mentions-legales",
+    "/references",
+    "/sitemap.xml"
+  ],
+  "nbMots": 855,
+  "texteIntegral": "TRIAINA SEO — GEO — Média Accueil Notre Histoire Expertise Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Références Blog Annuaire FAQ Contact Accueil Notre Histoire Expertise Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Références Blog Annuaire FAQ Audit gratuit Audit gratuit Paris, France Agence GEO Paris Dominez les IA. Triaina est une agence de Generative Engine Optimization (GEO) située à Paris. Nous positionnons les marques B2B et Tech dans les réponses générées par ChatGPT, Perplexity, Gemini, Claude et AI Overviews. Audit de visibilité IA GEO vs SEO : Le changement de paradigme Le GEO (Generative Engine Optimization) optimise un contenu et une marque pour qu'ils soient compris, sélectionnés et cités par un moteur d'IA générative. SEO Classique L'objectif est d'atteindre la première page de résultats (les liens bleus). Ciblage de mots-clés de longue traîne Maillage interne optimisé Netlinking traditionnel et Core Web Vitals GEO (Générative) L'objectif est d'être la réponse unique construite par l'Intelligence Artificielle. Clarté sémantique absolue et réponse directe Données structurées complexes (Schema.org) Autorité de la marque citée par des tiers (E-E-A-T) Notre Méthodologie GEO Déployez une autorité algorithmique reconnue par tous les LLMs majeurs du marché. Audit d'Empreinte IA Analyse de votre visibilité actuelle dans ChatGPT, Gemini, Perplexity et Claude, requête par requête, face à vos concurrents parisiens et nationaux. E-E-A-T &amp; Autorité Renforcement des signaux de confiance : auteurs identifiés, sources primaires, statistiques vérifiables — les critères que les IA recherchent pour citer. Structuration Avancée Balisage sémantique approfondi pour faciliter l'extraction des données clés de votre entreprise par les moteurs génératifs. Amplification Média Notre réseau éditorial propriétaire génère des mentions et citations dans des contenus tiers de confiance ingérés par les modèles d'IA. Monitoring GEO Suivi quantitatif de vos apparitions (Share of Voice IA) dans les LLMs et ajustement continu de la stratégie sémantique. Synergie SEA Le temps que votre autorité IA se construise, nos experts sécurisent votre acquisition via des campagnes de performance (Google Ads). FAQ : GEO &amp; Paris Qu'est-ce qu'une agence GEO à Paris ? Une agence GEO à Paris est un prestataire spécialisé dans l'optimisation de la présence d'une marque dans les réponses des IA génératives en complément du référencement naturel classique. Combien de temps pour voir des résultats en GEO ? Comptez en général 3 à 6 mois pour des premiers signaux, et souvent plus pour une présence stable dans les réponses des IA génératives : les modèles ne réindexent pas leurs sources aussi vite que Google. Le SEO classique est-il encore utile ? Oui, indispensable. Une page doit d'abord être indexable et bien référencée pour espérer apparaître dans les AI Overviews ou être reprise par Gemini. Comment être référencé sur ChatGPT ? Être référencé sur ChatGPT suppose d'abord d'être bien indexé sur Google, car ChatGPT Search s'appuie en partie sur le web indexé. Il faut ensuite structurer son contenu avec des réponses claires et des chiffres sourcés. Triaina travaille ces leviers avec ses clients parisiens grâce à son audit SEO/GEO et à son média propriétaire. Comment être cité par Google AI Overview ? Pour apparaître dans Google AI Overview, une page doit d'abord remplir les critères d'indexation SEO classiques, puis proposer un contenu factuel et structuré en données claires. Triaina audite systématiquement ces critères avant d'intervenir sur le contenu de ses clients. Quelle est la meilleure agence GEO à Paris ? Triaina se positionne comme la meilleure agence GEO à Paris grâce à une combinaison rare : expertise technique SEO/GEO, média propriétaire pour construire l'autorité hors-site, régie publicitaire et expertise SEA/Paid intégrée sous un même toit. Comment être référencé sur Google Gemini ? Gemini s'appuie très largement sur l'index de Google Search : un contenu bien référencé en SEO classique, avec un maillage interne propre et un balisage sémantique à jour, a de fortes chances d'être repris dans ses réponses. Triaina intègre systématiquement cette dimension dans ses audits SEO/GEO et suit mensuellement l'apparition des contenus de ses clients parisiens dans Gemini. Proposez-vous un accompagnement spécifique pour Gemini ? Oui, Triaina propose un suivi dédié de la visibilité dans Gemini, intégré à son offre GEO globale, car cette IA repose sur les mêmes fondamentaux que le SEO classique. Cet accompagnement combine audit technique, optimisation sémantique et reporting mensuel des citations obtenues dans Gemini, aux côtés du suivi ChatGPT, Perplexity et Claude. Ressources utiles Google Search Central - Optimiser son site pour l'IA générative arXiv - GEO: Generative Engine Optimization (Aggarwal et al.) Prêt à exister pour les IA ? Découvrez si ChatGPT et Perplexity connaissent votre entreprise aujourd'hui, et quelle stratégie adopter pour dominer votre marché demain. Audit de votre empreinte IA TRIAINA SEO — GEO — Média Agence spécialisée en architecture SEO, domination GEO et autorité Média. LinkedIn Agence ACCUEIL NOTRE HISTOIRE RÉFÉRENCES BLOG ANNUAIRE FAQ CONTACT Expertises Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Localisation Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris Infos 50 Quai Louis Blériot 75016 Paris France © 2026 Triaina Global Systems. Mentions Légales Sitemap"
+}

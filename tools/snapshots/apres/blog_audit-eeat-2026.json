@@ -1,0 +1,296 @@
+{
+  "title": "Audit E-E-A-T 2026 : comment préparer votre site ? - Triaina | Triaina",
+  "description": "L'E-E-A-T est le cadre que Google utilise pour évaluer la fiabilité d'un contenu et de son auteur. Ce guide vous aide à préparer votre site.",
+  "keywords": "agence seo, agence gso, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative search optimization",
+  "robots": null,
+  "canonical": "https://triaina.fr/blog/audit-eeat-2026",
+  "og": {
+    "og:type": "website",
+    "og:url": "https://triaina.fr/blog/audit-eeat-2026",
+    "og:title": "Audit E-E-A-T 2026 : comment préparer votre site ? - Triaina",
+    "og:description": "L'E-E-A-T est le cadre que Google utilise pour évaluer la fiabilité d'un contenu et de son auteur. Ce guide vous aide à préparer votre site.",
+    "og:image": "https://www.triaina.fr/og-image.jpg",
+    "og:locale": "fr_FR",
+    "og:site_name": "Triaina"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Audit E-E-A-T 2026 : comment préparer votre site ? - Triaina",
+    "twitter:description": "L'E-E-A-T est le cadre que Google utilise pour évaluer la fiabilité d'un contenu et de son auteur. Ce guide vous aide à préparer votre site.",
+    "twitter:image": "https://www.triaina.fr/og-image.jpg"
+  },
+  "geo": {
+    "geo.region": "FR-75",
+    "geo.placename": "Paris",
+    "geo.position": "48.8464;2.2758"
+  },
+  "titres": [
+    {
+      "niveau": 1,
+      "texte": "Audit E-E-A-T 2026 : comment préparer votre site ?"
+    },
+    {
+      "niveau": 2,
+      "texte": "Les 4 piliers de l'E-E-A-T expliqués concrètement"
+    },
+    {
+      "niveau": 3,
+      "texte": "Experience : l'expérience de première main"
+    },
+    {
+      "niveau": 3,
+      "texte": "Expertise : la compétence du créateur"
+    },
+    {
+      "niveau": 3,
+      "texte": "Authoritativeness : l'autorité reconnue"
+    },
+    {
+      "niveau": 3,
+      "texte": "Trustworthiness : la fiabilité, le pilier central"
+    },
+    {
+      "niveau": 2,
+      "texte": "Checklist self-audit E-E-A-T : 52 critères à vérifier"
+    },
+    {
+      "niveau": 2,
+      "texte": "Les erreurs les plus fréquentes qu'on constate en audit"
+    },
+    {
+      "niveau": 2,
+      "texte": "La méthodologie Triaina en 4 phases"
+    },
+    {
+      "niveau": 3,
+      "texte": "Phase 1 : Cadrage"
+    },
+    {
+      "niveau": 3,
+      "texte": "Phase 2 : Audit technique et éditorial"
+    },
+    {
+      "niveau": 3,
+      "texte": "Phase 3 : Plan de remédiation"
+    },
+    {
+      "niveau": 3,
+      "texte": "Phase 4 : Suivi"
+    },
+    {
+      "niveau": 2,
+      "texte": "Étude de cas : d'un score EEAT faible à une visibilité GEO de 90%"
+    },
+    {
+      "niveau": 2,
+      "texte": "FAQ"
+    },
+    {
+      "niveau": 3,
+      "texte": "Qu'est-ce que l'E-E-A-T exactement ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "L'EEAT est-il un facteur de ranking officiel ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Combien de temps prend un audit EEAT complet ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Quelle différence entre EEAT SEO et GEO ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Faut-il un auteur nommé sur chaque page pour améliorer son EEAT ?"
+    },
+    {
+      "niveau": 2,
+      "texte": "Sources utiles"
+    },
+    {
+      "niveau": 3,
+      "texte": "À propos de l'auteure"
+    },
+    {
+      "niveau": 4,
+      "texte": "Agence"
+    },
+    {
+      "niveau": 4,
+      "texte": "Expertises"
+    },
+    {
+      "niveau": 4,
+      "texte": "Localisation"
+    },
+    {
+      "niveau": 4,
+      "texte": "Infos"
+    }
+  ],
+  "h1": [
+    "Audit E-E-A-T 2026 : comment préparer votre site ?"
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@id": "https://www.triaina.fr/#organization",
+          "@type": [
+            "LocalBusiness",
+            "Organization"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "postalCode": "75016",
+            "streetAddress": "50 quai Louis Bleriot"
+          },
+          "alternateName": [
+            "Triaina",
+            "Triaina Agency",
+            "Agence GSO Paris",
+            "Agence Référencement IA"
+          ],
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "description": "Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.8464,
+            "longitude": 2.2758
+          },
+          "hasMap": "https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris",
+          "image": "https://www.triaina.fr/logo.svg",
+          "knowsAbout": [
+            "SEO",
+            "GSO",
+            "Generative Search Optimization",
+            "Référencement IA",
+            "Stratégie Média",
+            "Agence SEO Paris",
+            "Search Engine Optimization (SEO)",
+            "Large Language Models (LLM)",
+            "Agence GSO",
+            "Google SGE Optimization",
+            "Knowledge Graph Construction",
+            "Entity SEO",
+            "Optimisation ChatGPT",
+            "Digital PR"
+          ],
+          "logo": "https://www.triaina.fr/logo.svg",
+          "name": "Triaina - Agence SEO & GEO Paris",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "closes": "19:00",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00"
+          },
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.linkedin.com/company/triaina",
+            "https://www.instagram.com/triaina_agency"
+          ],
+          "url": "https://www.triaina.fr"
+        },
+        {
+          "@id": "https://www.triaina.fr/#website",
+          "@type": "WebSite",
+          "description": "Domination IA et Visibilité Totale",
+          "inLanguage": "fr-FR",
+          "name": "Triaina | Agence SEO & GEO Paris",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "query-input": "required name=search_term_string",
+            "target": "https://www.triaina.fr/recherche?q={search_term_string}"
+          },
+          "publisher": {
+            "@id": "https://www.triaina.fr/#organization"
+          },
+          "url": "https://www.triaina.fr/"
+        }
+      ]
+    },
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "author": {
+          "@type": "Person",
+          "jobTitle": "Consultante Senior GEO/SEO chez Triaina",
+          "name": "Camille Rousseau",
+          "sameAs": "https://www.linkedin.com/in/camille-rousseau-a44488413/",
+          "url": "https://www.triaina.fr"
+        },
+        "description": "L'E-E-A-T est le cadre que Google utilise pour évaluer la fiabilité d'un contenu et de son auteur. Ce guide vous aide à préparer votre site.",
+        "headline": "Audit E-E-A-T 2026 : comment préparer votre site ?",
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://www.triaina.fr",
+            "name": "Accueil",
+            "position": 1
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://www.triaina.fr/blog",
+            "name": "Blog",
+            "position": 2
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://www.triaina.fr/blog/audit-eeat-2026",
+            "name": "Audit E-E-A-T 2026 : comment préparer votre site ?",
+            "position": 3
+          }
+        ]
+      }
+    ]
+  ],
+  "typesSchema": [
+    null,
+    "Article",
+    "BreadcrumbList"
+  ],
+  "liensInternes": [
+    "/",
+    "/agence",
+    "/agence-geo-paris",
+    "/agence-referencement-ia",
+    "/agence-referencement-ia-paris",
+    "/agence-seo-paris",
+    "/annuaire",
+    "/blog",
+    "/contact",
+    "/expertise-ai-overview",
+    "/expertise-contenu",
+    "/expertise-geo",
+    "/expertise-gsa",
+    "/expertise-media",
+    "/expertise-sea",
+    "/expertise-seo",
+    "/faq",
+    "/mentions-legales",
+    "/references",
+    "/sitemap.xml"
+  ],
+  "nbMots": 2916,
+  "texteIntegral": "TRIAINA SEO - GEO - Média ACCUEIL TRIAINA EXPERTISE Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview SEO/IA Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris RÉFÉRENCES BLOG CONTACT ANNUAIRE FAQ Retour aux articles 16 JUILLET 2026 | GUIDE Audit E-E-A-T 2026 : comment préparer votre site ? L'E-E-A-T est le cadre que Google utilise pour évaluer la fiabilité d'un contenu et de son auteur. Ce guide vous aide à préparer votre site. L'E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) est le cadre que Google utilise pour évaluer la fiabilité d'un contenu et de son auteur. Ce n'est pas un facteur de ranking direct au sens strict, mais un filtre qui conditionne de plus en plus l'accès aux positions hautes - et, depuis l'arrivée massive des réponses générées par IA (AI Overviews, ChatGPT, Perplexity), aux citations dans ces réponses. Un audit EEAT sert à mesurer où votre site se situe sur ces quatre piliers et à corriger ce qui bloque votre visibilité. Pourquoi maintenant ? Parce que 2026 change la donne. Les moteurs génératifs ne se contentent plus de classer des pages : ils sélectionnent des sources qu'ils jugent dignes de confiance pour nourrir leurs réponses. Un site sans auteurs identifiés, sans preuves d'expérience terrain ni sources primaires a statistiquement moins de chances d'être cité - que ce soit dans le SERP classique ou dans une réponse IA. C'est tout l'enjeu du GEO (Generative Engine Optimization) : il s'appuie directement sur les mêmes signaux que l'EEAT SEO traditionnel, en les poussant plus loin. Dans cet article : la définition détaillée des 4 piliers, une checklist de 52 critères prête à l'emploi, les erreurs qu'on constate le plus souvent en audit, notre méthodologie en 4 phases, et un cas client anonymisé avec des chiffres avant/après. Les 4 piliers de l'E-E-A-T expliqués concrètement Google a formalisé ce cadre dans ses Search Quality Rater Guidelines et dans sa documentation sur le contenu utile. Chaque pilier répond à une question précise que se pose un évaluateur humain - et de plus en plus, un modèle de langage qui doit décider s'il peut citer votre page comme source fiable. Experience : l'expérience de première main Ce pilier a été ajouté en décembre 2022 pour distinguer un contenu écrit par quelqu'un qui a réellement vécu ou testé le sujet d'un contenu compilé à partir d'autres sources. Un article sur un logiciel comptable rédigé par quelqu'un qui l'utilise tous les jours vaut plus, aux yeux de Google, qu'une synthèse générique sans capture d'écran ni détail vécu. Signaux concrets : photos et captures d'écran originales, chiffres internes, retours d'usage précis, anecdotes datées, mention explicite du test réalisé. Expertise : la compétence du créateur L'expertise se juge sur la profondeur et la justesse du traitement du sujet, pas sur un diplôme affiché en façade. Un article juridique signé par un avocat inscrit au barreau, avec un lien vers son profil professionnel, a plus de poids qu'un texte anonyme truffé d'approximations. Signaux concrets : auteur nommé avec fonction précise, page bio détaillée, cohérence thématique des publications, sourcing rigoureux des données citées. Authoritativeness : l'autorité reconnue L'autorité se construit de l'extérieur : ce sont les autres - médias, sites du secteur, communauté professionnelle - qui reconnaissent votre expertise. C'est la différence entre dire \"je suis expert\" et être cité comme tel par des tiers indépendants. Signaux concrets : backlinks depuis des sites reconnus du secteur, citations presse, mentions de marque sans lien, présence dans des bases de connaissance comme Wikidata, participation à des conférences sectorielles. Trustworthiness : la fiabilité, le pilier central Google le dit explicitement dans ses guidelines : la confiance (Trust) est le pilier le plus important. Un site peut avoir de l'expérience, de l'expertise et de l'autorité - s'il n'est pas fiable (informations trompeuses, absence de mentions légales, données non sourcées), tout le reste s'effondre. Signaux concrets : HTTPS, mentions légales complètes, sources primaires citées, transparence sur les partenariats, cohérence des informations sur tout le site. Checklist self-audit E-E-A-T : 52 critères à vérifier Voici la grille que nous utilisons en interne pour un premier passage rapide, avant l'audit approfondi. Pour chaque critère : la question à se poser et le signal qui indique que c'est bon. Pilier Critère Question à se poser Signal positif Experience Test réel du produit/service L'auteur a-t-il utilisé concrètement ce dont il parle ? Photos ou captures d'écran originales, retours d'usage précis Experience Preuves de première main Y a-t-il des détails que seul quelqu'un ayant vécu la situation connaîtrait ? Anecdotes, chiffres internes, erreurs vécues racontées Experience Production du contenu Le texte a-t-il été relu et enrichi par un humain expert ? Mention de la méthode de production, corrections manuelles visibles Experience Études de cas maison Le site publie-t-il ses propres résultats clients ? Cas chiffrés, avant/après documentés Experience Preuves visuelles Les images sont-elles originales ou du stock générique ? Captures d'écran datées, photos de l'équipe Experience Contexte temporel Les exemples sont-ils récents et datés ? Dates précises, contexte de marché mentionné Experience Témoignages Les avis clients sont-ils vérifiables ? Nom, entreprise, lien LinkedIn associés Experience Détail du process L'article explique-t-il comment le travail a été réalisé ? Étapes décrites, outils nommés Experience Historique de la marque Depuis combien de temps l'entreprise pratique-t-elle ce métier ? Date de création visible, portfolio consultable Experience Bio auteur détaillée La bio précise-t-elle le nombre d'années ou de projets réalisés ? Chiffres précis mentionnés Experience Positionnement tranché L'auteur ose-t-il un avis argumenté issu de sa pratique ? Prise de position claire et justifiée Experience Interaction communauté L'auteur répond-il aux commentaires ou questions ? Réponses datées, engagement réel Experience Formats vivants Existe-t-il des formats où l'auteur apparaît réellement ? Vidéo, podcast, conférence filmée Expertise Auteur identifié Chaque article a-t-il un auteur nommé ? Nom, fonction et photo affichés Expertise Page auteur dédiée Existe-t-il une page bio par auteur ? URL dédiée avec parcours détaillé Expertise Credentials vérifiables Les diplômes ou certifications sont-ils vérifiables ? Lien vers l'organisme certificateur Expertise Cohérence thématique L'auteur écrit-il uniquement sur son domaine de compétence ? Thématiques homogènes sur toutes les publications Expertise Profil professionnel Le lien LinkedIn est-il présent et cohérent avec la bio ? Poste actuel identique à celui affiché Expertise Reconnaissance externe L'auteur est-il cité ou interviewé ailleurs ? Articles invités, interviews, conférences Expertise Niveau de langage Le vocabulaire est-il précis sans être un jargon creux ? Termes techniques expliqués simplement Expertise Sourcing des données Les chiffres cités proviennent-ils de sources primaires ? Lien direct vers l'étude ou le rapport officiel Expertise Fraîcheur du contenu La date de mise à jour est-elle visible et récente ? Date affichée, historique de modifications Expertise Profondeur du traitement Le sujet est-il traité de façon exhaustive ? Sous-thèmes couverts, questions annexes traitées Expertise Relecture par les pairs Un second expert relit-il le contenu avant publication ? Mention \"relu par\" ou \"validé par\" Expertise Régularité de publication L'auteur publie-t-il de façon cohérente dans la durée ? Fréquence régulière, pas de trous suspects Expertise Spécialisation du site Le site traite-t-il un périmètre clair ? Silo thématique cohérent, pas de dispersion Autorité Backlinks qualitatifs Qui référence votre site ? Liens depuis médias ou sites sectoriels reconnus Autorité Citations presse La marque est-elle citée par des tiers indépendants ? Articles de presse, mentions dans des dossiers sectoriels Autorité Réseaux professionnels L'entreprise est-elle active et reconnue sur LinkedIn ? Followers qualifiés, taux d'engagement réel Autorité Reconnaissance sectorielle La marque intervient-elle dans des événements du secteur ? Speakers à des conférences, tables rondes Autorité Base de connaissance L'entité existe-t-elle dans les bases de connaissance ? Fiche Wikidata, knowledge panel Google Autorité Avis publics Combien d'avis et quelle note moyenne ? Volume d'avis significatif et note cohérente Autorité Mentions sans lien La marque est-elle citée même sans backlink ? Citations dans forums, réseaux sociaux, communautés Autorité Partenariats visibles Le site affiche-t-il des clients ou partenaires reconnus ? Logos clients réels, références vérifiables Autorité Ancienneté du domaine Le domaine a-t-il un historique établi ? Ancienneté significative, pas de changement suspect Autorité Cohérence NAP Les infos légales sont-elles cohérentes partout ? Nom, adresse, téléphone identiques sur tous les supports Autorité Média propriétaire L'entreprise publie-t-elle une recherche ou un observatoire propre ? Étude annuelle, baromètre sectoriel cité par d'autres Autorité Distinctions Le site a-t-il reçu des labels ou récompenses vérifiables ? Label qualité, certification affichée et vérifiable Autorité Citations tierces Des études ou rapports tiers citent-ils vos contenus ? Citations dans des publications sectorielles ou académiques Fiabilité Mentions légales Les mentions légales sont-elles complètes et à jour ? SIRET, adresse, responsable de publication indiqués Fiabilité Politique de confidentialité La politique RGPD est-elle claire et accessible ? Page dédiée, gestion des cookies conforme Fiabilité Sécurité technique Le site est-il en HTTPS sur toutes les pages ? Certificat SSL valide, aucun contenu mixte Fiabilité Contact accessible Peut-on contacter facilement l'entreprise ? Formulaire, téléphone, adresse physique visibles Fiabilité Sources primaires Les affirmations chiffrées renvoient-elles vers une source vérifiable ? Lien direct vers l'étude ou l'organisme officiel Fiabilité Transparence publicitaire Les contenus sponsorisés sont-ils signalés ? Mention explicite \"partenariat\" ou \"contenu sponsorisé\" Fiabilité Correction des erreurs Le site corrige-t-il ses erreurs publiquement ? Mention de correctifs, changelog visible Fiabilité Paiement sécurisé Le paiement est-il sécurisé et affiché comme tel ? Badges de sécurité, protocole de paiement reconnu Fiabilité Cohérence globale Les informations sont-elles identiques sur toutes les pages ? Aucune contradiction entre pages ou supports Fiabilité Modération des avis Les avis négatifs sont-ils aussi visibles ? Pas de filtrage abusif des retours clients Fiabilité Titres non trompeurs Les titres correspondent-ils au contenu réel ? Pas de clickbait, promesse tenue dans le texte Fiabilité Conditions claires Les conditions de vente ou de retour sont-elles explicites ? CGV accessibles et compréhensibles Fiabilité Performance technique Le site est-il fiable techniquement (rapide, sans erreur) ? Bons scores Core Web Vitals, pas d'erreurs 404 en masse Les erreurs les plus fréquentes qu'on constate en audit Sur les dizaines d'audits que nous avons menés, quelques erreurs reviennent presque systématiquement : Zéro auteur identifié. Des articles signés \"L'équipe\" ou pas signés du tout, sur des sujets pourtant sensibles (santé, finance, droit). Bio auteur générique. Une phrase type \"passionné de marketing digital\" sans année d'expérience, sans lien vérifiable, sans spécialité claire. Contenu 100% IA sans retouche. Des textes produits en masse, sans preuve d'expérience terrain, sans exemple vécu - ce qui saute aux yeux d'un évaluateur humain comme d'un modèle de langage. Chiffres non sourcés. Des statistiques citées sans lien vers l'étude d'origine, ou pire, recopiées d'un autre blog qui les avait déjà déformées. Mentions légales bâclées. Adresse absente, responsable de publication non identifié, politique de confidentialité datée de 2018. Aucun signal d'autorité externe. Pas de citation presse, pas de mention Wikidata, pas de backlink d'un site sectoriel reconnu - le site vit en vase clos. Confusion entre EEAT et backlinks. Beaucoup pensent qu'acheter des liens résout le problème. Or sans expérience et sans expertise démontrées sur le contenu lui-même, l'autorité ne \"prend\" pas. La méthodologie Triaina en 4 phases On ne fait pas un audit EEAT comme un audit SEO classique. Un audit technique regarde des métriques ; un audit EEAT regarde la crédibilité perçue - par un humain et par un modèle d'IA. Voici notre grille de scoring, la Triaina EEAT Score , appliquée en 4 phases. Phase 1 : Cadrage On définit le périmètre : quelles pages sont YMYL (Your Money Your Life, donc les plus scrutées), qui sont les auteurs actuels, quels sont les objectifs business (visibilité SEO classique, citations GEO dans les réponses IA, ou les deux). On cartographie aussi la concurrence directe sur ces critères. Phase 2 : Audit technique et éditorial Passage de chaque page au crible des 4 piliers avec la checklist ci-dessus, mais aussi avec une couche supplémentaire propre au GEO : on vérifie si le contenu contient des \"proxies d'authenticité\" - des signaux que les crawlers IA utilisent pour juger si une page mérite d'être citée dans une réponse générée. Concrètement : présence d'un auteur vérifié avec identité réelle, sources primaires citées explicitement, preuves d'expérience de première main (chiffres propres, cas clients, données originales). Chaque critère est noté sur 100, par pilier et par page. Phase 3 : Plan de remédiation On priorise les corrections par impact et effort : pages YMYL sans auteur en premier, sources manquantes ensuite, signaux d'autorité externe en troisième. Le plan inclut des templates de bio auteur, un guide de sourcing, et une liste de leviers d'autorité externe (relations presse, Wikidata, partenariats) à activer. Phase 4 : Suivi On remesure le score EEAT à 30, 60 et 90 jours, en croisant avec la visibilité GEO (taux de citation dans les réponses IA sur un panel de requêtes cibles) et les positions SEO classiques. L'objectif n'est pas un audit ponctuel mais un suivi dans la durée, parce que les signaux d'autorité et de confiance se construisent sur plusieurs mois, pas en une semaine. Étude de cas : d'un score EEAT faible à une visibilité GEO de 90% Un de nos clients, un acteur B2B du secteur industriel, nous a sollicités fin 2025 avec un problème simple : zéro citation dans les réponses generées par IA sur ses requêtes cœur de métier, malgré un bon volume de trafic SEO classique. Avant l'audit : Articles signés \"Rédaction\" sans auteur identifiable Aucune page bio, aucun lien vers un profil professionnel Statistiques sectorielles citées sans source Zéro mention presse ou citation externe récente Visibilité GEO mesurée : 0% de citations sur le panel de requêtes cibles Après application de la méthodologie en 4 phases (sur 3 mois) : Auteurs identifiés avec pages bio détaillées et liens LinkedIn vérifiés Sourcing systématique des données avec liens vers études officielles Publication d'un baromètre sectoriel propre au client (média propriétaire), repris par 2 titres de presse spécialisée Refonte des mentions légales et de la politique de confidentialité Résultats mesurés : la visibilité GEO du site est passée de 0% à 73% sur le premier lot de requêtes, puis à 90% après un second cycle de remédiation ciblant les pages produits restantes. Le trafic organique classique a progressé en parallèle de 34% sur la période, un effet secondaire logique : les mêmes signaux qui rassurent un modèle d'IA rassurent aussi Google en SERP traditionnel. FAQ Qu'est-ce que l'E-E-A-T exactement ? L'E-E-A-T désigne quatre critères - Experience, Expertise, Authoritativeness, Trustworthiness - que Google utilise pour évaluer la crédibilité d'un contenu et de son auteur. Ce n'est pas un score algorithmique direct, mais un cadre qui influence les systèmes de classement et, de plus en plus, la sélection de sources par les IA génératives. L'EEAT est-il un facteur de ranking officiel ? Non, Google l'a confirmé plusieurs fois : l'E-E-A-T n'est pas un signal de ranking direct mesurable dans l'algorithme. C'est un concept utilisé par les évaluateurs qualité humains pour noter des exemples de résultats, et qui inspire les mises à jour de l'algorithme (comme les Helpful Content Updates). Combien de temps prend un audit EEAT complet ? Pour un site de taille moyenne (50 à 200 pages), comptez 2 à 3 semaines pour les phases de cadrage et d'audit, puis 1 à 3 mois pour la remédiation selon le volume de contenu à corriger. Le suivi, lui, s'étale sur 3 à 6 mois pour observer un effet mesurable. Quelle différence entre EEAT SEO et GEO ? L'EEAT SEO vise la crédibilité perçue par Google pour le classement classique dans les résultats de recherche. Le GEO (Generative Engine Optimization) vise la citation dans les réponses générées par IA. Les deux s'appuient sur les mêmes fondamentaux - auteurs identifiés, sources primaires, preuves d'expérience - mais le GEO ajoute une couche de vérification supplémentaire propre aux crawlers IA. Faut-il un auteur nommé sur chaque page pour améliorer son EEAT ? Pas systématiquement pour du contenu générique, mais c'est indispensable pour les pages YMYL (santé, finance, droit, sécurité) où l'enjeu pour l'utilisateur est élevé. Sur ces pages, un auteur identifié avec des credentials vérifiables reste le signal le plus fort et le plus simple à mettre en place. Sources utiles Google Search Central - Creating helpful, reliable, people-first content Google Search Central - Blog officiel sur les Search Quality Rater Guidelines et l'E-E-A-T Search Quality Rater Guidelines - document complet (PDF) À propos de l'auteure Camille Rousseau Consultante Senior GEO/SEO chez Triaina Experte en stratégies d'acquisition hybrides. Camille accompagne les marques dans l'optimisation de leur visibilité sur les moteurs de recherche traditionnels (SEO) et les interfaces d'IA génératives (GSO). Voir son profil LinkedIn Audit offert Votre marque est-elle citée par les IA&nbsp;? Trente minutes pour mesurer où vous en êtes — positions Google, citations dans ChatGPT, Gemini et Perplexity — et repartir avec trois actions concrètes. Recevoir mon audit gratuit Sans engagement · réponse sous 24&nbsp;h ouvrées Partager cet article Sommaire Les 4 piliers de l'E-E-A-T expliqués concrètement Checklist self-audit E-E-A-T : 52 critères à vérifier Les erreurs les plus fréquentes qu'on constate en audit La méthodologie Triaina en 4 phases Étude de cas : d'un score EEAT faible à une visibilité GEO de 90% FAQ Sources utiles TRIAINA SEO - GEO - Média Agence spécialisée en architecture SEO, domination GEO et autorité Média. LinkedIn Agence ACCUEIL TRIAINA RÉFÉRENCES BLOG ANNUAIRE FAQ CONTACT Expertises Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Localisation Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris Infos 50 Quai Louis Blériot 75016 Paris France © 2026 Triaina Global Systems. Mentions Légales Sitemap"
+}

@@ -1,0 +1,201 @@
+{
+  "title": "Agence SEO & GEO Paris | Experts Référencement & IA | Triaina",
+  "description": "Agence SEO & GEO à Paris spécialisée en référencement naturel et optimisation pour les IA (Generative Search Optimization). Audit et Stratégie.",
+  "keywords": "agence seo, agence gso, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative search optimization",
+  "robots": null,
+  "canonical": "https://www.triaina.fr/",
+  "og": {
+    "og:type": "website",
+    "og:url": "https://www.triaina.fr/",
+    "og:title": "Agence SEO & GEO Paris | Experts Référencement & IA | Triaina",
+    "og:description": "Agence SEO & GEO spécialisée en référencement naturel et optimisation pour les IA à Paris.",
+    "og:image": "https://www.triaina.fr/og-image.jpg",
+    "og:locale": "fr_FR",
+    "og:site_name": "Triaina"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Agence SEO & GEO Paris | Experts Référencement & IA | Triaina",
+    "twitter:description": "Agence SEO & GEO spécialisée en référencement naturel et optimisation IA.",
+    "twitter:image": "https://www.triaina.fr/twitter-image.jpg"
+  },
+  "geo": {
+    "geo.region": "FR-75",
+    "geo.placename": "Paris",
+    "geo.position": "48.8464;2.2758"
+  },
+  "titres": [
+    {
+      "niveau": 1,
+      "texte": "Sortez de l'ombre."
+    },
+    {
+      "niveau": 2,
+      "texte": "Un éclat. Trois faisceaux."
+    },
+    {
+      "niveau": 3,
+      "texte": "SEO — la fondation"
+    },
+    {
+      "niveau": 3,
+      "texte": "GEO — la citation"
+    },
+    {
+      "niveau": 3,
+      "texte": "Média — la preuve"
+    },
+    {
+      "niveau": 2,
+      "texte": "Elles sont sorties de l'ombre."
+    },
+    {
+      "niveau": 2,
+      "texte": "Passez dans la lumière."
+    },
+    {
+      "niveau": 3,
+      "texte": "Recevez votre audit de visibilité offert"
+    },
+    {
+      "niveau": 4,
+      "texte": "Agence"
+    },
+    {
+      "niveau": 4,
+      "texte": "Expertises"
+    },
+    {
+      "niveau": 4,
+      "texte": "Localisation"
+    },
+    {
+      "niveau": 4,
+      "texte": "Infos"
+    }
+  ],
+  "h1": [
+    "Sortez de l'ombre."
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@id": "https://www.triaina.fr/#organization",
+          "@type": [
+            "LocalBusiness",
+            "Organization"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "postalCode": "75016",
+            "streetAddress": "50 quai Louis Bleriot"
+          },
+          "alternateName": [
+            "Triaina",
+            "Triaina Agency",
+            "Agence GSO Paris",
+            "Agence Référencement IA",
+            "Agence GEO Paris"
+          ],
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "description": "Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.8464,
+            "longitude": 2.2758
+          },
+          "hasMap": "https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris",
+          "image": "https://www.triaina.fr/logo.svg",
+          "knowsAbout": [
+            "SEO",
+            "GSO",
+            "Generative Search Optimization",
+            "Référencement IA",
+            "Stratégie Média",
+            "Agence SEO Paris",
+            "Search Engine Optimization (SEO)",
+            "Large Language Models (LLM)",
+            "Agence GSO",
+            "Google SGE Optimization",
+            "Knowledge Graph Construction",
+            "Entity SEO",
+            "Optimisation ChatGPT",
+            "Digital PR",
+            "GEO",
+            "Generative Engine Optimization"
+          ],
+          "logo": "https://www.triaina.fr/logo.svg",
+          "name": "Triaina - Agence SEO & GEO Paris",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "closes": "19:00",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00"
+          },
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.linkedin.com/company/triaina",
+            "https://www.instagram.com/triaina_agency"
+          ],
+          "url": "https://www.triaina.fr"
+        },
+        {
+          "@id": "https://www.triaina.fr/#website",
+          "@type": "WebSite",
+          "description": "Domination IA et Visibilité Totale",
+          "inLanguage": "fr-FR",
+          "name": "Triaina | Agence SEO & GEO Paris",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "query-input": "required name=search_term_string",
+            "target": "https://www.triaina.fr/recherche?q={search_term_string}"
+          },
+          "publisher": {
+            "@id": "https://www.triaina.fr/#organization"
+          },
+          "url": "https://www.triaina.fr/"
+        }
+      ]
+    }
+  ],
+  "typesSchema": [
+    null
+  ],
+  "liensInternes": [
+    "/",
+    "/agence",
+    "/agence-geo-paris",
+    "/agence-referencement-ia",
+    "/agence-referencement-ia-paris",
+    "/agence-seo-paris",
+    "/annuaire",
+    "/blog",
+    "/contact",
+    "/expertise-ai-overview",
+    "/expertise-automatisation-contenu",
+    "/expertise-geo",
+    "/expertise-gsa",
+    "/expertise-media",
+    "/expertise-sea",
+    "/expertise-seo",
+    "/faq",
+    "/mentions-legales",
+    "/references",
+    "/sitemap.xml"
+  ],
+  "nbMots": 815,
+  "texteIntegral": "TRIAINA SEO — GEO — Média Accueil Notre Histoire Expertise Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Références Blog Annuaire FAQ Contact Accueil Notre Histoire Expertise Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Références Blog Annuaire FAQ Audit gratuit Audit gratuit Paris · Agence SEO &amp; GEO Sortez de l'ombre. Vos clients posent déjà leurs questions — à Google, à ChatGPT, à Gemini, à Perplexity. Triaina met votre marque en pleine lumière : le SEO pour l'index, le GEO pour devenir la source que les IA citent. Recevoir mon audit gratuit Voir la méthode ↓ Des références de l'hôtellerie à l'éducation · réponse &lt;&nbsp;24&nbsp;h · 30&nbsp;min, sans engagement La lumière charge — l'ombre perd. Éclairez, puis cliquez. Défiler La méthode Un éclat. Trois faisceaux. Le search n'est plus une liste de liens : c'est une réponse. Notre méthode éclaire les trois surfaces où elle se joue — l'index de Google, les réponses des IA, et les sources qui leur servent de preuve. 01 SEO — la fondation Vingt-trois ans de référencement naturel : audit technique, optimisation des entités, netlinking éditorial. Nous rendons votre site limpide pour Google — et donc pour tout ce qui s'en nourrit. 02 GEO — la citation La visibilité IA se gagne à la source : contenu structuré en réponses directes, entité de marque renforcée, audit GSO. Objectif : être la réponse que ChatGPT, Gemini et Perplexity choisissent de citer. 03 Média — la preuve Nos médias propriétaires, Yonder et Les Hardis, fabriquent l'autorité que les algorithmes comme les lecteurs reconnaissent : relations presse, brand content, signaux E-E-A-T. L'agence en chiffres 23 ans d'expertise SEO — racines en 2000 60 + guides SEO &amp; GEO publiés — voyage, vin, hospitality 4-8 semaines avant les premières citations IA — mesurées dès le premier mois 2014 naissance du groupe média propriétaire — Yonder puis Les Hardis Ils nous font confiance Elles sont sorties de l'ombre. Hôtellerie, voyage, grands crus, médias, tech, éducation — quelques-unes des marques qui nous confient leur visibilité, sur Google comme dans les réponses des IA. Bernard Magrez Skilink Younight Hospitality Bomporto Hotels Les Hardis YourSunlife Lazuli Nile Cruises Talis Education Group Tamtam AI Lazuli Travel Bureau Contact Passez dans la lumière. Trente minutes pour mesurer où vous en êtes — positions Google, citations dans ChatGPT, Gemini et Perplexity — et repartir avec trois actions concrètes. Recevez votre audit de visibilité offert URL de votre site — https://votre-site.fr Email professionnel — prenom@entreprise.fr Recevoir mon audit gratuit Pas de spam · réponse sous 24&nbsp;h ouvrées · sans engagement Offert, sans engagement — vous repartez avec trois actions concrètes, et vous restez libre de la suite. contact@triaina.fr · 50 quai Louis Blériot, 75016 Paris FAQ Qu'est-ce que le GEO (Generative Engine Optimization) ? Le GEO, ou Generative Engine Optimization, est l'optimisation de la visibilité d'une marque dans les réponses des IA génératives : ChatGPT, Gemini, Perplexity, Google AI Overviews. Là où le SEO vise les liens bleus de Google, le GEO vise la citation — faire de votre site la source que le moteur reprend dans sa réponse. C'est le cœur de métier d'une agence GEO comme Triaina, en complément du SEO qui en reste le socle. Comment être cité par ChatGPT ? Être cité par ChatGPT repose sur quatre leviers : une autorité SEO solide (les IA s'appuient sur les mêmes sources que Google), un contenu structuré en réponses directes, des signaux E-E-A-T forts, et des citations dans des sources tierces que les LLM consultent. Triaina accélère ce dernier levier grâce à son groupe média propriétaire — Yonder et Les Hardis — déjà lu et repris par les IA. Combien coûte un accompagnement SEO &amp; GEO ? Un audit SEO + GEO complet coûte entre 1 500&nbsp;€ et 3 000&nbsp;€ ; l'accompagnement mensuel démarre à partir de 500&nbsp;€/mois, sur devis selon la taille du site, le secteur et les objectifs. Avant tout engagement, Triaina offre un audit de 30&nbsp;minutes pour cadrer le budget. En combien de temps voit-on des résultats ? En SEO, les premiers signaux apparaissent entre 2 et 4&nbsp;mois, et le top&nbsp;3 sur des requêtes concurrentielles se consolide en 6 à 12&nbsp;mois. En GEO, les premières citations IA peuvent apparaître sous 4 à 8&nbsp;semaines si le contenu et l'autorité suivent. Triaina mesure les citations IA dès le premier mois et ajuste la stratégie en continu. TRIAINA SEO — GEO — Média Agence spécialisée en architecture SEO, domination GEO et autorité Média. LinkedIn Agence ACCUEIL NOTRE HISTOIRE RÉFÉRENCES BLOG ANNUAIRE FAQ CONTACT Expertises Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Localisation Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris Infos 50 Quai Louis Blériot 75016 Paris France © 2026 Triaina Global Systems. Mentions Légales Sitemap"
+}

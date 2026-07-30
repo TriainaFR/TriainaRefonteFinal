@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <!-- Trident central (Bleu Triaina) -->
+  <rect x="18" y="5" width="4" height="25" rx="1" fill="#2563eb"/>
+  
+  <!-- Pilier gauche (Slate 900) -->
+  <rect x="10" y="12" width="3" height="15" rx="1" fill="#0f172a"/>
+  
+  <!-- Pilier droit (Slate 900) -->
+  <rect x="27" y="12" width="3" height="15" rx="1" fill="#0f172a"/>
+</svg>

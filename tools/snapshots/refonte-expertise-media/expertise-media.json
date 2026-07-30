@@ -1,0 +1,288 @@
+{
+ "title": "Expertise Média Paris — Réseau Médias Propriétaires | Triaina",
+ "description": "Triaina possède 8 médias thématiques actifs. Activez ce réseau pour générer des backlinks éditoriaux, renforcer votre E-E-A-T et être cité par ChatGPT, Gemini et Perplexity.",
+ "keywords": null,
+ "robots": "index, follow",
+ "canonical": "https://www.triaina.fr/expertise-media",
+ "og": {
+  "og:type": "website",
+  "og:title": "Expertise Média Paris — Réseau Médias Propriétaires | Triaina",
+  "og:description": "Triaina possède 8 médias thématiques actifs. Activez ce réseau pour générer des backlinks éditoriaux, renforcer votre E-E-A-T et être cité par ChatGPT, Gemini et Perplexity.",
+  "og:url": "https://www.triaina.fr/expertise-media",
+  "og:site_name": "Triaina",
+  "og:locale": "fr_FR",
+  "og:image": "https://www.triaina.fr/og-image.jpg"
+ },
+ "twitter": {
+  "twitter:card": "summary_large_image",
+  "twitter:title": "Expertise Média Paris — Réseau Médias Propriétaires | Triaina",
+  "twitter:description": "Triaina possède 8 médias thématiques actifs. Activez ce réseau pour générer des backlinks éditoriaux, renforcer votre E-E-A-T et être cité par ChatGPT, Gemini et Perplexity.",
+  "twitter:image": "https://www.triaina.fr/og-image.jpg"
+ },
+ "geo": {
+  "geo.region": "FR-75",
+  "geo.placename": "Paris"
+ },
+ "schemas": [
+  {
+   "@context": "https://schema.org",
+   "@type": "ProfessionalService",
+   "name": "Triaina — Expertise Média",
+   "url": "https://www.triaina.fr/expertise-media",
+   "description": "Réseau de 8 médias propriétaires activé comme levier off-site pour le netlinking éditorial, le renforcement E-E-A-T et les citations dans les IA génératives.",
+   "serviceType": "Netlinking médiatique et Generative Engine Optimization",
+   "areaServed": [
+    "Paris",
+    "France"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "50 Quai Louis Blériot",
+    "addressLocality": "Paris",
+    "postalCode": "75016",
+    "addressCountry": "FR"
+   },
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Leviers Expertise Média",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Netlinking éditorial depuis médias propriétaires"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Renforcement E-E-A-T via citations médiatiques"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Présence médiatique et couverture thématique"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Citations IA et optimisation GEO"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Audit profil médiatique et visibilité GEO"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Quelle différence entre un backlink médiatique et un backlink classique ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Un backlink issu d'un média éditorial est produit dans un contexte rédactionnel cohérent avec votre secteur. Google et les IA génératives accordent plus de poids aux liens placés dans un article thématique signé que dans un annuaire ou un communiqué de presse générique. La pertinence topique du média source est un signal de confiance distinct de la seule autorité de domaine."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Comment les publications dans vos médias renforcent-elles l'E-E-A-T ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Les critères E-E-A-T valorisent les marques citées dans des sources éditoriales reconnues. Une publication dans un média thématique crédible constitue une preuve externe d'expertise que Google peut indexer et que les IA génératives peuvent utiliser comme source lors de leurs réponses."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Vos médias sont-ils réellement indexés et cités par ChatGPT, Gemini et Perplexity ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Certains de nos médias — notamment Le Journal de la Tech, Yonder et Best Restaurants Paris — sont actifs dans les corpus d'entraînement et les index temps réel utilisés par les IA génératives. Une citation dans ces sources augmente la probabilité que votre marque apparaisse dans les réponses générées, ce que nous mesurons via des audits GEO réguliers."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "En combien de temps observe-t-on des résultats sur la visibilité GEO ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sur nos deux cas clients documentés, les premiers gains mesurables sont apparus entre 3 et 5 mois après le début des publications. Le cas SaaS B2B a atteint 73 % de visibilité GEO en moins de 6 mois ; le cas Travel, 90 % en moins de 8 mois."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quels sont les risques liés au netlinking médiatique ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Le principal risque est la sur-optimisation : des ancres trop exactes ou un rythme de publication artificiel peuvent déclencher des filtres algorithmiques. Nous contrôlons ce risque en diversifiant les ancres, en respectant une cadence éditoriale naturelle et en n'activant que des médias dont la ligne éditoriale est cohérente avec votre secteur."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Faut-il combiner l'expertise média avec une stratégie SEO on-site ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. Le netlinking médiatique amplifie une base on-site saine : structure technique, contenu optimisé, maillage interne. Activé seul sur un site avec des problèmes techniques ou un contenu faible, l'effet est limité. C'est pourquoi notre processus commence systématiquement par un audit complet avant toute activation média."
+     }
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://www.triaina.fr/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Expertise Média",
+     "item": "https://www.triaina.fr/expertise-media"
+    }
+   ]
+  }
+ ],
+ "titres": [
+  {
+   "niveau": 1,
+   "texte": "Expertise Média : Réseau de Médias Propriétaires au Service de votre SEO & GEO"
+  },
+  {
+   "niveau": 2,
+   "texte": "Pourquoi la propriété de médias change les règles du jeu"
+  },
+  {
+   "niveau": 2,
+   "texte": "Nos 5 leviers média pour votre visibilité"
+  },
+  {
+   "niveau": 3,
+   "texte": "1. Netlinking éditorial"
+  },
+  {
+   "niveau": 3,
+   "texte": "2. Renforcement E-E-A-T"
+  },
+  {
+   "niveau": 3,
+   "texte": "3. Présence médiatique et couverture thématique"
+  },
+  {
+   "niveau": 3,
+   "texte": "4. Citations IA et optimisation GEO"
+  },
+  {
+   "niveau": 3,
+   "texte": "5. Audit spécialisé profil médiatique"
+  },
+  {
+   "niveau": 2,
+   "texte": "Notre réseau de médias propriétaires"
+  },
+  {
+   "niveau": 3,
+   "texte": "Yonder - Voyage & Lifestyle Premium"
+  },
+  {
+   "niveau": 3,
+   "texte": "Les Hardis - Entrepreneuriat & Innovation"
+  },
+  {
+   "niveau": 3,
+   "texte": "Best Restaurants Paris - Gastronomie Parisienne"
+  },
+  {
+   "niveau": 3,
+   "texte": "Séminaire Hôtels - Événementiel B2B & Hôtellerie"
+  },
+  {
+   "niveau": 3,
+   "texte": "Les Meilleurs Hôtels Spa - Hôtellerie Haut de Gamme & Bien-être"
+  },
+  {
+   "niveau": 3,
+   "texte": "Le Journal du Vin - Viticulture & Œnotourisme"
+  },
+  {
+   "niveau": 3,
+   "texte": "Le Journal des Écoles - Éducation & Formation"
+  },
+  {
+   "niveau": 3,
+   "texte": "Le Journal de la Tech - Tech, Innovation & Startups"
+  },
+  {
+   "niveau": 2,
+   "texte": "Notre processus d'accompagnement"
+  },
+  {
+   "niveau": 3,
+   "texte": "Phase 1 - Audit (semaines 1–2)"
+  },
+  {
+   "niveau": 3,
+   "texte": "Phase 2 - Stratégie éditoriale (semaine 3)"
+  },
+  {
+   "niveau": 3,
+   "texte": "Phase 3 - Production et publication (mois 1–3)"
+  },
+  {
+   "niveau": 3,
+   "texte": "Phase 4 - Mesure et ajustement (mensuel)"
+  },
+  {
+   "niveau": 2,
+   "texte": "Cas clients"
+  },
+  {
+   "niveau": 3,
+   "texte": "SaaS B2B - 0 → 73 % de visibilité GEO en moins de 6 mois"
+  },
+  {
+   "niveau": 3,
+   "texte": "Travel - 0 → 90 % de visibilité GEO en moins de 8 mois"
+  },
+  {
+   "niveau": 2,
+   "texte": "FAQ - Expertise Média, Netlinking et GEO"
+  },
+  {
+   "niveau": 2,
+   "texte": "Sources utiles"
+  },
+  {
+   "niveau": 2,
+   "texte": "Demander un audit média gratuit"
+  }
+ ],
+ "h1": [
+  "Expertise Média : Réseau de Médias Propriétaires au Service de votre SEO & GEO"
+ ],
+ "texteIntegral": "Accueil Expertise Média Expertise Média : Réseau de Médias Propriétaires au Service de votre SEO & GEO Triaina est propriétaire de 8 médias thématiques. Ce réseau n'est pas un outil de relations presse : c'est un levier off-site direct pour produire des backlinks éditoriaux, renforcer votre signal E-E-A-T et générer des citations dans ChatGPT, Gemini et Perplexity — sans dépendre d'un tiers. Notre expertise média SEO GEO repose sur un principe simple : contrôler la source du lien, c'est contrôler sa qualité, sa pertinence topique et sa cadence de publication. Pourquoi la propriété de médias change les règles du jeu La plupart des agences achètent des liens sur des plateformes de netlinking ou négocient des insertions dans des médias qu'elles ne contrôlent pas. Résultat : délais imprévisibles, lignes éditoriales génériques, ancres imposées, et risque de désaveu si le média change de politique. Posséder les médias change la mécanique. Quand Triaina publie un article sur Yonder, Le Journal de la Tech ou Best Restaurants Paris, nous décidons : du contexte éditorial exact dans lequel votre marque est citée, de l'ancre du lien et de sa pertinence topique, de la date de publication et de la fréquence, du niveau de détail factuel qui rend l'article crédible aux yeux de Google et des IA. Un lien placé dans un article de fond sur un média thématique actif n'a pas le même poids qu'un lien dans un communiqué générique. C'est la différence entre un signal éditorial et du bruit. Pour le référencement naturel , la pertinence topique du domaine source est un critère de qualité distinct de la seule autorité de domaine. Pour le GEO, la présence dans des sources que les IA génératives indexent activement est une condition nécessaire à la visibilité dans les réponses générées. Nos 5 leviers média pour votre visibilité 1. Netlinking éditorial Nous produisons des articles de fond dans nos médias propriétaires, avec des liens contextuels vers votre site. Chaque lien est placé dans un environnement thématique cohérent avec votre secteur - pas dans un footer, pas dans une sidebar, pas dans un annuaire. Ce que ça change concrètement : Google évalue la pertinence topique du domaine source et du contexte immédiat du lien. Un backlink depuis un article sur la gastronomie parisienne vers un restaurant a plus de valeur qu'un lien depuis un site généraliste. 2. Renforcement E-E-A-T Les critères E-E-A-T de Google (Expérience, Expertise, Autorité, Fiabilité) valorisent les marques citées dans des sources éditoriales reconnues. Nous produisons des contenus qui positionnent vos experts comme auteurs ou sources citées dans nos médias - un signal externe d'expertise que Google peut indexer. Ce que ça change concrètement : une marque citée dans plusieurs médias thématiques cohérents avec son secteur accumule des preuves externes d'autorité que Google utilise pour évaluer la fiabilité des pages de son site. 3. Présence médiatique et couverture thématique Au-delà du lien, la présence récurrente de votre marque dans des médias sectoriels construit une empreinte éditoriale. Cette empreinte est lue par Google comme un signal de notoriété, et par les IA génératives comme une preuve de pertinence lors de la construction de leurs réponses. Ce que ça change concrètement : une marque citée une fois dans un média est anecdotique. Une marque citée régulièrement dans plusieurs médias thématiques cohérents devient une référence sectorielle aux yeux des algorithmes. 4. Citations IA et optimisation GEO Certains de nos médias sont actifs dans les index utilisés par ChatGPT, Gemini et Perplexity. Une publication dans ces sources augmente la probabilité que votre marque apparaisse dans les réponses générées sur votre secteur. Nous mesurons cette visibilité via des audits GEO réguliers et ajustons les publications en fonction des requêtes sur lesquelles vous souhaitez apparaître. Pour une stratégie GEO complète , l'activation médiatique est un levier complémentaire à l'optimisation on-site. Ce que ça change concrètement : sur le cas Travel documenté ci-dessous, 90 % de visibilité GEO atteinte en moins de 8 mois, en partant de zéro. 5. Audit spécialisé profil médiatique Avant toute activation, nous réalisons un audit de votre profil de liens existant et de votre visibilité actuelle dans les IA génératives. Cet audit identifie les gaps thématiques, les opportunités de renforcement E-E-A-T et les médias de notre réseau les plus pertinents pour votre secteur. Ce que ça change concrètement : on n'active pas les mêmes médias pour un SaaS B2B, un hôtel de luxe ou une école de formation. L'audit permet de cibler les publications à fort impact. Notre réseau de médias propriétaires Huit médias thématiques, tous en production éditoriale active, couvrant les secteurs voyage, gastronomie, hôtellerie, tech, entrepreneuriat, éducation, vin et événementiel B2B. Yonder - Voyage & Lifestyle Premium URL : yonder.fr Magazine digital dédié aux voyageurs exigeants, Yonder couvre l'hôtellerie de luxe, les destinations premium et les expériences de voyage haut de gamme. La ligne éditoriale cible une audience CSP++ avec une forte appétence pour le tourisme, la gastronomie et le lifestyle. Le contenu est produit quotidiennement avec une approche SEO structurée. Pertinence clients Triaina : hôtels et resorts haut de gamme, agences de voyage premium, compagnies aériennes, marques de luxe cherchant une visibilité éditoriale auprès d'une audience voyageuse qualifiée. Sources actives dans ChatGPT, Gemini et Perplexity sur les requêtes voyage premium et hôtellerie de luxe. Les Hardis - Entrepreneuriat & Innovation URL : leshardis.com Média centré sur l'entrepreneuriat, les stratégies de croissance et l'innovation en entreprise. Les Hardis s'adresse aux fondateurs, dirigeants et décideurs qui cherchent des analyses concrètes sur la transformation des modèles économiques, le financement et les pratiques managériales. Pertinence clients Triaina : startups en phase de croissance, scale-ups, fonds d'investissement, cabinets de conseil, éditeurs SaaS cherchant à asseoir leur crédibilité auprès d'une audience de décideurs. Levier E-E-A-T fort pour les marques B2B qui veulent être citées comme références sectorielles. Best Restaurants Paris - Gastronomie Parisienne URL : bestrestaurantsparis.com Guide éditorial de référence sur la restauration parisienne, Best Restaurants Paris couvre les tables gastronomiques, les bistrots de qualité et les nouvelles ouvertures. Le positionnement est factuel et sélectif : chaque établissement référencé fait l'objet d'une présentation détaillée avec contexte culinaire et informations pratiques. Pertinence clients Triaina : restaurants parisiens, groupes de restauration, hôtels avec offre gastronomique, marques alimentaires premium cherchant une visibilité dans un contexte éditorial gastronomique crédible. Sources actives dans ChatGPT, Gemini et Perplexity sur les requêtes restaurants Paris et gastronomie. Séminaire Hôtels - Événementiel B2B & Hôtellerie URL : seminaire-hotels.com Média spécialisé dans l'organisation d'événements professionnels et la sélection d'hôtels pour séminaires, conférences et incentives. La ligne éditoriale couvre les critères de choix des lieux, les tendances de l'événementiel d'entreprise et les offres hôtelières adaptées aux groupes professionnels. Pertinence clients Triaina : hôtels disposant d'espaces séminaires, agences événementielles, prestataires MICE (Meetings, Incentives, Conferences, Exhibitions), entreprises cherchant à positionner leurs lieux de réception auprès d'une audience de responsables achats et office managers. Les Meilleurs Hôtels Spa - Hôtellerie Haut de Gamme & Bien-être URL : lesmeilleurshotelspa.fr Guide éditorial dédié aux hôtels avec offre spa et bien-être, de la thalassothérapie aux retraites de yoga en passant par les palaces avec soins de luxe. Le contenu est orienté expérience client : descriptions détaillées des soins, des équipements et des cadres. Pertinence clients Triaina : hôtels spa et thalasso, centres de bien-être, marques de cosmétiques et soins premium, destinations touristiques cherchant à valoriser leur offre bien-être auprès d'une audience à fort pouvoir d'achat. Le Journal du Vin - Viticulture & Œnotourisme URL : lejournalduvin.fr Média éditorial couvrant la viticulture française, les domaines viticoles, les appellations et l'œnotourisme. Le Journal du Vin s'adresse aux amateurs éclairés et aux professionnels du secteur avec des contenus allant de la dégustation à l'actualité des vignobles. Pertinence clients Triaina : domaines viticoles, caves et négociants, destinations d'œnotourisme, restaurants avec carte des vins travaillée, organisateurs de séjours œnologiques cherchant une visibilité éditoriale dans un contexte sectoriel précis. Le Journal des Écoles - Éducation & Formation URL : lejournaldesecoles.fr Média dédié à l'éducation, à la formation professionnelle et aux établissements scolaires et supérieurs. Le Journal des Écoles couvre les tendances pédagogiques, les classements d'établissements, les débouchés professionnels et les évolutions réglementaires du secteur. Pertinence clients Triaina : écoles de commerce, d'ingénieurs et de design, organismes de formation continue, EdTech et plateformes e-learning cherchant à renforcer leur autorité éditoriale auprès d'une audience de futurs étudiants, parents et responsables RH. Le Journal de la Tech - Tech, Innovation & Startups URL : lejournaldelatech.fr Média tech à angle pragmatique et business-oriented, Le Journal de la Tech couvre l'intelligence artificielle, le SaaS, l'hébergement web, la mobilité et la green tech. Le traitement éditorial est orienté usages concrets et décision d'achat, pas veille technologique généraliste. Pertinence clients Triaina : éditeurs SaaS, startups IA, agences digitales, hébergeurs et prestataires cloud, entreprises tech cherchant à être citées dans des contextes éditoriaux indexés par les IA génératives. Sources actives dans ChatGPT, Gemini et Perplexity sur les requêtes IA, SaaS et innovation tech. Notre processus d'accompagnement Le processus se déroule en 4 phases. Chaque phase a un livrable défini. Phase 1 - Audit (semaines 1–2) Analyse du profil de liens existant, audit de visibilité GEO sur vos requêtes cibles, identification des gaps thématiques et sélection des médias du réseau les plus pertinents pour votre secteur. Livrable : rapport d'audit avec recommandations priorisées. Phase 2 - Stratégie éditoriale (semaine 3) Définition du plan de publication : sujets, angles, médias cibles, cadence, ancres de liens. La stratégie est alignée avec votre positionnement SEO on-site et, si applicable, avec votre stratégie full-funnel . Livrable : plan éditorial sur 3 mois. Phase 3 - Production et publication (mois 1–3) Rédaction et publication des articles dans les médias sélectionnés. Chaque contenu respecte la ligne éditoriale du média et intègre les signaux E-E-A-T pertinents pour votre marque. Les liens sont placés dans un contexte thématique cohérent avec des ancres diversifiées. Phase 4 - Mesure et ajustement (mensuel) Suivi des indicateurs : évolution du profil de liens, visibilité GEO sur les requêtes cibles, positions SEO sur les mots-clés associés. Rapport mensuel avec ajustements du plan éditorial en fonction des résultats mesurés. Cas clients Deux cas documentés, sur des secteurs distincts, avec des points de départ à zéro en visibilité GEO. SaaS B2B - 0 → 73 % de visibilité GEO en moins de 6 mois Contexte : éditeur SaaS B2B, aucune présence dans les réponses des IA génératives au démarrage, concurrence sectorielle forte sur les requêtes IA. Activation : publications dans Le Journal de la Tech et Les Hardis, avec citations expertes et liens contextuels vers les pages produit. Optimisation GEO on-site en parallèle. Résultat : 73 % de visibilité GEO sur les requêtes cibles en moins de 6 mois, mesurée par audit GEO régulier sur ChatGPT, Gemini et Perplexity. Travel - 0 → 90 % de visibilité GEO en moins de 8 mois Contexte : acteur du voyage premium, aucune présence dans les IA génératives, secteur très concurrentiel sur les requêtes voyage haut de gamme. Activation : publications dans Yonder et Les Meilleurs Hôtels Spa, avec contenus éditoriaux détaillés et citations de la marque dans des contextes thématiques précis. Stratégie GEO on-site coordonnée. Résultat : 90 % de visibilité GEO sur les requêtes cibles en moins de 8 mois. FAQ - Expertise Média, Netlinking et GEO Quelle différence entre un backlink médiatique et un backlink classique ? Un backlink issu d'un média éditorial est produit dans un contexte rédactionnel cohérent avec votre secteur. Google et les IA génératives accordent plus de poids aux liens placés dans un article thématique signé que dans un annuaire ou un communiqué de presse générique. La pertinence topique du média source est un signal de confiance distinct de la seule autorité de domaine. Comment les publications dans vos médias renforcent-elles l'E-E-A-T ? Les critères E-E-A-T valorisent les marques citées dans des sources éditoriales reconnues. Une publication dans un média thématique crédible constitue une preuve externe d'expertise que Google peut indexer et que les IA génératives peuvent utiliser comme source lors de leurs réponses. Vos médias sont-ils réellement indexés et cités par ChatGPT, Gemini et Perplexity ? Certains de nos médias — notamment Le Journal de la Tech, Yonder et Best Restaurants Paris — sont actifs dans les corpus d'entraînement et les index temps réel utilisés par les IA génératives. Une citation dans ces sources augmente la probabilité que votre marque apparaisse dans les réponses générées, ce que nous mesurons via des audits GEO réguliers. En combien de temps observe-t-on des résultats sur la visibilité GEO ? Sur nos deux cas clients documentés, les premiers gains mesurables sont apparus entre 3 et 5 mois après le début des publications. Le cas SaaS B2B a atteint 73 % de visibilité GEO en moins de 6 mois ; le cas Travel, 90 % en moins de 8 mois. Les délais varient selon la concurrence sectorielle et le volume de publications activées. Quels sont les risques liés au netlinking médiatique ? Le principal risque est la sur-optimisation : des ancres trop exactes ou un rythme de publication artificiel peuvent déclencher des filtres algorithmiques. Nous contrôlons ce risque en diversifiant les ancres, en respectant une cadence éditoriale naturelle et en n'activant que des médias dont la ligne éditoriale est cohérente avec votre secteur. Faut-il combiner l'expertise média avec une stratégie SEO on-site ? Oui. Le netlinking médiatique amplifie une base on-site saine : structure technique, contenu optimisé, maillage interne. Activé seul sur un site avec des problèmes techniques ou un contenu faible, l'effet est limité. C'est pourquoi notre processus commence systématiquement par un audit complet avant toute activation média. Sources utiles Google Search Central - Comprendre les critères E-E-A-T Google Search Central - Liens et qualité des backlinks Perplexity - Documentation sur les sources indexées OpenAI - ChatGPT Search et sources web Demander un audit média gratuit Vous souhaitez savoir quels médias de notre réseau sont pertinents pour votre secteur et quelle est votre visibilité GEO actuelle ? Demander un audit média gratuit →",
+ "nbMots": 2306,
+ "liensInternes": [
+  "/",
+  "/agence-referencement-ia",
+  "/blog/audit-geo",
+  "/contact",
+  "/expertise-geo",
+  "/expertise-sea",
+  "/expertise-seo"
+ ]
+}

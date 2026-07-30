@@ -1,0 +1,435 @@
+{
+ "page": "agence-seo-paris",
+ "blocs": [
+  {
+   "t": "p",
+   "html": "Paris & Île-de-France",
+   "groupe": "s0"
+  },
+  {
+   "t": "h1",
+   "html": "Agence SEO à Paris : <br><span>Référencement Naturel, GSO et Stratégie de Visibilité</span>",
+   "groupe": "s0"
+  },
+  {
+   "t": "h2",
+   "html": "Pourquoi choisir une agence SEO à Paris ?",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Bienvenue chez <strong>Triaina</strong>, votre <strong>agence SEO à Paris</strong> spécialisée en référencement naturel et Generative Search Optimization. Depuis plus de 5 ans, nous aidons les entreprises parisiennes à dominer les résultats de recherche Google et les moteurs de recherche IA.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Le référencement naturel (SEO) est l'investissement le plus rentable pour votre visibilité en ligne. Contrairement aux campagnes publicitaires payantes, le SEO génère du trafic qualifié 24h/24, 7j/7, sans coût par clic. Une bonne stratégie SEO peut multiplier votre trafic organique par 2 à 3 en 6 mois.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Chez Triaina, nous combinons le <strong>SEO traditionnel</strong> avec le <strong>GSO (Generative Search Optimization)</strong> pour vous assurer une visibilité maximale sur tous les canaux de recherche : Google Search, ChatGPT, Perplexity, Claude et Google AI Overview.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Nous travaillons avec des entreprises de tous les secteurs : e-commerce, services, B2B, santé, immobilier, etc. Notre approche est personnalisée, basée sur les données, et orientée vers les résultats mesurables, en phase avec les <a href=\"https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">recommandations officielles de Google Search Central</a>.",
+   "groupe": "s1"
+  },
+  {
+   "t": "h2",
+   "html": "Services SEO : Dominez Google Search",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Audit SEO complet",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Nous commençons par un audit SEO détaillé de votre site. Cet audit analyse la crawlabilité, l'indexation, les mots-clés, les backlinks, la technique, le contenu et la concurrence. <strong>Résultat</strong> : Un rapport détaillé avec 20-30 recommandations prioritaires.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Optimisation on-page",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "L'optimisation on-page consiste à améliorer chaque page de votre site pour les moteurs de recherche : titres, meta descriptions, structure H1/H2/H3, contenu long-form, images optimisées, liens internes, données structurées et E-E-A-T.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Création de contenu SEO",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Le contenu est roi en SEO. Nous créons du contenu optimisé pour les mots-clés que vous visez : articles de blog (2 000+ mots), guides complets, cas clients, FAQ optimisées pour les featured snippets, et contenu vidéo avec transcriptions.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Netlinking & construction de backlinks",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Les backlinks sont essentiels pour ranker. Nous construisons votre profil de liens de qualité via des backlinks éditoriaux, annuaires de qualité, partenariats, communiqués de presse et guest posting.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Suivi et reporting",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Nous trackons vos performances SEO mensuellement : positions sur vos mots-clés cibles, augmentation du trafic organique, conversions générées, et rapports détaillés avec recommandations.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h2",
+   "html": "Services GSO : Dominez les moteurs de recherche IA",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Optimisation pour ChatGPT, Perplexity et Claude",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Le GSO est la nouvelle discipline du référencement. Nous optimisons votre contenu pour être cité par les moteurs de recherche IA : contenu clair et structuré, E-E-A-T renforcé, données structurées (schema.org), et netlinking stratégique.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Audit de présence IA",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Nous analysons votre présence actuelle dans les moteurs de recherche IA : vérification de vos citations dans ChatGPT, Perplexity, Claude et Google AI Overview.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Stratégie GSO intégrée",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Nous créons une stratégie GSO qui complète votre SEO : contenu long-form (2 000+ mots), FAQ structurées, guides pratiques détaillés, et cas clients avec résultats mesurables.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h2",
+   "html": "Notre processus SEO & GEO",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "<span>Étape 01</span>",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "Phase 1 : Audit et stratégie (Semaines 1-2)",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Audit SEO complet, audit GSO, analyse concurrentielle, identification des 50-100 mots-clés prioritaires, et création d'une stratégie SEO + GSO personnalisée.",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "<span>Étape 02</span>",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "Phase 2 : Optimisation technique (Semaines 2-4)",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Correction des erreurs d'indexation, optimisation de la vitesse de chargement, amélioration du mobile-friendliness, ajout de données structurées, et optimisation des Core Web Vitals.",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "<span>Étape 03</span>",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "Phase 3 : Création et optimisation de contenu (Semaines 5-12)",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Création de 10-15 articles optimisés SEO + GSO, optimisation de vos pages existantes, création de guides complets et cas clients, et optimisation E-E-A-T.",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "<span>Étape 04</span>",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "Phase 4 : Netlinking et amplification (Semaines 4-16)",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Création de 15-20 backlinks de qualité, partenariats avec blogs influents, communiqués de presse, et amplification sur les réseaux sociaux.",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "<span>Étape 05</span>",
+   "groupe": "s4"
+  },
+  {
+   "t": "h3",
+   "html": "Phase 5 : Suivi et optimisation continue (Mois 3-6+)",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Suivi mensuel des positions et du trafic, tests A/B de contenu, ajustements de stratégie basés sur les résultats, et rapports mensuels détaillés.",
+   "groupe": "s4"
+  },
+  {
+   "t": "h2",
+   "html": "Cas clients : Résultats réels à Paris",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Cas 1 : Agence immobilière Paris",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Situation initiale :",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "8 000 clics/mois, présence faible sur \"agence immobilière paris\", site ancien avec contenu peu optimisé.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Résultats :",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "+5 000 clics/mois (8 000 → 13 000 clics/mois), position 1-3 sur \"agence immobilière paris\", +42 ventes immobilières supplémentaires/an.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Cas 2 : Cabinet d'avocats Paris",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Situation initiale :",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "12 000 clics/mois, pas de présence sur \"avocat paris\", contenu généraliste.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Résultats :",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "+3 200 clics/mois (12 000 → 15 200 clics/mois), position 5-8 sur \"avocat paris\", +28 nouveaux clients/an.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Cas 3 : E-commerce Paris",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Situation initiale :",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "45 000 clics/mois, aucune présence sur les mots-clés commerciaux prioritaires, site technique obsolète.",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Résultats :",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "+18 000 clics/mois (45 000 → 63 000 clics/mois), position 1-5 sur 30 mots-clés commerciaux, +850 000€ de chiffre d'affaires supplémentaire.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h2",
+   "html": "Localisation : Pourquoi choisir une agence SEO à Paris ?",
+   "groupe": "s6"
+  },
+  {
+   "t": "p",
+   "html": "Nous sommes basés à Paris et connaissons le marché parisien. Nous avons travaillé avec des centaines d'entreprises parisiennes dans tous les secteurs. Paris est un marché très compétitif, et nous savons comment ranker sur des mots-clés comme \"agence seo paris\", \"avocat paris\", \"plombier paris\".",
+   "groupe": "s6"
+  },
+  {
+   "t": "p",
+   "html": "Vous pouvez nous rencontrer en personne pour discuter de votre stratégie. Nous avons un réseau de partenaires à Paris (blogs, agences, influenceurs) qui nous permet de construire des backlinks de qualité. Nous sommes disponibles pour des réunions, des appels et des discussions en temps réel.",
+   "groupe": "s6"
+  },
+  {
+   "t": "h2",
+   "html": "FAQ : Vos questions sur le SEO à Paris",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q1 : Combien de temps pour voir les résultats du SEO ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Les premiers résultats apparaissent en 4-6 semaines. Les résultats significatifs (position 1-10) prennent 3-6 mois. L'impact maximal se mesure à 6-12 mois.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q2 : Combien coûte une stratégie SEO à Paris ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Nos tarifs commencent à partir de <strong>1 000€/mois</strong> pour un accompagnement SEO continu. Un <strong>audit SEO complet</strong> coûte <strong>3 000€</strong>. Ces tarifs dépendent de votre secteur et de vos objectifs. Nous proposons une consultation gratuite pour évaluer vos besoins.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q3 : Pouvez-vous garantir les résultats du SEO ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Non, personne ne peut garantir des résultats en SEO. Mais nous garantissons une stratégie solide, du contenu de qualité, et un suivi rigoureux.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q4 : Pourquoi le SEO est-il meilleur que Google Ads ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Le SEO génère du trafic gratuit à long terme. Google Ads coûte cher (5-20€ par clic) et s'arrête dès que vous arrêtez de payer. Le SEO continue à générer du trafic pendant des années.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q5 : Travaillez-vous avec d'autres agences SEO ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Oui, nous pouvons travailler en complément d'une autre agence. Nous nous intégrons facilement dans votre écosystème digital.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q6 : Quelle est votre garantie de satisfaction ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Nous garantissons une augmentation mesurable de votre trafic organique. Si vous n'êtes pas satisfait après 3 mois, nous discutons d'ajustements ou d'une résiliation sans pénalité.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q7 : Comment être référencé sur ChatGPT ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Être référencé sur ChatGPT suppose d'abord d'être bien indexé sur Google, car ChatGPT Search s'appuie en partie sur le web indexé. Il faut ensuite structurer son contenu avec des réponses claires et des chiffres sourcés. Triaina travaille ces leviers avec ses clients parisiens grâce à son audit SEO/GEO et à son média propriétaire.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q8 : Comment être cité par Google AI Overview ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Pour apparaître dans Google AI Overview, une page doit d'abord remplir les critères d'indexation SEO classiques, puis proposer un contenu factuel et structuré en données claires. Triaina audite systématiquement ces critères avant d'intervenir sur le contenu de ses clients.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q9 : Quelle est la meilleure agence GEO à Paris ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Triaina se positionne comme la meilleure agence GEO à Paris grâce à une combinaison rare : expertise technique SEO/GEO, média propriétaire pour construire l'autorité hors-site, régie publicitaire et expertise SEA/Paid intégrée sous un même toit.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h3",
+   "html": "Q10 : Comment être référencé sur Google Gemini ?",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Gemini s'appuie très largement sur l'index de Google Search : un contenu bien référencé en SEO classique, avec un maillage interne propre et un balisage sémantique à jour, a de fortes chances d'être repris dans ses réponses. Triaina intègre systématiquement cette dimension dans ses audits SEO/GEO.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h2",
+   "html": "Demander une consultation gratuite",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Vous voulez savoir comment ranker sur \"agence seo paris\" ou vos mots-clés cibles ? Nous offrons une <strong>consultation gratuite</strong> de 30 minutes.<br><br>Nous analyserons votre position actuelle, identifierons 5 opportunités rapides pour améliorer votre visibilité, et créerons un plan d'action personnalisé pour les 3 prochains mois.",
+   "groupe": "s8"
+  },
+  {
+   "t": "cta",
+   "html": "<a href=\"/contact\">Demander la consultation gratuite </a>",
+   "groupe": "s8"
+  },
+  {
+   "t": "h2",
+   "html": "Découvrez nos autres services",
+   "groupe": "s9"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/agence\">En savoir plus sur notre agence</a><a href=\"/expertise-seo\">Expertise SEO</a><a href=\"/expertise-geo\">Expertise GSO</a><a href=\"/expertise-sea\">Expertise SEA</a><a href=\"/references\">Voir nos cas clients</a><a href=\"/contact\">Nous contacter</a>",
+   "groupe": "s9"
+  }
+ ]
+}

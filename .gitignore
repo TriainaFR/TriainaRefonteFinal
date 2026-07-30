@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ces deux dossiers étaient ignorés tant qu'ils étaient regénérables depuis le
+# code de l'ancien site. Ce code a été supprimé le 30/07/2026 : ils sont devenus
+# la SEULE source du contenu des articles et des captures de référence, et
+# doivent donc être suivis.
+#   tools/contenus/  → HTML des 67 articles
+#   tools/snapshots/ → captures « ancien-* », impossibles à refaire
+tools/.tmp-extraction/
+tools/.tmp-liste/

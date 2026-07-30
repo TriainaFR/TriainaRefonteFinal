@@ -1,0 +1,16 @@
+{
+  "name": "triaina-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Site statique triaina.fr — 85 pages générées, servies telles quelles",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "serve": "node tools/serveur-site.mjs",
+    "verifie-urls": "node tools/normalise-urls.mjs --verifie"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "typescript": "~5.8.2"
+  }
+}

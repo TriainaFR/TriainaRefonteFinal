@@ -1,0 +1,165 @@
+{
+ "page": "mentions-legales",
+ "blocs": [
+  {
+   "t": "h1",
+   "html": "MENTIONS LÉGALES",
+   "groupe": "s0"
+  },
+  {
+   "t": "p",
+   "html": "// Informations Juridiques",
+   "groupe": "s0"
+  },
+  {
+   "t": "p",
+   "html": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site internet de la société TRIAINA l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
+   "groupe": "s0"
+  },
+  {
+   "t": "h2",
+   "html": "1. Édition du site",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Le présent site est édité par la société TRIAINA, Société par Actions Simplifiée (SAS) au capital social de 1 000,00 euros.",
+   "groupe": "s1"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><strong>Siège social :</strong> 50 Quai Louis Blériot, 75016 Paris</li><li><strong>Immatriculation :</strong> Inscrite au RCS de Paris sous le numéro 999 402 654</li><li><strong>SIRET :</strong> 999 402 654 00019</li><li><strong>Numéro de TVA Intracommunautaire :</strong> FR54999402654</li><li><strong>Code NAF/APE :</strong> 70.22Z (Conseil pour les affaires et autres conseils de gestion)</li></ul>",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Nous contacter :</strong>",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Par email : <a href=\"mailto:lucas@triaina.fr\">lucas@triaina.fr</a>",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Par téléphone : 06 14 91 62 95",
+   "groupe": "s1"
+  },
+  {
+   "t": "h2",
+   "html": "2. Responsable de la publication",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Le Directeur de la publication est Monsieur Lucas LECOQ-PELLIZZON, en qualité de Président de la société TRIAINA.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h2",
+   "html": "3. Hébergement",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Le site est hébergé par la société OVH SAS.",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Adresse : 2 rue Kellermann - 59100 Roubaix - France",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Site web : <a href=\"https://www.ovhcloud.com\" target=\"_blank\" rel=\"noreferrer\">www.ovhcloud.com</a>",
+   "groupe": "s3"
+  },
+  {
+   "t": "h2",
+   "html": "4. Propriété intellectuelle et contrefaçons",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "La société TRIAINA est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site, notamment les textes, images, graphismes, logo, icônes, sons et logiciels.",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de la société TRIAINA.",
+   "groupe": "s4"
+  },
+  {
+   "t": "p",
+   "html": "Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.",
+   "groupe": "s4"
+  },
+  {
+   "t": "h2",
+   "html": "5. Description des services fournis",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Le site a pour objet de fournir une information concernant l’ensemble des activités de la société. TRIAINA est spécialisée dans :",
+   "groupe": "s5"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li>Le conseil en marketing ;</li><li>La prestation de services en marketing digital ;</li><li>Le référencement (SEO, GSO) ;</li><li>L'activité de pôle média.</li></ul>",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "La société s’efforce de fournir sur le site des informations aussi précises que possible. Toutefois, elle ne pourra être tenue responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h2",
+   "html": "6. Données personnelles (RGPD)",
+   "groupe": "s6"
+  },
+  {
+   "t": "p",
+   "html": "Conformément au Règlement Général sur la Protection des Données (RGPD), l'utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles le concernant.",
+   "groupe": "s6"
+  },
+  {
+   "t": "p",
+   "html": "Pour exercer ce droit, l'utilisateur peut adresser sa demande par email à : <a href=\"mailto:lucas@triaina.fr\">lucas@triaina.fr</a>.",
+   "groupe": "s6"
+  },
+  {
+   "t": "p",
+   "html": "Aucune information personnelle de l'utilisateur du site n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers.",
+   "groupe": "s6"
+  },
+  {
+   "t": "h2",
+   "html": "7. Limitations de responsabilité",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "La société TRIAINA ne pourra être tenue responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site.",
+   "groupe": "s7"
+  },
+  {
+   "t": "p",
+   "html": "Des espaces interactifs (possibilité de poser des questions dans l’espace contact) peuvent être à la disposition des utilisateurs. La société se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France.",
+   "groupe": "s7"
+  },
+  {
+   "t": "h2",
+   "html": "8. Droit applicable et attribution de juridiction",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Tout litige en relation avec l’utilisation du site est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de PARIS.",
+   "groupe": "s8"
+  }
+ ]
+}

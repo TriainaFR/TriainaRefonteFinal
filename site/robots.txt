@@ -1,0 +1,29 @@
+# Stratégie GSO (Generative Search Optimization) - Triaina
+# Accès total autorisé pour maximiser l'ingestion dans les LLMs
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+User-agent: *
+Allow: /
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+# Google (Gemini / Vertex AI)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+# Common Crawl (Base d'entrainement de nombreux LLMs)
+User-agent: CCBot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.triaina.fr/sitemap.xml

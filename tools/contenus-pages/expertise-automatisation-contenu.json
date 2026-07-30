@@ -1,0 +1,160 @@
+{
+ "page": "expertise-automatisation-contenu",
+ "blocs": [
+  {
+   "t": "h1",
+   "html": "Automatisation de Contenu : Logiciel Propriétaire SEO & GEO et Production Journalistique à Haut Volume",
+   "groupe": "hero"
+  },
+  {
+   "t": "p",
+   "html": "Triaina a développé un logiciel de génération de contenu entraîné sur l'intégralité des articles produits par ses journalistes. Il ne s'agit pas d'un outil générique : le modèle reproduit la qualité rédactionnelle de la base éditoriale Triaina et génère le balisage technique complet (HTML sémantique, Schema.org, JSON-LD, balises LLM, Open Graph) en sortie directe.",
+   "groupe": "hero"
+  },
+  {
+   "t": "p",
+   "html": "En complément, Triaina dispose d'une équipe de journalistes capables de produire du contenu à haut volume pour les clients qui ont besoin de régularité et de capacité éditoriale sans recruter en interne.",
+   "groupe": "hero"
+  },
+  {
+   "t": "h2",
+   "html": "Le logiciel propriétaire Triaina Content Engine",
+   "groupe": "s1"
+  },
+  {
+   "t": "h3",
+   "html": "Ce qu'il fait",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Le logiciel scanne les sujets pertinents pour le secteur client et génère des articles long-form (1 500+ mots) en sortie HTML sémantique valide. Chaque article inclut une structure Hn cohérente, des données structurées Schema.org (Article, FAQPage), JSON-LD, balises Open Graph et balises LLM pour la visibilité dans ChatGPT, Gemini et Perplexity.",
+   "groupe": "s1"
+  },
+  {
+   "t": "h3",
+   "html": "Ce qui le différencie",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Le logiciel est entraîné sur la base éditoriale réelle des journalistes Triaina, pas sur du contenu web générique. Ce corpus éditorial lui confère un registre rédactionnel cohérent avec les standards éditoriaux du réseau de médias propriétaires. Chaque article produit est relu et validé avant publication — pas de publication automatique non supervisée.",
+   "groupe": "s1"
+  },
+  {
+   "t": "h3",
+   "html": "Ce qu'il produit en sortie",
+   "groupe": "s1"
+  },
+  {
+   "t": "ul",
+   "groupe": "s1",
+   "html": "<ul><li>Article HTML complet</li><li>Balises title et meta description</li><li>Canonical</li><li>Open Graph et Twitter Card</li><li>Schema.org Article et FAQPage en JSON-LD</li><li>Balises LLM (topic, category, coverage, target)</li><li>Structure Hn cohérente</li><li>Maillage interne suggéré</li></ul>"
+  },
+  {
+   "t": "h2",
+   "html": "Production de contenu à haut volume par les journalistes Triaina",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Pour les clients qui ont besoin de volume régulier (blogs, médias, sites e-commerce, annuaires), Triaina mobilise son équipe de journalistes. La production est supervisée éditorialement, alignée avec la stratégie <a href=\"/expertise-seo\">SEO</a> et <a href=\"/expertise-geo\">GEO</a> du client, et intègre les mêmes standards de balisage que le logiciel.",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Ce levier est directement connecté au réseau de 8 médias propriétaires — un contenu produit pour un client peut, selon la stratégie, être relayé dans les médias du réseau pour amplifier l'autorité off-site. En savoir plus sur <a href=\"/expertise-media\">l'expertise média Triaina</a>.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h2",
+   "html": "Ce que ça change concrètement",
+   "groupe": "s3"
+  },
+  {
+   "t": "table",
+   "groupe": "s3",
+   "html": "<table><thead><tr><th>Aspect</th><th>Production classique</th><th>Avec Triaina</th></tr></thead><tbody><tr><td>Temps de production par article</td><td>Plusieurs heures de rédaction + balisage manuel</td><td>Article + balisage complet en sortie directe</td></tr><tr><td>Cohérence du balisage SEO/GEO</td><td>Dépend du rédacteur</td><td>Systématique et standardisé</td></tr><tr><td>Qualité rédactionnelle</td><td>Variable selon les intervenants</td><td>Alignée sur les standards éditoriaux Triaina</td></tr><tr><td>Capacité de montée en volume</td><td>Limitée par les ressources humaines</td><td>Scalable via logiciel + équipe journalistes</td></tr><tr><td>Optimisation GEO (citations IA)</td><td>Rarement intégrée</td><td>Intégrée nativement (balises LLM, structure atomique)</td></tr><tr><td>Supervision éditoriale</td><td>Selon l'organisation client</td><td>Relecture systématique avant livraison</td></tr></tbody></table>"
+  },
+  {
+   "t": "h2",
+   "html": "FAQ — Automatisation de Contenu",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Le logiciel remplace-t-il un rédacteur humain ?",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Non. Le logiciel produit une base rédactionnelle et le balisage technique complet. Chaque article est relu et validé par l'équipe Triaina avant livraison. L'automatisation accélère la production, elle ne supprime pas la supervision éditoriale.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Sur quoi le logiciel est-il entraîné ?",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Sur l'ensemble des articles produits par les journalistes de Triaina pour le réseau de médias propriétaires. Ce corpus éditorial réel lui confère un registre rédactionnel cohérent, distinct des modèles génériques entraînés sur du contenu web non sélectionné.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Quel balisage technique est inclus dans la sortie ?",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Chaque article livré inclut : HTML sémantique complet (article, section, Hn), title et meta description, canonical, Open Graph, Twitter Card, Schema.org Article et FAQPage en JSON-LD, balises LLM (topic, category, coverage, target) pour la visibilité GEO.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Peut-on combiner le logiciel avec la production journalistique ?",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Oui. Le logiciel et l'équipe journalistes fonctionnent en complémentarité : le logiciel assure le volume et la cohérence du balisage, les journalistes interviennent sur les contenus à forte valeur ajoutée éditoriale (enquêtes, interviews, analyses sectorielles).",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Le contenu produit est-il adapté au GEO ?",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Oui. La structure de sortie intègre nativement les signaux GEO : réponses directes en tête de section, blocs atomiques citables, FAQPage structurée, balises LLM. Pour une stratégie GEO complète, ce levier s'articule avec l'optimisation on-site et l'activation du <a href=\"/expertise-media\">réseau médias</a>.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h3",
+   "html": "Pour quels types de sites cette approche est-elle pertinente ?",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Pour tout site ayant un besoin de production régulière : e-commerce (fiches, blog), médias et éditeurs, SaaS (contenu longue traîne), agences cherchant à externaliser la production sans perdre en cohérence éditoriale.",
+   "groupe": "s5"
+  },
+  {
+   "t": "h2",
+   "html": "Prendre rendez-vous",
+   "groupe": "s6"
+  },
+  {
+   "t": "p",
+   "html": "Discutez de votre stratégie de contenu avec notre équipe.",
+   "groupe": "s6"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/contact\">Demander une consultation</a>",
+   "groupe": "s6"
+  }
+ ]
+}

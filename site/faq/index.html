@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ | Agence SEO &amp; GEO Triaina</title>
+<meta name="description" content="Questions fréquentes sur le SEO, le GSO et l'accompagnement par l'agence Triaina.">
+<meta name="keywords" content="agence seo, agence gso, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative search optimization">
+<link rel="canonical" href="https://www.triaina.fr/faq">
+<meta name="ICBM" content="48.8464, 2.2758">
+<meta name="msvalidate.01" content="4C58C9622B2DBB31ECD9A463E3DCAF66">
+<link rel="alternate" hreflang="fr" href="https://www.triaina.fr/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/logo.svg">
+<meta name="geo.region" content="FR-75">
+<meta name="geo.placename" content="Paris">
+<meta name="geo.position" content="48.8464;2.2758">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.triaina.fr/faq">
+<meta property="og:title" content="FAQ - Agence SEO &amp; GEO Triaina">
+<meta property="og:description" content="Questions fréquentes sur le SEO, le GSO et l'accompagnement par l'agence Triaina.">
+<meta property="og:image" content="https://www.triaina.fr/og-image.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Triaina">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FAQ - Agence SEO &amp; GEO Triaina">
+<meta name="twitter:description" content="Questions fréquentes sur le SEO, le GSO et l'accompagnement par l'agence Triaina.">
+<meta name="twitter:image" content="https://www.triaina.fr/og-image.jpg">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/da31.css">
+<style>
+  /* ══════════════════════════════════════════════════════════════════════
+     DA-36 « Le Grand Index » — /faq. UNE grande idée : la FAQ est un index
+     typographique monumental, un registre de 20 lignes bord à bord — numéro
+     display creux au bord gauche, question en Syne, réponse dans une colonne
+     de lecture — et la lumière descend le long du registre au fil du scroll.
+     Markup <details> inchangé, texte et SEO gelés.
+     ══════════════════════════════════════════════════════════════════════ */
+  .page{overflow-x:clip}
+  .faq-wrap{position:relative; z-index:2; max-width:64rem; margin:0 auto;
+    padding:0 var(--marge)}
+
+  /* ── hero typographique pleine largeur ── */
+  .faq-hero{padding:8.5rem 0 0; text-align:left; margin-bottom:0}
+  .faq-hero h1{font-family:var(--syne); font-weight:800; color:#fff; letter-spacing:-.025em;
+    font-size:clamp(2.6rem,7vw,5.4rem); line-height:.94;
+    text-shadow:0 0 110px rgba(37,99,235,.5)}
+  .faq-hero h1 em{font-style:normal; display:block;
+    background:linear-gradient(90deg,var(--bleu),var(--bleu-p));
+    -webkit-background-clip:text; background-clip:text; color:transparent}
+  /* la ligne mono s'étire d'un bord à l'autre */
+  .faq-hero .sous-k{margin:2rem 0 0; display:flex; align-items:center; gap:1.2rem;
+    justify-content:flex-start; font-family:ui-monospace,monospace; font-size:.66rem;
+    letter-spacing:.22em; text-transform:uppercase; color:var(--brume);
+    padding-bottom:2.6rem}
+  .faq-hero .sous-k i{flex:1; height:1px; width:auto;
+    background:linear-gradient(90deg, rgba(255,233,184,.6), rgba(96,165,250,.3));
+    align-self:center}
+
+  /* ── le registre : 20 lignes bord à bord, la lumière descend à gauche ── */
+  .ql{position:relative; display:block; margin-bottom:0; gap:0}
+  .ql::before{content:''; position:absolute; left:0; top:0; bottom:0; width:2px;
+    background:rgba(148,163,184,.14)}
+  .ql::after{content:''; position:absolute; left:0; top:0; width:2px;
+    height:calc(var(--trace,0)*100%);
+    background:linear-gradient(180deg,var(--lueur),var(--bleu-c));
+    box-shadow:0 0 16px rgba(255,233,184,.5)}
+  .q{border:0; border-radius:0; background:transparent; overflow:visible;
+    border-top:1px solid rgba(148,163,184,.16); transition:background .35s}
+  .q:last-child{border-bottom:1px solid rgba(148,163,184,.16)}
+  .q:hover{border-color:rgba(148,163,184,.16)}
+  .q[open]{border-color:rgba(148,163,184,.16); box-shadow:none; transform:none;
+    background:linear-gradient(90deg, rgba(37,99,235,.07), transparent 60%)}
+  .q summary{display:grid; align-items:baseline;
+    grid-template-columns:clamp(3.6rem,7vw,5.6rem) minmax(0,1fr) 2rem;
+    gap:clamp(.8rem,2vw,1.6rem); padding:clamp(1rem,2vw,1.5rem) .2rem}
+  /* numéro display : creux au repos, or plein quand la ligne est ouverte */
+  .q .qn{font-family:var(--syne); font-weight:800;
+    font-size:clamp(1.4rem,3vw,2.6rem); line-height:1; color:transparent;
+    -webkit-text-stroke:1.4px rgba(96,165,250,.45);
+    transition:color .45s, text-shadow .45s}
+  @supports not (-webkit-text-stroke:1px #000){.q .qn{color:rgba(96,165,250,.6)}}
+  .q[open] .qn, .q summary:hover .qn{color:var(--lueur);
+    -webkit-text-stroke:0px transparent; text-shadow:0 0 30px rgba(255,233,184,.5)}
+  .q .qt{font-family:var(--syne); font-weight:700; text-transform:uppercase;
+    letter-spacing:.01em; color:#CBD5E1; line-height:1.3;
+    font-size:clamp(1rem,1.9vw,1.35rem); transition:color .3s}
+  .q[open] .qt, .q summary:hover .qt{color:#fff}
+  .q .pm{font-family:var(--manrope); font-weight:300; font-size:clamp(1.5rem,2.4vw,2.2rem);
+    line-height:1; color:var(--bleu-c); transition:transform .3s; justify-self:end}
+  .q[open] .pm{transform:rotate(45deg)}
+  /* la réponse s'imprime dans la colonne de lecture */
+  .q .rep{margin-left:clamp(0rem,9vw,7.2rem); max-width:60ch;
+    padding:.2rem .2rem clamp(1.3rem,2.4vw,2rem);
+    border-top:0; color:var(--brume); font-size:.96rem; line-height:1.8;
+    animation:rep-in .5s cubic-bezier(.22,.9,.24,1)}
+  @keyframes rep-in{from{opacity:0; transform:translateY(12px)} to{opacity:1; transform:none}}
+  @media(max-width:880px){
+    .q summary{grid-template-columns:auto minmax(0,1fr) 1.6rem; gap:.9rem}
+    .q .qn{font-size:1.3rem; -webkit-text-stroke-width:1px}
+    .q .qt{font-size:1rem}
+    .q .rep{margin-left:0}
+    .ql::before,.ql::after{display:none}
+  }
+  .q .rep .chev{font-family:ui-monospace,monospace; color:var(--bleu-c); margin-right:.6rem}
+  .q .rep a{color:var(--bleu-p); text-decoration:underline; text-underline-offset:3px;
+    transition:color .3s}
+  .q .rep a:hover{color:var(--lueur)}
+  /* le lien de conversion des réponses ressort en capsule */
+  .q .rep a[href="/contact"]{display:inline-flex; margin-top:.5rem; padding:.5rem 1.05rem;
+    background:var(--bleu); color:#fff; border-radius:99px; text-decoration:none;
+    font-weight:700; font-size:.8rem; letter-spacing:.08em}
+  .q .rep a[href="/contact"]:hover{background:var(--bleu-nuit); color:#fff}
+
+  /* ── infos pratiques : bande scindée jusqu'aux bords ── */
+  .infos{border-top:0; padding-top:0; margin-top:0}
+  .infos h3{font-family:ui-monospace,monospace; font-weight:400; font-size:.62rem;
+    letter-spacing:.26em; text-transform:uppercase; color:var(--bleu-c);
+    text-align:left; padding:2.6rem 0 1.4rem; margin:0}
+  .infos .duo{display:grid; grid-template-columns:1fr 1fr; gap:0;
+    border-top:1px solid rgba(148,163,184,.16)}
+  @media(max-width:720px){.infos .duo{grid-template-columns:1fr}}
+  .carte-info{display:flex; gap:1.1rem; align-items:flex-start;
+    border:0; border-radius:0; background:transparent;
+    padding:clamp(1.6rem,3vw,2.4rem) clamp(1rem,2vw,1.8rem)}
+  .carte-info:first-child{padding-left:0}
+  .carte-info+.carte-info{border-left:1px solid rgba(148,163,184,.16)}
+  @media(max-width:720px){.carte-info+.carte-info{border-left:0;
+    border-top:1px solid rgba(148,163,184,.16)}}
+  .carte-info:hover{border-color:rgba(148,163,184,.16); box-shadow:none}
+  .carte-info .ic{flex:none; width:44px; height:44px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(37,99,235,.16); color:var(--bleu-c)}
+  .carte-info .ic svg{width:20px; height:20px; fill:none; stroke:currentColor;
+    stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
+  .carte-info h4{font-family:var(--syne); font-weight:700; color:#fff;
+    font-size:clamp(1rem,1.6vw,1.3rem); margin-bottom:.5rem}
+  .carte-info address, .carte-info .lignes{font-family:ui-monospace,monospace;
+    font-style:normal; font-size:.84rem; color:var(--brume); line-height:1.75}
+  .carte-info .lignes b{display:block; color:var(--bleu-c); font-weight:700; margin-top:.2rem}
+
+  /* arrivée en cascade (additive) */
+  .faq-anim :is(.q,.infos h3,.carte-info){transition:opacity .6s,
+    transform .6s cubic-bezier(.22,.9,.24,1), background .35s}
+  .faq-anim :is(.q,.infos h3,.carte-info):not(.vu){opacity:0; transform:translateY(20px)}
+
+  @media (prefers-reduced-motion: reduce){
+    .q .rep{animation:none}
+    .ql::after{display:none}
+    .q .qn{color:rgba(96,165,250,.7); -webkit-text-stroke:0px transparent}
+  }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://www.triaina.fr/#organization","@type":["LocalBusiness","Organization"],"address":{"@type":"PostalAddress","addressCountry":"FR","addressLocality":"Paris","postalCode":"75016","streetAddress":"50 quai Louis Bleriot"},"alternateName":["Triaina","Triaina Agency","Agence GSO Paris","Agence Référencement IA","Agence GEO Paris"],"areaServed":{"@type":"Country","name":"France"},"description":"Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.","geo":{"@type":"GeoCoordinates","latitude":48.8464,"longitude":2.2758},"hasMap":"https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris","image":"https://www.triaina.fr/logo.svg","knowsAbout":["SEO","GSO","Generative Search Optimization","Référencement IA","Stratégie Média","Agence SEO Paris","Search Engine Optimization (SEO)","Large Language Models (LLM)","Agence GSO","Google SGE Optimization","Knowledge Graph Construction","Entity SEO","Optimisation ChatGPT","Digital PR","GEO","Generative Engine Optimization"],"logo":"https://www.triaina.fr/logo.svg","name":"Triaina - Agence SEO & GEO Paris","openingHoursSpecification":{"@type":"OpeningHoursSpecification","closes":"19:00","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00"},"priceRange":"$$","sameAs":["https://www.linkedin.com/company/triaina","https://www.instagram.com/triaina_agency"],"url":"https://www.triaina.fr"},{"@id":"https://www.triaina.fr/#website","@type":"WebSite","description":"Domination IA et Visibilité Totale","inLanguage":"fr-FR","name":"Triaina | Agence SEO & GEO Paris","potentialAction":{"@type":"SearchAction","query-input":"required name=search_term_string","target":"https://www.triaina.fr/recherche?q={search_term_string}"},"publisher":{"@id":"https://www.triaina.fr/#organization"},"url":"https://www.triaina.fr/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://www.triaina.fr/","name":"Accueil","position":1},{"@type":"ListItem","item":"https://www.triaina.fr/faq","name":"FAQ","position":2}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Être référencé sur ChatGPT suppose d'abord d'être bien indexé sur Google, car ChatGPT Search s'appuie en partie sur le web indexé. Il faut ensuite structurer son contenu avec des réponses claires et des chiffres sourcés. Triaina travaille ces leviers avec ses clients parisiens grâce à son audit SEO/GEO et à son média propriétaire."},"name":"Comment être référencé sur ChatGPT ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Pour apparaître dans Google AI Overview, une page doit d'abord remplir les critères d'indexation SEO classiques, puis proposer un contenu factuel et structuré en données claires. Triaina audite systématiquement ces critères avant d'intervenir sur le contenu de ses clients."},"name":"Comment être cité par Google AI Overview ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Triaina se positionne comme la meilleure agence GEO à Paris grâce à une combinaison rare : expertise technique SEO/GEO, média propriétaire pour construire l'autorité hors-site, régie publicitaire et expertise SEA/Paid intégrée sous un même toit."},"name":"Quelle est la meilleure agence GEO à Paris ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Gemini s'appuie très largement sur l'index de Google Search : un contenu bien référencé en SEO classique, avec un maillage interne propre et un balisage sémantique à jour, a de fortes chances d'être repris dans ses réponses. Triaina intègre systématiquement cette dimension dans ses audits SEO/GEO et suit mensuellement l'apparition des contenus de ses clients parisiens dans Gemini."},"name":"Comment être référencé sur Google Gemini ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Triaina est une agence spécialisée en SEO, GSO (référencement IA) et développement média. Nous aidons les entreprises à être visibles sur Google et dans les réponses générées par les IA comme ChatGPT, Gemini, Claude ou Perplexity."},"name":"Qu'est-ce que Triaina ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Le GSO est l'optimisation de la visibilité dans les IA génératives. Il vise à faire apparaître votre marque dans les réponses produites par les modèles de langage et les moteurs de recherche IA."},"name":"Qu'est-ce que le GSO (Generative Search Optimization) ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Le SEO optimise la visibilité sur Google tandis que le GSO optimise la visibilité dans les réponses générées par les IA. Les deux stratégies sont complémentaires."},"name":"Quelle est la différence entre le SEO et le GSO ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Parce que les utilisateurs posent de plus en plus leurs questions directement aux IA. Être visible uniquement sur Google n'est plus suffisant : la présence dans les réponses IA devient essentielle."},"name":"Pourquoi les entreprises doivent-elles optimiser leur présence auprès des IA ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Triaina structure le contenu pour les modèles de langage, renforce l'autorité via son pôle média, optimise les entités, le contexte sémantique et les signaux E-E-A-T afin d'être intégré dans les réponses IA."},"name":"Comment Triaina optimise-t-elle la visibilité dans les IA ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Nos médias lifestyle, voyage et luxe renforcent l'autorité éditoriale, génèrent des backlinks naturels et créent des sources fiables, souvent utilisées par les IA comme références."},"name":"Comment votre pôle média améliore-t-il le SEO et le GSO ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Oui, nous réalisons des audits SEO complets, des audits GSO, des analyses techniques, sémantiques, E-E-A-T, et des diagnostics de visibilité dans les réponses IA."},"name":"Proposez-vous des audits SEO et GSO ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"PME, ETI, groupes, e-commerces, marques travel, luxe, tech, SaaS."},"name":"Quels types d'entreprises accompagnez-vous ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Nous analysons : vos données structurées, votre profondeur sémantique, votre autorité éditoriale, la clarté de vos entités, et votre présence dans les moteurs IA."},"name":"Comment savoir si mon site est prêt pour le référencement IA ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Oui : nos associés créent des agences SEO depuis 2000, ont monté un groupe média en 2014, et ont pris le virage IA dès 2024. Triaina fait partie des premières agences SEO IA hybrides en France."},"name":"Triaina est-elle vraiment une agence pionnière dans le GSO ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Le GEO est l'optimisation de la visibilité d'une marque dans les réponses des IA génératives : ChatGPT, Perplexity, Gemini, Google AI Overview. Distinct du SEO classique qui cible Google Search. Le trafic issu des LLM a progressé de +527 % en un an. Le GEO repose sur 4 piliers : autorité de domaine, contenu structuré et extractible, E-E-A-T, citations tierces. Consultez notre <a href=\"/blog/geo-definition-2026\">définition complète du GEO</a>."},"name":"Qu'est-ce que le GEO (Generative Engine Optimization) ou référencement IA ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Être référencé dans ChatGPT et les IA génératives repose sur 4 leviers : (1) autorité SEO Google solide — les IA crawlent les mêmes sources que Google, (2) contenu structuré avec réponses directes et schema FAQ, (3) signaux E-E-A-T forts (auteur vérifié, sources primaires), (4) citations tierces dans des sources que les LLM consomment. Triaina accélère ce processus grâce à son groupe média propriétaire, qui génère des citations dans des sources directement indexées par les LLM. Découvrez notre <a href=\"/blog/etre-cite-par-chatgpt\">guide pour être cité par ChatGPT</a>."},"name":"Comment être référencé dans ChatGPT et les autres IA ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Les tarifs d'une agence SEO et GEO à Paris varient selon le périmètre. Un audit SEO + GEO complet est disponible à partir de 1 700 €. L'accompagnement démarre à partir de 500 €/mois pour les sites de taille réduite, et à partir de 1 000 €/mois pour une stratégie SEO et GEO combinée. Les offres hybrides SEO + GEO de Triaina sont établies sur devis selon la taille du site, le secteur et les objectifs. Un pré-audit gratuit de 30 minutes est proposé pour cadrer le budget avant tout engagement. Demandez un audit gratuit ."},"name":"Combien coûte une agence SEO et GEO à Paris ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"SEO (Search Engine Optimization) = optimisation pour les moteurs de recherche classiques comme Google (liens bleus). GEO (Generative Engine Optimization) = optimisation pour les moteurs IA génératifs : ChatGPT, Perplexity, Gemini. GSO (Generative Search Optimization) = approche propriétaire Triaina qui combine SEO + GEO + contrôle des sources via groupe média et régie. Les trois disciplines sont complémentaires : un bon SEO facilite le GEO, et le GSO amplifie les deux. En savoir plus sur <a href=\"/expertise-gso\">notre expertise GSO</a>."},"name":"Quelle différence entre SEO, GEO et GSO ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"En SEO, les premiers signaux (positions gagnées, trafic en hausse) apparaissent entre 2 et 4 mois. La consolidation dans le top 3 sur des mots-clés concurrentiels demande 6 à 12 mois — c'est lié à l'algorithme Transition Rank de Google, qui observe les pages sur ~90 jours avant de stabiliser leur position. En GEO, les premières citations IA peuvent apparaître sous 4 à 8 semaines si la stratégie de contenu et d'autorité est bien exécutée. Triaina mesure les citations IA dès le premier mois pour ajuster la stratégie en continu. Découvrez <a href=\"/agence-referencement-ia\">notre offre de référencement IA</a>."},"name":"En combien de temps voit-on des résultats en SEO et en GEO ?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Trois méthodes pour mesurer sa visibilité dans les IA : (1) test manuel en navigation privée — taper ses requêtes cibles dans ChatGPT, Perplexity et Gemini et vérifier si la marque est citée, (2) Google Search Console — le rapport « AI Overviews » (disponible depuis juin 2026) indique les impressions générées par les réponses IA de Google, (3) outils de tracking GEO tiers pour un suivi automatisé des citations. Triaina intègre le suivi des citations IA dans tous ses reportings mensuels clients. En savoir plus sur <a href=\"/expertise-gso\">notre expertise GSO</a>."},"name":"Comment mesurer sa visibilité dans les IA génératives ?"}]}]}</script>
+</head>
+<body>
+
+<div class="prog" aria-hidden="true"><i id="progBar"></i></div>
+<canvas id="scene" aria-hidden="true"></canvas>
+<canvas id="arcs" aria-hidden="true"></canvas>
+<div class="curseur-lueur" aria-hidden="true"></div>
+
+<nav class="site" aria-label="Navigation principale">
+  <a class="logo" href="/" aria-label="Triaina — Accueil">
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="18" y="5" width="4" height="25" rx="1" fill="#2563EB"/>
+      <rect x="10" y="12" width="3" height="15" rx="1" fill="#F8FAFC"/>
+      <rect x="27" y="12" width="3" height="15" rx="1" fill="#F8FAFC"/>
+    </svg>
+    <span><b>TRIAINA</b><i>SEO — GEO — Média</i></span>
+  </a>
+
+  <ul class="nav-l">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/agence">Notre Histoire</a></li>
+      <li class="a-sous-menu">
+        <button type="button" class="nav-parent" aria-expanded="false" aria-haspopup="true">Expertise<svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+        <ul class="sous-menu">
+          <li><a href="/expertise-seo">Expertise SEO</a></li>
+          <li><a href="/expertise-sea">Expertise SEA</a></li>
+          <li><a href="/expertise-geo">Expertise GEO</a></li>
+          <li><a href="/expertise-media">Expertise Média</a></li>
+          <li><a href="/expertise-automatisation-contenu">Expertise Automatisation de Contenu</a></li>
+          <li><a href="/expertise-ai-overview">Google AI Overview</a></li>
+        </ul>
+      </li>
+      <li><a href="/references">Références</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/annuaire">Annuaire</a></li>
+      <li><a href="/faq" aria-current="page">FAQ</a></li>
+    <li><a class="ncta" href="/contact">Contact</a></li>
+  </ul>
+
+  <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu"
+          aria-expanded="false" aria-controls="menu-mobile">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="menu-mobile" id="menu-mobile" hidden>
+  <div class="mm-fond" data-fermer></div>
+  <div class="mm-panneau" role="dialog" aria-modal="true" aria-label="Menu" data-lenis-prevent>
+    <ul class="mm-liens">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/agence">Notre Histoire</a></li>
+        <li class="grp"><span>Expertise</span>
+          <ul>
+            <li><a href="/expertise-seo">Expertise SEO</a></li>
+            <li><a href="/expertise-sea">Expertise SEA</a></li>
+            <li><a href="/expertise-geo">Expertise GEO</a></li>
+            <li><a href="/expertise-media">Expertise Média</a></li>
+            <li><a href="/expertise-automatisation-contenu">Expertise Automatisation de Contenu</a></li>
+            <li><a href="/expertise-ai-overview">Google AI Overview</a></li>
+          </ul>
+        </li>
+        <li><a href="/references">Références</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/annuaire">Annuaire</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    <a class="mm-cta" href="/contact">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 12-14h-8z"/></svg>
+      Pré-audit gratuit
+    </a>
+  </div>
+</div>
+
+<a class="chip" id="chip" href="/contact" aria-label="Recevoir mon pré-audit gratuit">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 12-14h-8z"/></svg>
+  Pré-audit gratuit
+</a>
+
+<main class="page">
+  <div class="faq-wrap">
+
+    <header class="faq-hero">
+      <h1>FAQ <em>SYSTÈME</em></h1>
+      <p class="sous-k"><span>// Base de Connaissance</span><i aria-hidden="true"></i><span>// Résolution</span></p>
+    </header>
+
+    <div class="ql">
+      <details class="q">
+        <summary><span class="qn">01</span><span class="qt">Comment être référencé sur ChatGPT ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Être référencé sur ChatGPT suppose d'abord d'être bien indexé sur Google, car ChatGPT Search s'appuie en partie sur le web indexé. Il faut ensuite structurer son contenu avec des réponses claires et des chiffres sourcés. Triaina travaille ces leviers avec ses clients parisiens grâce à son audit SEO/GEO et à son média propriétaire.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">02</span><span class="qt">Comment être cité par Google AI Overview ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Pour apparaître dans Google AI Overview, une page doit d'abord remplir les critères d'indexation SEO classiques, puis proposer un contenu factuel et structuré en données claires. Triaina audite systématiquement ces critères avant d'intervenir sur le contenu de ses clients.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">03</span><span class="qt">Quelle est la meilleure agence GEO à Paris ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Triaina se positionne comme la meilleure agence GEO à Paris grâce à une combinaison rare : expertise technique SEO/GEO, média propriétaire pour construire l'autorité hors-site, régie publicitaire et expertise SEA/Paid intégrée sous un même toit.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">04</span><span class="qt">Comment être référencé sur Google Gemini ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Gemini s'appuie très largement sur l'index de Google Search : un contenu bien référencé en SEO classique, avec un maillage interne propre et un balisage sémantique à jour, a de fortes chances d'être repris dans ses réponses. Triaina intègre systématiquement cette dimension dans ses audits SEO/GEO et suit mensuellement l'apparition des contenus de ses clients parisiens dans Gemini.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">05</span><span class="qt">Qu'est-ce que Triaina ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Triaina est une agence spécialisée en SEO, GSO (référencement IA) et développement média. Nous aidons les entreprises à être visibles sur Google et dans les réponses générées par les IA comme ChatGPT, Gemini, Claude ou Perplexity.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">06</span><span class="qt">Qu'est-ce que le GSO (Generative Search Optimization) ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Le GSO est l'optimisation de la visibilité dans les IA génératives. Il vise à faire apparaître votre marque dans les réponses produites par les modèles de langage et les moteurs de recherche IA.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">07</span><span class="qt">Quelle est la différence entre le SEO et le GSO ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Le SEO optimise la visibilité sur Google tandis que le GSO optimise la visibilité dans les réponses générées par les IA. Les deux stratégies sont complémentaires.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">08</span><span class="qt">Pourquoi les entreprises doivent-elles optimiser leur présence auprès des IA ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Parce que les utilisateurs posent de plus en plus leurs questions directement aux IA. Être visible uniquement sur Google n'est plus suffisant : la présence dans les réponses IA devient essentielle.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">09</span><span class="qt">Comment Triaina optimise-t-elle la visibilité dans les IA ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Triaina structure le contenu pour les modèles de langage, renforce l'autorité via son pôle média, optimise les entités, le contexte sémantique et les signaux E-E-A-T afin d'être intégré dans les réponses IA.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">010</span><span class="qt">Comment votre pôle média améliore-t-il le SEO et le GSO ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Nos médias lifestyle, voyage et luxe renforcent l'autorité éditoriale, génèrent des backlinks naturels et créent des sources fiables, souvent utilisées par les IA comme références.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">011</span><span class="qt">Proposez-vous des audits SEO et GSO ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Oui, nous réalisons des audits SEO complets, des audits GSO, des analyses techniques, sémantiques, E-E-A-T, et des diagnostics de visibilité dans les réponses IA.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">012</span><span class="qt">Quels types d'entreprises accompagnez-vous ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>PME, ETI, groupes, e-commerces, marques travel, luxe, tech, SaaS.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">013</span><span class="qt">Comment savoir si mon site est prêt pour le référencement IA ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Nous analysons : vos données structurées, votre profondeur sémantique, votre autorité éditoriale, la clarté de vos entités, et votre présence dans les moteurs IA.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">014</span><span class="qt">Triaina est-elle vraiment une agence pionnière dans le GSO ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Oui : nos associés créent des agences SEO depuis 2000, ont monté un groupe média en 2014, et ont pris le virage IA dès 2024. Triaina fait partie des premières agences SEO IA hybrides en France.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">015</span><span class="qt">Qu'est-ce que le GEO (Generative Engine Optimization) ou référencement IA ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Le GEO est l'optimisation de la visibilité d'une marque dans les réponses des IA génératives : ChatGPT, Perplexity, Gemini, Google AI Overview. Distinct du SEO classique qui cible Google Search. Le trafic issu des LLM a progressé de +527 % en un an. Le GEO repose sur 4 piliers : autorité de domaine, contenu structuré et extractible, E-E-A-T, citations tierces. Consultez notre <a href="/blog/geo-definition-2026">définition complète du GEO</a>.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">016</span><span class="qt">Comment être référencé dans ChatGPT et les autres IA ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Être référencé dans ChatGPT et les IA génératives repose sur 4 leviers : (1) autorité SEO Google solide — les IA crawlent les mêmes sources que Google, (2) contenu structuré avec réponses directes et schema FAQ, (3) signaux E-E-A-T forts (auteur vérifié, sources primaires), (4) citations tierces dans des sources que les LLM consomment. Triaina accélère ce processus grâce à son groupe média propriétaire, qui génère des citations dans des sources directement indexées par les LLM. Découvrez notre <a href="/blog/etre-cite-par-chatgpt">guide pour être cité par ChatGPT</a>.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">017</span><span class="qt">Combien coûte une agence SEO et GEO à Paris ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Les tarifs d'une agence SEO et GEO à Paris varient selon le périmètre. Un audit SEO + GEO complet est disponible à partir de 1 700 €. L'accompagnement démarre à partir de 500 €/mois pour les sites de taille réduite, et à partir de 1 000 €/mois pour une stratégie SEO et GEO combinée. Les offres hybrides SEO + GEO de Triaina sont établies sur devis selon la taille du site, le secteur et les objectifs. Un pré-audit gratuit de 30 minutes est proposé pour cadrer le budget avant tout engagement. <a href="/contact">Demandez un audit gratuit</a>.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">018</span><span class="qt">Quelle différence entre SEO, GEO et GSO ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>SEO (Search Engine Optimization) = optimisation pour les moteurs de recherche classiques comme Google (liens bleus). GEO (Generative Engine Optimization) = optimisation pour les moteurs IA génératifs : ChatGPT, Perplexity, Gemini. GSO (Generative Search Optimization) = approche propriétaire Triaina qui combine SEO + GEO + contrôle des sources via groupe média et régie. Les trois disciplines sont complémentaires : un bon SEO facilite le GEO, et le GSO amplifie les deux. En savoir plus sur <a href="/expertise-gso">notre expertise GSO</a>.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">019</span><span class="qt">En combien de temps voit-on des résultats en SEO et en GEO ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>En SEO, les premiers signaux (positions gagnées, trafic en hausse) apparaissent entre 2 et 4 mois. La consolidation dans le top 3 sur des mots-clés concurrentiels demande 6 à 12 mois — c'est lié à l'algorithme Transition Rank de Google, qui observe les pages sur ~90 jours avant de stabiliser leur position. En GEO, les premières citations IA peuvent apparaître sous 4 à 8 semaines si la stratégie de contenu et d'autorité est bien exécutée. Triaina mesure les citations IA dès le premier mois pour ajuster la stratégie en continu. Découvrez <a href="/agence-referencement-ia">notre offre de référencement IA</a>.</div>
+      </details>
+      <details class="q">
+        <summary><span class="qn">020</span><span class="qt">Comment mesurer sa visibilité dans les IA génératives ?</span><span class="pm" aria-hidden="true">+</span></summary>
+        <div class="rep"><span class="chev">&gt;</span>Trois méthodes pour mesurer sa visibilité dans les IA : (1) test manuel en navigation privée — taper ses requêtes cibles dans ChatGPT, Perplexity et Gemini et vérifier si la marque est citée, (2) Google Search Console — le rapport « AI Overviews » (disponible depuis juin 2026) indique les impressions générées par les réponses IA de Google, (3) outils de tracking GEO tiers pour un suivi automatisé des citations. Triaina intègre le suivi des citations IA dans tous ses reportings mensuels clients. En savoir plus sur <a href="/expertise-gso">notre expertise GSO</a>.</div>
+      </details>
+    </div>
+
+    <section class="infos" aria-label="Informations pratiques">
+      <h3>Informations Pratiques</h3>
+      <div class="duo">
+        <div class="carte-info">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div>
+            <h4>Siège Social</h4>
+            <address>50 Quai Louis Blériot<br>75016 Paris<br>France</address>
+          </div>
+        </div>
+        <div class="carte-info">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div>
+            <h4>Horaires d'Ouverture</h4>
+            <div class="lignes"><p>Lundi - Vendredi</p><b>08:00 - 19:00</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="pied">
+    <div class="pied-col pied-marque">
+      <a class="logo" href="/" aria-label="Triaina — Accueil">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="18" y="5" width="4" height="25" rx="1" fill="#2563EB"/>
+          <rect x="10" y="12" width="3" height="15" rx="1" fill="#F8FAFC"/>
+          <rect x="27" y="12" width="3" height="15" rx="1" fill="#F8FAFC"/>
+        </svg>
+        <span><b>TRIAINA</b><i>SEO — GEO — Média</i></span>
+      </a>
+      <p>Agence spécialisée en architecture SEO, domination GEO et autorité Média.</p>
+      <a class="social" href="https://www.linkedin.com/company/triaina" target="_blank" rel="noreferrer" aria-label="Suivre Triaina sur LinkedIn">LinkedIn</a>
+    </div>
+    <div class="pied-col">
+      <p class="pied-titre">Agence</p>
+      <ul>
+        <li><a href="/">ACCUEIL</a></li>
+        <li><a href="/agence">NOTRE HISTOIRE</a></li>
+        <li><a href="/references">RÉFÉRENCES</a></li>
+        <li><a href="/blog">BLOG</a></li>
+        <li><a href="/annuaire">ANNUAIRE</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="pied-col">
+      <p class="pied-titre">Expertises</p>
+      <ul>
+        <li><a href="/expertise-seo">Expertise SEO</a></li>
+        <li><a href="/expertise-sea">Expertise SEA</a></li>
+        <li><a href="/expertise-geo">Expertise GEO</a></li>
+        <li><a href="/expertise-media">Expertise Média</a></li>
+        <li><a href="/expertise-automatisation-contenu">Expertise Automatisation de Contenu</a></li>
+        <li><a href="/expertise-ai-overview">Google AI Overview</a></li>
+      </ul>
+    </div>
+    <div class="pied-col">
+      <p class="pied-titre">Localisation</p>
+      <ul>
+        <li><a href="/agence-seo-paris">Agence SEO Paris</a></li>
+        <li><a href="/agence-referencement-ia">Agence Référencement IA</a></li>
+        <li><a href="/agence-referencement-ia-paris">Agence Référencement IA Paris</a></li>
+        <li><a href="/agence-geo-paris">Agence GEO Paris</a></li>
+      </ul>
+    </div>
+    <div class="pied-col">
+      <p class="pied-titre">Infos</p>
+      <address>50 Quai Louis Blériot<br>75016 Paris<br>France</address>
+    </div>
+  </div>
+  <div class="pied-bas">
+    <p>© 2026 Triaina Global Systems.</p>
+    <div class="liens">
+      <a href="/mentions-legales">Mentions Légales</a>
+      <a href="/sitemap.xml" target="_blank">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/da31.js" defer></script>
+<script>
+/* Arrivée en cascade — additive : sans JS ou en motion réduit, tout est visible. */
+(function () {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!('IntersectionObserver' in window)) return;
+  document.body.classList.add('faq-anim');
+  var cibles = [].slice.call(document.querySelectorAll('.q, .infos h3, .carte-info'));
+  var obs = new IntersectionObserver(function (entrees) {
+    entrees.forEach(function (x) {
+      if (!x.isIntersecting) return;
+      x.target.classList.add('vu');
+      obs.unobserve(x.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  cibles.forEach(function (el, i) {
+    el.style.transitionDelay = (i % 4) * 70 + 'ms';
+    obs.observe(el);
+  });
+
+  /* la lumière descend le long du registre (un rAF sur scroll, passif) */
+  var ql = document.querySelector('.ql');
+  var attente = false;
+  function trace() {
+    attente = false;
+    if (!ql) return;
+    var r = ql.getBoundingClientRect();
+    var p = (innerHeight * 0.7 - r.top) / Math.max(r.height, 1);
+    ql.style.setProperty('--trace', Math.min(1, Math.max(0, p)).toFixed(4));
+  }
+  trace();
+  addEventListener('scroll', function () {
+    if (!attente) { attente = true; requestAnimationFrame(trace); }
+  }, { passive: true });
+
+  /* réponse ouverte sous la ligne de flottaison : on la ramène en vue */
+  [].slice.call(document.querySelectorAll('.q')).forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) return;
+      var rep = d.querySelector('.rep');
+      if (rep && rep.getBoundingClientRect().bottom > innerHeight) {
+        rep.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

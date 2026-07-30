@@ -1,0 +1,1925 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triaina — Agence SEO, GEO &amp; Média à Paris | Sortez de l'ombre</title>
+<meta name="description" content="Triaina, agence SEO et GEO à Paris. Référencement naturel, citations IA (ChatGPT, Gemini, Perplexity) et réseau de 8 médias propriétaires. Pré-audit gratuit.">
+<meta name="keywords" content="agence seo, agence geo, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative engine optimization">
+<meta name="author" content="Triaina">
+<meta name="robots" content="index, follow">
+<meta name="msvalidate.01" content="4C58C9622B2DBB31ECD9A463E3DCAF66">
+<link rel="canonical" href="https://www.triaina.fr/">
+<link rel="alternate" hreflang="fr" href="https://www.triaina.fr/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/logo.svg">
+<meta name="geo.region" content="FR-75">
+<meta name="geo.placename" content="Paris">
+<meta name="geo.position" content="48.8464;2.2758">
+<meta name="ICBM" content="48.8464, 2.2758">
+<meta name="language" content="fr">
+<meta http-equiv="content-language" content="fr">
+<meta name="topic" content="Agence SEO GEO Paris">
+<meta name="category" content="Agence de référencement">
+<meta name="coverage" content="France">
+<meta name="target" content="Entreprises cherchant visibilité Google et citations IA">
+<meta name="rating" content="General">
+<meta name="revisit-after" content="7 days">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.triaina.fr/">
+<meta property="og:title" content="Triaina — Agence SEO, GEO &amp; Média à Paris">
+<meta property="og:description" content="Triaina, agence SEO et GEO à Paris. Référencement naturel, citations IA (ChatGPT, Gemini, Perplexity) et réseau de 8 médias propriétaires. Pré-audit gratuit.">
+<meta property="og:image" content="https://www.triaina.fr/og-image.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Triaina">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Triaina — Agence SEO, GEO &amp; Média à Paris">
+<meta name="twitter:description" content="Triaina, agence SEO et GEO à Paris. Référencement naturel, citations IA (ChatGPT, Gemini, Perplexity) et réseau de 8 médias propriétaires. Pré-audit gratuit.">
+<meta name="twitter:image" content="https://www.triaina.fr/og-image.jpg">
+<link rel="stylesheet" href="/assets/fonts.css">
+<style>
+  /* ══════════════════════════════════════════════════════════════════
+     DA-31 « Éclat » — FUSION DA-30 (Ionique) × DA-8 (Phare).
+     UNE seule grande idée : LA LUMIÈRE CHARGE, L'OMBRE PERD.
+     La page est plongée dans l'ombre. Le halo du curseur et le balayage
+     lent du phare (DA-8) CHARGENT les particules qu'ils touchent :
+     allumage OR #FFE9B8 (la lumière), puis charge tenue BLEUE #60A5FA
+     (la marque) qui décroît en quelques secondes. Quand la charge
+     suffit, une DÉCHARGE voyage de particule chargée en particule
+     chargée (moteur DA-30) jusqu'au trident, qui pulse.
+     Attention → visibilité → leads. Trois états, pas plus :
+       0 · hero — ombre, trident deviné ; halo + balayage chargent,
+           décharges au seuil et au clic ; h1 toujours lisible ;
+       1 · scroll — nappe ; faisceau conique scrubé (DA-8) qui charge
+           ce qu'il traverse ; néons allumés par micro-décharge ; la
+           question FAQ ouverte attire une convergence de charges ;
+       2 · CTA — flood (DA-8) : tout se charge, trident géant derrière,
+           décharges continues vers le bouton du FORMULAIRE (la borne).
+     Règle DA-28 : l'or = la lumière, le bleu = la marque.
+     ══════════════════════════════════════════════════════════════════ */
+  :root{
+    --bleu:#2563EB; --bleu-c:#60A5FA; --bleu-p:#93C5FD; --bleu-nuit:#1D4ED8;
+    --encre:#0F172A; --nuit:#0B1428; --nuit-2:#101A33;
+    --papier:#EAF2FF; --brume:#94A3B8; --eclair:#EAF2FF; --lueur:#FFE9B8;
+    --syne:'Syne',sans-serif; --manrope:'Manrope',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:auto}
+  body{
+    background:var(--nuit); color:var(--papier);
+    font-family:var(--manrope); font-weight:300; line-height:1.6;
+    overflow-x:hidden;
+  }
+  ::selection{background:rgba(37,99,235,.45)}
+  a{color:inherit; text-decoration:none}
+  :focus-visible{outline:2px solid var(--bleu-c); outline-offset:3px}
+  .sr{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
+
+  /* ── Fil de progression de lecture ── */
+  .prog{position:fixed; top:0; left:0; right:0; height:2px; z-index:99; background:rgba(148,163,184,.12)}
+  .prog i{
+    display:block; height:100%; transform:scaleX(0); transform-origin:0 50%;
+    background:linear-gradient(90deg,var(--bleu),var(--bleu-c));
+    box-shadow:0 0 12px rgba(96,165,250,.8);
+  }
+
+  .badge-da{
+    position:fixed; bottom:1rem; left:1rem; z-index:90;
+    font-size:.625rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--brume); background:rgba(11,20,40,.85); border:1px solid rgba(148,163,184,.25);
+    padding:.4rem .7rem; border-radius:99px; backdrop-filter:blur(8px);
+  }
+  .badge-da:hover{color:#fff}
+
+  /* ── Nav capsules (pattern des parentes) ── */
+  nav{
+    position:fixed; top:0; left:0; right:0; z-index:80;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:1rem clamp(1.25rem,4vw,3rem); pointer-events:none;
+  }
+  nav>*{pointer-events:auto}
+  .logo{background:rgba(11,20,40,.62); backdrop-filter:blur(12px); border-radius:99px; padding:.45rem .95rem .45rem .6rem; display:flex; align-items:center; gap:.7rem}
+  .logo svg{width:26px; height:26px}
+  .logo b{font-family:var(--syne); font-weight:700; letter-spacing:.2em; font-size:.9rem; color:#fff}
+  .logo i{display:block; font-style:normal; font-family:ui-monospace,monospace; font-size:.55rem; letter-spacing:.18em; color:#9DB9F5; text-transform:uppercase}
+  .nav-l{display:flex; gap:.15rem; list-style:none; background:rgba(11,20,40,.62); backdrop-filter:blur(12px); border-radius:99px; padding:.3rem .4rem}
+  .nav-l a{font-size:.6875rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:#CBD5E1; padding:.5rem .65rem; border-radius:99px; transition:color .25s}
+  .nav-l a:hover{color:#fff}
+  .nav-l a.ncta{background:#fff; color:var(--encre)}
+  .nav-l a.ncta:hover{background:var(--bleu); color:#fff}
+  @media(max-width:1080px){.nav-l{display:none}}
+
+  /* ── Les deux toiles : champ de charges (fond) + décharges (dessus) ── */
+  #scene{position:fixed; inset:0; z-index:0; display:block}
+  #arcs{position:fixed; inset:0; z-index:40; pointer-events:none; display:block}
+  .flash{position:fixed; inset:0; background:var(--eclair); opacity:0; pointer-events:none; z-index:60}
+
+  /* ── LA LUMIÈRE (toujours en OR) : halo curseur + faisceau (DA-8) ── */
+  .curseur-lueur{
+    position:fixed; left:-170px; top:-170px; width:340px; height:340px; border-radius:50%;
+    pointer-events:none; z-index:70; opacity:0; mix-blend-mode:screen;
+    background:radial-gradient(closest-side, rgba(255,233,184,.14), transparent 70%);
+  }
+  /* faisceau balayant retiré à la demande de Lucas (29/07) — l'élément
+     aria-hidden reste dans le HTML pour ne pas toucher au balisage servi */
+  .faisceau{display:none}
+
+  /* ── Boutons ── */
+  .btn-foudre{
+    position:relative; display:inline-flex; align-items:center; gap:.7rem;
+    font-weight:800; font-size:.78rem; letter-spacing:.15em; text-transform:uppercase;
+    background:var(--bleu); color:#fff; padding:1.15rem 2.1rem; border-radius:99px;
+    box-shadow:0 18px 44px -20px rgba(37,99,235,.95);
+    transition:box-shadow .35s, background .3s, transform .2s;
+  }
+  .btn-foudre svg{width:14px; height:14px; fill:#fff}
+  .btn-foudre:hover, .btn-foudre.charge{
+    background:var(--bleu-nuit);
+    box-shadow:0 0 34px rgba(37,99,235,.6), 0 0 90px rgba(37,99,235,.32);
+    transform:translateY(-1px);
+  }
+  .btn-fantome{
+    font-weight:700; font-size:.78rem; letter-spacing:.15em; text-transform:uppercase;
+    color:#CBD5E1; border:1.5px solid rgba(148,163,184,.4); padding:1.1rem 1.8rem; border-radius:99px;
+    transition:border-color .3s, color .3s, background .3s;
+  }
+  .btn-fantome:hover{border-color:var(--bleu-c); color:#fff; background:rgba(37,99,235,.1)}
+
+  /* ── Chip CTA persistant ── */
+  .chip{
+    position:fixed; right:1rem; bottom:1rem; z-index:89;
+    display:inline-flex; align-items:center; gap:.55rem;
+    font-weight:800; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase;
+    background:var(--bleu); color:#fff; padding:.85rem 1.3rem; border-radius:99px;
+    box-shadow:0 14px 40px -12px rgba(37,99,235,.8);
+    opacity:0; transform:translateY(14px); pointer-events:none;
+    transition:opacity .4s, transform .4s, background .3s;
+  }
+  .chip.la{opacity:1; transform:none; pointer-events:auto}
+  .chip svg{width:12px; height:12px; fill:#fff}
+  .chip:hover{background:var(--bleu-nuit)}
+
+  /* ── Hero — état 0 : l'ombre, le trident deviné, la lumière qui charge ── */
+  .hero{
+    position:relative; z-index:2; min-height:100svh;
+    display:flex; flex-direction:column; justify-content:center;
+    padding:6.5rem clamp(1.25rem,5vw,4rem) 5rem;
+    --sx:-40; /* position du balayage (%) — hors champ par défaut */
+  }
+  .hero .balai{
+    position:fixed; inset:0; z-index:0; pointer-events:none; mix-blend-mode:screen;
+    background:linear-gradient(112deg, transparent calc(var(--sx)*1% - 11%), rgba(255,233,184,.08) calc(var(--sx)*1%), transparent calc(var(--sx)*1% + 11%));
+  }
+  .hero .in{position:relative; z-index:2; max-width:76rem; margin:0 auto; width:100%; will-change:transform,opacity,filter}
+  .hero .sur{
+    font-family:ui-monospace,monospace; font-size:.72rem; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--lueur); margin-bottom:1.4rem;
+    display:flex; align-items:center; gap:.75rem;
+  }
+  .hero .sur::before{content:''; display:block; width:2.6rem; height:1px; background:var(--lueur)}
+  /* h1 TOUJOURS lisible : couleur pleine, jamais dépendant de la lumière. */
+  .hero h1{
+    font-family:var(--syne); font-weight:800; text-transform:uppercase;
+    font-size:clamp(2.5rem,7.6vw,6.8rem); line-height:.96; letter-spacing:-.02em;
+    text-shadow:0 0 calc(var(--g,0)*30px) rgba(255,233,184,calc(var(--g,0)*.2));
+  }
+  .hero h1 em{font-style:normal; color:var(--bleu-c)}
+  .hero .sous{margin-top:1.7rem; font-size:clamp(1rem,1.4vw,1.24rem); color:var(--brume); max-width:37em; font-weight:400}
+  .hero .actions{display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:2.3rem}
+  .hero .preuve{margin-top:1.5rem; font-family:ui-monospace,monospace; font-size:.68rem; letter-spacing:.15em; text-transform:uppercase; color:var(--brume)}
+  .hero .preuve b{color:var(--bleu-c); font-weight:700}
+  .hero .indic{
+    position:absolute; bottom:2.2rem; right:clamp(1.25rem,5vw,4rem); z-index:2;
+    display:flex; align-items:center; gap:.8rem;
+    font-family:ui-monospace,monospace; font-size:.625rem; letter-spacing:.25em;
+    text-transform:uppercase; color:var(--brume);
+  }
+  .indic .tr{width:1px; height:40px; background:linear-gradient(var(--lueur),transparent)}
+  .hero .aide{
+    position:absolute; bottom:1.2rem; left:0; right:0; width:max-content; margin-inline:auto; white-space:nowrap; z-index:2;
+    font-family:ui-monospace,monospace; font-size:.6rem; letter-spacing:.2em;
+    text-transform:uppercase; color:rgba(148,163,184,.65);
+  }
+  @media(max-width:620px){
+    .hero{padding:6rem 1.25rem 6rem}
+    .hero .preuve{font-size:.58rem; letter-spacing:.08em}
+    .hero .sous{font-size:.98rem}
+    .hero .actions{gap:.75rem}
+    .hero .indic,.hero .aide{display:none}
+    .btn-foudre,.btn-fantome{padding:1rem 1.5rem; font-size:.72rem; letter-spacing:.12em}
+  }
+
+  /* ── Sections communes ── */
+  .k{font-family:ui-monospace,monospace; font-size:.68rem; letter-spacing:.24em; text-transform:uppercase; color:var(--bleu-c)}
+  section h2{
+    font-family:var(--syne); font-weight:800; text-transform:uppercase;
+    font-size:clamp(1.9rem,4.4vw,3.6rem); line-height:1; letter-spacing:-.01em; margin-top:1rem;
+    text-shadow:0 6px 40px rgba(11,20,40,.85);
+  }
+
+  /* ── Méthode : trois piliers, léchés par le faisceau (--lum) ── */
+  .methode{position:relative; z-index:2; padding:18vh clamp(1.25rem,5vw,4rem) 12vh}
+  .methode .cadre{max-width:66rem; margin:0 auto}
+  .methode .intro{margin-top:1.2rem; color:var(--brume); max-width:42em}
+  .piliers{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:3rem}
+  @media(max-width:900px){.piliers{grid-template-columns:1fr}}
+  .pilier{
+    --lum:1; /* sans JS : éclairé */
+    position:relative; overflow:hidden;
+    border:1px solid rgba(148,163,184,.22); border-radius:16px;
+    padding:1.6rem 1.5rem; background:rgba(16,26,51,.82);
+    box-shadow:0 0 calc(var(--lum)*42px) rgba(255,233,184,calc(var(--lum)*.13));
+  }
+  .pilier::before{ /* la lumière du faisceau qui frappe la carte */
+    content:''; position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(120% 90% at 50% 0%, rgba(255,233,184,.15), transparent 70%);
+    opacity:var(--lum);
+  }
+  .pilier .num{font-family:ui-monospace,monospace; font-size:.62rem; letter-spacing:.22em; color:var(--bleu-c)}
+  .pilier h3{
+    font-family:var(--syne); font-weight:800; text-transform:uppercase;
+    font-size:1.15rem; letter-spacing:.03em; margin-top:.55rem; color:var(--papier);
+    text-shadow:0 0 calc(var(--lum)*18px) rgba(255,233,184,calc(var(--lum)*.5));
+  }
+  .pilier p.tx{margin-top:.8rem; font-size:.9rem; color:var(--brume)}
+  /* l'or de la marque sur le mot qui porte la promesse, comme au hero et au CTA */
+  .methode h2 em{font-style:normal; color:var(--lueur); text-shadow:0 0 24px rgba(255,233,184,.3)}
+  /* chaque pilier renvoie vers sa page d'expertise : maillage interne réel,
+     suivi par les crawlers, là où l'ancienne home s'arrêtait au texte */
+  .pilier .lien-pilier{display:inline-block; margin-top:.9rem; font-size:.82rem;
+    font-weight:600; color:var(--bleu-c); text-decoration:none;
+    border-bottom:1px solid rgba(96,165,250,.35); padding-bottom:1px;
+    transition:color .2s, border-color .2s}
+  .pilier .lien-pilier:hover{color:var(--lueur); border-color:var(--lueur)}
+
+  /* ── Chiffres : néons BLEUS (charge tenue) allumés par micro-décharge ── */
+  .chiffres{
+    position:relative; z-index:2; padding:16vh clamp(1.25rem,5vw,4rem);
+    background:linear-gradient(rgba(11,20,40,0),rgba(16,26,51,.6) 16%,rgba(16,26,51,.6) 84%,rgba(11,20,40,0));
+  }
+  .chiffres .cadre{max-width:66rem; margin:0 auto}
+  .neons{display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(1rem,2.5vw,2.5rem); margin-top:3rem}
+  @media(max-width:900px){.neons{grid-template-columns:repeat(2,1fr); gap:2rem 1rem}}
+  .eclat{border-top:1px solid rgba(148,163,184,.18); padding-top:1.3rem}
+  .eclat b{
+    --on:1; /* sans JS : allumé */
+    display:block; font-family:var(--syne); font-weight:800;
+    font-size:clamp(2.4rem,5.2vw,4.4rem); line-height:1; color:var(--bleu-p);
+    opacity:calc(.12 + var(--on)*.88);
+    text-shadow:
+      0 0 calc(var(--on)*16px) rgba(96,165,250,calc(var(--on)*.85)),
+      0 0 calc(var(--on)*52px) rgba(37,99,235,calc(var(--on)*.45));
+  }
+  .eclat b sup{font-size:.4em; vertical-align:.85em}
+  .eclat span{display:block; margin-top:.7rem; font-family:ui-monospace,monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--brume)}
+
+  /* ── Clients ── */
+  .clients{position:relative; z-index:2; padding:16vh clamp(1.25rem,5vw,4rem)}
+  .clients .cadre{max-width:66rem; margin:0 auto}
+  .clients .sous-t{margin-top:1.1rem; color:var(--brume); max-width:46em}
+  /* ── nuée des marques : chaque plaque ARRIVE DU FOND (point de fuite au pied
+        du faisceau), grossit en approchant et se pose sur l'écran au fil du
+        scroll — à la fin, le mur complet est sorti de l'ombre ── */
+  .defile{position:relative; margin-top:1rem}
+  .scene-c{position:relative; padding:3rem 0 1.5rem; display:flex; align-items:center; justify-content:center; overflow:hidden}
+  /* cône doré retiré à la demande de Lucas (29/07) — l'élément reste dans le
+     HTML (décoratif, aria-hidden) pour ne pas toucher au balisage servi */
+  .faisceau-c{display:none}
+  .train{position:relative; display:flex; flex-wrap:wrap; justify-content:center; gap:1.1rem; list-style:none; max-width:64rem; margin:0 auto}
+  .train li{
+    --lit:1; width:clamp(150px,17vw,215px);
+    border:1px solid rgba(148,163,184,.16); border-radius:16px;
+    background:rgba(16,26,51,.82); overflow:hidden;
+    padding:1.4rem 1rem 1rem;
+    display:flex; flex-direction:column; align-items:center; gap:.85rem; text-align:center;
+    will-change:transform, opacity; transition:box-shadow .4s;
+  }
+  .train li:hover{box-shadow:0 0 30px -6px rgba(37,99,235,.55)}
+  .train .cap{height:52px; width:100%; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius:8px}
+  .train img{max-width:100%; max-height:52px; object-fit:contain; transition:filter .35s}
+  .train .cap.tall{height:72px}
+  .train .cap.tall img{max-height:none; width:100%; height:100%; object-fit:cover; object-position:50% 22%}
+  /* traitements par logo : tout converge vers la lumière sur fond nuit */
+  .lg-inv{filter:invert(1) grayscale(1) brightness(var(--lit)); mix-blend-mode:screen}
+  .lg-invscr{filter:invert(1) brightness(var(--lit)); mix-blend-mode:screen}
+  .lg-scr{filter:brightness(calc(var(--lit)*1.2)); mix-blend-mode:screen}
+  .lg-or{filter:brightness(calc(var(--lit)*1.25))}
+  .lg-svg{filter:brightness(var(--lit))}
+  .lg-photo{filter:brightness(calc(var(--lit)*.5)) saturate(.55) contrast(1.15); border-radius:8px}
+  .lg-photo2{filter:brightness(calc(var(--lit)*.62)) saturate(.75) contrast(1.1)}
+  /* logo opaque sur fond blanc (pas de transparence exploitable) : la carte encadre la charge */
+  .lg-card{filter:brightness(var(--lit)); border-radius:6px}
+  .s11{transform:scale(1.1)} .s12{transform:scale(1.2)} .s125{transform:scale(1.25)}
+  .s135{transform:scale(1.35)} .s145{transform:scale(1.45)} .s16{transform:scale(1.6)}
+  .train em{
+    display:block; font-style:normal; font-family:ui-monospace,monospace; font-size:.58rem;
+    letter-spacing:.14em; color:var(--bleu-c); text-transform:uppercase; opacity:.9;
+  }
+  /* ── mode REVUE (posé par JS) : les marques passent UNE PAR UNE sous le
+        faisceau — chacune sort de l'ombre, tient l'écran, puis y retourne
+        quand la suivante arrive. Sans JS ou en motion réduit, ce mode n'est
+        jamais activé : la grille complète reste le rendu. ── */
+  .defile.revue .scene-c{min-height:min(64vh,34rem); min-height:min(64svh,34rem);
+    padding:3rem 0 2rem}
+  .defile.revue .train{display:block; max-width:none; width:100%;
+    height:min(46vh,24rem); height:min(46svh,24rem); position:relative}
+  .defile.revue .train li{position:absolute; inset:0; margin:auto;
+    width:min(34rem,88vw); height:max-content;
+    border:0; background:none; padding:0; box-shadow:none;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:1.5rem; text-align:center; opacity:0; pointer-events:none}
+  /* les logos inversés (fond blanc, pas d'alpha) : le blending screen est
+     neutralisé par l'isolation du li animé — on leur rend une plaque sombre */
+  .defile.revue .train li:has(.lg-inv,.lg-invscr){
+    background:rgba(16,26,51,.72); border-radius:16px;
+    padding:1.7rem 2.2rem; width:min(30rem,84vw)}
+  .defile.revue .cap{height:auto; width:auto; max-width:100%; overflow:visible}
+  .defile.revue .cap img{max-height:min(22vh,11.5rem); max-height:min(20svh,11.5rem);
+    max-width:min(24rem,76vw); object-fit:contain}
+  /* les visuels photographiques gardent un cadre doux en grand format */
+  .defile.revue .cap img.lg-photo, .defile.revue .cap img.lg-photo2{
+    width:min(22rem,74vw); height:min(20vh,10.5rem); object-fit:cover;
+    border-radius:14px}
+  .defile.revue .cap.tall{height:auto}
+  .defile.revue .train em{font-size:clamp(.8rem,1.5vw,1.05rem);
+    letter-spacing:.26em; opacity:1}
+  /* jauge de passage (décor injecté par JS) : la lumière avance, sans compteur */
+  .revue-jauge{position:absolute; bottom:.4rem; left:50%; transform:translateX(-50%);
+    width:min(16rem,56vw); height:1px; background:rgba(148,163,184,.2)}
+  .revue-jauge i{display:block; height:100%; width:0;
+    background:linear-gradient(90deg,var(--lueur),var(--bleu-c));
+    box-shadow:0 0 10px rgba(255,233,184,.55)}
+
+  /* repli statique (motion réduit / sans JS) : grille posée, tout visible —
+     y compris si le réglage change PAGE OUVERTE alors que .revue est posée */
+  @media (prefers-reduced-motion: reduce){
+    .faisceau-c{display:none}
+    .train li{transform:none!important; opacity:1!important; filter:none!important}
+    .defile.revue .train{height:auto!important; display:flex!important}
+    .defile.revue .train li{position:static!important; width:auto!important}
+    .revue-jauge{display:none}
+  }
+
+  /* ── FAQ : la question ouverte attire les charges ── */
+  .faq{position:relative; z-index:2; padding:14vh clamp(1.25rem,5vw,4rem)}
+  .faq .cadre{max-width:56rem; margin:0 auto}
+  .faq details{
+    border:1px solid rgba(148,163,184,.2); border-radius:14px;
+    background:rgba(16,26,51,.82); margin-top:1rem; overflow:hidden;
+    transition:border-color .3s, box-shadow .3s;
+  }
+  .faq details[open]{
+    border-color:rgba(96,165,250,.6);
+    box-shadow:0 0 26px -8px rgba(37,99,235,.55);
+  }
+  .faq summary{
+    cursor:pointer; list-style:none; display:flex; align-items:baseline;
+    justify-content:space-between; gap:1rem; padding:1.2rem 1.4rem;
+    font-family:var(--syne); font-weight:700; font-size:1rem; line-height:1.35; color:#E2E8F0;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+'; flex:none; font-family:var(--manrope); font-weight:300; font-size:1.5rem; line-height:1; color:var(--bleu-c); transition:transform .3s}
+  .faq details[open] summary::after{content:'−'}
+  .faq .rep{padding:0 1.4rem 1.35rem; color:var(--brume); font-size:.94rem; max-width:64em}
+
+  /* ── CTA final — état 2 : flood, trident géant, formulaire-borne ── */
+  .cta{position:relative; z-index:2; padding:16vh clamp(1.25rem,5vw,4rem) 20vh; text-align:center; overflow:hidden}
+  .flood{ /* flood de lumière DA-8 — l'or inonde, puis la charge est bleue */
+    position:absolute; left:50%; top:52%; width:95rem; height:95rem; border-radius:50%;
+    transform:translate(-50%,-50%) scale(.14); opacity:.22; pointer-events:none;
+    background:radial-gradient(closest-side, rgba(255,233,184,.24), rgba(255,209,102,.08) 45%, transparent 72%);
+    transition:transform 1.4s cubic-bezier(.19,1,.22,1), opacity 1.2s;
+  }
+  .flood.on{transform:translate(-50%,-50%) scale(1); opacity:1}
+  /* ── LES FEUX DE LA RAMPE : plus de carte — une pénombre douce pour la
+        lisibilité, et une rampe de théâtre au pied du bouton qui éclaire
+        la scène d'en bas. Sans JS / motion réduit : la rampe (décor injecté)
+        est absente, le contenu complet reste visible ; --feu:1 par défaut
+        couvre le cas « motion réduit basculé page ouverte ». ── */
+  .cta .voile{
+    position:relative; z-index:1; max-width:52rem; margin:0 auto;
+    padding:clamp(1.6rem,4vw,3rem);
+    background:radial-gradient(ellipse 120% 85% at 50% 42%,
+      rgba(11,20,40,.85), rgba(11,20,40,.55) 55%, transparent 78%);
+  }
+  .cta h2{font-size:clamp(2.2rem,6vw,4.6rem); line-height:.98; letter-spacing:-.015em; margin-top:1rem}
+  .cta h2 em{font-style:normal; color:var(--lueur); text-shadow:0 0 24px rgba(255,233,184,.3)}
+  .cta p.desc{margin-top:1.3rem; color:var(--brume); max-width:36em; margin-inline:auto;
+    text-shadow:0 1px 6px rgba(11,20,40,.95), 0 0 14px rgba(11,20,40,.85)}
+  .formulaire{margin-top:2.6rem; text-align:left; max-width:44rem; margin-inline:auto}
+  .formulaire h3{font-family:var(--syne); font-weight:700; font-size:1.05rem; letter-spacing:.03em; text-transform:uppercase; color:#E2E8F0; text-align:center}
+  .formulaire .champs{display:grid; grid-template-columns:1fr 1fr; gap:.9rem; margin-top:1.5rem}
+  @media(max-width:860px){.formulaire .champs{grid-template-columns:1fr}}
+  /* champs « trappes » : encastrés dans le plancher de scène, joint fin en
+     bas ; au focus, un filament bleu et une fuite de lumière vers le sol */
+  .formulaire input{
+    width:100%; background:rgba(2,5,12,.72); border:0; border-radius:4px;
+    padding:1rem 1.1rem; color:var(--papier); caret-color:var(--lueur);
+    font-family:var(--manrope); font-size:.95rem;
+    box-shadow:inset 0 2px 6px rgba(0,0,0,.55), inset 0 -1px 0 rgba(148,163,184,.22);
+    transition:box-shadow .3s;
+  }
+  .formulaire input::placeholder{color:rgba(148,163,184,.75); text-overflow:ellipsis}
+  .formulaire input:focus{outline:none;
+    box-shadow:inset 0 2px 6px rgba(0,0,0,.55), inset 0 -2px 0 var(--bleu-c),
+      0 14px 22px -14px rgba(96,165,250,.5)}
+  .formulaire .btn-foudre{border:0; cursor:pointer; font-family:var(--manrope);
+    display:flex; width:fit-content; min-width:17rem; justify-content:center;
+    margin:1.4rem auto 0}
+  @media(max-width:640px){.formulaire .btn-foudre{width:100%; min-width:0}}
+  /* état « charge » (flood actif) : le bouton est éclairé d'en bas par la rampe */
+  .formulaire .btn-foudre.charge{
+    box-shadow:0 0 34px rgba(37,99,235,.55), 0 16px 34px -12px rgba(255,209,102,.5)}
+  /* le survol garde un retour visible même en état charge */
+  .formulaire .btn-foudre.charge:hover{
+    box-shadow:0 0 46px rgba(37,99,235,.75), 0 18px 40px -10px rgba(255,209,102,.6)}
+  /* la rampe (décor injecté par JS) : ligne de feux, allumée par défaut.
+     --feu = intensité de base (respiration), --sur = surcroît au focus */
+  .rampe{--feu:1; --sur:0; position:relative; height:16px; margin-top:1rem;
+    display:flex; align-items:center; justify-content:center; gap:clamp(1.4rem,4vw,2.6rem)}
+  .rampe::before{content:''; position:absolute; left:4%; right:4%; top:50%; height:2px;
+    transform:translateY(-50%);
+    background:linear-gradient(90deg, transparent, var(--lueur), transparent);
+    opacity:calc(.55 * (var(--feu) + var(--sur)))}
+  .rampe i{width:4px; height:4px; border-radius:50%; background:var(--lueur);
+    opacity:calc(.75 * (var(--feu) + var(--sur)));
+    box-shadow:0 0 calc(10px + 8px * (var(--feu) + var(--sur))) 2px rgba(255,220,150,.65)}
+  .formulaire .note{margin-top:1.1rem; text-align:center; font-family:ui-monospace,monospace; font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--brume); transition:color .35s;
+    text-shadow:0 1px 6px rgba(11,20,40,.95), 0 0 14px rgba(11,20,40,.85)}
+  /* les deux champs remplis : la réassurance gagne en lisibilité */
+  .cta.prete .formulaire .note{color:#CBD5E1}
+  /* statut d'envoi (élément injecté par JS, aria-live) */
+  .cta-statut{margin-top:.8rem; text-align:center; font-size:.85rem; color:var(--bleu-c)}
+  .cta-statut.err{color:#FCA5A5}
+  .cta .rassure{margin-top:1.8rem; font-size:.85rem; color:var(--brume); position:relative; z-index:1; max-width:44em; margin-inline:auto;
+    text-shadow:0 1px 6px rgba(11,20,40,.95), 0 0 14px rgba(11,20,40,.85)}
+  /* l'adresse n'est plus un lien mailto (email retiré de la page) : le style
+     de l'ancien <a> est reporté ici pour que la ligne reste à l'identique */
+  .cta .rassure a, .cta .rassure .adresse{font-family:ui-monospace,monospace; font-size:.8rem; display:inline-block; margin-top:.5rem}
+  .cta .rassure a:hover{color:#fff}
+
+  footer{
+    position:relative; z-index:2; border-top:1px solid rgba(148,163,184,.15);
+    padding:3rem clamp(1.25rem,5vw,4rem) 4.5rem; display:flex; flex-wrap:wrap;
+    gap:1rem 3rem; justify-content:space-between; background:var(--nuit);
+    font-size:.75rem; color:var(--brume);
+  }
+  footer .liens{display:flex; flex-wrap:wrap; gap:1.4rem; text-transform:uppercase; letter-spacing:.12em; font-weight:500}
+  footer .liens a:hover{color:#fff}
+
+  /* ══ Motion réduit : frame statique du trident (charges posées),
+        lumière DOM coupée, néons et piliers allumés, tout lisible. ══ */
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important; transition:none!important}
+    .prog,#arcs,.flash,.faisceau,.balai,.curseur-lueur,.flood{display:none}
+    .hero .in{transform:none!important; opacity:1!important; filter:none!important}
+    .hero .indic,.hero .aide{display:none}
+    .pilier{--lum:1}
+    .eclat b{--on:1}
+    .chip{opacity:1; transform:none; pointer-events:auto}
+  }
+</style>
+<link rel="stylesheet" href="/assets/da31.css">
+<noscript><style>
+  /* Sans JS : toiles et lumières coupées → fond au CSS, piliers et néons
+     allumés (valeurs par défaut), FAQ native, formulaire natif, chip visible.
+     100 % du texte est déjà dans le HTML. */
+  #scene,#arcs,.prog,.flash,.faisceau,.balai,.flood,.faisceau-c{display:none}
+  body{background:radial-gradient(64% 50% at 74% 32%, rgba(37,99,235,.25), transparent 70%), #0B1428}
+  .hero .indic,.hero .aide{display:none}
+  .scene-c{height:auto; min-height:0; overflow:visible}
+  .train{flex-wrap:wrap; justify-content:center; padding:0}
+  .train li{--lit:1; transform:none}
+  .train em{opacity:1}
+  .chip{opacity:1; transform:none; pointer-events:auto}
+</style></noscript>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://www.triaina.fr/#organization","@type":["LocalBusiness","Organization"],"address":{"@type":"PostalAddress","addressCountry":"FR","addressLocality":"Paris","postalCode":"75016","streetAddress":"50 quai Louis Bleriot"},"alternateName":["Triaina","Triaina Agency","Agence GSO Paris","Agence Référencement IA","Agence GEO Paris"],"areaServed":{"@type":"Country","name":"France"},"description":"Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.","geo":{"@type":"GeoCoordinates","latitude":48.8464,"longitude":2.2758},"hasMap":"https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris","image":"https://www.triaina.fr/logo.svg","knowsAbout":["SEO","GSO","Generative Search Optimization","Référencement IA","Stratégie Média","Agence SEO Paris","Search Engine Optimization (SEO)","Large Language Models (LLM)","Agence GSO","Google SGE Optimization","Knowledge Graph Construction","Entity SEO","Optimisation ChatGPT","Digital PR","GEO","Generative Engine Optimization"],"logo":"https://www.triaina.fr/logo.svg","name":"Triaina - Agence SEO & GEO Paris","openingHoursSpecification":{"@type":"OpeningHoursSpecification","closes":"19:00","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00"},"priceRange":"$$","sameAs":["https://www.linkedin.com/company/triaina","https://www.instagram.com/triaina_agency"],"url":"https://www.triaina.fr"},{"@id":"https://www.triaina.fr/#website","@type":"WebSite","description":"Domination IA et Visibilité Totale","inLanguage":"fr-FR","name":"Triaina | Agence SEO & GEO Paris","potentialAction":{"@type":"SearchAction","query-input":"required name=search_term_string","target":"https://www.triaina.fr/recherche?q={search_term_string}"},"publisher":{"@id":"https://www.triaina.fr/#organization"},"url":"https://www.triaina.fr/"}]}</script>
+<!-- Fil d'Ariane de l'accueil. -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.triaina.fr/"}]}</script>
+<!-- FAQ de l'accueil : les 4 paires ci-dessous sont RIGOUREUSEMENT identiques au
+     texte visible de la section #faq. Google exige cette correspondance, et c'est
+     aussi ce qui rend les réponses citables telles quelles par les IA. Toute
+     retouche du texte visible doit être reportée ici, et inversement. -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu'est-ce que le GEO (Generative Engine Optimization) ?","acceptedAnswer":{"@type":"Answer","text":"Le GEO (Generative Engine Optimization) désigne l'ensemble des techniques qui visent à faire apparaître votre marque ou votre contenu dans les réponses générées par les moteurs d'IA — ChatGPT, Gemini, Perplexity, Copilot. Contrairement au SEO classique qui cible un classement dans une liste de liens, le GEO cible une citation dans un texte généré. Les leviers sont différents : structuration du contenu en réponses directes, renforcement de l'entité de marque, balisage Schema.org précis, et présence dans des sources que les IA utilisent comme références. Triaina mesure la visibilité GEO via des audits réguliers sur les principaux moteurs génératifs."}},{"@type":"Question","name":"Comment être cité par ChatGPT ?","acceptedAnswer":{"@type":"Answer","text":"ChatGPT Search et les autres moteurs génératifs citent les sources qui combinent trois signaux : un contenu structuré en réponses directes (pas de texte dense non découpé), une autorité de marque mesurable (citations dans des médias tiers, cohérence des entités sur le web), et un balisage technique lisible par les crawlers IA (Schema.org, JSON-LD, balises LLM). Triaina travaille ces trois leviers en parallèle : optimisation on-site du contenu, renforcement de l'entité via le réseau de médias propriétaires, et audit technique GEO. Les premières citations mesurables apparaissent généralement entre 4 et 8 semaines après le début de l'accompagnement."}},{"@type":"Question","name":"Combien coûte un accompagnement SEO & GEO ?","acceptedAnswer":{"@type":"Answer","text":"Les accompagnements Triaina démarrent à partir de 1 000 €/mois pour une stratégie SEO et GEO combinée. Un audit SEO/GEO complet est disponible à partir de 1 700 €. Pour les sites de taille réduite, des formules à partir de 500 €/mois couvrent les optimisations essentielles. Chaque accompagnement est précédé d'un pré-audit gratuit de 30 minutes pour évaluer votre situation actuelle et définir les priorités. Contactez-nous pour un chiffrage adapté à votre secteur et à vos objectifs."}},{"@type":"Question","name":"En combien de temps voit-on des résultats ?","acceptedAnswer":{"@type":"Answer","text":"En SEO, les premiers mouvements de positions sont visibles entre 4 et 12 semaines selon l'état technique du site et la concurrence sur les mots-clés ciblés. La stabilisation des gains prend généralement 3 mois — c'est le délai algorithmique standard de Google (Transition Rank). En GEO, les premières citations IA mesurables apparaissent entre 4 et 8 semaines après l'activation des leviers on-site et médias. Triaina mesure ces résultats dès le premier mois via des audits de visibilité GEO sur ChatGPT, Gemini et Perplexity."}}]}</script>
+</head>
+<body data-fond="accueil">
+
+<div class="prog" aria-hidden="true"><i id="progBar"></i></div>
+
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="faisceau" id="faisceau" aria-hidden="true"></div>
+<canvas id="arcs" aria-hidden="true"></canvas>
+<div class="flash" id="flash" aria-hidden="true"></div>
+
+<nav class="site" aria-label="Navigation principale">
+  <a class="logo" href="/" aria-label="Triaina — Accueil">
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="18" y="5" width="4" height="25" rx="1" fill="#2563EB"/>
+      <rect x="10" y="12" width="3" height="15" rx="1" fill="#F8FAFC"/>
+      <rect x="27" y="12" width="3" height="15" rx="1" fill="#F8FAFC"/>
+    </svg>
+    <span><b>TRIAINA</b><i>SEO — GEO — Média</i></span>
+  </a>
+
+  <ul class="nav-l">
+      <li><a href="/" aria-current="page">Accueil</a></li>
+      <li><a href="/agence">Notre Histoire</a></li>
+      <li class="a-sous-menu">
+        <button type="button" class="nav-parent" aria-expanded="false" aria-haspopup="true">Expertise<svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+        <ul class="sous-menu">
+          <li><a href="/expertise-seo">Expertise SEO</a></li>
+          <li><a href="/expertise-sea">Expertise SEA</a></li>
+          <li><a href="/expertise-geo">Expertise GEO</a></li>
+          <li><a href="/expertise-media">Expertise Média</a></li>
+          <li><a href="/expertise-automatisation-contenu">Expertise Automatisation de Contenu</a></li>
+          <li><a href="/expertise-ai-overview">Google AI Overview</a></li>
+        </ul>
+      </li>
+      <li><a href="/references">Références</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/annuaire">Annuaire</a></li>
+      <li><a href="/faq">FAQ</a></li>
+    <li><a class="ncta" href="/contact">Contact</a></li>
+  </ul>
+
+  <button type="button" class="burger" id="burger" aria-label="Ouvrir le menu"
+          aria-expanded="false" aria-controls="menu-mobile">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="menu-mobile" id="menu-mobile" hidden>
+  <div class="mm-fond" data-fermer></div>
+  <div class="mm-panneau" role="dialog" aria-modal="true" aria-label="Menu" data-lenis-prevent>
+    <ul class="mm-liens">
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/agence">Notre Histoire</a></li>
+        <li class="grp"><span>Expertise</span>
+          <ul>
+            <li><a href="/expertise-seo">Expertise SEO</a></li>
+            <li><a href="/expertise-sea">Expertise SEA</a></li>
+            <li><a href="/expertise-geo">Expertise GEO</a></li>
+            <li><a href="/expertise-media">Expertise Média</a></li>
+            <li><a href="/expertise-automatisation-contenu">Expertise Automatisation de Contenu</a></li>
+            <li><a href="/expertise-ai-overview">Google AI Overview</a></li>
+          </ul>
+        </li>
+        <li><a href="/references">Références</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/annuaire">Annuaire</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    <a class="mm-cta" href="/contact">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 12-14h-8z"/></svg>
+      Pré-audit gratuit
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="chip" id="chip" href="#contact" aria-label="Recevoir mon pré-audit gratuit">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 12-14h-8z"/></svg>
+  Pré-audit gratuit
+</a>
+
+<!-- ═══ HERO — état 0 : l'ombre ; la lumière charge, la charge éclaire ═══ -->
+<header class="hero" id="hero">
+  <div class="balai" aria-hidden="true"></div>
+  <div class="in">
+    <p class="sur">Paris · Agence SEO &amp; GEO</p>
+    <h1 aria-label="Agence SEO et GEO à Paris — sortez de l'ombre sur Google et dans les réponses des IA">Sortez de <em>l'ombre.</em></h1>
+    <p class="sous">Vos clients posent déjà leurs questions&#8239;: à Google, à ChatGPT, à Gemini,
+    à Perplexity. Triaina met votre marque en pleine lumière&#8239;: le SEO pour l'index,
+    le GEO pour devenir la source que les IA citent.</p>
+    <div class="actions">
+      <a class="btn-foudre" id="btnHero" href="#contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 12-14h-8z"/></svg>
+        Recevoir mon pré-audit gratuit
+      </a>
+      <a class="btn-fantome" href="#methode">Voir la méthode ↓</a>
+    </div>
+    <p class="preuve">réponse <b>&lt;&nbsp;24&nbsp;h</b> · 30&nbsp;min, sans engagement</p>
+  </div>
+  <p class="aide" aria-hidden="true">La lumière charge — l'ombre perd. Éclairez, puis cliquez.</p>
+  <div class="indic" aria-hidden="true"><span class="tr"></span> Défiler</div>
+</header>
+
+<!-- ═══ MÉTHODE — état 1 : le faisceau lèche les piliers, qui se chargent ═══ -->
+<section class="methode" id="methode" aria-label="La méthode — SEO, GEO et Média">
+  <div class="cadre">
+    <p class="k">La méthode</p>
+    <h2>Trois leviers. Une seule direction&#8239;: <em>la lumière.</em></h2>
+    <p class="intro">Le search n'est plus une liste de liens&#8239;: c'est une réponse.
+    Notre méthode éclaire les trois surfaces où elle se joue — l'index de Google,
+    les réponses des IA, et les sources qui leur servent de preuve.</p>
+    <div class="piliers">
+      <article class="pilier">
+        <p class="num">01</p>
+        <h3>SEO — la fondation</h3>
+        <p class="tx">Vingt-six ans d'expertise en référencement naturel&#8239;: audit
+        technique, optimisation des entités, netlinking éditorial. Nous rendons votre site
+        limpide pour Google — et donc pour tout ce qui s'en nourrit.
+        <a class="lien-pilier" href="/expertise-seo">Découvrir notre expertise SEO →</a></p>
+      </article>
+      <article class="pilier">
+        <p class="num">02</p>
+        <h3>GEO — la citation</h3>
+        <p class="tx">La visibilité IA se gagne à la source&#8239;: contenu structuré en
+        réponses directes, entité de marque renforcée, audit GEO. Objectif&#8239;: être la
+        réponse que ChatGPT, Gemini et Perplexity choisissent de citer.
+        <a class="lien-pilier" href="/expertise-geo">Découvrir notre expertise GEO →</a></p>
+      </article>
+      <article class="pilier">
+        <p class="num">03</p>
+        <h3>Média — la preuve</h3>
+        <p class="tx">8 médias propriétaires et plus de 100 partenaires éditoriaux — dont
+        Yonder et Les Hardis — fabriquent l'autorité que les algorithmes comme les lecteurs
+        reconnaissent&#8239;: relations presse, brand content, signaux E-E-A-T.
+        <a class="lien-pilier" href="/expertise-media">Découvrir notre expertise Média →</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CHIFFRES — néons bleus allumés par micro-décharge ═══ -->
+<section class="chiffres" aria-label="L'agence en chiffres">
+  <div class="cadre">
+    <p class="k">L'agence en chiffres</p>
+    <div class="neons">
+      <div class="eclat"><b>26</b><span>ans d'expertise SEO cumulée — racines en 2000</span></div>
+      <div class="eclat" data-compte="articles"><b>65</b><span>guides SEO &amp; GEO publiés</span></div>
+      <div class="eclat"><b>4-8</b><span>semaines avant les premières citations IA mesurées</span></div>
+      <div class="eclat"><b>8</b><span>médias propriétaires + 100<sup>+</sup> partenaires éditoriaux</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLIENTS ═══ -->
+<section class="clients" aria-label="Ils nous font confiance">
+  <div class="cadre">
+    <p class="k">Ils nous font confiance</p>
+    <h2>Elles sont sorties de l'ombre.</h2>
+    <p class="sous-t">Hôtellerie, voyage, grands crus, médias, tech, éducation — quelques-unes
+    des marques qui nous confient leur visibilité, sur Google comme dans les réponses
+    des IA.</p>
+  </div>
+  <div class="defile" id="defile">
+    <div class="scene-c">
+      <div class="faisceau-c" aria-hidden="true"></div>
+      <ul class="train" id="train">
+        <li><span class="cap"><img class="lg-or s12" src="/assets/logos/magrez.webp" alt="Bernard Magrez" loading="lazy"></span><em>Bernard Magrez</em></li>
+        <li><span class="cap"><img class="lg-svg" src="/assets/logos/skilink-dark.svg" alt="Skilink" loading="lazy"></span><em>Skilink</em></li>
+        <li><span class="cap"><img class="lg-invscr s135" src="/assets/logos/younight.png" alt="Younight Hospitality" loading="lazy"></span><em>Younight Hospitality</em></li>
+        <li><span class="cap"><img class="lg-photo" src="/assets/logos/bomporto.jpg" alt="Bomporto Hotels" loading="lazy"></span><em>Bomporto Hotels</em></li>
+        <li><span class="cap"><img class="lg-inv s145" src="/assets/logos/les-hardis.png" alt="Les Hardis" loading="lazy"></span><em>Les Hardis</em></li>
+        <li><span class="cap"><img class="lg-invscr" src="/assets/logos/sunlife.png" alt="YourSunlife" loading="lazy"></span><em>YourSunlife</em></li>
+        <li><span class="cap"><img class="lg-or s12" src="/assets/logos/lazuli.png" alt="Lazuli Nile Cruises" loading="lazy"></span><em>Lazuli Nile Cruises</em></li>
+        <li><span class="cap"><img class="lg-inv" src="/assets/logos/talis.png" alt="Talis Education Group" loading="lazy"></span><em>Talis Education Group</em></li>
+        <li><span class="cap"><img class="lg-card s125" src="/assets/logos/tamtam.png" alt="Tamtam AI" loading="lazy"></span><em>Tamtam AI</em></li>
+        <li><span class="cap tall"><img class="lg-photo2" src="/assets/logos/lazuli-travel-bureau.jpg" alt="Lazuli Travel Bureau" loading="lazy"></span><em>Lazuli Travel Bureau</em></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL — état 2 : flood, trident géant, le formulaire est la borne ═══ -->
+<section class="cta" id="contact" aria-label="Contact — audit de visibilité offert">
+  <div class="flood" id="flood" aria-hidden="true"></div>
+  <div class="voile">
+    <p class="k">Contact</p>
+    <h2>Passez dans <em>la lumière.</em></h2>
+    <p class="desc">Trente minutes pour mesurer où vous en êtes, positions Google,
+    citations dans ChatGPT, Gemini et Perplexity, et repartir avec trois actions concrètes.</p>
+    <form class="formulaire" id="leadForm" action="#" method="post">
+      <h3>Recevez votre pré-audit gratuit</h3>
+      <div class="champs">
+        <div>
+          <label class="sr" for="f-url">URL de votre site — https://votre-site.fr</label>
+          <input type="url" id="f-url" name="url" placeholder="URL de votre site — https://votre-site.fr" autocomplete="url">
+        </div>
+        <div>
+          <label class="sr" for="f-email">Email professionnel — prenom@entreprise.fr</label>
+          <input type="email" id="f-email" name="email" placeholder="Email professionnel — prenom@entreprise.fr" autocomplete="email" required>
+        </div>
+      </div>
+      <button class="btn-foudre" id="btnForm" type="submit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 12-14h-8z"/></svg>
+        Recevoir mon pré-audit gratuit
+      </button>
+      <p class="note">Pas de spam · réponse sous 24&nbsp;h ouvrées · sans engagement</p>
+    </form>
+  </div>
+  <p class="rassure">Offert, sans engagement, vous repartez avec trois actions concrètes,
+  et vous restez libre de la suite.
+  <br><span class="adresse">50 quai Louis Blériot, 75016 Paris</span></p>
+</section>
+
+<!-- ═══ FAQ — après le CTA : la question ouverte attire les charges ═══ -->
+<section class="faq" id="faq" aria-label="Questions fréquentes — SEO et GEO">
+  <div class="cadre">
+    <p class="k">FAQ</p>
+    <details>
+      <summary>Qu'est-ce que le GEO (Generative Engine Optimization) ?</summary>
+      <p class="rep">Le GEO (Generative Engine Optimization) désigne l'ensemble des techniques
+      qui visent à faire apparaître votre marque ou votre contenu dans les réponses générées
+      par les moteurs d'IA — ChatGPT, Gemini, Perplexity, Copilot. Contrairement au SEO
+      classique qui cible un classement dans une liste de liens, le GEO cible une citation
+      dans un texte généré. Les leviers sont différents : structuration du contenu en réponses
+      directes, renforcement de l'entité de marque, balisage Schema.org précis, et présence
+      dans des sources que les IA utilisent comme références. Triaina mesure la visibilité GEO
+      via des audits réguliers sur les principaux moteurs génératifs.</p>
+    </details>
+    <details>
+      <summary>Comment être cité par ChatGPT ?</summary>
+      <p class="rep">ChatGPT Search et les autres moteurs génératifs citent les sources qui
+      combinent trois signaux : un contenu structuré en réponses directes (pas de texte dense
+      non découpé), une autorité de marque mesurable (citations dans des médias tiers,
+      cohérence des entités sur le web), et un balisage technique lisible par les crawlers IA
+      (Schema.org, JSON-LD, balises LLM). Triaina travaille ces trois leviers en parallèle :
+      optimisation on-site du contenu, renforcement de l'entité via le réseau de médias
+      propriétaires, et audit technique GEO. Les premières citations mesurables apparaissent
+      généralement entre 4 et 8 semaines après le début de l'accompagnement.</p>
+    </details>
+    <details>
+      <summary>Combien coûte un accompagnement SEO &amp; GEO ?</summary>
+      <p class="rep">Les accompagnements Triaina démarrent à partir de 1 000 €/mois pour une
+      stratégie SEO et GEO combinée. Un audit SEO/GEO complet est disponible à partir de
+      1 700 €. Pour les sites de taille réduite, des formules à partir de 500 €/mois couvrent
+      les optimisations essentielles. Chaque accompagnement est précédé d'un pré-audit gratuit
+      de 30 minutes pour évaluer votre situation actuelle et définir les priorités.
+      Contactez-nous pour un chiffrage adapté à votre secteur et à vos objectifs.</p>
+    </details>
+    <details>
+      <summary>En combien de temps voit-on des résultats ?</summary>
+      <p class="rep">En SEO, les premiers mouvements de positions sont visibles entre 4 et
+      12 semaines selon l'état technique du site et la concurrence sur les mots-clés ciblés.
+      La stabilisation des gains prend généralement 3 mois — c'est le délai algorithmique
+      standard de Google (Transition Rank). En GEO, les premières citations IA mesurables
+      apparaissent entre 4 et 8 semaines après l'activation des leviers on-site et médias.
+      Triaina mesure ces résultats dès le premier mois via des audits de visibilité GEO sur
+      ChatGPT, Gemini et Perplexity.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="pied">
+    <div class="pied-col pied-marque">
+      <a class="logo" href="/" aria-label="Triaina — Accueil">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="18" y="5" width="4" height="25" rx="1" fill="#2563EB"/>
+          <rect x="10" y="12" width="3" height="15" rx="1" fill="#F8FAFC"/>
+          <rect x="27" y="12" width="3" height="15" rx="1" fill="#F8FAFC"/>
+        </svg>
+        <span><b>TRIAINA</b><i>SEO — GEO — Média</i></span>
+      </a>
+      <p>Agence spécialisée en architecture SEO, domination GEO et autorité Média.</p>
+      <a class="social" href="https://www.linkedin.com/company/triaina" target="_blank" rel="noreferrer" aria-label="Suivre Triaina sur LinkedIn">LinkedIn</a>
+    </div>
+    <div class="pied-col">
+      <p class="pied-titre">Agence</p>
+      <ul>
+        <li><a href="/">ACCUEIL</a></li>
+        <li><a href="/agence">NOTRE HISTOIRE</a></li>
+        <li><a href="/references">RÉFÉRENCES</a></li>
+        <li><a href="/blog">BLOG</a></li>
+        <li><a href="/annuaire">ANNUAIRE</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="pied-col">
+      <p class="pied-titre">Expertises</p>
+      <ul>
+        <li><a href="/expertise-seo">Expertise SEO</a></li>
+        <li><a href="/expertise-sea">Expertise SEA</a></li>
+        <li><a href="/expertise-geo">Expertise GEO</a></li>
+        <li><a href="/expertise-media">Expertise Média</a></li>
+        <li><a href="/expertise-automatisation-contenu">Expertise Automatisation de Contenu</a></li>
+        <li><a href="/expertise-ai-overview">Google AI Overview</a></li>
+      </ul>
+    </div>
+    <div class="pied-col">
+      <p class="pied-titre">Localisation</p>
+      <ul>
+        <li><a href="/agence-seo-paris">Agence SEO Paris</a></li>
+        <li><a href="/agence-referencement-ia">Agence Référencement IA</a></li>
+        <li><a href="/agence-referencement-ia-paris">Agence Référencement IA Paris</a></li>
+        <li><a href="/agence-geo-paris">Agence GEO Paris</a></li>
+      </ul>
+    </div>
+    <div class="pied-col">
+      <p class="pied-titre">Infos</p>
+      <address>50 Quai Louis Blériot<br>75016 Paris<br>France</address>
+    </div>
+  </div>
+  <div class="pied-bas">
+    <p>© 2026 Triaina Global Systems.</p>
+    <div class="liens">
+      <a href="/mentions-legales">Mentions Légales</a>
+      <a href="/sitemap.xml" target="_blank">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/gsap.min.js"></script>
+<script src="/assets/ScrollTrigger.min.js"></script>
+<script src="/assets/lenis.min.js"></script>
+<script>
+(function(){
+  'use strict';
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ═══════════════════════════════════════════════════════════════
+     1. LE CHAMP DANS L'OMBRE — moteur de particules DA-30 (projection
+        3D maison) + CHARGE : chaque particule porte ch (charge tenue,
+        bleue, décroît en ~4 s) et hot (allumage or, décroît vite).
+        États : 0 trident deviné+ambiant · 1 nappe · 2 trident géant.
+     ═══════════════════════════════════════════════════════════════ */
+  var cv = document.getElementById('scene'), cx = cv.getContext('2d');
+  var cvA = document.getElementById('arcs'), cxA = cvA.getContext('2d');
+  var W, H, DPR = Math.min(devicePixelRatio || 1, 1.5);   // plafond DPR (règle ≤ 2)
+  var N = innerWidth < 900 ? 1400 : 2600;
+  var parts = [], proj = [], vus = new Array(N);
+  var etat = 0, boot = { v: 0 }, strike = { v: 0 }, t0 = 0;
+  var mx = 0, my = 0;                      // souris normalisée (rotation douce)
+  var pxs = -1e4, pys = -1e4;              // pointeur en pixels écran
+  var pol = { x: 0, y: 0, k: 0 };          // impulsion de polarisation (FAQ)
+  var sweep = { v: -40 };                  // balayage du phare (DA-8), en %
+  var beamObj = { p: 0 };                  // progression du faisceau scrubé
+  var beamRot = 0, beamK = 0;              // rotation + intensité du faisceau
+  var chargedN = 0;                        // particules dont la charge tient
+  var floodOn = false;
+
+  function resize(){
+    W = innerWidth; H = innerHeight;
+    cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
+    cv.style.width = W + 'px'; cv.style.height = H + 'px';
+    cx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    cvA.width = W; cvA.height = H;
+    if (reduce && parts.length === N) dessine(16);   // repeint la frame statique
+  }
+
+  /* ── Géométrie EXACTE du logo (repère SVG 0..40), reprise de DA-30 ──
+     hampe x 18→22 y 5→30 · dents x 10→13 et 27→30, y 12→27. */
+  var BARRES = [
+    { x0:18, x1:22, y0:5,  y1:30, bleu:true  },
+    { x0:10, x1:13, y0:12, y1:27, bleu:false },
+    { x0:27, x1:30, y0:12, y1:27, bleu:false }
+  ];
+  var aires = BARRES.map(function(b){ return (b.x1 - b.x0) * (b.y1 - b.y0); });
+  var aireTot = aires[0] + aires[1] + aires[2];
+  var ECH = 34, CXU = 20, CYU = 17.5;
+  var tipIdx = 0, tipY = 1e9;
+
+  for (var i = 0; i < N; i++){
+    var tir = Math.random() * aireTot, k = 0, cum = aires[0];
+    while (tir > cum && k < 2){ k++; cum += aires[k]; }
+    var b = BARRES[k];
+    var ux = b.x0 + Math.random() * (b.x1 - b.x0);
+    var uy = b.y0 + Math.random() * (b.y1 - b.y0);
+    var p = {
+      // état 0 : trident deviné… ou charge ambiante (1 sur 6 dérive dans
+      // tout le cadre — c'est le milieu que la lumière et l'éclair traversent)
+      amb: (i % 6 === 0),
+      tx: (ux - CXU) * ECH, ty: (uy - CYU) * ECH, tz: (Math.random() - .5) * 44,
+      ax: (Math.random() - .5) * 3400, ay: (Math.random() - .5) * 1500, az: (Math.random() - .5) * 700,
+      bleu: b.bleu, r: Math.random() * Math.PI * 2,
+      // état 1 : nappe d'onde
+      gx: (Math.random() - .5) * 2100, gz: Math.random() * 900 - 150,
+      // état 2 : anneaux (ambiantes) autour du trident géant
+      vr: 210 + Math.pow(Math.random(), .65) * 520,
+      va: Math.random() * Math.PI * 2, vy: (Math.random() - .5) * 130,
+      // apparition depuis l'extérieur du cadre
+      bd: i / N,
+      sx0: 0, sy0: 0, sz0: 0,
+      ox: 0, oy: 0,      // offset champ curseur (amorti)
+      fl: 0,             // flare : la particule vient d'être traversée
+      ch: 0,             // CHARGE tenue (bleue) — la lumière l'a touchée
+      hot: 0             // allumage OR à l'instant où la lumière touche
+    };
+    p.sx0 = p.tx * 3.4 + (Math.random() - .5) * 900;
+    p.sy0 = p.ty * 3.4 + (Math.random() - .5) * 900;
+    p.sz0 = p.tz + (Math.random() - .5) * 900;
+    if (!p.amb && p.bleu && p.ty < tipY){ tipY = p.ty; tipIdx = i; }
+    parts.push(p);
+    proj.push({ sx:0, sy:0, s:0, a:0, b:1, z:0, ok:false, f:0, dx:0, dy:1, cr:140, cg:160, cb:190 });
+  }
+  function liss(t){ return t * t * (3 - 2 * t); }
+  function melange(a, b, t){ return a + (b - a) * t; }
+
+  // Réglages par état : centre écran, halo, éclat — l'ombre domine au hero
+  var CXF   = [ .78, .50, .50 ];
+  var CYF   = [ .50, .50, .52 ];
+  var HALOI = [ .55, .26, .78 ];
+  var HALOR = [ 430,  760, 700 ];
+  var ECLAT = [ 1.02, .82, .95 ];
+
+  /* Positions cibles par état (coordonnées de scène, tampon partagé). */
+  var _c = [0, 0, 0];
+  function cible(p, s, e){
+    if (s === 0){
+      if (p.amb){                       // charge ambiante : dérive lente
+        _c[0] = p.ax + Math.sin(e * .07 + p.r) * 60;
+        _c[1] = p.ay + Math.cos(e * .05 + p.r * 1.7) * 46 + Math.sin(e * .11 + p.r) * 16;
+        _c[2] = p.az;
+      } else {                          // trident deviné : respiration douce
+        _c[0] = p.tx + Math.cos(e * .8 + p.r) * 2.5;
+        _c[1] = p.ty + Math.sin(e * 1.15 + p.r) * 4.5;
+        _c[2] = p.tz + Math.sin(e * .6 + p.r) * 6;
+      }
+    } else if (s === 1){                // nappe qui accompagne la descente
+      _c[0] = p.gx;
+      _c[1] = Math.sin(p.gx * .0045 + e * .6 + p.r) * 66
+            + Math.cos(p.gz * .006 + e * .5) * 40 + 120;
+      _c[2] = p.gz;
+    } else {                            // trident GÉANT derrière le formulaire
+      if (p.amb){                       // …les ambiantes orbitent autour
+        var a = p.va + e * .1;
+        var ca = Math.cos(a), sa = Math.sin(a);
+        _c[0] = ca * p.vr;
+        _c[1] = sa * p.vr * .40 + p.vy + Math.sin(e * .5 + p.va) * 10;
+        _c[2] = sa * p.vr * .35;
+      } else {
+        _c[0] = p.tx * 2.3 + Math.cos(e * .7 + p.r) * 5;
+        _c[1] = p.ty * 2.3 + 30 + Math.sin(e * .9 + p.r) * 8;
+        _c[2] = p.tz * 2.3 + Math.sin(e * .5 + p.r) * 10;
+      }
+    }
+    return _c;
+  }
+
+  /* géométrie du balayage : bande à 112° (comme le dégradé CSS) */
+  var SWX = Math.sin(112 * Math.PI / 180), SWY = -Math.cos(112 * Math.PI / 180);
+
+  function dessine(t){
+    if (!t0) t0 = t;
+    var e = (t - t0) / 1000;
+    cx.clearRect(0, 0, W, H);
+
+    var i0 = Math.floor(etat); if (i0 > 1) i0 = 1; if (i0 < 0) i0 = 0;
+    var i1 = i0 + 1;
+    var ft = liss(Math.max(0, Math.min(1, etat - i0)));
+    if (etat >= 2){ i0 = 1; i1 = 2; ft = 1; }
+
+    var f = 620;
+    var ry = mx * .22 + Math.sin(e * .085) * .1;
+    var cosY = Math.cos(ry), sinY = Math.sin(ry);
+    var etroit = W < 1120;
+    var mini = etroit ? .58 : Math.min(1, W / 1300);
+    var cxs = W * (etroit ? .5 : melange(CXF[i0], CXF[i1], ft));
+    var cys = H * (etroit ? .5 : melange(CYF[i0], CYF[i1], ft));
+    var eclat = melange(ECLAT[i0], ECLAT[i1], ft) * (etroit ? .6 : 1);
+    var haloI = melange(HALOI[i0], HALOI[i1], ft) * (etroit ? .55 : 1)
+              * (1 + Math.sin(e * 1.25) * .09)       // le halo respire
+              * (1 + strike.v * 1.6);                 // …et pulse à la décharge
+    var haloR = melange(HALOR[i0], HALOR[i1], ft) * mini;
+    var wTri = (i0 === 0) ? 1 - ft : 0;               // poids de l'état trident
+
+    /* halo radial BLEU (la marque) derrière le champ — discret dans l'ombre */
+    var g = cx.createRadialGradient(cxs, cys, 0, cxs, cys, haloR);
+    g.addColorStop(0,   'rgba(37,99,235,' + Math.min(.6, .4 * haloI).toFixed(3) + ')');
+    g.addColorStop(.42, 'rgba(37,99,235,' + Math.min(.28, .15 * haloI).toFixed(3) + ')');
+    g.addColorStop(1,   'rgba(11,20,40,0)');
+    cx.fillStyle = g;
+    cx.fillRect(0, 0, W, H);
+
+    /* paramètres des sources de lumière pour cette frame */
+    var swOn = etat < .8 && sweep.v > -6 && sweep.v < 112;
+    var swL = W * SWX + H * SWY;                       // longueur du dégradé
+    var swC = sweep.v / 100 * swL;                     // centre de bande
+    var swHalf = Math.max(90, swL * .085);             // demi-largeur
+    var bmOn = beamK > .08;
+    var bmAx = W * .5, bmAy = 0;
+
+    chargedN = 0;
+    var nb = 0;
+    for (var i = 0; i < N; i++){
+      var p = parts[i], x, y, z;
+      cible(p, i0, e);
+      var ax2 = _c[0], ay2 = _c[1], az2 = _c[2];
+      cible(p, i1, e);
+      x = ax2 + (_c[0] - ax2) * ft;
+      y = ay2 + (_c[1] - ay2) * ft;
+      z = az2 + (_c[2] - az2) * ft;
+
+      if (boot.v < 1){
+        var loc = Math.max(0, Math.min(1, (boot.v * 1.62 - p.bd * .58) / 1.04));
+        var ea = 1 - Math.pow(1 - loc, 3);
+        x = p.sx0 + (x - p.sx0) * ea;
+        y = p.sy0 + (y - p.sy0) * ea;
+        z = p.sz0 + (z - p.sz0) * ea;
+      }
+
+      var xr = x * cosY - z * sinY, zr = x * sinY + z * cosY;
+      var s = f / (f + zr + 400);
+      var o = proj[i];
+      if (s <= .02){ o.ok = false; continue; }
+
+      var sx = cxs + xr * s * mini;
+      var sy = cys + (y + my * 30) * s * mini;
+      o.f = 0;
+
+      /* ══ LA LUMIÈRE CHARGE ══ */
+      /* 1 · halo curseur (or) : charge + champ doux DA-30 (limaille) */
+      var dxc = pxs - sx, dyc = pys - sy;
+      var d2 = dxc * dxc + dyc * dyc;
+      if (d2 < 32400){                                   // rayon 180 px
+        var d = Math.sqrt(d2) || .001;
+        var fo = 1 - d / 180;
+        var dxn = dxc / d, dyn = dyc / d;
+        p.ox += dxn * fo * fo * .9 + Math.sin(e * 14 + p.r * 7) * fo * .5;
+        p.oy += dyn * fo * fo * .9 + Math.cos(e * 12 + p.r * 5) * fo * .5;
+        o.f = fo; o.dx = dxn; o.dy = dyn;
+        p.ch += fo * fo * .045; if (p.ch > 1) p.ch = 1;
+        if (fo * .9 > p.hot) p.hot = fo * .9;
+      }
+
+      /* 2 · balayage du phare (or) : la bande qui traverse charge */
+      if (swOn){
+        var dsw = Math.abs(sx * SWX + sy * SWY - swC);
+        if (dsw < swHalf){
+          var fsw = 1 - dsw / swHalf;
+          p.ch += fsw * .035; if (p.ch > 1) p.ch = 1;
+          if (fsw * .85 > p.hot) p.hot = fsw * .85;
+        }
+      }
+
+      /* 3 · faisceau conique scrubé (or) : le cône qui balaie charge */
+      if (bmOn && sy > 40){
+        var caF = Math.atan2(-(sx - bmAx), sy - bmAy) * 180 / Math.PI;
+        var diff = Math.abs(beamRot - caF);
+        if (diff < 9){
+          var fb = (1 - diff / 9) * beamK;
+          p.ch += fb * .05; if (p.ch > 1) p.ch = 1;
+          if (fb * .85 > p.hot) p.hot = fb * .85;
+        }
+      }
+
+      /* 4 · flood du CTA : tout le champ se charge */
+      if (floodOn && etat > 1.6){
+        p.ch += .008; if (p.ch > 1) p.ch = 1;
+      }
+
+      /* la charge tient quelques secondes, puis l'ombre regagne */
+      p.ch *= .9962;
+      p.hot *= .90;
+      if (p.ch > .55) chargedN++;
+
+      /* ── polarisation FAQ : la question ouverte attire les charges ── */
+      if (pol.k > .02 && p.ch > .12){
+        var dxp = pol.x - sx, dyp = pol.y - sy;
+        var dp2 = dxp * dxp + dyp * dyp;
+        if (dp2 < 129600){                               // rayon 360 px
+          var dp = Math.sqrt(dp2) || .001;
+          var fp = (1 - dp / 360) * pol.k;
+          sx += dxp / dp * fp * fp * 34;
+          sy += dyp / dp * fp * fp * 34;
+          if (fp > o.f){ o.f = fp; o.dx = dxp / dp; o.dy = dyp / dp; }
+        }
+      }
+
+      p.ox *= .88; p.oy *= .88;
+      sx += p.ox; sy += p.oy;
+
+      o.sx = sx; o.sy = sy; o.s = s; o.z = zr; o.ok = true;
+      o.tri = !p.amb;                    /* particule du TRIDENT (vs nappe) */
+
+      /* ══ L'OMBRE PERD : luminosité = base sombre + charge + allumage ══
+         couleur : sombre (140,160,190) → charge BLEUE (96,165,250)
+                   → allumage OR (255,233,184) à l'instant où la lumière touche */
+      var chk = p.ch, hot = p.hot;
+      var cr = 140 - 44 * chk, cg = 160 + 5 * chk, cb2 = 190 + 60 * chk;
+      if (hot > .02){
+        cr += (255 - cr) * hot; cg += (233 - cg) * hot; cb2 += (184 - cb2) * hot;
+      }
+      o.cr = cr | 0; o.cg = cg | 0; o.cb = cb2 | 0;
+
+      var bst = (1 + p.fl * 1.8) * (1 + o.f * .5);
+      if (!p.amb) bst *= 1 + strike.v * 1.2 * (wTri + (etat > 1.6 ? 1 - wTri : 0));
+      p.fl *= .93;
+      o.b = bst;
+      /* visibilité de base : la nappe ambiante reste discrète, le TRIDENT est
+         plus lisible (demande de Lucas, 29/07) — c'est l'écart entre les deux
+         qui fait ressortir le logo dans la nuit */
+      var vis = (p.amb ? .11 : .46) + chk * .6 + hot * .45;
+      o.a = Math.max(0, Math.min(1, (s * s * .6 + s * .88) * eclat * vis * Math.min(bst, 2.4)));
+      vus[nb++] = i;
+    }
+
+    vus.length = nb;
+    vus.sort(function(a, b2){ return proj[b2].z - proj[a].z; });
+
+    /* passe 1 : bloom (lighter, alpha faible) */
+    cx.globalCompositeOperation = 'lighter';
+    cx.globalAlpha = .19;
+    for (var j = 0; j < nb; j++){
+      var q = proj[vus[j]];
+      var rr = 3.2 * q.s * 2.4 * Math.min(q.b, 1.8) * (q.tri ? 1.4 : 1);
+      cx.fillStyle = 'rgba(' + q.cr + ',' + q.cg + ',' + q.cb + ',' + q.a.toFixed(3) + ')';
+      cx.fillRect(q.sx - rr / 2, q.sy - rr / 2, rr, rr);
+    }
+    cx.globalAlpha = 1;
+
+    /* passe 2 : noyau net — les charges orientées s'étirent en limaille */
+    cx.globalCompositeOperation = 'source-over';
+    for (var j2 = 0; j2 < nb; j2++){
+      var r2 = proj[vus[j2]];
+      /* le trident porte des points un peu plus gros que la nappe : c'est la
+         taille, autant que l'alpha, qui fait lire le logo dans la nuit */
+      var rn = 3.2 * r2.s * (1 + (r2.b - 1) * .4) * (r2.tri ? 1.45 : 1);
+      var lr = r2.cr + ((255 - r2.cr) * .3 | 0);
+      var lg = r2.cg + ((255 - r2.cg) * .3 | 0);
+      var lb = r2.cb + ((255 - r2.cb) * .3 | 0);
+      cx.fillStyle = 'rgba(' + lr + ',' + lg + ',' + lb + ',' + Math.min(1, r2.a * 1.15).toFixed(3) + ')';
+      cx.fillRect(r2.sx - rn / 2, r2.sy - rn / 2, rn, rn);
+      if (r2.f > .22){
+        var el = 2.8 * r2.f, rm = rn * .7;
+        cx.fillRect(r2.sx + r2.dx * el - rm / 2, r2.sy + r2.dy * el - rm / 2, rm, rm);
+        cx.fillRect(r2.sx - r2.dx * el - rm / 2, r2.sy - r2.dy * el - rm / 2, rm, rm);
+      }
+    }
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     2. DÉCHARGES — l'éclair voyage DE PARTICULE CHARGÉE EN PARTICULE
+        CHARGÉE (chemin de proches voisins DA-30, rendu midpoint DA-11),
+        et CONSOMME la charge : la lumière crée la charge, la charge
+        crée l'éclair.
+     ═══════════════════════════════════════════════════════════════ */
+  var bolts = [];
+  var firstStrike = false;
+
+  function genBolt(x1, y1, x2, y2){        // midpoint displacement
+    var pts = [[x1, y1], [x2, y2]], d = Math.hypot(x2 - x1, y2 - y1) / 2;
+    while (d > 7){
+      var np = [pts[0]];
+      for (var i = 0; i < pts.length - 1; i++){
+        var a = pts[i], b = pts[i + 1];
+        np.push([(a[0] + b[0]) / 2 + (Math.random() - .5) * d,
+                 (a[1] + b[1]) / 2 + (Math.random() - .5) * d * .55], b);
+      }
+      pts = np; d *= .5;
+    }
+    return pts;
+  }
+
+  /* Chemin de charge en charge : on saute de particule voisine en
+     particule voisine en se rapprochant de la cible ; les particules
+     CHARGÉES sont fortement préférées (bonus -140·ch au score). */
+  function chemin(x0, y0, x1, y1){
+    var ch = [[x0, y0]], cxp = x0, cyp = y0, guard = 0;
+    while (guard++ < 56){
+      var dT = Math.hypot(x1 - cxp, y1 - cyp);
+      if (dT < 70){ ch.push([x1, y1]); break; }
+      var best = -1, bs = 1e9;
+      for (var k = 0; k < 70; k++){
+        var i = (Math.random() * N) | 0, o = proj[i];
+        if (!o.ok) continue;
+        var dx = o.sx - cxp, dy = o.sy - cyp, d2 = dx * dx + dy * dy;
+        if (d2 < 144 || d2 > 12100) continue;            // saut 12–110 px
+        var dt = Math.hypot(x1 - o.sx, y1 - o.sy);
+        if (dt > dT - 6) continue;                        // il faut progresser
+        var sc = dt + Math.random() * 55 - parts[i].ch * 140;
+        if (sc < bs){ bs = sc; best = i; }
+      }
+      if (best < 0){
+        // zone vide : point synthétique aux 35 % du trajet, décalé
+        cxp += (x1 - cxp) * .35 + (Math.random() - .5) * 44;
+        cyp += (y1 - cyp) * .35 + (Math.random() - .5) * 44;
+        ch.push([cxp, cyp]);
+        continue;
+      }
+      var ob = proj[best];
+      parts[best].fl = 1.5;                               // la charge s'allume
+      ch.push([ob.sx, ob.sy]);
+      cxp = ob.sx; cyp = ob.sy;
+    }
+    // brisure : point médian perpendiculaire entre chaque saut
+    var out = [ch[0]];
+    for (var i2 = 1; i2 < ch.length; i2++){
+      var a2 = ch[i2 - 1], b2 = ch[i2];
+      var ddx = b2[0] - a2[0], ddy = b2[1] - a2[1];
+      var L = Math.hypot(ddx, ddy) || 1;
+      var off = (Math.random() - .5) * L * .6;
+      out.push([(a2[0] + b2[0]) / 2 - ddy / L * off, (a2[1] + b2[1]) / 2 + ddx / L * off], b2);
+    }
+    return out;
+  }
+
+  function drawBolt(ctx, b){               // trois passes : bleu → cœur blanc
+    var passes = [
+      ['rgba(37,99,235,' + (b.a * .35).toFixed(3) + ')', 9],
+      ['rgba(96,165,250,' + (b.a * .7).toFixed(3) + ')', 3.4],
+      ['rgba(234,242,255,' + b.a.toFixed(3) + ')', 1.4]
+    ];
+    for (var pi = 0; pi < 3; pi++){
+      ctx.strokeStyle = passes[pi][0]; ctx.lineWidth = passes[pi][1];
+      ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+      ctx.beginPath();
+      for (var i = 0; i < b.p.length; i++)
+        i ? ctx.lineTo(b.p[i][0], b.p[i][1]) : ctx.moveTo(b.p[i][0], b.p[i][1]);
+      ctx.stroke();
+      for (var j = 0; j < b.br.length; j++){
+        ctx.beginPath();
+        for (var i3 = 0; i3 < b.br[j].length; i3++)
+          i3 ? ctx.lineTo(b.br[j][i3][0], b.br[j][i3][1]) : ctx.moveTo(b.br[j][i3][0], b.br[j][i3][1]);
+        ctx.stroke();
+      }
+    }
+  }
+
+  /* décharge vers le trident : part d'une particule CHARGÉE lointaine
+     (ou du point donné), et consomme la charge du champ */
+  function decharge(fx, fy){
+    var o = proj[tipIdx];
+    var tx = o.ok ? o.sx : W * .78, ty = o.ok ? o.sy : H * .34;
+    if (fx == null){
+      fx = Math.random() * W; fy = -30;
+      for (var k = 0; k < 40; k++){
+        var i = (Math.random() * N) | 0, q = proj[i];
+        if (q.ok && parts[i].ch > .5 && Math.hypot(q.sx - tx, q.sy - ty) > 380){
+          fx = q.sx; fy = q.sy; break;
+        }
+      }
+    }
+    var p = chemin(fx, fy, tx, ty), br = [];
+    for (var b2 = 0; b2 < 2; b2++){
+      var pt = p[(Math.random() * p.length * .7 + 2) | 0];
+      if (pt) br.push(genBolt(pt[0], pt[1],
+        pt[0] + (Math.random() - .5) * 150, pt[1] + 60 + Math.random() * 110));
+    }
+    bolts.push({ p: p, br: br, a: 1 });
+    if (bolts.length > 10) bolts.shift();
+    gsap.fromTo(strike, { v: .9 }, { v: 0, duration: .65, ease: 'power2.out' });
+    gsap.fromTo('#flash', { opacity: .12 }, { opacity: 0, duration: .35, ease: 'power1.out' });
+    firstStrike = true;
+    for (var i2 = 0; i2 < N; i2++)         // l'éclair consomme la charge
+      if (parts[i2].ch > .3) parts[i2].ch *= .55;
+  }
+
+  /* premier dimensionnement — APRÈS toutes les définitions du moteur :
+     en motion réduit, resize() repeint une frame via dessine(), qui lit
+     les tableaux d'états, _c, SWX/SWY… (l'appel prématuré plantait tout
+     le moteur en motion réduit — corrigé le 29/07) */
+  resize(); addEventListener('resize', resize);
+
+  /* câblage FONCTIONNEL du formulaire (envoi réel EmailJS + gate .prete) —
+     doit tourner AUSSI en motion réduit : seuls les effets sont optionnels */
+  function cableFormulaire(avecEffets){
+    var form = document.getElementById('leadForm');
+    var btn = document.getElementById('btnForm');
+    var fu = document.getElementById('f-url'), fe = document.getElementById('f-email');
+    var secCta = document.querySelector('.cta');
+    /* les deux champs remplis : la réassurance passe en pleine lisibilité */
+    function verifie(){
+      secCta.classList.toggle('prete',
+        fu.value.trim().length > 3 && fe.validity.valid && fe.value.trim() !== '');
+    }
+    fu.addEventListener('input', verifie); fe.addEventListener('input', verifie);
+    /* statut d'envoi (aria-live) — injecté, jamais dans le HTML servi */
+    var statut = document.createElement('p');
+    statut.className = 'cta-statut'; statut.setAttribute('aria-live', 'polite');
+    form.appendChild(statut);
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if (fu.value.trim().length < 4){ fu.focus(); return; } /* l'audit porte sur ce site */
+      if (avecEffets && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+        var r = btn.getBoundingClientRect();
+        var bx = r.left + r.width / 2, by = r.top + r.height / 2;
+        for (var i = 0; i < 3; i++)
+          bolts.push({ p: chemin(bx + (Math.random() - .5) * W * .7, -30, bx, by), br: [], a: 1 });
+        while (bolts.length > 10) bolts.shift();
+        gsap.fromTo(strike, { v: .9 }, { v: 0, duration: .7, ease: 'power2.out' });
+        gsap.fromTo('.cta .voile', { x: -5 }, { x: 0, duration: .5, ease: 'elastic.out(1,.3)' });
+        var rampeFx = document.querySelector('.rampe');
+        if (rampeFx) gsap.fromTo(rampeFx, { '--sur': .6 }, { '--sur': 0, duration: .5, ease: 'power2.out' });
+      }
+      btn.disabled = true;
+      statut.classList.remove('err'); statut.textContent = 'Envoi…';
+      fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          service_id: 'service_dme37kj', template_id: 'template_y87pze2',
+          user_id: 'E7cFvIw50eYZ8er2v',
+          template_params: {
+            user_name: '', user_phone: '',
+            user_email: fe.value,
+            message: 'Demande d’audit (formulaire de l’accueil) — URL du site : ' + fu.value
+          }
+        })
+      }).then(function(rep){
+        if (!rep.ok) return rep.text().then(function(t){
+          throw new Error('EmailJS ' + rep.status + ' : ' + t.slice(0, 200));
+        });
+        statut.textContent = 'C’est envoyé — réponse sous 24 h ouvrées.';
+        form.reset();
+        secCta.classList.remove('prete');
+      }).catch(function(err){
+        console.error('Erreur EmailJS:', err);
+        statut.classList.add('err');
+        statut.textContent = 'L’envoi n’est pas parti — écrivez-nous : contact@triaina.fr';
+      }).finally(function(){ btn.disabled = false; });
+    });
+  }
+
+  /* ══ Motion réduit : une frame statique du trident, charges posées,
+        puis stop — le contenu est lisible sans animation, et le formulaire
+        RESTE branché (l'envoi n'est pas un décor). ══ */
+  if (reduce){
+    boot.v = 1; etat = 0;
+    for (var iR = 0; iR < N; iR += 3) parts[iR].ch = .6;
+    dessine(16);
+    addEventListener('load', function(){ dessine(16); });
+    cableFormulaire(false);
+    return;   // le reste est décoratif — le contenu est déjà posé
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     3. GSAP + LENIS — UN SEUL ticker pour tout le dessin
+     ═══════════════════════════════════════════════════════════════ */
+  gsap.registerPlugin(ScrollTrigger);
+  var lenis = new Lenis({ lerp: .1 });
+  lenis.on('scroll', ScrollTrigger.update);
+
+  var elHero  = document.getElementById('hero'),
+      elMeth  = document.getElementById('methode'),
+      elCta   = document.getElementById('contact');
+  var btnForm = document.getElementById('btnForm');
+  var beamEl  = document.getElementById('faisceau');
+  var floodEl = document.getElementById('flood');
+  var piliers = gsap.utils.toArray('.pilier');
+  piliers.forEach(function(d){ d.style.setProperty('--lum', 0); });
+  gsap.set(beamEl, { xPercent: -50, rotation: 0 });
+
+  var lastArc = 0, lastAuto = 0, nextFlood = 0;
+  var TH = Math.round(N * .023);           // seuil de décharge (≈60 desktop)
+
+  /* léchage des piliers par le faisceau (méca --lum de DA-8) */
+  function lumPiliers(){
+    for (var i = 0; i < piliers.length; i++){
+      var d = piliers[i];
+      var r = d.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > H || beamK < .05){ d.style.setProperty('--lum', 0); continue; }
+      var cxi = r.left + r.width / 2, cyi = r.top + r.height * .35;
+      var ca = Math.atan2(-(cxi - W * .5), cyi) * 180 / Math.PI;
+      var diff = Math.abs(beamRot - ca);
+      var lum = Math.max(0, 1 - diff / 26) * beamK;
+      lum = lum * lum * (3 - 2 * lum);
+      d.style.setProperty('--lum', lum.toFixed(3));
+    }
+  }
+
+  gsap.ticker.add(function(time){
+    lenis.raf(time * 1000);
+    var now = performance.now();
+
+    /* (faisceau balayant retiré — beamK reste à 0 : la charge des piliers
+       est désormais déclenchée par leur apparition au scroll, plus bas) */
+
+    /* balayage du phare (hero) : la variable CSS suit l'objet JS */
+    elHero.style.setProperty('--sx', sweep.v.toFixed(2));
+
+    dessine(now);
+
+    /* décharge automatique : quand la lumière a assez chargé le champ */
+    if (etat < .6 && heroVisible && chargedN > TH && now - lastAuto > 2600 && !document.hidden){
+      lastAuto = now;
+      decharge();
+    }
+
+    /* toile des décharges : arcs au-dessus du contenu */
+    cxA.clearRect(0, 0, W, H);
+
+    /* état 2 — l'arc curseur→formulaire passe par les particules (DA-30) */
+    if (etat > 1.4 && pxs > -9000){
+      var r = btnForm.getBoundingClientRect();
+      var bx = r.left + r.width / 2, by = r.top + r.height / 2;
+      var d = Math.hypot(pxs - bx, pys - by);
+      if (d < 320 && d > 60 && now - lastArc > 130){
+        lastArc = now;
+        bolts.push({ p: chemin(pxs, pys, bx, by), br: [], a: .42 * (1 - d / 320) });
+        if (bolts.length > 10) bolts.shift();
+      }
+    }
+
+    /* état 2 — flood : décharges continues qui convergent vers la borne */
+    if (floodOn && etat > 1.6 && !document.hidden && now > nextFlood){
+      nextFlood = now + 650 + Math.random() * 700;
+      var rf = btnForm.getBoundingClientRect();
+      var bfx = rf.left + rf.width / 2, bfy = rf.top + rf.height / 2;
+      var sx0 = Math.random() < .5 ? Math.random() * W : (Math.random() < .5 ? -20 : W + 20);
+      var sy0 = sx0 < 0 || sx0 > W ? Math.random() * H * .8 : -20;
+      for (var kf = 0; kf < 30; kf++){
+        var ii = (Math.random() * N) | 0, qq = proj[ii];
+        if (qq.ok && parts[ii].ch > .55 && Math.hypot(qq.sx - bfx, qq.sy - bfy) > 260){
+          sx0 = qq.sx; sy0 = qq.sy; break;
+        }
+      }
+      bolts.push({ p: chemin(sx0, sy0, bfx, bfy), br: [], a: .55 });
+      if (bolts.length > 10) bolts.shift();
+      gsap.fromTo(strike, { v: .35 }, { v: 0, duration: .5, ease: 'power2.out' });
+    }
+
+    if (bolts.length){
+      cxA.globalCompositeOperation = 'lighter';
+      for (var i = bolts.length - 1; i >= 0; i--){
+        drawBolt(cxA, bolts[i]);
+        bolts[i].a *= .85;
+        if (bolts[i].a < .04) bolts.splice(i, 1);
+      }
+      cxA.globalCompositeOperation = 'source-over';
+    }
+  });
+  gsap.ticker.lagSmoothing(0);
+
+  /* pointeur global : rotation douce + halo curseur (or, DA-8) */
+  var lueur = document.createElement('div');
+  lueur.className = 'curseur-lueur'; lueur.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(lueur);
+  var lx = gsap.quickTo(lueur, 'x', { duration: .45, ease: 'power3' });
+  var ly = gsap.quickTo(lueur, 'y', { duration: .45, ease: 'power3' });
+
+  addEventListener('pointermove', function(ev){
+    mx = ev.clientX / W - .5; my = ev.clientY / H - .5;
+    pxs = ev.clientX; pys = ev.clientY;
+    if (!ev.pointerType || ev.pointerType === 'mouse'){
+      lueur.style.opacity = 1;
+      lx(ev.clientX); ly(ev.clientY);
+    }
+  }, { passive: true });
+  document.addEventListener('pointerleave', function(){
+    pxs = -1e4; pys = -1e4; lueur.style.opacity = 0;
+  }, { passive: true });
+
+  /* construction du champ (~2 s), balayage du phare en boucle (DA-8),
+     et première décharge garantie si la lumière n'a pas encore suffi */
+  gsap.to(boot, { v: 1, duration: 2.1, ease: 'none' });
+  gsap.fromTo(sweep, { v: -30 }, {
+    v: 130, duration: 3.4, ease: 'sine.inOut',
+    repeat: -1, repeatDelay: 3.9, delay: 1.1
+  });
+  setTimeout(function(){
+    if (!document.hidden && heroVisible && !firstStrike) decharge();
+  }, 5200);
+
+  /* ═══════════════════════════════════════════════════════════════
+     4. LE SCALAIRE D'ÉTAT (0 → 2) piloté par le scroll
+     ═══════════════════════════════════════════════════════════════ */
+  var ancres = [];
+  function mesureAncres(){
+    var vh = innerHeight;
+    ancres = [
+      { y: 0,                             s: 0 },
+      { y: elMeth.offsetTop - vh * .55,   s: 0 },
+      { y: elMeth.offsetTop + vh * .25,   s: 1 },
+      { y: elCta.offsetTop - vh * 1.05,   s: 1 },
+      { y: elCta.offsetTop - vh * .2,     s: 2 },
+      { y: 1e9,                           s: 2 }
+    ];
+  }
+  mesureAncres();
+  addEventListener('resize', mesureAncres);
+  ScrollTrigger.addEventListener('refresh', mesureAncres);
+
+  function etatDe(y){
+    for (var i = 0; i < ancres.length - 1; i++){
+      var a = ancres[i], b = ancres[i + 1];
+      if (y <= b.y){
+        if (a.s === b.s || b.y === a.y) return a.s;
+        var f2 = Math.max(0, Math.min(1, (y - a.y) / (b.y - a.y)));
+        return a.s + (b.s - a.s) * liss(f2);
+      }
+    }
+    return 2;
+  }
+  ScrollTrigger.create({
+    trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: true,
+    onUpdate: function(st){ etat = etatDe(st.scroll()); },
+    onRefresh: function(st){ etat = etatDe(st.scroll()); }
+  });
+
+  /* charge des piliers : chacun s'allume en cascade quand il entre en scène
+     (remplace le léchage par le faisceau balayant, retiré) */
+  piliers.forEach(function(d, i){
+    gsap.to(d, {
+      '--lum': 1, duration: 1.1, ease: 'power2.out', delay: i * .18,
+      scrollTrigger: { trigger: d, start: 'top 78%', once: true }
+    });
+  });
+
+  /* barre de progression de lecture */
+  gsap.to('#progBar', {
+    scaleX: 1, ease: 'none',
+    scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: .25 }
+  });
+
+  /* ═══════════════════════════════════════════════════════════════
+     5. HERO — allumage flicker (h1 toujours lisible), clic = décharge
+     ═══════════════════════════════════════════════════════════════ */
+  gsap.set('.hero h1', { opacity: 0, '--g': 0 });
+  gsap.set('.hero .sur, .hero .sous, .hero .actions, .hero .preuve, .hero .aide, .hero .indic', { opacity: 0, y: 26 });
+  gsap.timeline()
+    .fromTo('#flash', { opacity: .35 }, { opacity: 0, duration: .55, ease: 'power1.out' }, 0)
+    .to('.hero h1', { keyframes: [
+        { opacity: .85, duration: .09 }, { opacity: .06, duration: .06 },
+        { opacity: .95, duration: .1 },  { opacity: .18, duration: .05 },
+        { opacity: 1, duration: .3 }
+      ] }, .3)
+    .to('.hero h1', { '--g': 1, duration: 1.2, ease: 'power2.out' }, .6)
+    .to('.hero .sur', { opacity: 1, y: 0, duration: .7, ease: 'power3.out' }, .7)
+    .to('.hero .sous, .hero .actions, .hero .preuve', { opacity: 1, y: 0, duration: .8, ease: 'power3.out', stagger: .1 }, .85)
+    .to('.hero .aide, .hero .indic', { opacity: 1, y: 0, duration: .6, ease: 'power3.out' }, 1.2);
+
+  /* sortie du hero : parallaxe + flou */
+  gsap.to('.hero .in', {
+    yPercent: -24, opacity: 0, filter: 'blur(9px)', ease: 'none',
+    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom 25%', scrub: .3 }
+  });
+  gsap.to('.hero .indic, .hero .aide', {
+    opacity: 0, y: 30, ease: 'none',
+    scrollTrigger: { trigger: '.hero', start: 'top top', end: '25% top', scrub: .3 }
+  });
+
+  var heroVisible = true;
+  ScrollTrigger.create({
+    trigger: elHero, start: 'top bottom', end: 'bottom top',
+    onToggle: function(st){ heroVisible = st.isActive; }
+  });
+
+  /* clic dans le hero (hors liens) : décharge depuis le point cliqué */
+  elHero.addEventListener('pointerdown', function(ev){
+    if (ev.target.closest('a')) return;
+    if (etat < .6) decharge(ev.clientX, ev.clientY);
+  });
+
+  /* ═══════════════════════════════════════════════════════════════
+     6. RÉVÉLATIONS + NÉONS (micro-décharge) + FAQ (convergence)
+     ═══════════════════════════════════════════════════════════════ */
+  gsap.utils.toArray('.methode .k, .methode h2, .methode .intro, .chiffres .k, .clients .k, .clients h2, .clients .sous-t, .faq .k')
+    .forEach(function(el){
+      gsap.set(el, { opacity: 0, y: 34 });
+      gsap.to(el, {
+        opacity: 1, y: 0, duration: .85, ease: 'power3.out',
+        scrollTrigger: { trigger: el, start: 'top 86%', once: true }
+      });
+    });
+  gsap.utils.toArray('.pilier').forEach(function(el, i){
+    gsap.set(el, { opacity: 0, y: 34 });
+    gsap.to(el, {
+      opacity: 1, y: 0, duration: .8, ease: 'power3.out', delay: i * .1,
+      scrollTrigger: { trigger: el, start: 'top 88%', once: true }
+    });
+  });
+  /* LA REVUE des marques : la scène se fige et chaque marque passe SEULE
+     sous le faisceau — elle sort de l'ombre (flou + luminosité), tient
+     l'écran, puis y retourne quand la suivante arrive. Piloté par le scrub :
+     on avance et on recule librement, aucun scroll-jacking. Le HTML de la
+     liste est inchangé — sans JS ou en motion réduit, la grille complète
+     reste le rendu (mode .revue jamais posé). */
+  var plaques = gsap.utils.toArray('.train li');
+  (function(){
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var defile = document.getElementById('defile');
+    defile.classList.add('revue');
+
+    /* jauge de passage — décor pur, donc injectée par JS (absente du HTML servi) */
+    var jauge = document.createElement('div');
+    jauge.className = 'revue-jauge';
+    jauge.setAttribute('aria-hidden', 'true');
+    jauge.appendChild(document.createElement('i'));
+    defile.querySelector('.scene-c').appendChild(jauge);
+
+    /* la barre d'adresse mobile ne doit pas déclencher de refresh en plein pin */
+    ScrollTrigger.config({ ignoreMobileResize: true });
+    /* filtres en FONCTIONS (comme les distances) : re-évalués par
+       invalidateOnRefresh si le viewport franchit 760px page ouverte
+       (rotation de tablette, resize, split view) */
+    var estMobile = function(){ return matchMedia('(max-width: 760px)').matches; };
+    var flou = function(){ return estMobile() ? 'blur(0px)' : 'blur(7px)'; };
+    var flouSortie = function(){ return estMobile() ? 'blur(0px)' : 'blur(6px)'; };
+    var tlRevue = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.defile', pin: true, scrub: .55, start: 'top 12%',
+        end: function(){ return '+=' + Math.round(innerHeight *
+          (matchMedia('(max-width: 760px)').matches ? 2.3 : 2.9)); },
+        invalidateOnRefresh: true,
+        onUpdate: function(self){
+          jauge.firstChild.style.width = (self.progress * 100).toFixed(2) + '%';
+        }
+      }
+    });
+    /* chaque marque arrive par un bord différent (gauche, droite, haut,
+       diagonales…) et ressort en face : elle TRAVERSE la scène. Vecteurs
+       [dx, dy] fixes — même chorégraphie à chaque visite. Les distances sont
+       des fonctions : recalculées au refresh (rotation, resize), et la scène
+       (.scene-c, overflow:hidden) clippe — aucun débordement de page. */
+    var dirs = [
+      [-1, .12], [1, -.18], [-.5, -1], [.6, 1], [1, .35],
+      [-1, -.45], [.15, -1], [-.7, .85], [1, -.7], [-1, .55]
+    ];
+    plaques.forEach(function(li, i){
+      var t = i, d = dirs[i % dirs.length];
+      /* amplitudes bornées à l'espace réel : sous 760px la scène (335px à
+         375px de viewport) n'a que ~2px de marge autour d'une plaque de
+         330px — une grande amplitude guillotine la plaque au bord clippé */
+      var ax = function(){ return d[0] * (estMobile()
+        ? innerWidth * .12 : Math.min(innerWidth * .34, 430)); };
+      var ay = function(){ return d[1] * (estMobile()
+        ? innerHeight * .14 : Math.min(innerHeight * .26, 240)); };
+      /* entrée : la marque sort de l'ombre depuis son bord */
+      tlRevue.fromTo(li,
+        { opacity: 0, x: ax, y: ay, scale: .92, filter: flou, '--lit': .3 },
+        { opacity: 1, x: 0, y: 0, scale: 1, filter: 'blur(0px)', '--lit': 1,
+          duration: .4, ease: 'power2.out' }, t);
+      /* sortie : elle poursuit sa course vers le bord opposé pendant que la
+         suivante paraît — sauf la dernière, qui reste posée */
+      if (i < plaques.length - 1) {
+        tlRevue.to(li,
+          { opacity: 0, scale: .96, filter: flouSortie,
+            x: function(){ return -ax() * .8; },
+            y: function(){ return -ay() * .8; },
+            duration: .34, ease: 'power2.in' }, t + .7);
+      }
+    });
+    tlRevue.to({}, { duration: .15 }); /* courte respiration, scène jamais vide */
+    /* « réduire les animations » activé PAGE OUVERTE : on démonte tout
+       (trigger + pin, styles inline, jauge) — la grille statique reprend
+       la main sans laisser d'écrans de scroll mort */
+    var mrm = matchMedia('(prefers-reduced-motion: reduce)');
+    if (mrm.addEventListener) mrm.addEventListener('change', function(e){
+      if (!e.matches) return;
+      tlRevue.scrollTrigger.kill(true);
+      tlRevue.kill();
+      gsap.set(plaques, { clearProps: 'all' });
+      defile.classList.remove('revue');
+      jauge.remove();
+    });
+  })();
+  gsap.utils.toArray('.faq details').forEach(function(dt, i){
+    gsap.set(dt, { opacity: 0, y: 26 });
+    gsap.to(dt, {
+      opacity: 1, y: 0, duration: .7, ease: 'power3.out', delay: (i % 2) * .06,
+      scrollTrigger: { trigger: dt, start: 'top 90%', once: true }
+    });
+  });
+  /* ── LES FEUX DE LA RAMPE : le tableau final s'allume d'en bas ──
+     La rampe (décor pur, absente du HTML servi) est injectée au pied du
+     bouton ; les feux flickent du centre vers les bords, puis la scène
+     entre en cadence de rappel, le bouton en dernier. */
+  var rampe = document.createElement('div');
+  rampe.className = 'rampe'; rampe.setAttribute('aria-hidden', 'true');
+  for (var ri = 0; ri < 9; ri++) rampe.appendChild(document.createElement('i'));
+  var noteEl = document.querySelector('.formulaire .note');
+  noteEl.parentNode.insertBefore(rampe, noteEl);
+  (function(){
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return; /* état CSS = allumé */
+    var lampes = gsap.utils.toArray('.rampe i');
+    var acteurs = gsap.utils.toArray(['.cta .k', '.cta h2', '.cta .desc',
+      '.formulaire h3', '.formulaire .champs > div', '.formulaire .btn-foudre',
+      '.formulaire .note', '.cta .rassure']);
+    gsap.set(acteurs, { opacity: 0, y: 16 });
+    gsap.set(lampes, { opacity: 0 });
+    gsap.set(rampe, { '--feu': 0 });
+    var tlCta = gsap.timeline({
+      scrollTrigger: { trigger: '.cta', start: 'top 62%', once: true }
+    });
+    tlCta.to(lampes, {
+      keyframes: [{ opacity: .8, duration: .06 }, { opacity: .1, duration: .05 },
+                  { opacity: 1, duration: .08 }],
+      stagger: { each: .05, from: 'center' }
+    }, 0)
+    .to(rampe, { '--feu': 1, duration: .7, ease: 'power2.out' }, .25)
+    .to(acteurs, { opacity: 1, y: 0, duration: .6, ease: 'power3.out', stagger: .1 }, .45)
+    /* « la lumière. » flicke une fois du bleu vers l'or */
+    .fromTo('.cta h2 em', { color: '#60A5FA' },
+      { color: '#FFE9B8', duration: .45, ease: 'power1.in' }, .8)
+    /* tenue : la rampe respire (même précédent que les néons des chiffres) */
+    .to(rampe, { '--feu': .84, duration: 3.5, yoyo: true, repeat: -1, ease: 'sine.inOut' }, '+=.2');
+    /* greffe : la rampe monte d'un cran quand on s'approche d'un champ */
+    var surTo = gsap.quickTo(rampe, '--sur', { duration: .4, ease: 'power2.out' });
+    ['f-url', 'f-email'].forEach(function(id){
+      var ch = document.getElementById(id);
+      ch.addEventListener('focus', function(){ surTo(.15); });
+      ch.addEventListener('blur', function(){ surTo(0); });
+    });
+    /* motion réduit basculé page ouverte : on fige l'état final allumé
+       et on neutralise la réponse au focus */
+    var mrc = matchMedia('(prefers-reduced-motion: reduce)');
+    if (mrc.addEventListener) mrc.addEventListener('change', function(e){
+      if (!e.matches) return;
+      surTo = function(){};
+      if (tlCta.scrollTrigger) tlCta.scrollTrigger.kill(true);
+      tlCta.kill();
+      gsap.set(acteurs, { clearProps: 'all' });
+      gsap.set(lampes, { clearProps: 'all' });
+      gsap.set(rampe, { clearProps: 'all' });
+      gsap.set('.cta h2 em', { clearProps: 'color' });
+    });
+  })();
+
+  /* néons des chiffres : chaque valeur est allumée par une MICRO-DÉCHARGE
+     qui arrive de la nappe, puis flicker d'allumage (DA-8) et respiration */
+  var neons = gsap.utils.toArray('.eclat b');
+  neons.forEach(function(b){ gsap.set(b, { '--on': 0 }); });
+  gsap.set('.eclat span', { opacity: 0, y: 14 });
+  var tlNeons = gsap.timeline({
+    scrollTrigger: { trigger: '.chiffres', start: 'top 62%', once: true }
+  });
+  neons.forEach(function(b, i){
+    tlNeons.call(function(){
+      var r = b.getBoundingClientRect();
+      var bx = r.left + r.width / 2, by = r.top + r.height / 2;
+      bolts.push({ p: chemin(bx + (Math.random() - .5) * 260, by - 180, bx, by), br: [], a: .7 });
+      if (bolts.length > 10) bolts.shift();
+      gsap.fromTo(strike, { v: .3 }, { v: 0, duration: .45, ease: 'power2.out' });
+    }, null, i * .45)
+    .to(b, { keyframes: [
+      { '--on': .9,  duration: .07 }, { '--on': .06, duration: .05 },
+      { '--on': 1,   duration: .08 }, { '--on': .14, duration: .05 },
+      { '--on': .95, duration: .1 },  { '--on': .5,  duration: .04 },
+      { '--on': 1,   duration: .35, ease: 'power2.out' }
+    ] }, i * .45 + .1)
+    .to(b.parentNode.querySelector('span'), { opacity: 1, y: 0, duration: .6, ease: 'power3.out' }, i * .45 + .4);
+  });
+  tlNeons.call(function(){
+    neons.forEach(function(b, i){
+      gsap.to(b, { '--on': .88, duration: 2.2 + i * .3, yoyo: true, repeat: -1, ease: 'sine.inOut' });
+    });
+  });
+
+  /* FAQ : la question ouverte attire une convergence de charges */
+  function pulse(el){
+    var r = el.getBoundingClientRect();
+    pol.x = r.left + r.width / 2; pol.y = r.top + r.height / 2;
+    gsap.killTweensOf(pol);
+    gsap.timeline()
+      .to(pol, { k: 1, duration: .5, ease: 'power2.out' })
+      .to(pol, { k: 0, duration: 1.1, ease: 'power2.inOut' }, .85);
+  }
+  var faqItems = gsap.utils.toArray('.faq details');
+  faqItems.forEach(function(dt){
+    dt.addEventListener('toggle', function(){
+      if (!dt.open) return;
+      faqItems.forEach(function(o){ if (o !== dt) o.open = false; });
+      pulse(dt);
+      var r = dt.getBoundingClientRect();
+      var fx = r.left + r.width / 2, fy = r.top + r.height / 2;
+      for (var i = 0; i < N; i++){                 // l'attention allume la zone
+        var o2 = proj[i];
+        if (!o2.ok) continue;
+        var d = Math.hypot(o2.sx - fx, o2.sy - fy);
+        if (d < 300){
+          var fo = 1 - d / 300;
+          parts[i].ch = Math.min(1, parts[i].ch + fo * .7);
+          if (fo * .5 > parts[i].hot) parts[i].hot = fo * .5;
+        }
+      }
+    });
+  });
+
+  /* ═══════════════════════════════════════════════════════════════
+     7. CTA — flood DA-8 : l'or inonde, le champ se charge, les éclairs
+        convergent vers la borne (le bouton du formulaire)
+     ═══════════════════════════════════════════════════════════════ */
+  ScrollTrigger.create({
+    trigger: elCta, start: 'top 70%', end: 'bottom top', /* reste actif jusqu'en bas de page */
+    onToggle: function(st){
+      floodOn = st.isActive;
+      floodEl.classList.toggle('on', st.isActive);
+      btnForm.classList.toggle('charge', st.isActive);
+      if (st.isActive){
+        setTimeout(function(){
+          var r = btnForm.getBoundingClientRect();
+          var bx = r.left + r.width / 2, by = r.top + r.height / 2;
+          bolts.push({ p: chemin(W * .16, -30, bx, by), br: [], a: .9 });
+          bolts.push({ p: chemin(W * .86, -30, bx, by), br: [], a: .9 });
+          if (bolts.length > 10){ bolts.shift(); }
+          gsap.fromTo(strike, { v: .8 }, { v: 0, duration: .6, ease: 'power2.out' });
+        }, 350);
+      }
+    }
+  });
+
+  /* envoi réel + gate .prete : câblés par cableFormulaire (défini plus haut,
+     appelé aussi dans la branche motion réduit) — ici avec les effets */
+  cableFormulaire(true);
+
+  /* ═══════════════════════════════════════════════════════════════
+     8. CHIP persistant — avec le correctif remontée (da-28/30)
+     ═══════════════════════════════════════════════════════════════ */
+  var chip = document.getElementById('chip');
+  ScrollTrigger.create({
+    start: function(){ return innerHeight * .85; }, end: 'max',
+    onToggle: function(st){ chip.classList.toggle('la', st.isActive); }
+  });
+  ScrollTrigger.create({
+    trigger: elCta, start: 'top 75%', end: 'bottom top', /* pas de chip sur le formulaire, même tout en bas */
+    onToggle: function(st){
+      if (st.isActive) chip.classList.remove('la');
+      else if (scrollY > innerHeight * .85) chip.classList.add('la'); /* remontée depuis le contact */
+    }
+  });
+})();
+</script>
+<script src="/assets/da31.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+{
+  "title": "Audit GEO : qu'est-ce que c'est et comment le réaliser en 2026 ? - Triaina | Triaina",
+  "description": "Un audit GEO mesure votre taux de citation dans les IA génératives (ChatGPT, Perplexity, Gemini, Copilot). Découvrez notre méthode en 4 phases et 30 points de contrôle.",
+  "keywords": "agence seo, agence gso, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative search optimization",
+  "robots": null,
+  "canonical": "https://triaina.fr/blog/audit-geo",
+  "og": {
+    "og:type": "website",
+    "og:url": "https://triaina.fr/blog/audit-geo",
+    "og:title": "Audit GEO : qu'est-ce que c'est et comment le réaliser en 2026 ? - Triaina",
+    "og:description": "Un audit GEO mesure votre taux de citation dans les IA génératives (ChatGPT, Perplexity, Gemini, Copilot). Découvrez notre méthode en 4 phases et 30 points de contrôle.",
+    "og:image": "https://www.triaina.fr/og-image.jpg",
+    "og:locale": "fr_FR",
+    "og:site_name": "Triaina"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Audit GEO : qu'est-ce que c'est et comment le réaliser en 2026 ? - Triaina",
+    "twitter:description": "Un audit GEO mesure votre taux de citation dans les IA génératives (ChatGPT, Perplexity, Gemini, Copilot). Découvrez notre méthode en 4 phases et 30 points de contrôle.",
+    "twitter:image": "https://www.triaina.fr/og-image.jpg"
+  },
+  "geo": {
+    "geo.region": "FR-75",
+    "geo.placename": "Paris",
+    "geo.position": "48.8464;2.2758"
+  },
+  "titres": [
+    {
+      "niveau": 1,
+      "texte": "Audit GEO : qu'est-ce que c'est et comment le réaliser en 2026 ?"
+    },
+    {
+      "niveau": 2,
+      "texte": "Qu'est-ce qu'un audit GEO ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Pourquoi c'est différent d'un audit SEO"
+    },
+    {
+      "niveau": 3,
+      "texte": "Ce qu'un audit GEO mesure concrètement"
+    },
+    {
+      "niveau": 3,
+      "texte": "Ce qu'un audit SEO classique ne détecte pas"
+    },
+    {
+      "niveau": 2,
+      "texte": "Pourquoi réaliser un audit GEO en 2026 ?"
+    },
+    {
+      "niveau": 2,
+      "texte": "Les 4 phases d'un audit GEO complet"
+    },
+    {
+      "niveau": 3,
+      "texte": "Phase 1 - Mesurer le taux de citation actuel"
+    },
+    {
+      "niveau": 3,
+      "texte": "Phase 2 - Auditer la structure du contenu (chunking)"
+    },
+    {
+      "niveau": 3,
+      "texte": "Phase 3 - Vérifier les signaux E-E-A-T et d'entité"
+    },
+    {
+      "niveau": 3,
+      "texte": "Phase 4 - Analyser les données structurées et l'indexation IA"
+    },
+    {
+      "niveau": 2,
+      "texte": "Checklist audit GEO - 30 points de contrôle"
+    },
+    {
+      "niveau": 2,
+      "texte": "Outils pour réaliser un audit GEO"
+    },
+    {
+      "niveau": 2,
+      "texte": "Audit GEO vs Audit SEO : tableau comparatif"
+    },
+    {
+      "niveau": 2,
+      "texte": "Combien coûte un audit GEO ?"
+    },
+    {
+      "niveau": 3,
+      "texte": "Audit GEO DIY - gratuit"
+    },
+    {
+      "niveau": 3,
+      "texte": "Audit GEO par une agence - 800 € à 3 000 €"
+    },
+    {
+      "niveau": 3,
+      "texte": "Audit GEO + plan d'action - 1 500 € à 5 000 €"
+    },
+    {
+      "niveau": 2,
+      "texte": "FAQ - Audit GEO"
+    },
+    {
+      "niveau": 2,
+      "texte": "Sources utiles"
+    },
+    {
+      "niveau": 3,
+      "texte": "À propos de l'auteure"
+    },
+    {
+      "niveau": 4,
+      "texte": "Agence"
+    },
+    {
+      "niveau": 4,
+      "texte": "Expertises"
+    },
+    {
+      "niveau": 4,
+      "texte": "Localisation"
+    },
+    {
+      "niveau": 4,
+      "texte": "Infos"
+    }
+  ],
+  "h1": [
+    "Audit GEO : qu'est-ce que c'est et comment le réaliser en 2026 ?"
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@id": "https://www.triaina.fr/#organization",
+          "@type": [
+            "LocalBusiness",
+            "Organization"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "FR",
+            "addressLocality": "Paris",
+            "postalCode": "75016",
+            "streetAddress": "50 quai Louis Bleriot"
+          },
+          "alternateName": [
+            "Triaina",
+            "Triaina Agency",
+            "Agence GSO Paris",
+            "Agence Référencement IA"
+          ],
+          "areaServed": {
+            "@type": "Country",
+            "name": "France"
+          },
+          "description": "Agence marketing française experte en référencement SEO Google, optimisation pour les IA (GSO) et autorité Média.",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.8464,
+            "longitude": 2.2758
+          },
+          "hasMap": "https://maps.google.com/?q=50+Quai+Louis+Blériot+75016+Paris",
+          "image": "https://www.triaina.fr/logo.svg",
+          "knowsAbout": [
+            "SEO",
+            "GSO",
+            "Generative Search Optimization",
+            "Référencement IA",
+            "Stratégie Média",
+            "Agence SEO Paris",
+            "Search Engine Optimization (SEO)",
+            "Large Language Models (LLM)",
+            "Agence GSO",
+            "Google SGE Optimization",
+            "Knowledge Graph Construction",
+            "Entity SEO",
+            "Optimisation ChatGPT",
+            "Digital PR"
+          ],
+          "logo": "https://www.triaina.fr/logo.svg",
+          "name": "Triaina - Agence SEO & GEO Paris",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "closes": "19:00",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00"
+          },
+          "priceRange": "$$",
+          "sameAs": [
+            "https://www.linkedin.com/company/triaina",
+            "https://www.instagram.com/triaina_agency"
+          ],
+          "url": "https://www.triaina.fr"
+        },
+        {
+          "@id": "https://www.triaina.fr/#website",
+          "@type": "WebSite",
+          "description": "Domination IA et Visibilité Totale",
+          "inLanguage": "fr-FR",
+          "name": "Triaina | Agence SEO & GEO Paris",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "query-input": "required name=search_term_string",
+            "target": "https://www.triaina.fr/recherche?q={search_term_string}"
+          },
+          "publisher": {
+            "@id": "https://www.triaina.fr/#organization"
+          },
+          "url": "https://www.triaina.fr/"
+        }
+      ]
+    },
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "author": {
+          "@type": "Person",
+          "jobTitle": "Consultante Senior GEO/SEO chez Triaina",
+          "name": "Camille Rousseau",
+          "sameAs": "https://www.linkedin.com/in/camille-rousseau-a44488413/",
+          "url": "https://www.triaina.fr"
+        },
+        "description": "Un audit GEO mesure votre taux de citation dans les IA génératives (ChatGPT, Perplexity, Gemini, Copilot). Découvrez notre méthode en 4 phases et 30 points de contrôle.",
+        "headline": "Audit GEO : qu'est-ce que c'est et comment le réaliser en 2026 ?",
+        "image": "/images/audit-geo.jpg"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://www.triaina.fr",
+            "name": "Accueil",
+            "position": 1
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://www.triaina.fr/blog",
+            "name": "Blog",
+            "position": 2
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://www.triaina.fr/blog/audit-geo",
+            "name": "Audit GEO : qu'est-ce que c'est et comment le réaliser en 2026 ?",
+            "position": 3
+          }
+        ]
+      }
+    ]
+  ],
+  "typesSchema": [
+    null,
+    "Article",
+    "BreadcrumbList"
+  ],
+  "liensInternes": [
+    "/",
+    "/agence",
+    "/agence-geo-paris",
+    "/agence-referencement-ia",
+    "/agence-referencement-ia-paris",
+    "/agence-seo-paris",
+    "/annuaire",
+    "/blog",
+    "/blog/audit-seo-guide-complet",
+    "/blog/etre-cite-par-chatgpt",
+    "/blog/geo-definition-2026",
+    "/blog/schema-org-donnees-structurees-gso",
+    "/contact",
+    "/expertise",
+    "/expertise-ai-overview",
+    "/expertise-contenu",
+    "/expertise-geo",
+    "/expertise-gsa",
+    "/expertise-gso",
+    "/expertise-media",
+    "/expertise-sea",
+    "/expertise-seo",
+    "/faq",
+    "/mentions-legales",
+    "/references",
+    "/sitemap.xml"
+  ],
+  "nbMots": 3343,
+  "texteIntegral": "TRIAINA SEO — GEO — Média Accueil Triaina Expertise SEO/IA Références Blog Annuaire FAQ Contact Audit gratuit ← Retour aux articles 29 JUIN 2026 GUIDE Audit GEO : qu'est-ce que c'est et comment le réaliser en 2026 ? Un audit GEO mesure votre taux de citation dans les IA génératives (ChatGPT, Perplexity, Gemini, Copilot). Découvrez notre méthode en 4 phases et 30 points de contrôle. TL;DR - Ce qu'il faut retenir Un audit GEO mesure votre taux de citation dans les IA génératives (ChatGPT, Perplexity, Gemini, Copilot) - c'est fondamentalement différent d'un audit SEO classique . Le trafic issu des LLM a bondi de +527 % en un an (2024-2025) : si vous n'avez pas de citations, vous n'existez pas pour une part croissante de vos prospects. La méthode se déroule en 4 phases : mesure des citations, audit du chunking, vérification E-E-A-T, analyse des données structurées. 30 points de contrôle couvrent l'essentiel - la checklist ci-dessous est opérationnelle immédiatement, sans outil payant. Un audit GEO DIY prend 1 à 2 jours avec les outils gratuits listés ici ; une agence facture entre 800 € et 3 000 €. Qu'est-ce qu'un audit GEO ? Un audit GEO est une analyse complète de la visibilité d'un site dans les moteurs génératifs - ChatGPT, Perplexity, Gemini, Copilot. L'objectif : savoir si votre marque est citée, à quelle position, sur quels sujets, et pourquoi elle ne l'est pas quand ce n'est pas le cas. Pour comprendre le cadre général, voir notre définition du GEO (Generative Engine Optimization) . Pourquoi c'est différent d'un audit SEO Google crawle, indexe, et classe. Les LLM, eux, sélectionnent et paraphrasent . Ce n'est pas le même mécanisme, donc ce ne sont pas les mêmes critères. Un audit SEO complet mesure des positions, des backlinks, des Core Web Vitals, une structure de crawl. Tout ça reste nécessaire - mais insuffisant. Une page peut être en position 1 sur Google et complètement absente des réponses IA. Inversement, une page bien structurée, avec un auteur identifié et des données structurées solides, peut être citée par Perplexity même si elle est en position 8 sur Google. Ce qu'un audit GEO mesure concrètement Taux de citation par LLM : sur 10 prompts représentatifs, combien de fois votre domaine apparaît-il dans les réponses ? Qualité des extraits cités : l'IA cite-t-elle votre marque, votre URL, un passage précis de votre contenu ? Signaux E-E-A-T détectés par les IA : auteur identifié, expertise démontrée, mentions tierces. Structure du contenu (chunking) : vos sections sont-elles extractibles comme des blocs de sens autonomes ? Données structurées : JSON-LD Article, FAQPage, Organization - présents et valides ? Fraîcheur : les IA privilégient les contenus mis à jour récemment, surtout sur des sujets évolutifs. Ce qu'un audit SEO classique ne détecte pas C'est là que réside l'angle mort. Un audit SEO standard ne voit pas : L' absence de citations dans les IA - aucun outil SEO classique ne mesure ça nativement. Un mauvais chunking : des pages bien optimisées pour Google mais structurées en longs blocs narratifs que les LLM ne savent pas extraire proprement. L' absence d'auteur identifié : un article sans byline passe les audits SEO sans problème, mais les IA le traitent comme une source anonyme - donc moins fiable. Un contenu non paraphrasable : trop dense, trop jargonneux, sans réponse directe en début de section. Pourquoi réaliser un audit GEO en 2026 ? Le trafic généré par la recherche IA a augmenté de +527 % en un an entre 2024 et 2025, selon les données agrégées des plateformes IA. ChatGPT seul compte entre 800 et 900 millions d'utilisateurs actifs hebdomadaires en 2026. Gemini dépasse les 750 millions d'utilisateurs mensuels, en croissance de +114 % sur un an. Ce n'est plus un phénomène émergent - c'est un canal d'acquisition à part entière. Les décideurs B2B utilisent ChatGPT et Copilot pour leurs recherches fournisseurs. Pas pour trouver une recette. Pour comparer des prestataires, évaluer des solutions, préparer un appel d'offres. Si votre marque n'est pas citée dans ces réponses, vous n'existez pas pour cette partie du parcours d'achat. Google AI Overviews - déjà déployés aux États-Unis, attendus en France - vont capter les clics des positions 1 à 3 sur les requêtes informationnelles. Seules les sources citées dans l'AI Overview survivent à cette transformation. Les autres perdent du trafic sans même comprendre pourquoi. L'audit GEO permet de prioriser les actions : pas besoin de tout refaire. Dans la plupart des sites audités, 20 % des corrections génèrent 80 % des gains de citations. L'audit identifie ces 20 %. Les 4 phases d'un audit GEO complet Phase 1 - Mesurer le taux de citation actuel Avant de corriger quoi que ce soit, il faut savoir où vous en êtes. La méthode manuelle est la plus fiable - et la seule qui mesure ce que les utilisateurs voient vraiment. Méthode : testez 10 à 15 prompts représentatifs de vos prospects dans ChatGPT, Perplexity, Gemini et Copilot, toujours en navigation privée pour éviter les biais de personnalisation. Prompts types à tester : « Meilleure agence SEO Paris 2026 » « Comment optimiser son site pour les IA génératives ? » « Qu'est-ce que le GEO ? » « Comparatif outils GEO 2026 » « Agence référencement IA France » Grille de notation par prompt et par LLM : Cité en position 1 dans la réponse → 3 points Cité en position 2-3 → 2 points Cité en bas de réponse ou dans les sources → 1 point Non cité → 0 point Outils : copilot.microsoft.com , perplexity.ai , chat.openai.com , gemini.google.com - navigation privée systématique. Fréquence recommandée : 1 fois par semaine, 5 à 10 prompts représentatifs de vos prospects. Documentez dans un tableau simple (date, prompt, LLM, sources citées, votre position). Pour aller plus loin sur la stratégie d' être cité par ChatGPT , nous avons détaillé les leviers spécifiques à OpenAI dans un article dédié. Phase 2 - Auditer la structure du contenu (chunking) Les LLM n'ingèrent pas vos pages entières. Ils extraient des chunks - des blocs de sens cohérents - et les paraphrasent dans leurs réponses. Si votre contenu n'est pas structuré pour faciliter cette extraction, il sera ignoré même si Google le classe en position 1. Critères à vérifier sur vos 10 pages stratégiques : H2/H3 explicites : chaque titre doit formuler une question ou une affirmation autonome. « Notre approche » ne vaut rien. « Comment auditer la structure d'un contenu pour les IA » est extractible. Réponse directe en début de section : la réponse à la question implicite du titre doit être dans les 2 premières lignes - pas après 3 paragraphes d'introduction. Paragraphes courts : moins de 5 lignes par paragraphe. Les blocs denses sont mal extraits. Listes et tableaux : les IA les extraient quasi verbatim. Un tableau comparatif bien structuré est une mine d'or pour les citations. Absence de contenu dilutif : introductions longues, conclusions redondantes, transitions génériques - tout ça dilue le signal et réduit la probabilité d'extraction. FAQ présente : le format question/réponse est le format natif des LLM. Une section FAQ bien rédigée est systématiquement extraite. TL;DR en tête d'article : les IA lisent souvent le début de la page en priorité. Un résumé structuré augmente le taux de citation. Test rapide : lisez chaque H2 comme une question. La réponse est-elle dans les 2 premières lignes qui suivent ? Si non, c'est un point de correction. Score de chunking : 1 point par critère validé, sur vos 10 pages stratégiques. Un score inférieur à 5/7 sur une page est un signal d'alerte. Phase 3 - Vérifier les signaux E-E-A-T et d'entité Les IA génératives font confiance aux sources identifiables. Une page sans auteur, sans mentions tierces, sans présence dans le Knowledge Graph est traitée comme une source anonyme - donc déprioritisée. Points à vérifier : Auteur identifié : nom réel, titre professionnel précis, lien LinkedIn actif, photo - présent sur chaque article ? « L'équipe éditoriale » ne suffit pas. Schema.org Person : l'auteur est-il balisé en JSON-LD avec ses attributs (name, jobTitle, url) ? Voir notre guide sur les données structurées JSON-LD pour le GEO . Mentions externes : votre domaine est-il cité dans des publications tierces reconnues - presse sectorielle, LinkedIn, forums spécialisés ? Ces mentions construisent l'autorité d'entité aux yeux des LLM. Knowledge Graph : tapez le nom de votre marque dans ChatGPT ou Perplexity. L'IA la connaît-elle comme une entité ? Peut-elle décrire ce que vous faites sans chercher sur le web ? Bing Webmaster Tools : votre site est-il indexé ? Le tableau de bord « AI Performance » (disponible depuis février 2026) est-il activé ? C'est critique pour Copilot et Perplexity, qui s'appuient tous deux sur l'index Bing. Fraîcheur : les articles stratégiques ont-ils été mis à jour dans les 6 derniers mois ? Les LLM privilégient les contenus récents sur les sujets évolutifs. Phase 4 - Analyser les données structurées et l'indexation IA C'est la phase la plus technique, mais aussi l'une des plus actionnables : les corrections de données structurées et de robots.txt se font en quelques heures et ont un impact immédiat. Checklist technique : Présence de JSON-LD Article sur toutes les pages de contenu stratégiques. Présence de JSON-LD FAQPage sur les pages qui contiennent une FAQ. Présence de JSON-LD Organization sur la page d'accueil et la page À propos. Validation via Rich Results Test (Google) et Schema.org Validator . Sitemap soumis à Bing Webmaster Tools - pas seulement à Google Search Console. Bing est plus lent à découvrir les URLs organiquement. Robots.txt : vérifiez l'absence de blocages pour les crawlers IA. Les agents à autoriser pour les citations : OAI-SearchBot (ChatGPT Search), PerplexityBot , Claude-SearchBot , BingBot . Attention : GPTBot et ClaudeBot sont les crawlers d'entraînement - leur blocage n'empêche pas les citations. Cohérence des métadonnées : title, meta description, OG tags - les IA lisent ces balises pour qualifier le contenu avant même d'en lire le corps. IndexNow actif : ce protocole notifie Bing en quelques minutes après chaque publication, rendant vos pages éligibles aux citations Copilot dans l'heure. Checklist audit GEO - 30 points de contrôle Cette checklist couvre les 30 points critiques d'un audit GEO complet. Priorité : 🔴 critique (à corriger en priorité), 🟠 important, 🟡 optimisation. Point de contrôle Priorité Outil de vérification Citations IA (5 points) Taux de citation dans ChatGPT sur 10 prompts cibles 🔴 chat.openai.com (navigation privée) Taux de citation dans Perplexity sur 10 prompts cibles 🔴 perplexity.ai (navigation privée) Taux de citation dans Gemini sur 10 prompts cibles 🔴 gemini.google.com (navigation privée) Taux de citation dans Copilot sur 10 prompts cibles 🔴 copilot.microsoft.com (navigation privée) Position dans les réponses (1er, 2e-3e, bas, absent) 🟠 Grille de notation manuelle Structure du contenu - Chunking (8 points) H2/H3 explicites et autonomes (chaque titre = une question) 🔴 Lecture manuelle des pages stratégiques Réponse directe dans les 2 premières lignes de chaque section 🔴 Lecture manuelle Paragraphes courts (&lt; 5 lignes) 🟠 Lecture manuelle / Word count Listes à puces et tableaux présents sur les pages clés 🟠 Lecture manuelle Absence d'introductions longues avant l'information 🟠 Lecture manuelle Section FAQ présente sur les pages stratégiques 🟠 Lecture manuelle TL;DR ou résumé en tête d'article 🟡 Lecture manuelle Contenu paraphrasable (pas de jargon opaque, phrases directes) 🟡 Lecture manuelle / test de paraphrase IA E-E-A-T &amp; Entité (7 points) Auteur identifié (nom réel + titre professionnel) sur chaque article 🔴 Lecture manuelle Lien LinkedIn de l'auteur présent et actif 🔴 Lecture manuelle Photo de l'auteur présente 🟠 Lecture manuelle Mentions tierces du domaine (presse, LinkedIn, forums) 🔴 Ahrefs / Semrush / recherche manuelle Marque reconnue comme entité dans les réponses IA 🟠 Test manuel ChatGPT / Perplexity Site indexé dans Bing + AI Performance activé 🔴 Bing Webmaster Tools Fraîcheur : articles stratégiques mis à jour &lt; 6 mois 🟠 Google Search Console / lecture manuelle Données structurées (5 points) JSON-LD Article sur toutes les pages de contenu 🔴 Rich Results Test / Schema.org Validator JSON-LD FAQPage sur les pages avec FAQ 🔴 Rich Results Test JSON-LD Organization sur la page d'accueil 🟠 Rich Results Test JSON-LD Person (auteur) sur les articles 🟠 Schema.org Validator Validation Rich Results Test sans erreur 🔴 search.google.com/test/rich-results Indexation &amp; Technique (5 points) Sitemap soumis à Bing Webmaster Tools 🔴 Bing Webmaster Tools Robots.txt : crawlers IA de citation non bloqués (OAI-SearchBot, PerplexityBot) 🔴 votredomaine.com/robots.txt IndexNow actif (notification instantanée Bing) 🟠 indexnow.org / Bing Webmaster Tools Core Web Vitals dans le vert (LCP, INP, CLS) 🟠 Google Search Console / PageSpeed Insights Canonical www/non-www cohérent sur tout le site 🟡 Screaming Frog / Ahrefs Outils pour réaliser un audit GEO La bonne nouvelle : la majorité des outils nécessaires à un audit visibilité LLM sont gratuits. Voici la liste complète, par usage. Outil Usage dans l'audit GEO Gratuit / Payant Bing Webmaster Tools Indexation Bing + tableau de bord AI Performance (citations Copilot) Gratuit Google Search Console Indexation Google + requêtes organiques (base de l'audit) Gratuit Rich Results Test (Google) Validation des données structurées JSON-LD Gratuit Schema.org Validator Validation JSON-LD complète (tous types de schémas) Gratuit Score-GEO.fr Audit GEO automatisé - score 0 à 100 sur 91 points de contrôle Gratuit Geoptie.com Audit GEO multi-dimensions (6 axes : citation readiness, autorité, technique, etc.) Gratuit ChatGPT / Perplexity / Gemini / Copilot Test manuel des citations - la mesure la plus directe qui soit Gratuit Semrush / Ahrefs Audit SEO + profil de backlinks + mentions tierces (base autorité) Payant Notre recommandation : commencez par Score-GEO.fr et Geoptie.com pour avoir un diagnostic rapide en 30 secondes, puis approfondissez manuellement les phases 1 à 4 décrites ci-dessus. Les outils automatisés donnent une direction - la méthode manuelle donne la précision. Audit GEO vs Audit SEO : tableau comparatif Un audit GEO ne remplace pas l' audit SEO classique - il le complète. Voici les différences structurelles entre les deux approches. Dimension Audit SEO Audit GEO Objectif principal Améliorer le positionnement dans les SERP Google Augmenter le taux de citation dans les IA génératives Ce qu'on mesure Positions, trafic organique, backlinks, Core Web Vitals Taux de citation par LLM, qualité des extraits, score de chunking Outils principaux Google Search Console, Semrush, Ahrefs, Screaming Frog Bing Webmaster Tools, Score-GEO.fr, Geoptie.com, tests manuels LLM Critères de contenu Densité de mots-clés, cocon sémantique, maillage interne, longueur Chunking, réponse directe, paraphrasabilité, FAQ, TL;DR Signaux d'autorité Backlinks, Domain Rating, ancres, PageRank E-E-A-T auteur, mentions tierces, entité Knowledge Graph, fraîcheur Fréquence recommandée 1 fois par an (audit complet) + suivi mensuel Tous les 3 mois minimum (les LLM évoluent vite) Durée estimée 3 à 10 jours selon la taille du site 1 à 2 jours (DIY) / 1 à 2 semaines (agence) Le SEO reste la fondation : une page non indexée ne peut pas être citée. Mais le SEO seul ne suffit plus. L' audit GEO - ou audit référencement IA - est la couche complémentaire qui mesure ce que Google Search Console ne voit pas. Combien coûte un audit GEO ? La réponse dépend de la profondeur souhaitée et de la taille du site. Voici les trois scénarios réalistes. Audit GEO DIY - gratuit Avec les outils listés ci-dessus (Score-GEO.fr, Geoptie.com, Bing Webmaster Tools, Rich Results Test) et la méthode en 4 phases, un responsable marketing ou un consultant SEO peut réaliser un audit GEO gratuit complet en 1 à 2 jours de travail. Cet audit DIY couvre les 80 % critiques. Il manquera la profondeur d'analyse concurrentielle et le plan d'action priorisé - mais il identifie les angles morts principaux. Audit GEO par une agence - 800 € à 3 000 € Une agence spécialisée en audit GEO generative engine optimization facture entre 800 € et 3 000 € selon la profondeur de l'analyse, le nombre de pages auditées, et le nombre de LLM testés. À ce niveau, l'audit inclut une analyse concurrentielle (qui est cité à votre place ?), un scoring détaillé par page, et des recommandations priorisées. Audit GEO + plan d'action - 1 500 € à 5 000 € La formule complète inclut l'audit, une roadmap priorisée, et un accompagnement à l'implémentation. C'est la formule que propose Triaina dans le cadre d'une stratégie GSO complète, avec l'avantage d'un groupe média propriétaire pour accélérer les citations tierces - l'un des signaux les plus difficiles à construire rapidement en autonomie. Ce qui justifie le coût : un audit bien réalisé identifie les 20 % d'actions qui génèrent 80 % des gains de citations IA. Sur un site qui génère des leads B2B, même une augmentation marginale du taux de citation dans ChatGPT ou Copilot peut représenter plusieurs dizaines de milliers d'euros de pipeline supplémentaire. FAQ - Audit GEO Quelle différence entre un audit GEO et un audit SEO ? L' audit SEO classique mesure votre positionnement dans Google - positions, backlinks, Core Web Vitals. L'audit GEO mesure votre taux de citation dans les IA génératives (ChatGPT, Perplexity, Gemini, Copilot). Les critères sont différents : chunking du contenu, E-E-A-T auteur identifié, données structurées JSON-LD , fraîcheur des contenus. Un bon SEO est la condition nécessaire - pas suffisante. Combien de temps prend un audit GEO ? En DIY avec les outils gratuits listés dans cet article : 1 à 2 jours de travail. Avec une agence spécialisée : 1 à 2 semaines selon la taille du site et la profondeur de l'analyse concurrentielle. Peut-on faire un audit GEO soi-même ? Oui. Avec la checklist 30 points et les outils gratuits (Score-GEO.fr, Geoptie.com, Bing Webmaster Tools, Rich Results Test), un audit GEO gratuit DIY couvre les 80 % critiques. Une agence apporte la profondeur d'analyse concurrentielle, le plan d'action priorisé, et - dans le cas de Triaina - un réseau de publications tierces pour accélérer les citations. À quelle fréquence réaliser un audit GEO ? Tous les 3 mois minimum. Les LLM évoluent rapidement - nouvelles versions (GPT-5, Gemini 2.0, Claude 4), nouveaux critères de sélection, nouvelles interfaces. Un audit trimestriel permet d'ajuster la stratégie avant de perdre des positions acquises. Le suivi hebdomadaire des citations (5 prompts, 10 minutes) complète l'audit trimestriel. Un bon SEO suffit-il pour être cité par les IA ? Non. Le SEO est la base indispensable - une page non indexée ne peut pas être citée. Mais les IA ont des critères supplémentaires que Google n'évalue pas : structure du contenu (chunking), auteur identifié avec E-E-A-T, données structurées JSON-LD, fraîcheur, mentions tierces. C'est précisément ce que mesure l' audit visibilité LLM - et ce qu'un audit SEO classique ne détecte pas. Sources utiles Bing Webmaster Tools - bing.com/webmasters Rich Results Test (Google) - search.google.com/test/rich-results Schema.org Validator - validator.schema.org Score-GEO.fr - audit GEO automatisé gratuit Geoptie.com - audit GEO multi-dimensions gratuit Audit offert Votre marque est-elle citée par les IA&nbsp;? Trente minutes pour mesurer où vous en êtes — positions Google, citations dans ChatGPT, Gemini et Perplexity — et repartir avec trois actions concrètes. Recevoir mon audit gratuit Sans engagement · réponse sous 24&nbsp;h ouvrées Partager cet article À propos de l'auteure CR Camille Rousseau Consultante Senior GEO/SEO chez Triaina Experte en stratégies d'acquisition hybrides. Camille accompagne les marques dans l'optimisation de leur visibilité sur les moteurs de recherche traditionnels (SEO) et les interfaces d'IA génératives (GSO). Voir son profil LinkedIn Sommaire Qu'est-ce qu'un audit GEO ? Pourquoi réaliser un audit GEO en 2026 ? Les 4 phases d'un audit GEO complet Checklist audit GEO - 30 points de contrôle Outils pour réaliser un audit GEO Audit GEO vs Audit SEO : tableau comparatif Combien coûte un audit GEO ? FAQ - Audit GEO Sources utiles TRIAINA SEO — GEO — Média Agence spécialisée en architecture SEO, domination GEO et autorité Média. LinkedIn Agence ACCUEIL TRIAINA RÉFÉRENCES BLOG ANNUAIRE FAQ CONTACT Expertises Expertise SEO Expertise SEA Expertise GEO Expertise GSA Expertise Média Expertise Automatisation de Contenu Google AI Overview Localisation Agence SEO Paris Agence Référencement IA Agence Référencement IA Paris Agence GEO Paris Infos 50 Quai Louis Blériot 75016 Paris France © 2026 Triaina Global Systems. Mentions Légales Sitemap"
+}

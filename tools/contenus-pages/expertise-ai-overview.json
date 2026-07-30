@@ -1,0 +1,532 @@
+{
+ "page": "expertise-ai-overview",
+ "blocs": [
+  {
+   "t": "breadcrumb",
+   "html": "<ol><li><a href=\"https://triaina.fr/\">Accueil</a></li><li><a href=\"/expertise-geo\">Expertise</a></li><li aria-current=\"page\">Google AI Overview</li></ol>",
+   "groupe": "breadcrumb"
+  },
+  {
+   "t": "h1",
+   "html": "Google AI Overview en France : l'agence qui contrôle les sources - pas seulement l'optimisation",
+   "groupe": "hero"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Lancé officiellement en France le 22 juillet 2026</strong>, Google AI Overview redistribue les cartes de la visibilité en ligne. Triaina est la seule agence française combinant expertise technique SEO/GEO, réseau de médias propriétaires déjà cités par AI Overview dans leurs secteurs, et régie publicitaire intégrée.",
+   "groupe": "hero"
+  },
+  {
+   "t": "p",
+   "html": "Ce double levier - optimisation technique + contrôle des sources consommées par l'IA - produit des résultats que l'optimisation seule ne peut pas atteindre. Nos clients passent de 0 à 73 % de visibilité dans Google AI Overview en 6 mois.",
+   "groupe": "hero"
+  },
+  {
+   "t": "cta",
+   "html": "Démarrer votre audit AI Overview gratuit",
+   "groupe": "hero",
+   "nav": [
+    {
+     "texte": "Démarrer votre audit AI Overview gratuit",
+     "page": "contact",
+     "url": "/contact"
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "html": "Qu'est-ce que Google AI Overview ?",
+   "groupe": "definition"
+  },
+  {
+   "t": "p",
+   "html": "Google AI Overview (anciennement Search Generative Experience, SGE) est une synthèse générée par l'intelligence artificielle qui s'affiche <strong>en haut des résultats Google Search</strong>, avant les dix liens bleus classiques. Ce n'est pas un simple encadré informatif : c'est une réponse construite, sourcée, qui répond directement à la question de l'utilisateur sans qu'il ait à cliquer.",
+   "groupe": "definition"
+  },
+  {
+   "t": "p",
+   "html": "Le moteur derrière cette fonctionnalité, c'est <strong>Gemini</strong>, le modèle LLM multimodal de Google. Son fonctionnement repose sur une architecture transformeur : les requêtes sont converties en représentations numériques, un mécanisme d'auto-attention identifie les éléments les plus pertinents, et le modèle synthétise une réponse en s'appuyant sur des sources web sélectionnées en temps réel - un processus dit de <em>retrieval-augmented generation</em>.",
+   "groupe": "definition"
+  },
+  {
+   "t": "p",
+   "html": "Concrètement, quand un internaute tape « meilleure assurance habitation pour locataire », AI Overview génère une synthèse en citant 3 à 5 sources. Ces sources captent de la visibilité et du trafic. Les autres disparaissent du radar.",
+   "groupe": "definition"
+  },
+  {
+   "t": "h3",
+   "html": "Déploiement en France : le 22 juillet 2026",
+   "groupe": "definition"
+  },
+  {
+   "t": "p",
+   "html": "La France a connu un calendrier décalé par rapport aux États-Unis (déploiement en 2024) et à d'autres marchés européens, en raison des discussions autour des droits voisins et de la rémunération des éditeurs de presse. <strong>Le déploiement officiel a eu lieu le 22 juillet 2026</strong>, simultanément avec le lancement du Google AI Mode en France.",
+   "groupe": "definition"
+  },
+  {
+   "t": "p",
+   "html": "Nous publions cette page le jour même du lancement. La fenêtre first-mover est ouverte. Elle ne le restera pas longtemps.",
+   "groupe": "definition"
+  },
+  {
+   "t": "h3",
+   "html": "Impact sur le CTR : les chiffres qui comptent",
+   "groupe": "definition"
+  },
+  {
+   "t": "p",
+   "html": "Les données mesurées sur les marchés où AI Overview est déjà actif sont sans ambiguïté :",
+   "groupe": "definition"
+  },
+  {
+   "t": "ul",
+   "html": "<li><strong>−34,5 % de CTR</strong> en position 1 quand un AI Overview est présent (Ahrefs, base de 300 000 mots-clés informationnels)</li><li><strong>CTR moyen de 2,6 %</strong> contre 7,3 % en 2024 sur les requêtes avec AI Overview (BrightEdge)</li><li><strong>58 % des recherches</strong> ne génèrent aucun clic sur les résultats organiques classiques (WordStream)</li><li><strong>+35 % de clics</strong> pour les pages citées comme sources dans l'AI Overview vs. les pages non citées (Seer Interactive)</li>",
+   "groupe": "definition"
+  },
+  {
+   "t": "quote",
+   "html": "La conclusion est simple : si vous n'êtes pas cité, vous perdez. Si vous êtes cité, vous gagnez même quand le trafic global baisse. Tout se joue sur la sélection des sources.",
+   "groupe": "definition"
+  },
+  {
+   "t": "h2",
+   "html": "Pourquoi Google AI Overview change tout pour votre visibilité en France",
+   "groupe": "impact"
+  },
+  {
+   "t": "p",
+   "html": "Être en première page Google ne suffit plus. AI Overview capte l'attention avant même que l'utilisateur voie vos liens. Pour les marques absentes des synthèses IA, c'est une érosion silencieuse mais rapide du trafic organique.",
+   "groupe": "impact"
+  },
+  {
+   "t": "h3",
+   "html": "Les secteurs les plus exposés",
+   "groupe": "impact"
+  },
+  {
+   "t": "p",
+   "html": "L'impact varie selon les verticales, mais aucun secteur n'est épargné :",
+   "groupe": "impact"
+  },
+  {
+   "t": "table",
+   "html": "<table><thead><tr><th>Secteur</th><th>Fréquence d'apparition des AI Overviews</th><th>Type de requêtes concernées</th></tr></thead><tbody><tr><td>Santé</td><td>~50 %</td><td>Symptômes, traitements, comparatifs</td></tr><tr><td>Services financiers</td><td>29,2 %</td><td>Comparatifs, conseils, définitions</td></tr><tr><td>Technologie B2B</td><td>15,8 %</td><td>Définitions techniques, tutoriels</td></tr><tr><td>E-commerce / Retail</td><td>Croissant</td><td>Comparatifs produits, guides d'achat</td></tr><tr><td>Immobilier / Habitat</td><td>Élevé</td><td>Requêtes comparatives, réglementaires</td></tr></tbody></table>",
+   "groupe": "impact-secteurs"
+  },
+  {
+   "t": "p",
+   "html": "Pour l'<a href=\"#\">AI Overview pour l'e-commerce</a>, l'enjeu est particulièrement critique : les requêtes « meilleur produit X » et « comment choisir Y » déclenchent systématiquement des synthèses IA qui court-circuitent les fiches produits et les comparateurs.",
+   "groupe": "impact",
+   "nav": [
+    {
+     "texte": "AI Overview pour l'e-commerce",
+     "page": "ai-overview-ecommerce-2026",
+     "url": "/blog/ai-overview-ecommerce-france-2026"
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "html": "La fenêtre d'opportunité first-mover",
+   "groupe": "impact"
+  },
+  {
+   "t": "p",
+   "html": "En mai 2024, aux États-Unis, les marques qui ont investi en GEO dès le lancement d'AI Overview ont pris une avance structurelle sur leurs concurrents. Certaines ont consolidé leur position de source citée en moins de 4 mois - une position qu'il est ensuite très difficile de déloger.",
+   "groupe": "impact"
+  },
+  {
+   "t": "p",
+   "html": "En France, cette fenêtre vient de s'ouvrir. Le 22 juillet 2026 est le jour zéro. Les marques qui agissent maintenant construisent une autorité que leurs concurrents mettront 12 à 18 mois à rattraper, si tant est qu'ils y parviennent.",
+   "groupe": "impact"
+  },
+  {
+   "t": "p",
+   "html": "La corrélation entre classement organique et citations dans AI Overview est documentée : une page en position 1 a 33 % de chances d'être citée, contre moins de 1 % au-delà de la position 10 (Writesonic, août 2025). Le SEO reste la fondation. Mais il faut l'amplifier avec des leviers GEO spécifiques - et, chez Triaina, avec le contrôle direct des sources.",
+   "groupe": "impact"
+  },
+  {
+   "t": "h2",
+   "html": "Comment Triaina vous rend visible dans Google AI Overview",
+   "groupe": "methode"
+  },
+  {
+   "t": "p",
+   "html": "Notre méthodologie repose sur 4 étapes séquentielles. Ce qui la distingue radicalement des autres <a href=\"#\">agences AI Overview</a> : l'étape 3. Nous n'attendons pas que Google découvre vos contenus optimisés. Nous activons des sources que Google cite déjà.",
+   "groupe": "methode",
+   "nav": [
+    {
+     "texte": "agences AI Overview",
+     "page": "agence-google-ai-overview-2026",
+     "url": "/blog/agence-google-ai-overview"
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "html": "Étape 1 - Audit de visibilité AI Overview",
+   "groupe": "methode-etape-1"
+  },
+  {
+   "t": "p",
+   "html": "Avant toute optimisation, on mesure. L'audit couvre :",
+   "groupe": "methode-etape-1"
+  },
+  {
+   "t": "ul",
+   "html": "<li><strong>Détection des requêtes stratégiques</strong> déclenchant un AI Overview dans votre secteur (100 à 300 requêtes analysées)</li><li><strong>Identification des sources actuellement citées</strong> - vous et vos concurrents</li><li><strong>Scoring de votre visibilité IA</strong> actuelle : taux de citation, position dans les synthèses, fréquence d'apparition</li><li><strong>Analyse des signaux E-E-A-T</strong> de votre domaine vs. les sources citées</li><li><strong>Cartographie des opportunités</strong> : requêtes où vous pouvez prendre une position de source dans les 3 mois</li>",
+   "groupe": "methode-etape-1"
+  },
+  {
+   "t": "p",
+   "html": "Cet audit est le point de départ de toute mission. Il produit un rapport actionnable, pas un état des lieux théorique. Pour aller plus loin sur la méthodologie d'audit, consultez notre <a href=\"#\">guide pratique pour apparaître dans AI Overview</a>.",
+   "groupe": "methode-etape-1",
+   "nav": [
+    {
+     "texte": "guide pratique pour apparaître dans AI Overview",
+     "page": "google-ai-overview-france",
+     "url": "/blog/google-ai-overview-france"
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "html": "Étape 2 - Optimisation technique GEO",
+   "groupe": "methode-etape-2"
+  },
+  {
+   "t": "p",
+   "html": "L'optimisation technique pour AI Overview va plus loin que le SEO classique. Gemini sélectionne les sources selon des critères précis que nous optimisons systématiquement :",
+   "groupe": "methode-etape-2"
+  },
+  {
+   "t": "ul",
+   "html": "<li><strong>E-E-A-T renforcé</strong> : signatures auteur avec credentials vérifiables, dates de mise à jour explicites, sources primaires citées dans le contenu, mentions externes sur des sites d'autorité</li><li><strong>Schema.org avancé</strong> : FAQPage, HowTo, Article, Organization, Product - chaque type de contenu reçoit le balisage adapté pour faciliter l'extraction par Gemini</li><li><strong>Structuration IA-native</strong> : réponses directes en début de section (format pyramide inversée), listes à puces, tableaux comparatifs, définitions concises - les formats que Gemini extrait préférentiellement</li><li><strong>Optimisation des featured snippets</strong> : 54,5 % des citations dans AI Overview proviennent de pages déjà en featured snippet (BrightEdge) - on commence par là</li><li><strong>Accessibilité aux crawlers IA</strong> : vérification du passage de Google-Extended et GoogleOther, configuration du robots.txt, optimisation de la vitesse d'indexation</li>",
+   "groupe": "methode-etape-2"
+  },
+  {
+   "t": "p",
+   "html": "Cette étape relève de notre <a href=\"#\">expertise GEO complète</a> et de notre approche du <a href=\"#\">référencement IA</a>. Elle est nécessaire. Mais seule, elle ne suffit pas.",
+   "groupe": "methode-etape-2",
+   "nav": [
+    {
+     "texte": "expertise GEO complète",
+     "page": "expertise-gso",
+     "url": "/expertise-geo"
+    },
+    {
+     "texte": "référencement IA",
+     "page": "agence-referencement-ia",
+     "url": "/agence-referencement-ia"
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "html": "Étape 3 - Activation du réseau médias propriétaires",
+   "groupe": "methode-etape-3"
+  },
+  {
+   "t": "p",
+   "html": "<strong>C'est ici que Triaina se différencie de toutes les autres agences AI Overview en France.</strong>",
+   "groupe": "methode-etape-3"
+  },
+  {
+   "t": "p",
+   "html": "Nous possédons un réseau de médias thématiques qui sont <strong>déjà des sources citées par Google AI Overview</strong> dans leurs secteurs respectifs. Ce ne sont pas des annuaires ou des sites de liens génériques : ce sont des médias éditoriaux à forte autorité, reconnus par Gemini comme sources fiables sur leurs thématiques.",
+   "groupe": "methode-etape-3"
+  },
+  {
+   "t": "p",
+   "html": "Quand nous publions un contenu mentionnant votre marque, votre expertise ou votre offre sur ces médias, nous ne faisons pas du netlinking classique. Nous injectons votre marque directement dans l'écosystème de sources que Google AI Overview consulte déjà.",
+   "groupe": "methode-etape-3"
+  },
+  {
+   "t": "table",
+   "html": "<table><thead><tr><th>Approche</th><th>Mécanisme</th><th>Délai d'effet</th></tr></thead><tbody><tr><td>Optimisation technique seule</td><td>Attendre que Google découvre</td><td>6 à 12 mois</td></tr><tr><td>Technique + Médias Triaina</td><td>Vos contenus + sources reconnues</td><td>1 à 4 mois</td></tr></tbody></table>",
+   "groupe": "methode-etape-3"
+  },
+  {
+   "t": "h3",
+   "html": "Étape 4 - Mesure et reporting citations IA",
+   "groupe": "methode-etape-4"
+  },
+  {
+   "t": "p",
+   "html": "Ce qui ne se mesure pas ne s'améliore pas. Notre reporting AI Overview couvre :",
+   "groupe": "methode-etape-4"
+  },
+  {
+   "t": "ul",
+   "html": "<li><strong>Taux de citation</strong> : sur combien de requêtes stratégiques votre marque apparaît dans les synthèses AI Overview</li><li><strong>Position dans la synthèse</strong> : source principale, source secondaire, mention dans le corps du texte</li><li><strong>Évolution vs. concurrents</strong> : benchmark mensuel sur les requêtes prioritaires</li><li><strong>Trafic issu des AI Overviews</strong> : suivi dans Google Search Console (segment spécifique)</li><li><strong>Score de visibilité IA global</strong> : indicateur composite qui agrège toutes les métriques en un seul chiffre pilotable</li>",
+   "groupe": "methode-etape-4"
+  },
+  {
+   "t": "h2",
+   "html": "Nos résultats clients",
+   "groupe": "resultats"
+  },
+  {
+   "t": "p",
+   "html": "Les chiffres ci-dessous sont réels. Les clients sont anonymisés à leur demande.",
+   "groupe": "resultats"
+  },
+  {
+   "t": "h3",
+   "html": "Client 1 - Services B2B, France",
+   "groupe": "resultats-client-1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Situation initiale :</strong> 0 % de visibilité dans Google AI Overview sur 150 requêtes stratégiques auditées. Bon positionnement SEO, mais aucune citation dans les synthèses IA.",
+   "groupe": "resultats-client-1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mission Triaina :</strong> Audit GEO complet, refonte de l'architecture de contenu en format IA-native, déploiement Schema.org FAQPage + HowTo sur 40 pages, activation réseau médias (8 publications).",
+   "groupe": "resultats-client-1"
+  },
+  {
+   "t": "stat",
+   "html": "73% de visibilité AI Overview",
+   "groupe": "resultats-client-1"
+  },
+  {
+   "t": "meta",
+   "html": "Cité comme source principale sur ses 3 requêtes à plus fort volume à 6 mois.",
+   "groupe": "resultats-client-1"
+  },
+  {
+   "t": "h3",
+   "html": "Client 2 - E-commerce, France",
+   "groupe": "resultats-client-2"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Situation initiale :</strong> 0 citation dans AI Overview sur les requêtes comparatives sectorielles clés. Concurrents déjà présents sur 40% des requêtes.",
+   "groupe": "resultats-client-2"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Mission Triaina :</strong> Optimisation E-E-A-T des pages catégories, structuration des contenus en réponses directes, activation du réseau médias sur verticales retail.",
+   "groupe": "resultats-client-2"
+  },
+  {
+   "t": "stat",
+   "html": "90% de citations",
+   "groupe": "resultats-client-2"
+  },
+  {
+   "t": "meta",
+   "html": "Sur les requêtes sectorielles clés. <a href=\"#\">En savoir plus sur l'e-commerce</a>.",
+   "groupe": "resultats-client-2",
+   "nav": [
+    {
+     "texte": "En savoir plus sur l'e-commerce",
+     "page": "ai-overview-ecommerce-2026",
+     "url": "/blog/ai-overview-ecommerce-france-2026"
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "html": "Pourquoi choisir Triaina plutôt qu'une autre agence AI Overview ?",
+   "groupe": "comparatif"
+  },
+  {
+   "t": "p",
+   "html": "Le marché des agences spécialisées Google AI Overviews se structure rapidement en France depuis le lancement. Voici ce qui distingue concrètement Triaina - au-delà des formules marketing.",
+   "groupe": "comparatif"
+  },
+  {
+   "t": "table",
+   "html": "<table><thead><tr><th>Critère</th><th>Triaina</th><th>Agence SEO/GEO classique</th><th>Agence média only</th></tr></thead><tbody><tr><td>Expertise technique SEO/GEO</td><td>✅ Complète</td><td>✅ Variable</td><td>❌ Absente ou sous-traitée</td></tr><tr><td>Réseau médias propriétaires</td><td>✅ Médias déjà sources AI</td><td>❌ Pas de médias propres</td><td>⚠️ Médias non spécialisés IA</td></tr><tr><td>Régie publicitaire intégrée</td><td>✅ SEA/Paid coordonné</td><td>❌ Souvent externalisé</td><td>⚠️ Display uniquement</td></tr><tr><td>SEA / Paid Search</td><td>✅ Intégré et en synergie</td><td>⚠️ Proposé mais non coordonné</td><td>❌ Hors périmètre</td></tr><tr><td>Délai pour premiers résultats</td><td>1 à 4 mois</td><td>6 à 12 mois</td><td>Variable, non garanti</td></tr></tbody></table>",
+   "groupe": "comparatif"
+  },
+  {
+   "t": "p",
+   "html": "La différence fondamentale : une <strong>agence spécialisée Google AI Overviews</strong> qui ne fait que de l'optimisation technique attend que Google valide ses recommandations. Triaina contrôle une partie des sources que Google AI Overview consulte déjà. Ce n'est pas la même chose.",
+   "groupe": "comparatif"
+  },
+  {
+   "t": "p",
+   "html": "Pour comprendre comment choisir votre partenaire, lisez notre analyse détaillée : <a href=\"#\">comment choisir votre agence AI Overview</a>.",
+   "groupe": "comparatif",
+   "nav": [
+    {
+     "texte": "comment choisir votre agence AI Overview",
+     "page": "agence-google-ai-overview-2026",
+     "url": "/blog/agence-google-ai-overview"
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "html": "FAQ Google AI Overview",
+   "groupe": "faq"
+  },
+  {
+   "t": "faq-q",
+   "html": "Qu'est-ce que Google AI Overview et comment fonctionne-t-il en France ?",
+   "groupe": "faq-item-1"
+  },
+  {
+   "t": "faq-a",
+   "html": "Google AI Overview est une synthèse générée par le modèle Gemini qui s'affiche en haut des résultats Google Search, au-dessus des liens organiques classiques. Il analyse des sources web jugées fiables, les synthétise et cite ses références. Déployé officiellement en France le 22 juillet 2026, il concerne d'abord les requêtes informationnelles et comparatives, avec une extension progressive vers les requêtes transactionnelles.",
+   "groupe": "faq-item-1"
+  },
+  {
+   "t": "faq-q",
+   "html": "Comment être visible dans Google AI Overview en France ?",
+   "groupe": "faq-item-2"
+  },
+  {
+   "t": "faq-a",
+   "html": "Pour apparaître dans Google AI Overview, il faut combiner un bon positionnement SEO organique (les sources citées en position 1 ont 33 % de chances d'être reprises selon Writesonic), des signaux E-E-A-T renforcés, des données structurées Schema.org, un contenu structuré en réponses directes, et des citations sur des médias tiers à forte autorité. Triaina ajoute un levier unique : l'activation de son réseau de médias propriétaires, eux-mêmes déjà cités par AI Overview dans leurs secteurs.",
+   "groupe": "faq-item-2"
+  },
+  {
+   "t": "faq-q",
+   "html": "Combien de temps faut-il pour apparaître dans Google AI Overview ?",
+   "groupe": "faq-item-3"
+  },
+  {
+   "t": "faq-a",
+   "html": "Les premiers résultats se manifestent en général entre 3 et 6 mois. Pour les sites déjà bien positionnés en SEO, les premières citations dans AI Overview peuvent intervenir dès 1 à 3 mois après les optimisations. Grâce à l'activation du réseau médias propriétaires de Triaina - sources déjà reconnues par Google - le délai est significativement réduit par rapport à une approche d'optimisation technique seule.",
+   "groupe": "faq-item-3"
+  },
+  {
+   "t": "faq-q",
+   "html": "Google AI Overview réduit-il vraiment le trafic organique ?",
+   "groupe": "faq-item-4"
+  },
+  {
+   "t": "faq-a",
+   "html": "Oui, l'impact est réel et documenté. Ahrefs mesure une baisse de 34,5 % du CTR en position 1 quand un AI Overview est présent. BrightEdge indique que le CTR moyen chute de 7,3 % à 2,6 % sur les requêtes concernées. En revanche, les pages citées comme sources dans l'AI Overview captent jusqu'à +35 % de clics supplémentaires par rapport aux pages non citées (Seer Interactive). L'enjeu est donc d'être cité, pas seulement présent dans la SERP.",
+   "groupe": "faq-item-4"
+  },
+  {
+   "t": "faq-q",
+   "html": "AI Overview e-commerce : quels secteurs sont les plus touchés en France ?",
+   "groupe": "faq-item-5"
+  },
+  {
+   "t": "faq-a",
+   "html": "Les secteurs les plus exposés sont la santé (~50 % des requêtes déclenchent un AI Overview), les services financiers (29,2 %), la technologie B2B (15,8 %), le retail et l'e-commerce. Pour l'e-commerce, l'impact est fort sur les requêtes comparatives et informationnelles (\"meilleur produit X\", \"comment choisir Y\"). Les requêtes transactionnelles pures sont moins touchées, mais la tendance est à l'extension. Triaina a développé une méthodologie spécifique pour l'AI Overview e-commerce.",
+   "groupe": "faq-item-5"
+  },
+  {
+   "t": "h2",
+   "html": "Démarrer votre audit AI Overview",
+   "groupe": "cta-final"
+  },
+  {
+   "t": "p",
+   "html": "Le lancement de Google AI Overview en France le 22 juillet 2026 ouvre une fenêtre d'opportunité que les marques les plus réactives exploiteront en premier. Dans 6 mois, les positions de sources citées seront consolidées. Dans 12 mois, les rattraper coûtera deux fois plus cher.",
+   "groupe": "cta-final"
+  },
+  {
+   "t": "p",
+   "html": "L'audit AI Overview Triaina couvre :",
+   "groupe": "cta-final"
+  },
+  {
+   "t": "ul",
+   "html": "<li>Analyse de 100 à 300 requêtes stratégiques de votre secteur</li><li>Mesure de votre visibilité IA actuelle vs. concurrents</li><li>Identification des opportunités de citation à court terme</li><li>Plan d'action priorisé : optimisation technique + activation médias</li><li>Estimation du délai pour atteindre vos objectifs de visibilité AI Overview</li>",
+   "groupe": "cta-final"
+  },
+  {
+   "t": "p",
+   "html": "Triaina est la seule agence en France à combiner expertise technique GEO, réseau de médias propriétaires cités par AI Overview et régie publicitaire intégrée. Ce n'est pas un positionnement marketing. C'est une architecture de service que nos résultats clients confirment.",
+   "groupe": "cta-final"
+  },
+  {
+   "t": "cta",
+   "html": "Demander votre audit AI Overview gratuit",
+   "groupe": "cta-final",
+   "nav": [
+    {
+     "texte": "Demander votre audit AI Overview gratuit",
+     "page": "contact",
+     "url": "/contact"
+    }
+   ]
+  },
+  {
+   "t": "h2",
+   "html": "Sources",
+   "groupe": "sources"
+  },
+  {
+   "t": "ul",
+   "html": "<li><a href=\"https://ahrefs.com/blog/fr/baisse-clics-ai-overviews/\" rel=\"nofollow noopener\" target=\"_blank\">Ahrefs - Baisse des clics avec AI Overviews (−34,5 % CTR position 1)</a></li><li><a href=\"https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-2026-update\" rel=\"nofollow noopener\" target=\"_blank\">Seer Interactive - Impact AI Overview sur le CTR organique (mise à jour 2026)</a></li><li><a href=\"https://www.lemonde.fr/pixels/article/2026/07/22/google-lance-les-resumes-par-ia-sur-son-moteur-de-recherche-en-france-une-fonctionnalite-attendue-et-redoutee_6729851_4408996.html\" rel=\"nofollow noopener\" target=\"_blank\">Le Monde - Google lance les résumés par IA en France (22 juillet 2026)</a></li><li><a href=\"https://developers.google.com/search/docs/appearance/ai-overviews\" rel=\"nofollow noopener\" target=\"_blank\">Google Search Central - Documentation officielle AI Overviews</a></li>",
+   "groupe": "sources"
+  },
+  {
+   "t": "h3",
+   "html": "Notre Expertise",
+   "groupe": "sidebar-expertises"
+  },
+  {
+   "t": "ul",
+   "html": "<li>Expertise SEO</li><li>Expertise GEO (GSO)</li><li>Expertise SEA</li><li>Expertise Média</li>",
+   "groupe": "sidebar-expertises",
+   "nav": [
+    {
+     "texte": "Expertise SEO",
+     "page": "expertise-seo",
+     "url": "/expertise-seo"
+    },
+    {
+     "texte": "Expertise GEO (GSO)",
+     "page": "expertise-gso",
+     "url": "/expertise-geo"
+    },
+    {
+     "texte": "Expertise SEA",
+     "page": "expertise-sea",
+     "url": "/expertise-sea"
+    },
+    {
+     "texte": "Expertise Média",
+     "page": "expertise-media",
+     "url": "/expertise-media"
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "html": "Prêt à dominer AI Overview ?",
+   "groupe": "sidebar-cta"
+  },
+  {
+   "t": "p",
+   "html": "La fenêtre d'opportunité s'ouvre le 22 juillet 2026. Prenez position avant vos concurrents avec l'agence qui maîtrise les sources.",
+   "groupe": "sidebar-cta"
+  },
+  {
+   "t": "cta",
+   "html": "Prendre contact",
+   "groupe": "sidebar-cta",
+   "nav": [
+    {
+     "texte": "Prendre contact",
+     "page": "contact",
+     "url": "/contact"
+    }
+   ]
+  }
+ ],
+ "particularites": [
+  "Fil d'Ariane : <nav aria-label=\"Fil d'Ariane\"> avec className=\"hidden\" (display:none) dans l'ancien site — présent dans le DOM et dans la capture, repris en bloc t:\"breadcrumb\" avec ses liens verbatim (https://triaina.fr/ et /expertise-geo).",
+  "Liens éditoriaux du contenu : dans la SPA ce sont des <a href=\"#\"> + onClick(onNavigate) — reproduits avec href=\"#\" verbatim ; la destination réelle (clé de page + URL résolue via PAGE_TO_URL de constants.ts) est donnée dans le champ additionnel \"nav\" du bloc. C'est pourquoi ces destinations n'apparaissent pas dans liensInternes de la capture.",
+  "CTA et liens de la sidebar : ce sont des <button onClick> (pas des <a>) dans la source — représentés en t:\"cta\" ou items de ul, avec le champ \"nav\" (contact → /contact, expertise-seo → /expertise-seo, expertise-gso → /expertise-geo, expertise-sea → /expertise-sea, expertise-media → /expertise-media).",
+  "Types ajoutés au vocabulaire : \"breadcrumb\" (fil d'Ariane), \"table\" (3 tableaux : secteurs, délais étape 3, comparatif agences), \"stat\" (chiffre-clé des cartes clients, le nombre initial était rendu en très grand corps via un <span> stylé), \"faq-q\"/\"faq-a\" (accordéon FAQ : questions = <span> dans des <button>, PAS des balises Hn ; réponses présentes dans le DOM même repliées — max-h-0/opacity-0 — donc capturées et gelées).",
+  "H1 : le segment « l'agence qui contrôle les sources » était dans un <span class=\"text-blue-600\"> (mise en couleur) — balise de style retirée, texte intact ; à disposition du design.",
+  "Tableau secteurs : « Croissant » (orange) et « Élevé » (rouge) étaient des <span> colorés ; tableau étape 3 : la ligne « Technique + Médias Triaina » était graissée par classes. Style retiré, texte intact.",
+  "Icônes SVG lucide (Bot, CheckCircle2 des puces CTR, Search/Zap/Target/BarChart3 des étapes, ChevronDown FAQ, ArrowRight des CTA) : aucun équivalent texte, non gelées. En revanche les emojis ✅ ❌ ⚠️ du tableau comparatif SONT du texte et sont conservés tels quels.",
+  "Le bloc t:\"quote\" (« La conclusion est simple… ») était un <p> encadré (fond bleu clair, bordure gauche) — un callout, pas une citation d'auteur.",
+  "Aucun texte de la source absent du rendu capturé : tout le contenu du composant (y compris réponses FAQ repliées et breadcrumb caché) figure dans texteIntegral — rien n'a été exclu.",
+  "texteIntegral encode « GSO &amp; AI Overview » : caractère & conservé dans le bloc kicker, conformément à la consigne."
+ ]
+}

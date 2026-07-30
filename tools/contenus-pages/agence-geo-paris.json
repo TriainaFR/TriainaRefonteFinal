@@ -1,0 +1,245 @@
+{
+ "page": "agence-geo-paris",
+ "blocs": [
+  {
+   "t": "p",
+   "html": "Paris, France",
+   "groupe": "s0"
+  },
+  {
+   "t": "h1",
+   "html": "Agence GEO Paris Dominez les IA.",
+   "groupe": "s0"
+  },
+  {
+   "t": "p",
+   "html": "Triaina est une agence de Generative Engine Optimization (GEO) située à Paris. Nous positionnons les marques B2B et Tech dans les réponses générées par ChatGPT, Perplexity, Gemini, Claude et AI Overviews.",
+   "groupe": "s0"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/contact\"> Audit de visibilité IA </a>",
+   "groupe": "s0"
+  },
+  {
+   "t": "h2",
+   "html": "GEO vs SEO : Le changement de paradigme",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Le <strong>GEO (Generative Engine Optimization)</strong> optimise un contenu et une marque pour qu'ils soient compris, sélectionnés et cités par un moteur d'IA générative.",
+   "groupe": "s1"
+  },
+  {
+   "t": "h3",
+   "html": "SEO Classique",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "L'objectif est d'atteindre la première page de résultats (les liens bleus).",
+   "groupe": "s1"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li>Ciblage de mots-clés de longue traîne</li><li>Maillage interne optimisé</li><li>Netlinking traditionnel et Core Web Vitals</li></ul>",
+   "groupe": "s1"
+  },
+  {
+   "t": "h3",
+   "html": "GEO (Générative)",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "L'objectif est d'être la réponse unique construite par l'Intelligence Artificielle.",
+   "groupe": "s1"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li>Clarté sémantique absolue et réponse directe</li><li>Données structurées complexes (Schema.org)</li><li>Autorité de la marque citée par des tiers (E-E-A-T)</li></ul>",
+   "groupe": "s1"
+  },
+  {
+   "t": "h2",
+   "html": "Notre Méthodologie GEO",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Déployez une autorité algorithmique reconnue par tous les LLMs majeurs du marché.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Audit d'Empreinte IA",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Analyse de votre visibilité actuelle dans ChatGPT, Gemini, Perplexity et Claude, requête par requête, face à vos concurrents parisiens et nationaux.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "E-E-A-T & Autorité",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Renforcement des signaux de confiance : auteurs identifiés, sources primaires, statistiques vérifiables — les critères que les IA recherchent pour citer.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Structuration Avancée",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Balisage sémantique approfondi pour faciliter l'extraction des données clés de votre entreprise par les moteurs génératifs.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Amplification Média",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Notre réseau éditorial propriétaire génère des mentions et citations dans des contenus tiers de confiance ingérés par les modèles d'IA.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Monitoring GEO",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Suivi quantitatif de vos apparitions (Share of Voice IA) dans les LLMs et ajustement continu de la stratégie sémantique.",
+   "groupe": "s2"
+  },
+  {
+   "t": "h3",
+   "html": "Synergie SEA",
+   "groupe": "s2"
+  },
+  {
+   "t": "p",
+   "html": "Le temps que votre autorité IA se construise, nos experts sécurisent votre acquisition via des campagnes de performance (Google Ads).",
+   "groupe": "s2"
+  },
+  {
+   "t": "h2",
+   "html": "FAQ : GEO & Paris",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Qu'est-ce qu'une agence GEO à Paris ?",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Une agence GEO à Paris est un prestataire spécialisé dans l'optimisation de la présence d'une marque dans les réponses des IA génératives en complément du référencement naturel classique.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Combien de temps pour voir des résultats en GEO ?",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Comptez en général 3 à 6 mois pour des premiers signaux, et souvent plus pour une présence stable dans les réponses des IA génératives : les modèles ne réindexent pas leurs sources aussi vite que Google.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Le SEO classique est-il encore utile ?",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Oui, indispensable. Une page doit d'abord être indexable et bien référencée pour espérer apparaître dans les AI Overviews ou être reprise par Gemini.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Comment être référencé sur ChatGPT ?",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Être référencé sur ChatGPT suppose d'abord d'être bien indexé sur Google, car ChatGPT Search s'appuie en partie sur le web indexé. Il faut ensuite structurer son contenu avec des réponses claires et des chiffres sourcés. Triaina travaille ces leviers avec ses clients parisiens grâce à son audit SEO/GEO et à son média propriétaire.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Comment être cité par Google AI Overview ?",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Pour apparaître dans Google AI Overview, une page doit d'abord remplir les critères d'indexation SEO classiques, puis proposer un contenu factuel et structuré en données claires. Triaina audite systématiquement ces critères avant d'intervenir sur le contenu de ses clients.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Quelle est la meilleure agence GEO à Paris ?",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Triaina se positionne comme la meilleure agence GEO à Paris grâce à une combinaison rare : expertise technique SEO/GEO, média propriétaire pour construire l'autorité hors-site, régie publicitaire et expertise SEA/Paid intégrée sous un même toit.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Comment être référencé sur Google Gemini ?",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Gemini s'appuie très largement sur l'index de Google Search : un contenu bien référencé en SEO classique, avec un maillage interne propre et un balisage sémantique à jour, a de fortes chances d'être repris dans ses réponses. Triaina intègre systématiquement cette dimension dans ses audits SEO/GEO et suit mensuellement l'apparition des contenus de ses clients parisiens dans Gemini.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h3",
+   "html": "Proposez-vous un accompagnement spécifique pour Gemini ?",
+   "groupe": "s3"
+  },
+  {
+   "t": "p",
+   "html": "Oui, Triaina propose un suivi dédié de la visibilité dans Gemini, intégré à son offre GEO globale, car cette IA repose sur les mêmes fondamentaux que le SEO classique. Cet accompagnement combine audit technique, optimisation sémantique et reporting mensuel des citations obtenues dans Gemini, aux côtés du suivi ChatGPT, Perplexity et Claude.",
+   "groupe": "s3"
+  },
+  {
+   "t": "h2",
+   "html": "Ressources utiles",
+   "groupe": "s4"
+  },
+  {
+   "t": "ul",
+   "html": "<ul><li><a href=\"https://developers.google.com/search/docs/fundamentals/ai-optimization-guide\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"> Google Search Central - Optimiser son site pour l'IA générative </a></li><li><a href=\"https://arxiv.org/abs/2311.09735\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"> arXiv - GEO: Generative Engine Optimization (Aggarwal et al.) </a></li></ul>",
+   "groupe": "s4"
+  },
+  {
+   "t": "h2",
+   "html": "Prêt à exister pour les IA ?",
+   "groupe": "s5"
+  },
+  {
+   "t": "p",
+   "html": "Découvrez si ChatGPT et Perplexity connaissent votre entreprise aujourd'hui, et quelle stratégie adopter pour dominer votre marché demain.",
+   "groupe": "s5"
+  },
+  {
+   "t": "cta",
+   "html": "<a href=\"/contact\">Audit de votre empreinte IA</a>",
+   "groupe": "s5"
+  }
+ ]
+}
