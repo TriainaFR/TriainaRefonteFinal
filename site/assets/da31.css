@@ -256,10 +256,19 @@ h1.art-titre{
      (Référence-ment) ; `break-word` reste le filet pour un mot qu'aucun
      dictionnaire ne saurait couper. Invisible tant que le texte tient. */
   hyphens:auto; -webkit-hyphens:auto;
+  /* …mais seulement sur les mots vraiment longs : sans cette limite, le titre
+     de l'article ChatGPT e-commerce sortait coupé en « Chat-GPT ». Un nom de
+     marque ne se coupe pas. 10 caractères minimum pour autoriser une césure,
+     et au moins 4 lettres de part et d'autre. Ignoré par les vieux Safari,
+     qui retombent alors sur le comportement d'avant. */
+  hyphenate-limit-chars:10 4 4;
   overflow-wrap:break-word;
 }
-/* Même filet dans le corps : un titre de section peut porter un mot aussi long. */
-.art-corps h2, .art-corps h3, .art-corps h4{hyphens:auto; -webkit-hyphens:auto; overflow-wrap:break-word}
+/* Même filet dans le corps : un titre de section peut porter un mot aussi long,
+   et la même limite, sinon « leviers » se coupait en « le-viers ». */
+.art-corps h2, .art-corps h3, .art-corps h4{
+  hyphens:auto; -webkit-hyphens:auto; hyphenate-limit-chars:10 4 4; overflow-wrap:break-word;
+}
 .art-chapo{font-size:1.15rem; color:#CBD5E1; max-width:44em; line-height:1.65}
 
 .art-image{
