@@ -127,6 +127,15 @@ const REDIRECTIONS = {
   /* 301 déjà vivantes sur l'ancien site, à ne pas perdre */
   '/blog/optimiser-site-llm-2026-guide-complet': '/blog/optimiser-site-llm-guide-seo-complet-2026',
   '/blog/e-e-a-t-seo-guide': '/blog/eeat-seo-guide-complet',
+  /* Signalées 404 par la Search Console le 08/08/2026. L'ancien site déclarait
+     ces URLs dans le JSON-LD de /annuaire alors qu'aucune page ne les servait :
+     Google les a donc crawlées et comptées en erreur. La source est corrigée
+     (cf. le schéma de /annuaire), mais la 301 reste utile pour les liens
+     externes et pour vider l'index de l'erreur.
+     `liens-repares.mjs` traite le même slug — mais lui ne réécrit que les liens
+     DANS les articles au build : il ne produit aucune redirection HTTP. */
+  '/blog/meilleure-agence-referencement-ia-france': '/blog/meilleure-agence-gso-france-2026',
+  '/blog/meilleure-agence-referencement-ia-france-2026': '/blog/meilleure-agence-gso-france-2026',
   /* /recrutement n'est plus redirigée : la page a été recréée le 30/07/2026
      depuis le rendu réel de la production (voir tools/expertises/recrutement.mjs). */
 };
