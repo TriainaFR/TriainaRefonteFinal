@@ -73,7 +73,11 @@ setTimeout(function () {
           return '<' + cell + '>' + comp(net(c)) + '</' + cell + '>'; }).join('') + '</tr>';
       }).join('') + '</' + sel + '>';
     };
-    blocs.push({ t: 'table', groupe: groupe, html: '<table>' + part('thead','th') + part('tbody','td') + '</table>' });
+    /* la légende fait partie du tableau : la perdre retirerait du texte
+       visible (et du contexte pour les LLM) sans que rien ne le signale */
+    var cap = el.querySelector('caption');
+    var legende = cap ? '<caption>' + comp(net(cap)) + '</caption>' : '';
+    blocs.push({ t: 'table', groupe: groupe, html: '<table>' + legende + part('thead','th') + part('tbody','td') + '</table>' });
   }
   function marche(el) {
     [].slice.call(el.children).forEach(function (n) {

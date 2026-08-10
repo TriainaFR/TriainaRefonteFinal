@@ -63,7 +63,9 @@ export const PAGES = [
   { cle: 'expertise-media', captures: 'refonte-expertise-media' },
   { cle: 'expertise-ai-overview', captures: 'ancien-expertises' },
   { cle: 'agence-seo-paris', captures: 'ancien-seoia' },
-  { cle: 'agence-referencement-ia', captures: 'ancien-seoia' },
+  /* Référencement IA : contenu ET signaux remplacés le 10/08 par le code de
+     Lucas (tools/sources/agence-referencement-ia.html → prepare-source). */
+  { cle: 'agence-referencement-ia', captures: 'refonte-agence-referencement-ia' },
   { cle: 'agence-referencement-ia-paris', captures: 'ancien-seoia' },
   { cle: 'agence-geo-paris', captures: 'ancien-seoia' },
   { cle: 'mentions-legales', captures: 'ancien-divers' },
@@ -95,6 +97,7 @@ const BADGES = {
   'expertise-media': 'Autorité & Médias',
   'expertise-ai-overview': 'Google & Réponses IA',
   'expertise-automatisation-contenu': 'Production & Volume',
+  'agence-referencement-ia': 'Audit & Accompagnement IA',
 };
 
 const ICONE_BADGE = '<svg viewBox="0 0 24 24" aria-hidden="true">'
