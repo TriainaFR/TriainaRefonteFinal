@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Triaina — Agence SEO, GEO &amp; Média à Paris | Sortez de l'ombre</title>
+<title>Agence SEO &amp; GEO Paris — Référencement IA | Triaina</title>
 <meta name="description" content="Triaina, agence SEO et GEO à Paris. Référencement naturel, citations IA (ChatGPT, Gemini, Perplexity) et réseau de 8 médias propriétaires. Pré-audit gratuit.">
 <meta name="keywords" content="agence seo, agence geo, consultant seo, audit seo, référencement naturel, agence seo paris, référencement ia, generative engine optimization">
 <meta name="author" content="Triaina">
@@ -27,13 +27,13 @@
 <meta name="revisit-after" content="7 days">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.triaina.fr/">
-<meta property="og:title" content="Triaina — Agence SEO, GEO &amp; Média à Paris">
+<meta property="og:title" content="Agence SEO &amp; GEO Paris — Référencement IA | Triaina">
 <meta property="og:description" content="Triaina, agence SEO et GEO à Paris. Référencement naturel, citations IA (ChatGPT, Gemini, Perplexity) et réseau de 8 médias propriétaires. Pré-audit gratuit.">
 <meta property="og:image" content="https://www.triaina.fr/og-image.jpg">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Triaina">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Triaina — Agence SEO, GEO &amp; Média à Paris">
+<meta name="twitter:title" content="Agence SEO &amp; GEO Paris — Référencement IA | Triaina">
 <meta name="twitter:description" content="Triaina, agence SEO et GEO à Paris. Référencement naturel, citations IA (ChatGPT, Gemini, Perplexity) et réseau de 8 médias propriétaires. Pré-audit gratuit.">
 <meta name="twitter:image" content="https://www.triaina.fr/og-image.jpg">
 <link rel="preload" href="/assets/syne.woff2" as="font" type="font/woff2" crossorigin>
@@ -191,6 +191,18 @@
     text-shadow:0 0 calc(var(--g,0)*30px) rgba(255,233,184,calc(var(--g,0)*.2));
   }
   .hero h1 em{font-style:normal; color:var(--bleu-c)}
+  /* Ligne-clé du h1. Casse et graisse opposées à la ligne géante : elle se lit
+     comme une signature sous le titre, pas comme un second titre qui lui
+     dispute la place. text-transform:none est indispensable — le h1 est en
+     capitales, et cette ligne en capitales deviendrait un mur illisible. */
+  .hero h1 .cle{
+    display:block; margin-top:1.15rem; text-transform:none;
+    font-size:clamp(.95rem,1.75vw,1.5rem); font-weight:600; line-height:1.32;
+    letter-spacing:0; color:var(--brume); text-shadow:none;
+    /* text-wrap:balance répartit les lignes au lieu de laisser une orpheline —
+       sans lui, la coupure tombait sur « & » en fin de ligne. */
+    max-width:32em; text-wrap:balance; overflow-wrap:break-word;
+  }
   .hero .sous{margin-top:1.7rem; font-size:clamp(1rem,1.4vw,1.24rem); color:var(--brume); max-width:37em; font-weight:400}
   .hero .actions{display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:2.3rem}
   .hero .preuve{margin-top:1.5rem; font-family:ui-monospace,monospace; font-size:.68rem; letter-spacing:.15em; text-transform:uppercase; color:var(--brume)}
@@ -593,8 +605,13 @@
 <header class="hero" id="hero">
   <div class="balai" aria-hidden="true"></div>
   <div class="in">
-    <p class="sur">Paris · Agence SEO &amp; GEO</p>
-    <h1 aria-label="Agence SEO et GEO à Paris — sortez de l'ombre sur Google et dans les réponses des IA">Sortez de <em>l'ombre.</em></h1>
+    <p class="sur">Paris · SEO · GEO · Média</p>
+    <!-- Le h1 portait un aria-label qui REMPLAÇAIT « Sortez de l'ombre » par une
+         suite de mots-clés : un lecteur d'écran n'entendait donc jamais le titre
+         réel de la page. La ligne-clé ci-dessous porte désormais ces mots-clés en
+         texte visible, à la fois pour les moteurs et pour tout le monde. -->
+    <h1>Sortez de <em>l'ombre.</em>
+      <span class="cle">Agence SEO Paris — référencement Google &amp; citations IA.</span></h1>
     <p class="sous">Vos clients posent déjà leurs questions&#8239;: à Google, à ChatGPT, à Gemini,
     à Perplexity. Triaina met votre marque en pleine lumière&#8239;: le SEO pour l'index,
     le GEO pour devenir la source que les IA citent.</p>

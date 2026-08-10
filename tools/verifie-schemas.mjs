@@ -1,6 +1,6 @@
 /**
- * repare-images-schema.mjs — répare les URLs de fichiers qui n'existent pas
- * dans les données structurées JSON-LD.
+ * verifie-schemas.mjs — garantit qu'aucune donnée structurée ne déclare une URL
+ * morte. Répare les fichiers (images, logos) ; refuse le build sur une page.
  *
  * Pourquoi cette passe existe. Le 08/08/2026, la Search Console a signalé une
  * 404 sur /blog/meilleure-agence-referencement-ia-france : cette URL n'était
@@ -27,7 +27,17 @@
  *
  * Idempotent : au second passage, plus rien n'est à réparer.
  *
- * Usage : node tools/repare-images-schema.mjs   (après tous les générateurs)
+ * Les URLs de PAGES, elles, ne sont pas réparées : deviner vers quelle page
+ * rediriger produirait un lien plausible et faux, pire qu'une erreur visible.
+ * Elles font échouer la chaîne — ce qui n'est pas excessif : c'est exactement
+ * ce défaut qui a coûté la 404 du 08/08, et le correctif appliqué à la main sur
+ * site/annuaire/index.html a été ANNULÉ au build suivant, parce que
+ * genere-expertises régénère cette page depuis
+ * tools/snapshots/ancien-divers/annuaire.json. Corriger la page produite ne
+ * suffit pas : il faut corriger la capture. Sans ce garde-fou, la régression
+ * repasse en silence et on croit le problème réglé.
+ *
+ * Usage : node tools/verifie-schemas.mjs   (après tous les générateurs)
  */
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -94,3 +104,28 @@ for (const f of liste) {
 console.log(`images de schéma vérifiées sur ${liste.length} page(s) — ${touchees} réparée(s)`);
 for (const [cle, n] of [...compte].sort()) console.log(`  ${String(n).padStart(3)} × ${cle}`);
 if (!compte.size) console.log('  (rien à réparer — normal au second passage)');
+
+/* ── Contrôle bloquant : les URLs de PAGES déclarées dans le JSON-LD ──
+   Google les crawle comme des liens. Une seule URL morte ici suffit à faire
+   remonter une 404 en Search Console, sans qu'aucun lien du HTML ne la porte. */
+const mortes = new Map();
+for (const f of liste) {
+  for (const m of (await readFile(f, 'utf8'))
+    .matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    for (const u of m[1].matchAll(new RegExp(`${HOTE}(/[A-Za-z0-9\\-/._]*)`, 'g'))) {
+      const url = u[1];
+      if (url === '/' || /\.[a-z0-9]+$/i.test(url) || existe(url)) continue;
+      const ou = mortes.get(url) ?? new Set();
+      ou.add(path.relative(SITE, f));
+      mortes.set(url, ou);
+    }
+  }
+}
+if (mortes.size) {
+  console.error(`\n✗ ${mortes.size} URL(s) de page morte(s) déclarée(s) dans les schémas :`);
+  for (const [url, ou] of mortes) console.error(`  ${url}\n      déclarée par ${[...ou].join(', ')}`);
+  console.error('\nCorriger la CAPTURE qui alimente le générateur, pas la page produite :'
+    + '\nun correctif posé sur site/**.html est annulé au build suivant.');
+  process.exit(1);
+}
+console.log(`URLs de page déclarées : toutes servies ✓`);

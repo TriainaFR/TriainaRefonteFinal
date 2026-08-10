@@ -48,8 +48,9 @@ const CHAINE = [
      Elle passe AVANT le sitemap, qui relit titres et descriptions pour llms.txt. */
   'valeurs-officielles.mjs',
   /* après tous les générateurs : ils recopient le JSON-LD des captures de
-     l'ancien site, images comprises, sans vérifier que les fichiers existent. */
-  'repare-images-schema.mjs',
+     l'ancien site sans vérifier que ce qu'il déclare existe. Répare les
+     images ; ARRÊTE la chaîne si une URL de page déclarée n'est pas servie. */
+  'verifie-schemas.mjs',
   'genere-robots-sitemap.mjs',
   /* EN DERNIER, une fois que plus personne ne réécrit de HTML : l'empreinte
      posée sur /assets/*.css et *.js. Sans elle, les assets sont servis avec un
