@@ -14,6 +14,7 @@
  * Usage : node tools/genere-robots-sitemap.mjs
  */
 import { readFile, writeFile, readdir, stat } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -62,6 +63,32 @@ async function dateFichier(url) {
   const f = path.join(SITE, url === '/' ? '' : url.replace(/^\//, ''), 'index.html');
   const { mtime } = await stat(f);
   return mtime.toISOString().slice(0, 10);
+}
+
+/* ══ lastmod : empreinte de contenu, pas date de fichier ══
+ *
+ * Le mtime ne dit RIEN ici : chaque build réécrit les 99 pages, donc toutes
+ * auraient la date du jour. Et la date héritée de l'ancien sitemap, seule, fige
+ * la page pour toujours — le 10/08/2026, /agence-seo-paris a été entièrement
+ * réécrite et annonçait encore `lastmod` 2026-07-30. Google se sert de ce
+ * champ pour décider quand recrawler : une date fausse dans un sens fait
+ * ignorer une refonte, dans l'autre elle brûle la confiance accordée au
+ * sitemap.
+ *
+ * On garde donc une empreinte du contenu servi, dans `tools/sitemap-dates.json`
+ * (versionné) : la date n'avance que si l'empreinte a bougé.
+ *
+ * L'empreinte ignore les `?v=` posés par version-assets : quand une seule
+ * règle CSS change, l'empreinte des assets change sur les 99 pages, ce qui
+ * ferait annoncer 99 pages modifiées pour une modification qui n'en touche
+ * aucune dans son contenu. */
+const MANIFESTE = path.join(RACINE, 'tools/sitemap-dates.json');
+const AUJOURDHUI = new Date().toISOString().slice(0, 10);
+
+async function empreinte(url) {
+  const f = path.join(SITE, url === '/' ? '' : url.replace(/^\//, ''), 'index.html');
+  const html = (await readFile(f, 'utf8')).replace(/\?v=[0-9a-f]{8}/g, '');
+  return createHash('sha256').update(html).digest('hex').slice(0, 16);
 }
 
 /**
@@ -180,8 +207,13 @@ async function main() {
     connus.set(chemin, mod[1].slice(0, 10));
   }
 
+  /* manifeste des empreintes : { "/url": { h: "<sha>", d: "AAAA-MM-JJ" } } */
+  let manifeste = {};
+  try { manifeste = JSON.parse(await readFile(MANIFESTE, 'utf8')); }
+  catch { console.log('  (manifeste absent : les dates sont amorcées, aucune page marquée modifiée)'); }
+
   const lignes = [];
-  let herites = 0, nouveaux = 0;
+  let herites = 0, nouveaux = 0, bouges = 0, amorces = 0;
   for (const u of urls) {
     /* Plancher au 30/07/2026 : ce jour-là, TOUTE page a changé — nouveau
        design, nouveau balisage, nouvelle tête. Une date héritée antérieure
@@ -189,8 +221,23 @@ async function main() {
        on veut qu'il le fasse (demande explicite de Lucas avant soumission à
        Search Console). Les dates postérieures, elles, sont conservées : le
        plancher ne rajeunit rien, il ne fait que rattraper le passé. */
-    const brut = connus.get(u) ?? await dateFichier(u);
-    const lastmod = brut < DATE_REFONTE ? DATE_REFONTE : brut;
+    const emp = await empreinte(u);
+    const vu = manifeste[u];
+    let lastmod;
+    if (!vu) {
+      /* URL jamais vue : on l'amorce sur ce qu'on sait déjà d'elle plutôt que
+         de prétendre qu'elle a changé aujourd'hui — sauf si elle est vraiment
+         nouvelle, auquel cas la date du fichier est la bonne. */
+      lastmod = connus.get(u) ?? await dateFichier(u);
+      amorces++;
+    } else if (vu.h === emp) {
+      lastmod = vu.d;                       // contenu inchangé : date conservée
+    } else {
+      lastmod = AUJOURDHUI;                 // contenu modifié : c'est aujourd'hui
+      bouges++;
+    }
+    if (lastmod < DATE_REFONTE) lastmod = DATE_REFONTE;
+    manifeste[u] = { h: emp, d: lastmod };
     connus.has(u) ? herites++ : nouveaux++;
     const priorite = u === '/' ? '1.0' : u === '/blog' ? '0.9' : '0.8';
     lignes.push(`  <url>
@@ -210,9 +257,15 @@ async function main() {
   ].join('\n');
   await writeFile(path.join(SITE, 'sitemap.xml'), xml);
   await ecritLlmsTxt(urls);
+  /* le manifeste ne garde que les URL encore servies : sans ce filtre, une page
+     supprimée traînerait sa date indéfiniment */
+  const propre = Object.fromEntries(urls.sort().map(u => [u, manifeste[u]]));
+  await writeFile(MANIFESTE, JSON.stringify(propre, null, 1) + '\n');
 
   console.log(`robots.txt copié (autorisations IA préservées)`);
   console.log(`sitemap.xml : ${urls.length} URL — ${herites} avec lastmod hérité, ${nouveaux} nouvelles`);
+  console.log(`lastmod : ${bouges} page(s) modifiée(s) → ${AUJOURDHUI}`
+    + `${amorces ? `, ${amorces} amorcée(s)` : ''}, ${urls.length - bouges - amorces} inchangée(s)`);
   const manquantes = [...connus.keys()].filter(u => !urls.includes(u));
   if (manquantes.length) {
     console.log(`\n${manquantes.length} URL de l'ancien sitemap pas encore construites :`);

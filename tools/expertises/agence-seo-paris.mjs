@@ -1,143 +1,271 @@
 /**
- * agence-seo-paris.mjs — « La Ville Lumière » : Paris la nuit. Chaque tête de
- * section est une PLAQUE DE RUE émaillée (cadre à double liseré, capitale)
- * dont le liseré intérieur se trace à l'entrée pendant qu'un réverbère d'or
- * s'allume à son coin ; sous le hero, une skyline abstraite de fenêtres
- * s'allume en cascade, une fois. L'or : les réverbères, les fenêtres, le CTA.
- * Aucun motif emprunté aux autres pages (pas de balayage, pas d'éclat, pas
- * de filet libre) — la lumière est toujours logée dans un objet.
+ * agence-seo-paris.mjs — page /agence-seo-paris, ENTIÈREMENT REMPLACÉE le
+ * 10/08/2026 à la demande de Lucas : contenu, title, metas, Open Graph,
+ * Twitter, metas GEO/LLM et les 4 schémas (LocalBusiness, FAQPage,
+ * BreadcrumbList, Person) viennent de son code —
+ * tools/sources/agence-seo-paris.html, dont l'en-tête documente les
+ * corrections apportées (canonical en www conservé comme demandé, téléphone
+ * bouchon retiré, slug de blog mort réparé, durée du cas Travel alignée sur
+ * les deux autres pages qui le publient).
+ *
+ * L'ancien module « La Ville Lumière » habillait le contenu capturé de
+ * l'ancien site ; il part avec lui. Son `transformeSchemas` retirait un
+ * `aggregateRating` sans avis réels — le nouveau code de Lucas n'en déclare
+ * pas, la précaution devient sans objet.
+ *
+ * Design : « L'Escargot ». Paris se lit en spirale — le 1ᵉʳ au centre, le
+ * 20ᵉ au bout du colimaçon — et c'est exactement le sujet de la page : la
+ * concurrence arrondissement par arrondissement. Le hero trace ce plan, les
+ * vingt numéros s'allument dans l'ordre, le 16ᵉ reste en or (l'adresse
+ * déclarée par le LocalBusiness). Le motif se prolonge ensuite : les
+ * secteurs portent leurs codes postaux, les cinq phases suivent un rail
+ * gradué, les cas clients ouvrent sur leur arrondissement.
+ *
+ * Sans JS ou en motion réduite : le plan est tracé, tous les numéros
+ * allumés, tout le texte visible.
  */
+import { readFileSync } from 'node:fs';
+
+/* ══ La tête : les signaux de Lucas, à l'octet près ══ */
+const SOURCE = readFileSync(new URL('../sources/agence-seo-paris.html', import.meta.url), 'utf8');
+export const TETE = SOURCE
+  .slice(SOURCE.indexOf('<!-- SEO primaire -->'), SOURCE.indexOf('</head>'))
+  .trim();
+
+/**
+ * Le plan en colimaçon. Spirale d'Archimède adoucie : le pas est resserré au
+ * centre (les arrondissements centraux sont petits) puis s'ouvre — c'est la
+ * forme réelle de l'escargot parisien, pas une spirale régulière.
+ */
+function plan() {
+  const cx = 160, cy = 160, N = 20;
+  /* exposant < 1 : le pas s'ouvre vite au centre puis se resserre. Sans lui,
+     les six premiers arrondissements se chevauchaient au milieu. */
+  const rayon = (t) => 34 + 102 * Math.pow(t, 0.55);
+  const angle = (t) => -Math.PI / 2 + t * 3.7 * Math.PI;
+  const point = (t) => [cx + rayon(t) * Math.cos(angle(t)), cy + rayon(t) * Math.sin(angle(t))];
+
+  const trace = [];
+  for (let i = 0; i <= 260; i++) {
+    const [x, y] = point(i / 260);
+    trace.push(`${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`);
+  }
+
+  const bornes = [];
+  for (let i = 0; i < N; i++) {
+    const [x, y] = point(i / (N - 1));
+    const or = i === 15;                       // le 16ᵉ : l'adresse de Triaina
+    bornes.push(
+      `<g class="arr${or ? ' arr-or' : ''}" style="--i:${i}">`
+      + `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="10.5"/>`
+      + `<text x="${x.toFixed(1)}" y="${(y + 3.2).toFixed(1)}">${i + 1}</text></g>`);
+  }
+
+  return `<figure class="plan ln" aria-hidden="true">
+  <svg viewBox="0 0 320 320" role="presentation">
+    <path class="pl-trace" d="${trace.join(' ')}"/>
+    ${bornes.join('\n    ')}
+  </svg>
+  <figcaption>Les 20 arrondissements — Triaina est au 16ᵉ</figcaption>
+</figure>`;
+}
 
 export const STYLE = `
-  /* ── La Ville Lumière ── */
-  .g-s0{padding-top:8.5rem; padding-bottom:1.5rem}
-  .g-s0 .xp-k, .g-s0 > p:first-child{font-family:ui-monospace,monospace;
-    font-size:.66rem; letter-spacing:.2em; text-transform:uppercase;
-    color:var(--bleu-c)}
-  .g-s0 h1{font-family:var(--syne); font-weight:800; color:#fff;
-    letter-spacing:-.015em; font-size:clamp(2.3rem,5vw,3.9rem); line-height:1.08;
-    text-transform:uppercase; max-width:24ch; margin-top:.9rem}
-  /* la skyline : rangée de fenêtres qui s'allument (décor pur, aria-hidden) */
-  .skyline{display:flex; gap:6px; align-items:flex-end; height:44px;
-    margin-top:2.2rem; max-width:26rem}
-  .skyline i{flex:1; border-radius:2px 2px 0 0;
-    background:rgba(96,165,250,.16); transition:background .5s}
-  .skyline i:nth-child(3n){height:100%} .skyline i:nth-child(3n+1){height:62%}
-  .skyline i:nth-child(3n+2){height:80%} .skyline i:nth-child(7n){height:46%}
-  .skyline i.lum{background:rgba(255,233,184,.75)}
-  .xp-anim .skyline i{transition-delay:calc(var(--fx) * 70ms)}
+  /* ── L'Escargot ── */
 
-  /* ── la plaque de rue : chaque h2 ── */
-  .plaque-rue{position:relative; display:inline-block;
-    border:2px solid rgba(96,165,250,.4); border-radius:8px;
-    padding:1rem 1.6rem 1rem 1.9rem; background:rgba(11,20,40,.85);
-    margin-bottom:2.2rem}
-  .plaque-rue::before{content:''; position:absolute; inset:5px;
-    border:1px solid rgba(234,242,255,.35); border-radius:5px;
-    clip-path:inset(0 100% 0 0); transition:clip-path .8s cubic-bezier(.22,.9,.24,1)}
-  .plaque-rue::after{content:''; position:absolute; left:-5px; top:-5px;
-    width:10px; height:10px; border-radius:50%;
-    background:rgba(148,163,184,.4); transition:background .4s .5s, box-shadow .4s .5s}
-  .plaque-rue h2{font-family:var(--syne); font-weight:800; color:#EAF0FF;
-    text-transform:uppercase; letter-spacing:.04em;
-    font-size:clamp(1.15rem,2.2vw,1.7rem); line-height:1.25; margin:0}
-  .plaque-rue.vu::before, body:not(.xp-anim) .plaque-rue::before{clip-path:inset(0)}
-  .plaque-rue.vu::after, body:not(.xp-anim) .plaque-rue::after{
-    background:var(--lueur); box-shadow:0 0 12px rgba(255,233,184,.75)}
-
-  /* corps de sections */
-  .xp-sec p{max-width:46rem; color:var(--brume); line-height:1.75; margin-top:.9rem}
+  /* corps commun */
+  .xp-sec h2{font-family:var(--syne); font-weight:800; color:#fff;
+    font-size:clamp(1.5rem,2.9vw,2.35rem); margin-bottom:1.5rem;
+    position:relative; padding-left:1.9rem}
+  .xp-sec h2::before{content:''; position:absolute; left:0; top:.32em;
+    width:.85rem; height:.85rem; border:1.5px solid var(--lueur);
+    border-radius:50%; transition:transform .55s cubic-bezier(.2,1.25,.35,1), opacity .55s}
+  .xp-sec h2::after{content:''; position:absolute; left:.3rem; top:.62em;
+    width:.25rem; height:.25rem; border-radius:50%; background:var(--lueur)}
+  .xp-anim .xp-sec h2:not(.vu)::before{transform:scale(.3) rotate(-90deg); opacity:0}
   .xp-sec h3{font-family:var(--syne); font-weight:700; color:#fff;
-    font-size:1.12rem; margin-top:1.6rem}
+    font-size:clamp(1.02rem,1.45vw,1.2rem); margin-top:1.8rem}
+  .xp-sec p{max-width:47rem; color:var(--brume); line-height:1.75; margin-top:.9rem}
+  .xp-sec p strong{color:#EAF0FF}
+  .xp-sec li{color:var(--brume); line-height:1.7; margin-top:.5rem; font-size:.95rem;
+    list-style:none; position:relative; padding-left:1.3rem}
+  .xp-sec ul li::before{content:''; position:absolute; left:0; top:.55em;
+    width:6px; height:6px; border-radius:50%; border:1px solid rgba(96,165,250,.8)}
   .xp-sec a{color:var(--bleu-p); text-decoration:underline; text-underline-offset:3px}
   .xp-sec a:hover{color:var(--lueur)}
 
-  /* services : deux quartiers en colonnes */
-  .g-s2 .rues, .g-s3 .rues{display:grid; grid-template-columns:1fr 1fr;
-    gap:.4rem clamp(1.6rem,3vw,3rem)}
-  @media(max-width:860px){.g-s2 .rues, .g-s3 .rues{grid-template-columns:1fr}}
-  .rue{padding:1rem 0; border-bottom:1px solid rgba(148,163,184,.14)}
-  .rue h3{margin-top:0; position:relative; padding-left:1.15rem}
-  .rue h3::before{content:''; position:absolute; left:0; top:.34em;
-    width:7px; height:7px; border-radius:50%;
-    background:rgba(148,163,184,.4); transition:background .4s, box-shadow .4s}
-  .rue.vu h3::before, body:not(.xp-anim) .rue h3::before{
-    background:var(--lueur); box-shadow:0 0 8px rgba(255,233,184,.6)}
-  .rue p{font-size:.93rem; margin-top:.5rem}
+  /* balayage doré de la famille sur les chiffres qui portent l'argument */
+  .hl{background-image:linear-gradient(105deg, rgba(255,233,184,.2), rgba(255,233,184,.11));
+    background-repeat:no-repeat; background-size:100% 100%;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone; color:var(--lueur)}
+  .xp-anim .hl{background-size:0% 100%; color:inherit;
+    transition:background-size .6s cubic-bezier(.2,.7,.2,1) .15s, color .6s ease .15s}
+  .xp-anim .vu .hl{background-size:100% 100%; color:var(--lueur)}
 
-  /* processus : les étapes en réverbères successifs */
-  .g-s4 .etape{position:relative; max-width:46rem; padding-left:2.2rem;
-    margin-top:1.8rem}
-  .g-s4 .etape .xp-meta, .g-s4 .etape > p:first-child{
-    font-family:ui-monospace,monospace; font-size:.62rem; letter-spacing:.2em;
-    text-transform:uppercase; color:var(--bleu-c); margin:0}
-  .g-s4 .etape::before{content:''; position:absolute; left:.35rem; top:.3rem;
-    width:8px; height:8px; border-radius:50%;
-    background:rgba(148,163,184,.4); transition:background .4s, box-shadow .4s}
-  .g-s4 .etape.vu::before, body:not(.xp-anim) .g-s4 .etape::before{
-    background:var(--lueur); box-shadow:0 0 10px rgba(255,233,184,.65)}
-  .g-s4 .etape h3{margin-top:.35rem}
-  .g-s4 .etape p{margin-top:.5rem; font-size:.95rem}
+  /* ── hero : le plan en colimaçon ── */
+  .g-hero{display:grid; grid-template-columns:minmax(0,1fr) 22rem; gap:3rem;
+    align-items:center}
+  .g-hero h1{grid-column:1; margin:0}
+  .g-hero > p{grid-column:1; font-size:clamp(1rem,1.35vw,1.14rem); max-width:44rem}
+  .plan{grid-column:2; grid-row:1 / span 2; margin:0; justify-self:center}
+  .plan svg{width:min(22rem,72vw); height:auto; overflow:visible}
+  .pl-trace{fill:none; stroke:rgba(96,165,250,.45); stroke-width:1.2;
+    stroke-linecap:round; stroke-dasharray:1400; stroke-dashoffset:0}
+  .xp-anim .plan:not(.vu) .pl-trace{stroke-dashoffset:1400}
+  .xp-anim .plan .pl-trace{transition:stroke-dashoffset 2.4s cubic-bezier(.3,.7,.2,1)}
+  .arr circle{fill:rgba(13,22,44,.9); stroke:rgba(96,165,250,.55); stroke-width:1}
+  .arr text{fill:#9FB6DD; font-family:ui-monospace,monospace; font-size:8.5px;
+    text-anchor:middle; letter-spacing:.02em}
+  .arr-or circle{stroke:var(--lueur); stroke-width:1.6; fill:rgba(255,233,184,.1)}
+  .arr-or text{fill:var(--lueur); font-weight:700}
+  .xp-anim .plan:not(.vu) .arr{opacity:0; transform:scale(.6)}
+  .xp-anim .plan .arr{transform-box:fill-box; transform-origin:center;
+    transition:opacity .45s ease calc(.35s + var(--i)*.085s),
+               transform .45s cubic-bezier(.2,1.3,.35,1) calc(.35s + var(--i)*.085s)}
+  .xp-anim .plan.vu .arr-or circle{animation:battOr 2.6s ease-in-out 2.6s infinite}
+  @keyframes battOr{0%,100%{filter:none}50%{filter:drop-shadow(0 0 7px rgba(255,233,184,.75))}}
+  .plan figcaption{margin-top:1rem; text-align:center;
+    font-family:ui-monospace,monospace; font-size:.6rem; letter-spacing:.16em;
+    text-transform:uppercase; color:rgba(148,163,184,.7)}
 
-  /* cas clients : trois immeubles */
-  .g-s5 .cas-grille{display:grid; grid-template-columns:repeat(3,1fr);
-    gap:clamp(1.2rem,2.5vw,2.2rem)}
-  @media(max-width:900px){.g-s5 .cas-grille{grid-template-columns:1fr}}
-  .g-s5 .cas{border-top:2px solid rgba(96,165,250,.35); padding-top:1rem}
-  .g-s5 .cas h3{margin-top:0}
-  .g-s5 .cas p{font-size:.92rem}
-  .g-s5 .cas p strong{color:#EAF0FF}
+  /* ── cartes de service (s2, s3) ── */
+  .fiche{margin-top:1.6rem; padding:1.4rem 1.55rem; max-width:52rem;
+    border:1px solid rgba(96,165,250,.18); border-radius:14px;
+    background:rgba(16,26,51,.42); position:relative;
+    transition:border-color .35s, transform .35s}
+  .fiche::before{content:''; position:absolute; left:0; top:1.5rem; width:2px;
+    height:0; background:linear-gradient(var(--lueur), transparent);
+    border-radius:2px; transition:height .7s cubic-bezier(.22,.9,.24,1) .1s}
+  .fiche.vu::before, body:not(.xp-anim) .fiche::before{height:calc(100% - 3rem)}
+  .fiche:hover{border-color:rgba(255,233,184,.4); transform:translateY(-3px)}
+  .fiche h3{margin-top:0}
 
-  /* FAQ : paires visibles */
-  .g-s7 .paire{max-width:46rem; margin-top:1.8rem}
-  .g-s7 .paire h3{position:relative; padding-left:1.15rem; font-size:1.05rem}
-  .g-s7 .paire h3::before{content:''; position:absolute; left:0; top:.34em;
-    width:7px; height:7px; border-radius:50%; background:rgba(255,233,184,.5)}
-  .g-s7 .paire p{margin-top:.5rem; padding-left:1.15rem; font-size:.95rem}
+  /* ── secteurs (s5) : quatre quartiers ── */
+  .quartiers{display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:1.1rem; margin-top:1.5rem; max-width:56rem}
+  .quartier{margin:0; padding:1.5rem 1.6rem; border-radius:16px;
+    border:1px solid rgba(96,165,250,.2); background:rgba(13,22,44,.55);
+    position:relative; overflow:hidden; transition:border-color .35s, transform .35s}
+  .quartier::after{content:''; position:absolute; right:-3.5rem; top:-3.5rem;
+    width:9rem; height:9rem; border-radius:50%; pointer-events:none;
+    border:1px solid rgba(96,165,250,.16); transition:border-color .5s, transform .6s}
+  .quartier:hover{border-color:rgba(255,233,184,.45); transform:translateY(-4px)}
+  .quartier:hover::after{border-color:rgba(255,233,184,.4); transform:scale(1.12)}
+  .quartier h3{margin-top:0}
+  .quartier p{margin-top:.7rem; font-size:.93rem; max-width:none}
 
-  /* CTA final : le grand réverbère */
-  .g-s8{text-align:center}
-  .g-s8 .plaque-rue{display:inline-block}
-  .g-s8 p{margin-inline:auto}
-  .g-s8 .xp-cta{position:relative; display:inline-block; margin-top:1.8rem}
-  .g-s8 .xp-cta::before{content:''; position:absolute; left:50%; top:50%;
-    width:24rem; height:10rem; transform:translate(-50%,-50%);
-    pointer-events:none; opacity:0; transition:opacity .8s;
-    background:radial-gradient(closest-side, rgba(255,233,184,.26), transparent 70%)}
-  .g-s8 .xp-cta.vu::before, body:not(.xp-anim) .g-s8 .xp-cta::before{opacity:.55}
-  .g-s8 .xp-cta a{display:inline-flex; background:var(--bleu); color:#fff;
-    font-weight:800; font-size:.82rem; letter-spacing:.13em; text-transform:uppercase;
-    padding:1.15rem 2.2rem; border-radius:99px; text-decoration:none;
-    transition:background .25s, color .25s, transform .2s; position:relative}
-  .g-s8 .xp-cta a:hover{background:var(--lueur); color:#0B1428; transform:translateY(-2px)}
+  /* ── phases (s6) : le rail gradué ── */
+  .g-s6{counter-reset:phase}
+  .phase{counter-increment:phase; position:relative; padding-left:3.6rem;
+    max-width:47rem; margin-top:2rem}
+  .phase::before{content:counter(phase,decimal-leading-zero); position:absolute;
+    left:0; top:0; width:2.5rem; height:2.5rem; display:grid; place-items:center;
+    border:1px solid rgba(96,165,250,.45); border-radius:50%;
+    font-family:ui-monospace,monospace; font-size:.72rem; color:var(--bleu-c);
+    background:rgba(13,22,44,.9); transition:border-color .45s, color .45s, box-shadow .45s}
+  .phase.vu::before{border-color:rgba(255,233,184,.85); color:var(--lueur);
+    box-shadow:0 0 20px rgba(255,233,184,.2)}
+  .phase::after{content:''; position:absolute; left:1.25rem; top:2.8rem;
+    bottom:-1.8rem; width:1px; background:linear-gradient(rgba(255,233,184,.5), rgba(96,165,250,.15));
+    transform:scaleY(0); transform-origin:top;
+    transition:transform .8s cubic-bezier(.22,.9,.24,1) .25s}
+  .phase.vu::after{transform:scaleY(1)}
+  .phase:last-of-type::after{content:none}
+  body:not(.xp-anim) .phase::after{transform:scaleY(1)}
+  .phase p{margin-top:0; font-size:.95rem}
+  .phase strong{display:block; font-family:var(--syne); color:#fff;
+    font-size:1.02rem; margin-bottom:.45rem}
+  .phase br{display:none}
 
-  /* maillage : pilules froides */
-  .g-s9{padding-bottom:3.5rem}
-  .g-s9 .plaque-rue{border-width:1px; padding:.7rem 1.1rem}
-  .g-s9 .plaque-rue::before{display:none}
-  .g-s9 .plaque-rue::after{display:none}
-  .g-s9 .plaque-rue h2{font-size:.72rem; font-family:ui-monospace,monospace;
-    font-weight:400; letter-spacing:.22em; color:var(--brume)}
-  .g-s9 p{max-width:none}
-  .g-s9 a{display:inline-flex; margin:0 .6rem .6rem 0; padding:.55rem 1.1rem;
-    border:1px solid rgba(37,99,235,.4); border-radius:99px; color:#CBD5E1;
-    font-size:.85rem; text-decoration:none;
-    transition:border-color .25s, color .25s}
-  .g-s9 a:hover{border-color:rgba(255,233,184,.6); color:#fff}
+  /* ── cas clients (s7) ── */
+  .dossier{margin-top:1.5rem; padding:1.45rem 1.6rem; max-width:52rem;
+    border:1px solid rgba(96,165,250,.18); border-left:3px solid rgba(255,233,184,.55);
+    border-radius:14px; background:rgba(16,26,51,.42)}
+  .dossier p{margin-top:0; font-size:.95rem}
+  .dossier strong:first-child{display:block; font-family:var(--syne); color:var(--lueur);
+    font-size:1.02rem; margin-bottom:.5rem}
+  .dossier br{display:none}
 
-  /* arrivées : fondu-montée douce */
-  .xp-anim .vl:not(.vu){opacity:0; transform:translateY(14px)}
-  .xp-anim .vl{transition:opacity .55s, transform .55s cubic-bezier(.22,.9,.24,1)}
+  /* ── FAQ (s8) ── */
+  .qr{max-width:47rem; margin-top:1.9rem}
+  .qr h3{position:relative; padding-left:1.7rem; margin-top:0; font-size:1.02rem;
+    color:#E2E8F0}
+  .qr h3::before{content:''; position:absolute; left:0; top:.3em; width:.7rem;
+    height:.7rem; border-radius:50%; border:1.5px solid rgba(255,233,184,.6)}
+  .qr p{margin-top:.6rem; padding-left:1.7rem; font-size:.95rem}
 
+  /* ── CTA (s9) + liens (s10) ── */
+  .g-s9{position:relative}
+  .g-s9::before{content:''; position:absolute; left:12%; top:0; width:24rem;
+    height:13rem; pointer-events:none; opacity:0; transition:opacity 1s;
+    background:radial-gradient(closest-side, rgba(255,233,184,.15), transparent 70%)}
+  .g-s9.allume::before, body:not(.xp-anim) .g-s9::before{opacity:1}
+  .g-s9 p:last-child a{display:inline-flex; align-items:center; gap:.6rem;
+    background:var(--bleu); color:#fff; font-weight:800; font-size:.8rem;
+    letter-spacing:.13em; text-transform:uppercase; padding:1.05rem 2.1rem;
+    border-radius:99px; text-decoration:none; margin-top:.6rem;
+    transition:background .25s, color .25s, transform .2s}
+  .g-s9 p:last-child a:hover{background:var(--lueur); color:#0B1428; transform:translateY(-2px)}
+  .g-s10 ul{display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:.55rem; max-width:48rem; margin-top:1.2rem}
+  .g-s10 li{padding:.8rem 1rem; margin:0; border-radius:10px;
+    border:1px solid rgba(96,165,250,.2); background:rgba(13,22,44,.5);
+    transition:border-color .3s, transform .3s}
+  .g-s10 li::before{content:none}
+  .g-s10 li:hover{border-color:rgba(255,233,184,.45); transform:translateX(3px)}
+  .g-s10 li a{text-decoration:none; color:#DCE6FF}
+  .g-s10 li a:hover{color:var(--lueur)}
+  .g-s10 .signature{margin-top:2.2rem; padding-top:1.2rem; max-width:52rem;
+    border-top:1px solid rgba(148,163,184,.16); font-size:.9rem}
+  .g-s10 .signature strong{color:#EAF0FF}
+
+  /* arrivées */
+  .xp-anim .ln:not(.vu){opacity:0; transform:translateY(12px)}
+  .xp-anim .ln{transition:opacity .5s, transform .5s cubic-bezier(.22,.9,.24,1)}
+  .xp-anim .plan.ln:not(.vu){opacity:1; transform:none}   /* le plan a sa propre entrée */
+
+  @media(max-width:980px){
+    .g-hero{grid-template-columns:minmax(0,1fr)}
+    .g-hero h1, .g-hero > p{grid-column:1}
+    .plan{grid-column:1; grid-row:auto; margin-top:2rem}
+    .quartiers{grid-template-columns:1fr}
+  }
+  @media(max-width:640px){
+    .g-s10 ul{grid-template-columns:1fr}
+    .fiche, .quartier, .dossier{padding:1.15rem 1.1rem}
+    .phase{padding-left:3.1rem}
+  }
   @media (prefers-reduced-motion: reduce){
-    .plaque-rue::before{clip-path:inset(0)}
-    .plaque-rue::after{background:var(--lueur); box-shadow:0 0 12px rgba(255,233,184,.75)}
-    .skyline i.lum, .skyline i{transition:none}
-    .g-s8 .xp-cta::before{opacity:.55}
+    .pl-trace{stroke-dashoffset:0}
+    .arr{opacity:1; transform:none}
+    .arr-or circle{animation:none}
+    .phase::after{transform:scaleY(1)}
+    .g-s9::before{opacity:1}
   }
 `;
 
-function groupeDepuis(rendus, blocs, tetes, classe) {
+/* chiffres et formules qui portent l'argument (texte inchangé, enveloppé) */
+const LUMIERES = [
+  '22 200 recherches mensuelles',
+  '15 à 25 % des clics',
+  '80 % des sites parisiens sont invisibles aux IA',
+  'accélère les citations IA de 300 %',
+];
+
+export function renduBloc(b, defaut, groupe) {
+  if (b.t === 'p') {
+    let html = b.html;
+    for (const l of LUMIERES) {
+      if (html.includes(l) && !html.includes('class="hl"'))
+        html = html.replace(l, `<span class="hl">${l}</span>`);
+    }
+    if (html !== b.html) return `<p>${html}</p>`;
+  }
+  return defaut;
+}
+
+/* regroupe « une tête + ce qui la suit » en cartes, sans toucher au texte */
+function cartes(rendus, blocs, tetes, classe) {
   const sortie = [];
   let carte = null;
   rendus.forEach((r, i) => {
@@ -147,61 +275,59 @@ function groupeDepuis(rendus, blocs, tetes, classe) {
   });
   if (carte) sortie.push(carte);
   return sortie.map(x => Array.isArray(x)
-    ? `<div class="${classe} vl">\n${x.join('\n')}\n</div>` : x).join('\n');
-}
-
-/* le h2 devient plaque de rue ; la skyline est injectée après le h1 */
-export function renduBloc(b, defaut) {
-  if (b.t === 'h2')
-    return `<div class="plaque-rue vl"><h2>${b.html}</h2></div>`;
-  if (b.t === 'h1') {
-    const fen = Array.from({ length: 14 }, (_, i) => `<i style="--fx:${i}"></i>`).join('');
-    return `<h1>${b.html}</h1>\n<div class="skyline" aria-hidden="true">${fen}</div>`;
-  }
-  return defaut;
+    ? `<div class="${classe} ln">\n${x.join('\n')}\n</div>` : x).join('\n');
 }
 
 export function renduSection(groupe, s) {
-  if (groupe === 's2' || groupe === 's3') {
-    const interne = groupeDepuis(s.rendus, s.blocs, ['h3'], 'rue');
-    return `<section class="xp-sec g-${groupe}">\n${interne.replace(/(<div class="rue[\s\S]*<\/div>)/, '<div class="rues">\n$1\n</div>')}\n</section>`;
-  }
-  if (groupe === 's4') {
-    /* étapes : « Étape 0N » (p) + h3 + p */
-    const interne = groupeDepuis(s.rendus, s.blocs,
-      s.blocs.some(b => b.t === 'meta') ? ['meta'] : ['p'], 'etape');
-    /* le premier élément est le h2-plaque, les p « Étape » ouvrent les cartes :
-       on ne regroupe qu'à partir des blocs dont le texte commence par Étape */
-    return `<section class="xp-sec g-s4">\n${regroupeEtapes(s)}\n</section>`;
-  }
-  if (groupe === 's5') {
-    const interne = groupeDepuis(s.rendus, s.blocs, ['h3'], 'cas');
-    return `<section class="xp-sec g-s5">\n${interne.replace(/(<div class="cas[\s\S]*<\/div>)/, '<div class="cas-grille">\n$1\n</div>')}\n</section>`;
-  }
-  if (groupe === 's7')
-    return `<section class="xp-sec g-s7">\n${groupeDepuis(s.rendus, s.blocs, ['h3'], 'paire')}\n</section>`;
-  return s.enveloppe;
-}
+  const env = (interne) => `<section class="xp-sec g-${groupe}">\n${interne}\n</section>`;
 
-function regroupeEtapes(s) {
-  const sortie = [];
-  let carte = null;
-  s.rendus.forEach((r, i) => {
-    const b = s.blocs[i];
-    const ouvre = b.t === 'p' && /^Étape \d/.test(b.html);
-    if (ouvre) { if (carte) sortie.push(carte); carte = [r]; }
-    else if (carte) carte.push(r);
-    else sortie.push(r);
-  });
-  if (carte) sortie.push(carte);
-  return sortie.map(x => Array.isArray(x)
-    ? `<div class="etape vl">\n${x.join('\n')}\n</div>` : x).join('\n');
+  /* le plan en colimaçon se pose à côté du titre */
+  if (groupe === 'hero') return env([...s.rendus, plan()].join('\n'));
+
+  /* services et GEO : une carte par sous-titre */
+  if (groupe === 's2' || groupe === 's3')
+    return env(cartes(s.rendus, s.blocs, ['h3'], 'fiche'));
+
+  /* secteurs : quatre quartiers en grille */
+  if (groupe === 's5') {
+    const [titre, ...reste] = s.rendus;
+    const grille = cartes(reste, s.blocs.slice(1), ['h3'], 'quartier');
+    return env(`${titre}\n<div class="quartiers">\n${grille}\n</div>`);
+  }
+
+  /* les cinq phases : un paragraphe = une étape du rail */
+  if (groupe === 's6') {
+    return env(s.rendus.map((r, i) =>
+      s.blocs[i].t === 'p' ? `<div class="phase ln">${r}</div>` : r).join('\n'));
+  }
+
+  /* les cas clients : un paragraphe = un dossier */
+  if (groupe === 's7') {
+    return env(s.rendus.map((r, i) =>
+      s.blocs[i].t === 'p' && /^<strong>Cas /.test(s.blocs[i].html)
+        ? `<div class="dossier ln">${r}</div>` : r).join('\n'));
+  }
+
+  /* FAQ : paires question/réponse */
+  if (groupe === 's8') return env(cartes(s.rendus, s.blocs, ['h3'], 'qr'));
+
+  /* liens de fin + signature */
+  if (groupe === 's10') {
+    return env(s.rendus.map((r, i) => {
+      const b = s.blocs[i];
+      if (b.t === 'p' && /^Auteure de cette page/.test(b.html.replace(/<[^>]*>/g, '').trim()))
+        return `<p class="signature">${b.html}</p>`;
+      return r;
+    }).join('\n'));
+  }
+
+  return s.enveloppe;
 }
 
 export const JS = `
   var cibles = [].slice.call(document.querySelectorAll(
-    '.plaque-rue, .rue, .etape, .g-s5 .cas, .g-s7 .paire, ' +
-    '.g-s1 p, .g-s6 p, .g-s8 p, .g-s8 .xp-cta, .g-s9 p'));
+    '.plan, .xp-sec h2, .xp-sec h3, .xp-sec > p, .xp-sec > ul, ' +
+    '.fiche, .quartier, .phase, .dossier, .qr, .g-s10 .signature'));
   var io = new IntersectionObserver(function (entrees) {
     entrees.forEach(function (x) {
       if (!x.isIntersecting) return;
@@ -211,38 +337,11 @@ export const JS = `
         io.unobserve(cibles[j]);
       }
     });
-  }, { threshold: .2, rootMargin: '0px 0px -10% 0px' });
-  cibles.forEach(function (el) { el.classList.add('vl'); io.observe(el); });
-  /* la skyline s'allume en cascade, une fois */
-  var fen = [].slice.call(document.querySelectorAll('.skyline i'));
-  var ioSky = new IntersectionObserver(function (e) {
-    if (!e[0].isIntersecting) return;
-    ioSky.disconnect();
-    fen.forEach(function (f, i) {
-      if (i % 3 === 1) return;              /* quelques fenêtres restent éteintes */
-      setTimeout(function () { f.classList.add('lum'); }, 200 + i * 70);
-    });
-  }, { threshold: .4 });
-  if (fen.length) ioSky.observe(fen[0].parentElement);
-`;
+  }, { threshold: .15, rootMargin: '0px 0px -8% 0px' });
+  cibles.forEach(function (el) { el.classList.add('ln'); io.observe(el); });
 
-/* ── correction de schéma demandée par Lucas le 30/07/2026 ──────────────────
- * La capture de l'ancien site (tools/snapshots/ancien-seoia/) contient un
- * aggregateRating « 4,9 sur 52 avis » sur le nœud LocalBusiness. Aucun avis
- * n'existe nulle part sur le site : c'est exactement le motif d'action
- * manuelle Google « Problème lié aux données structurées ». On le retire ici
- * plutôt que dans la capture, pour que celle-ci reste un témoin fidèle de
- * l'ancien site (c'est elle qui sert de référence au diff de non-régression).
- * À rétablir le jour où de vrais avis, visibles sur la page, existeront. */
-export function transformeSchemas(schemas) {
-  let retires = 0;
-  const visite = o => {
-    if (Array.isArray(o)) return o.forEach(visite);
-    if (!o || typeof o !== 'object') return;
-    if (o.aggregateRating) { delete o.aggregateRating; retires++; }
-    for (const v of Object.values(o)) visite(v);
-  };
-  visite(schemas);
-  if (retires) console.log(`  agence-seo-paris : ${retires} aggregateRating retiré(s) (aucun avis réel)`);
-  return schemas;
-}
+  /* le halo du CTA s'allume à l'arrivée */
+  var cta = document.querySelector('.g-s9');
+  if (cta) new IntersectionObserver(function (entrees) {
+    entrees.forEach(function (x) { if (x.isIntersecting) cta.classList.add('allume'); });
+  }, { threshold: .25 }).observe(cta);`;

@@ -62,7 +62,9 @@ export const PAGES = [
   { cle: 'expertise-automatisation-contenu', captures: 'refonte-expertise-automatisation-contenu' },
   { cle: 'expertise-media', captures: 'refonte-expertise-media' },
   { cle: 'expertise-ai-overview', captures: 'ancien-expertises' },
-  { cle: 'agence-seo-paris', captures: 'ancien-seoia' },
+  /* SEO Paris : contenu ET signaux remplacés le 10/08 par le code de Lucas
+     (tools/sources/agence-seo-paris.html → prepare-source). */
+  { cle: 'agence-seo-paris', captures: 'refonte-agence-seo-paris' },
   /* Référencement IA : contenu ET signaux remplacés le 10/08 par le code de
      Lucas (tools/sources/agence-referencement-ia.html → prepare-source). */
   { cle: 'agence-referencement-ia', captures: 'refonte-agence-referencement-ia' },
@@ -98,6 +100,7 @@ const BADGES = {
   'expertise-ai-overview': 'Google & Réponses IA',
   'expertise-automatisation-contenu': 'Production & Volume',
   'agence-referencement-ia': 'Audit & Accompagnement IA',
+  'agence-seo-paris': 'Référencement Naturel & GEO',
 };
 
 const ICONE_BADGE = '<svg viewBox="0 0 24 24" aria-hidden="true">'
@@ -264,15 +267,13 @@ const ECARTS_HN = {
  * de comparer.
  */
 const ECARTS_TEXTE = {
-  'agence-seo-paris': [{
-    avant: "Nous avons travaillé avec des centaines d'entreprises parisiennes dans tous les secteurs.",
-    apres: 'Nous accompagnons des entreprises parisiennes dans tous les secteurs.',
-    pourquoi: "« des centaines d'entreprises » est invérifiable et contredit le reste "
-      + 'du site : /references publie 13 dossiers, /expertise-media parle de deux cas '
-      + 'documentés, et la société est immatriculée depuis 2025. Une affirmation de '
-      + 'volume qu\'on ne peut pas étayer abîme l\'E-E-A-T au lieu de le servir. '
-      + '(Audit du 30/07/2026.)',
-  }],
+  /* L'écart déclaré ici pour `agence-seo-paris` (« des centaines d'entreprises
+     parisiennes », affirmation de volume invérifiable, corrigée à l'audit du
+     30/07/2026) est devenu sans objet le 10/08/2026 : Lucas a remplacé toute
+     la page par son propre code, qui ne contient plus cette phrase. La règle,
+     elle, reste — voir l'en-tête de tools/sources/agence-seo-paris.html, où
+     les affirmations invérifiables du nouveau code sont traitées de la même
+     façon (téléphone bouchon retiré, durée du cas Travel alignée). */
 };
 
 /* ══ garde-fous bloquants ══ */
