@@ -1,20 +1,24 @@
 /**
- * agence-referencement-ia.mjs — page /agence-referencement-ia, ENTIÈREMENT
- * REMPLACÉE le 10/08/2026 à la demande de Lucas : contenu, title, metas,
- * Open Graph, Twitter, metas GEO/LLM et les 4 schémas (ProfessionalService,
- * FAQPage, BreadcrumbList, Person) viennent de son code —
- * tools/sources/agence-referencement-ia.html. Les corrections apportées à sa
- * source sont documentées en tête de ce fichier-là. (L'ancien module « Le
- * Verdict » habillait le contenu capturé de l'ancien site ; il est parti
- * avec lui.)
+ * agence-referencement-ia.mjs — page /agence-referencement-ia.
  *
- * Design : « La Réponse » — cette page vend une place dans les réponses des
- * IA, alors la page la met en scène : dans le hero, une console tape la
- * requête et les trois moteurs citent Triaina l'un après l'autre ; les cas
- * clients portent des jauges de taux de citation qui se remplissent à
- * l'entrée ; la méthode est un rail qui se charge étape par étape ; les
- * phrases clés reçoivent le balayage doré de la famille (repris de
- * /expertise-geo, où il signe la citation).
+ * Contenu et signaux fournis par Lucas : tools/sources/agence-referencement-ia.html,
+ * dont l'en-tête documente les corrections apportées. Version 2 du 11/08/2026
+ * (bloc « les 5 signaux », comparatif concurrentiel, FAQ portée à 9 questions) ;
+ * elle remplace la v1 du 10/08, qui remplaçait elle-même la page capturée de
+ * l'ancien site.
+ *
+ * Design : « La Réponse » — conservé de la v1. Cette page vend une place dans
+ * les réponses des IA, alors la page la met en scène : dans le hero, une
+ * console tape la requête et les trois moteurs citent Triaina l'un après
+ * l'autre ; les cas clients portent des jauges de taux de citation qui se
+ * remplissent à l'entrée ; méthode et signaux suivent des rails qui se
+ * chargent ; les phrases clés reçoivent le balayage doré de la famille.
+ *
+ * Le découpage en sections vient des <h2> du code fourni : il a changé entre
+ * v1 et v2 (s5 et s7 sont désormais des tableaux, le CTA final est passé de
+ * s8 à s9). Les correspondances ci-dessous sont donc à revérifier à chaque
+ * nouvelle version — un mauvais numéro ne casse rien, il habille simplement
+ * la mauvaise section.
  *
  * Sans JS ou en motion réduite : tout est visible d'emblée, la console
  * affiche sa requête en dur, les jauges sont pleines.
@@ -100,6 +104,15 @@ export const STYLE = `
     font-family:ui-monospace,monospace; font-size:.6rem; letter-spacing:.16em;
     text-transform:uppercase; color:rgba(148,163,184,.6); max-width:none}
 
+  /* le bouton d'appel (hero et CTA final) */
+  .bouton{display:inline-flex; align-items:center; gap:.6rem;
+    background:var(--bleu); color:#fff; font-weight:800; font-size:.8rem;
+    letter-spacing:.13em; text-transform:uppercase; padding:1.05rem 2.1rem;
+    border-radius:99px; text-decoration:none;
+    transition:background .25s, color .25s, transform .2s}
+  .bouton:hover{background:var(--lueur); color:#0B1428; transform:translateY(-2px)}
+  p:has(> .bouton:only-child){max-width:none}
+
   /* s1 : les trois moteurs, en cartes */
   .moteurs{display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
     gap:1rem; margin-top:1.4rem}
@@ -111,7 +124,22 @@ export const STYLE = `
   .moteurs .moteur strong:first-child{display:block; color:var(--lueur);
     font-family:var(--syne); font-size:1.02rem; margin-bottom:.55rem}
 
-  /* s2 : offres en cartes, fiches prix, les 8 médias en grille */
+  /* s1 : les 5 signaux de citation, en rail numéroté */
+  /* Repère SANS numéro : le texte de Lucas commence déjà par « 1. », « 2. »…
+     Un compteur CSS afficherait le rang deux fois de suite. */
+  .signal{position:relative; padding-left:2.2rem; max-width:47rem; margin-top:1.9rem}
+  .signal::before{content:''; position:absolute; left:0; top:.45rem;
+    width:.75rem; height:.75rem; border:1.5px solid rgba(96,165,250,.5);
+    border-radius:3px; transform:rotate(45deg);
+    transition:border-color .4s, background .4s, box-shadow .4s}
+  .signal.vu::before{border-color:rgba(255,233,184,.85);
+    background:rgba(255,233,184,.14); box-shadow:0 0 14px rgba(255,233,184,.2)}
+  .signal p{margin-top:0; font-size:.95rem}
+  .signal strong:first-child{display:block; font-family:var(--syne); color:#fff;
+    font-size:1rem; margin-bottom:.4rem}
+  .signal br{display:none}
+
+  /* s2 : offres en cartes, fiches prix, registre des 8 médias */
   .offre{margin-top:2.1rem; padding:1.6rem 1.7rem; max-width:52rem;
     border:1px solid rgba(96,165,250,.18); border-left:3px solid rgba(255,233,184,.5);
     border-radius:14px; background:rgba(16,26,51,.4)}
@@ -180,7 +208,7 @@ export const STYLE = `
   .xp-anim .cas .jauge i::before{width:0; transition:width 1.1s cubic-bezier(.22,.9,.24,1) .25s}
   .xp-anim .cas.vu .jauge i::before{width:calc(var(--v)*1%)}
 
-  /* tableaux : comparatif et tarifs — défilement horizontal sur mobile */
+  /* tableaux : défilement horizontal sur mobile */
   .defile{overflow-x:auto; margin-top:1.5rem; border:1px solid rgba(96,165,250,.16);
     border-radius:14px; max-width:60rem}
   .defile table{border-collapse:collapse; width:100%; min-width:44rem; font-size:.92rem}
@@ -197,6 +225,9 @@ export const STYLE = `
   .defile td:first-child strong{color:#fff; font-family:var(--syne)}
   .defile tbody tr{transition:background .25s}
   .defile tbody tr:hover{background:rgba(37,99,235,.08)}
+  /* comparatif concurrentiel : la colonne Triaina se détache */
+  .g-s7 .defile td:nth-child(2){color:var(--lueur); font-weight:600}
+  .g-s7 .defile th:nth-child(2){color:var(--lueur)}
   .xp-anim .defile tbody tr{opacity:0; transform:translateX(-8px);
     transition:opacity .45s, transform .45s cubic-bezier(.22,.9,.24,1)}
   .xp-anim .defile.vu tbody tr{opacity:1; transform:none}
@@ -205,6 +236,7 @@ export const STYLE = `
   .xp-anim .defile.vu tbody tr:nth-child(4){transition-delay:.27s}
   .xp-anim .defile.vu tbody tr:nth-child(5){transition-delay:.36s}
   .xp-anim .defile.vu tbody tr:nth-child(6){transition-delay:.45s}
+  .xp-anim .defile.vu tbody tr:nth-child(7){transition-delay:.54s}
 
   /* s6 : les 5 raisons */
   .raison{margin-top:1.8rem; max-width:49rem; padding-left:1.3rem;
@@ -213,7 +245,7 @@ export const STYLE = `
   .raison h3{margin-top:0}
   .raison p{margin-top:.55rem; font-size:.96rem}
 
-  /* s7 : FAQ, paires visibles */
+  /* s8 : FAQ, paires visibles */
   .qa{max-width:47rem; margin-top:2rem}
   .qa h3{position:relative; padding-left:1.6rem; margin-top:0;
     font-size:1.05rem; color:#E2E8F0}
@@ -223,17 +255,24 @@ export const STYLE = `
     border:1px solid rgba(255,233,184,.45); border-radius:5px}
   .qa p{margin-top:.7rem; padding-left:1.6rem; font-size:.95rem}
 
-  /* s8 : CTA final + signature */
-  .g-s8{position:relative; padding-bottom:4rem}
-  .g-s8::before{content:''; position:absolute; left:20%; top:10%;
+  /* s9 : CTA final — s10 : maillage + signature */
+  .g-s9{position:relative}
+  .g-s9::before{content:''; position:absolute; left:20%; top:10%;
     width:26rem; height:14rem; pointer-events:none; opacity:0; transition:opacity 1s;
     background:radial-gradient(closest-side, rgba(255,233,184,.16), transparent 70%)}
-  .g-s8.allume::before, body:not(.xp-anim) .g-s8::before{opacity:1}
-  .g-s8 a{color:var(--lueur); font-weight:700; text-decoration-color:rgba(255,233,184,.5)}
-  .g-s8 a:hover{color:#fff}
-  .g-s8 .signature{margin-top:2.4rem; padding-top:1.3rem; max-width:52rem;
+  .g-s9.allume::before, body:not(.xp-anim) .g-s9::before{opacity:1}
+  .g-s10 ul{display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:.55rem; max-width:48rem; margin-top:1.2rem}
+  .g-s10 li{padding:.8rem 1rem; margin:0; border-radius:10px;
+    border:1px solid rgba(96,165,250,.2); background:rgba(13,22,44,.5);
+    transition:border-color .3s, transform .3s}
+  .g-s10 li::before{content:none}
+  .g-s10 li:hover{border-color:rgba(255,233,184,.45); transform:translateX(3px)}
+  .g-s10 li a{text-decoration:none; color:#DCE6FF}
+  .g-s10 li a:hover{color:var(--lueur)}
+  .g-s10 .signature{margin-top:2.4rem; padding-top:1.3rem; max-width:52rem;
     border-top:1px solid rgba(148,163,184,.16); font-size:.9rem}
-  .g-s8 .signature strong{color:#EAF0FF}
+  .g-s10 .signature strong{color:#EAF0FF}
 
   /* arrivées */
   .xp-anim .ln:not(.vu){opacity:0; transform:translateY(12px)}
@@ -243,15 +282,16 @@ export const STYLE = `
     .moteurs{grid-template-columns:1fr}
   }
   @media(max-width:640px){
-    .medias-grille{grid-template-columns:1fr}
+    .medias-grille, .g-s10 ul{grid-template-columns:1fr}
     .offre, .cas{padding:1.2rem 1.1rem}
     .console .rep b{min-width:5.2rem}
+    .signal{padding-left:2.9rem}
   }
   @media (prefers-reduced-motion: reduce){
     .console .con-c{animation:none}
     .jauge i::before{width:calc(var(--v)*1%)}
     .etape::after{transform:scaleY(1)}
-    .g-s8::before{opacity:1}
+    .g-s9::before{opacity:1}
   }
 `;
 
@@ -260,13 +300,18 @@ const LUMIERES = [
   'entre 30 et 40 % des requêtes informationnelles',
   'citation IA quasi-immédiate',
   'les IA citent les sources qu’elles jugent fiables, récentes et structurées',
+  'accélère les citations de +300 % en moyenne',
 ];
 
 export function renduBloc(b, defaut, groupe, i) {
-  if (groupe === 'hero' && b.t === 'p' && i === 1)
-    return `<p class="lead">${b.html}</p>`;
-  if (groupe === 'hero' && b.t === 'p' && i === 4)
-    return `<p class="note">${b.html}</p>`;
+  if (groupe === 'hero') {
+    if (b.t === 'p' && i === 0) return `<p class="xp-k">${b.html}</p>`;
+    if (b.t === 'p' && i === 2) return `<p class="lead">${b.html}</p>`;
+    if (b.t === 'p' && i === 5) return `<p class="note">${b.html}</p>`;
+  }
+  /* un paragraphe qui ne contient QUE un lien vers /contact est un appel */
+  if (b.t === 'p' && /^<a href="\/contact">[^<]*<\/a>$/.test(b.html.trim()))
+    return `<p>${b.html.replace('<a ', '<a class="bouton" ')}</p>`;
   if (b.t === 'table')
     return `<div class="defile" tabindex="0" role="region" aria-label="Tableau — défilement horizontal possible">${b.html}</div>`;
   if (b.t === 'p') {
@@ -308,23 +353,28 @@ const CONSOLE = `<div class="console ln" aria-hidden="true">
 export function renduSection(groupe, s) {
   const env = (interne) => `<section class="xp-sec g-${groupe}">\n${interne}\n</section>`;
 
-  /* hero : la console de réponse s'insère après l'accroche, avant la note */
+  /* hero : la console s'insère juste avant le bouton d'appel */
   if (groupe === 'hero') {
     const rendus = [...s.rendus];
     rendus.splice(rendus.length - 1, 0, CONSOLE);
     return env(rendus.join('\n'));
   }
 
-  /* s1 : les trois paragraphes moteurs deviennent une grille de cartes */
+  /* s1 : les trois moteurs en grille, les cinq signaux en rail numéroté */
   if (groupe === 's1') {
     const estMoteur = (b) => b.t === 'p' && /^<strong>(ChatGPT|Gemini|Perplexity)/.test(b.html);
+    const estSignal = (b) => b.t === 'p' && /^<strong>[1-5]\.\s/.test(b.html);
     const sortie = [];
     let grille = null;
     s.rendus.forEach((r, i) => {
-      if (estMoteur(s.blocs[i])) {
+      const b = s.blocs[i];
+      if (estMoteur(b)) {
         if (!grille) { grille = []; sortie.push(grille); }
         grille.push(r.replace(/^<p>/, '<p class="moteur">'));
-      } else { grille = null; sortie.push(r); }
+        return;
+      }
+      grille = null;
+      sortie.push(estSignal(b) ? `<div class="signal ln">${r}</div>` : r);
     });
     return env(sortie.map(x => Array.isArray(x)
       ? `<div class="moteurs ln">\n${x.join('\n')}\n</div>` : x).join('\n'));
@@ -359,18 +409,17 @@ export function renduSection(groupe, s) {
   /* s6 : les 5 raisons */
   if (groupe === 's6') return env(cartes(s.rendus, s.blocs, ['h3'], 'raison'));
 
-  /* s7 : FAQ en paires question/réponse */
-  if (groupe === 's7') return env(cartes(s.rendus, s.blocs, ['h3'], 'qa'));
+  /* s8 : FAQ en paires question/réponse */
+  if (groupe === 's8') return env(cartes(s.rendus, s.blocs, ['h3'], 'qa'));
 
-  /* s8 : CTA final + signature */
-  if (groupe === 's8') {
-    const rendus = s.rendus.map((r, i) => {
+  /* s10 : maillage interne + signature */
+  if (groupe === 's10') {
+    return env(s.rendus.map((r, i) => {
       const b = s.blocs[i];
       if (b.t === 'p' && /^Auteure de cette page/.test(b.html.replace(/<[^>]*>/g, '').trim()))
         return `<p class="signature">${b.html}</p>`;
       return r;
-    });
-    return env(rendus.join('\n'));
+    }).join('\n'));
   }
 
   return s.enveloppe;
@@ -380,8 +429,8 @@ export const JS = `
   /* arrivées : tout ce qui précède un point atteint s'allume aussi */
   var cibles = [].slice.call(document.querySelectorAll(
     '.g-hero .lead, .g-hero .note, .console, .xp-sec h2, .xp-sec h3, ' +
-    '.xp-sec > p, .xp-sec > ul, .moteurs, .offre, .etape, .cas, .defile, ' +
-    '.raison, .qa, .g-s8 .signature'));
+    '.xp-sec > p, .xp-sec > ul, .moteurs, .signal, .offre, .etape, .cas, ' +
+    '.defile, .raison, .qa, .g-s10 .signature'));
   var io = new IntersectionObserver(function (entrees) {
     entrees.forEach(function (x) {
       if (!x.isIntersecting) return;
@@ -414,7 +463,7 @@ export const JS = `
   }
 
   /* le halo du CTA final s'allume quand on y arrive */
-  var fin = document.querySelector('.g-s8');
+  var fin = document.querySelector('.g-s9');
   if (fin) new IntersectionObserver(function (entrees) {
     entrees.forEach(function (x) { if (x.isIntersecting) fin.classList.add('allume'); });
   }, { threshold: .2 }).observe(fin);`;

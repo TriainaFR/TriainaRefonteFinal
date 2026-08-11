@@ -7,28 +7,38 @@
    "html": "<ol><li><a href=\"/\">Accueil</a></li><li aria-current=\"page\">Agence Référencement IA</li></ol>"
   },
   {
+   "t": "p",
+   "html": "Audit & Accompagnement IA",
+   "groupe": "hero"
+  },
+  {
    "t": "h1",
    "html": "Agence Référencement IA : Devenez visible sur ChatGPT, Gemini et Perplexity",
    "groupe": "hero"
   },
   {
    "t": "p",
-   "html": "<strong>En 2026, les IA génératives captent entre 30 et 40 % des requêtes informationnelles.</strong> ChatGPT dépasse les 200 millions d'utilisateurs actifs. Perplexity traite des dizaines de millions de questions par mois. Gemini est intégré directement dans les résultats Google via les <a href=\"/expertise-ai-overview\">AI Overview</a>. Résultat : le trafic organique classique recule, et les entreprises absentes des réponses IA perdent des leads sans même s'en rendre compte.",
+   "html": "<strong>En 2026, les IA génératives captent entre 30 et 40 % des requêtes informationnelles.</strong> ChatGPT dépasse les 200 millions d'utilisateurs actifs. Perplexity traite des dizaines de millions de questions par mois. Gemini est intégré directement dans les résultats Google via les AI Overview. Résultat : le trafic organique classique recule, et les entreprises absentes des réponses IA perdent des leads sans même s'en rendre compte.",
    "groupe": "hero"
   },
   {
    "t": "p",
-   "html": "Le <strong>référencement IA</strong> - aussi appelé <strong>GEO</strong> (Generative Engine Optimization) ou <strong>GSO</strong> (Generative Search Optimization) - est la discipline qui permet à votre marque d'être citée, recommandée et paraphrasée par ces moteurs. Ce n'est pas du SEO classique. Les signaux de ranking sont différents : autorité de la source, fraîcheur du contenu, structured data, présence dans des médias tiers reconnus par les LLM.",
+   "html": "Le <strong>référencement IA</strong> — aussi appelé <strong>GEO</strong> (Generative Engine Optimization) ou <strong>GSO</strong> (Generative Search Optimization) — est la discipline qui permet à votre marque d'être citée, recommandée et paraphrasée par ces moteurs. Ce n'est pas du SEO classique. Les signaux de ranking sont différents : autorité de la source, fraîcheur du contenu, structured data, présence dans des médias tiers reconnus par les LLM.",
    "groupe": "hero"
   },
   {
    "t": "p",
-   "html": "Triaina est l'<strong>agence référencement IA</strong> parisienne qui combine deux leviers que personne d'autre ne réunit : une <strong>expertise technique SEO/GEO</strong> éprouvée et un <strong>réseau de 8 médias propriétaires</strong> déjà indexés et cités par ChatGPT, Gemini et Perplexity. Publier dans nos médias, c'est obtenir une citation IA quasi-immédiate - là où une stratégie de netlinking classique demande 6 à 12 mois d'attente. Triaina gère aussi une régie publicitaire complémentaire pour amplifier encore davantage votre visibilité.",
+   "html": "Triaina est l'<strong>agence référencement IA</strong> parisienne qui combine deux leviers que personne d'autre ne réunit : une <strong>expertise technique SEO/GEO</strong> éprouvée et un <strong>réseau de 8 médias propriétaires</strong> déjà indexés et cités par ChatGPT, Gemini et Perplexity. Publier dans nos médias, c'est obtenir une citation IA quasi-immédiate — là où une stratégie de netlinking classique demande 6 à 12 mois d'attente. Triaina gère aussi une régie publicitaire complémentaire pour amplifier encore davantage votre visibilité.",
    "groupe": "hero"
   },
   {
    "t": "p",
    "html": "Audit ponctuel ou accompagnement mensuel : nous avons une formule adaptée à chaque budget et chaque secteur.",
+   "groupe": "hero"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/contact\">Pré-audit gratuit</a>",
    "groupe": "hero"
   },
   {
@@ -43,7 +53,7 @@
   },
   {
    "t": "p",
-   "html": "La <strong>Generative Engine Optimization</strong> est une discipline jeune - le terme GEO a été formalisé en 2023 par des chercheurs de Princeton et Georgia Tech - mais elle est déjà critique pour les entreprises dont les clients utilisent ChatGPT, Perplexity ou Gemini pour s'informer avant d'acheter ou de signer un contrat.",
+   "html": "La <strong>Generative Engine Optimization</strong> est une discipline jeune — le terme GEO a été formalisé en 2023 par des chercheurs de Princeton et Georgia Tech — mais elle est déjà critique pour les entreprises dont les clients utilisent ChatGPT, Perplexity ou Gemini pour s'informer avant d'acheter ou de signer un contrat.",
    "groupe": "s1"
   },
   {
@@ -89,6 +99,46 @@
   {
    "t": "p",
    "html": "Dans les trois cas, la logique est la même : <strong>les IA citent les sources qu'elles jugent fiables, récentes et structurées</strong>. C'est exactement ce que notre méthodologie GEO vise à construire pour votre marque.",
+   "groupe": "s1"
+  },
+  {
+   "t": "h3",
+   "html": "Les signaux concrets qui font qu'une IA vous cite",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "ChatGPT, Gemini et Perplexity ne choisissent pas leurs sources au hasard. Ces moteurs génératifs appliquent des algorithmes sophistiqués pour identifier et citer les contenus les plus pertinents et fiables sur un sujet donné. Comprendre ces signaux est essentiel pour toute agence référencement IA qui souhaite accélérer les citations de ses clients. Voici les 5 signaux concrets que les IA utilisent pour vous sélectionner comme source.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>1. Autorité de domaine et backlinks éditoriaux</strong><br> Les IA analysent votre profil de liens entrants, en particulier les liens provenant de médias reconnus, de publications spécialisées et de sites d'autorité. Un lien depuis un quotidien national ou une revue spécialisée pèse beaucoup plus qu'un lien depuis un blog anonyme. Triaina accélère ce signal en publiant le contenu client dans ses 8 médias propriétaires (Yonder, Les Hardis, Best Restaurants Paris, Séminaire Hôtels, Les Meilleurs Hôtels Spa, Le Journal du Vin, Le Journal des Écoles, Le Journal de la Tech) — déjà sources actives dans ChatGPT, Gemini et Perplexity.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>2. Structured data (Article, FAQPage, Person schema)</strong><br> Les IA lisent le JSON-LD et les schémas structurés pour identifier rapidement l'auteur, la date de publication, le sujet et la crédibilité d'un contenu. Un article avec un schema Article complet (author, datePublished, dateModified, articleBody) est beaucoup plus susceptible d'être cité qu'un article sans structure. Une FAQ avec FAQPage schema aide les IA à comprendre les questions-réponses et à les intégrer dans leurs réponses synthétisées.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>3. Mentions de marque dans des sources tierces</strong><br> Quand votre marque ou votre expertise est mentionnée dans des forums, des médias, des publications spécialisées ou des réseaux sociaux, les IA enregistrent ces citations tierces comme signaux de confiance. Une agence référencement IA doit donc construire une stratégie de relations presse et de mentions organiques, pas seulement des backlinks directs.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>4. Fraîcheur du contenu</strong><br> Les IA privilégient les contenus récemment publiés ou mis à jour. La date de publication (datePublished) et surtout la date de modification (dateModified) dans le schema structuré sont des signaux clés. Un article mis à jour il y a 2 semaines sera cité avant un article stagnant depuis 2 ans, même si ce dernier est plus ancien et plus établi.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "<strong>5. Réseau de citations croisées</strong><br> Les IA observent les citations croisées entre sources : si vous êtes cité par une source déjà citée par ChatGPT, votre probabilité d'être cité augmente exponentiellement. C'est un effet boule de neige. Une agence référencement IA doit donc construire un réseau de sources interconnectées, pas des contenus isolés.",
+   "groupe": "s1"
+  },
+  {
+   "t": "p",
+   "html": "Triaina agit directement sur les signaux 1, 3 et 5 via son réseau de 8 médias propriétaires déjà sources actives dans ChatGPT, Gemini et Perplexity. Quand nous accompagnons un client, nous ne nous contentons pas d'optimiser son site et d'attendre 6 à 12 mois les citations IA organiques. Nous publions du contenu client dans nos médias, ce qui crée immédiatement des backlinks éditoriaux, des mentions tierces et des citations croisées. Résultat : nos clients obtiennent des citations IA en 4 à 8 semaines au lieu de 6 à 12 mois — un levier indisponible chez les agences SEO classiques qui n'ont pas de réseau médias propriétaire.",
    "groupe": "s1"
   },
   {
@@ -138,7 +188,7 @@
   },
   {
    "t": "p",
-   "html": "L'accompagnement mensuel transforme les recommandations de l'audit en actions concrètes et mesurables. C'est un service continu, conçu pour construire une présence durable dans les réponses IA - pas un coup de com' ponctuel.",
+   "html": "L'accompagnement mensuel transforme les recommandations de l'audit en actions concrètes et mesurables. C'est un service continu, conçu pour construire une présence durable dans les réponses IA — pas un coup de com' ponctuel.",
    "groupe": "s2"
   },
   {
@@ -169,7 +219,7 @@
   {
    "t": "ul",
    "groupe": "s2",
-   "html": "<ul><li><strong>Yonder</strong> - voyage haut de gamme</li><li><strong>Les Hardis</strong> - entrepreneuriat et innovation</li><li><strong>Best Restaurants Paris</strong> - restauration parisienne</li><li><strong>Séminaire Hôtels</strong> - hôtellerie événementielle</li><li><strong>Les Meilleurs Hôtels Spa</strong> - hôtellerie bien-être</li><li><strong>Le Journal du Vin</strong> - gastronomie et œnologie</li><li><strong>Le Journal des Écoles</strong> - éducation supérieure</li><li><strong>Le Journal de la Tech</strong> - actualité technologique</li></ul>"
+   "html": "<ul><li><strong>Yonder</strong> — voyage haut de gamme</li><li><strong>Les Hardis</strong> — entrepreneuriat et innovation</li><li><strong>Best Restaurants Paris</strong> — restauration parisienne</li><li><strong>Séminaire Hôtels</strong> — hôtellerie événementielle</li><li><strong>Les Meilleurs Hôtels Spa</strong> — hôtellerie bien-être</li><li><strong>Le Journal du Vin</strong> — gastronomie et œnologie</li><li><strong>Le Journal des Écoles</strong> — éducation supérieure</li><li><strong>Le Journal de la Tech</strong> — actualité technologique</li></ul>"
   },
   {
    "t": "p",
@@ -179,11 +229,6 @@
   {
    "t": "p",
    "html": "Comparez avec la voie classique : construire l'autorité d'un nouveau domaine pour qu'il soit reconnu par les IA prend <strong>6 à 12 mois minimum</strong>. Notre réseau vous fait gagner ce temps. C'est un avantage concurrentiel structurel que vous ne trouverez nulle part ailleurs.",
-   "groupe": "s2"
-  },
-  {
-   "t": "p",
-   "html": "Pour en savoir plus sur notre <a href=\"/expertise-media\">réseau de médias propriétaires</a> et notre stratégie d'amplification média, consultez notre page dédiée.",
    "groupe": "s2"
   },
   {
@@ -198,12 +243,12 @@
   },
   {
    "t": "h3",
-   "html": "Étape 1 - Audit référencement IA",
+   "html": "Étape 1 — Audit référencement IA",
    "groupe": "s3"
   },
   {
    "t": "p",
-   "html": "Tout commence par un diagnostic complet de votre situation actuelle. Nous interrogeons systématiquement ChatGPT, Gemini, Perplexity et Claude sur vos mots-clés cibles pour établir votre taux de citation de départ - souvent proche de zéro pour les entreprises qui n'ont pas encore travaillé leur <a href=\"/expertise-geo\">expertise GEO</a>. Nous analysons en parallèle votre SEO technique, votre E-E-A-T et les sources que les IA citent à votre place dans votre secteur. Cette cartographie concurrentielle est le fondement de toute la stratégie.",
+   "html": "Tout commence par un diagnostic complet de votre situation actuelle. Nous interrogeons systématiquement ChatGPT, Gemini, Perplexity et Claude sur vos mots-clés cibles pour établir votre taux de citation de départ — souvent proche de zéro pour les entreprises qui n'ont pas encore travaillé leur <a href=\"/expertise-geo\">expertise GEO</a>. Nous analysons en parallèle votre SEO technique, votre E-E-A-T et les sources que les IA citent à votre place dans votre secteur. Cette cartographie concurrentielle est le fondement de toute la stratégie.",
    "groupe": "s3"
   },
   {
@@ -213,7 +258,7 @@
   },
   {
    "t": "h3",
-   "html": "Étape 2 - Stratégie de contenu GEO",
+   "html": "Étape 2 — Stratégie de contenu GEO",
    "groupe": "s3"
   },
   {
@@ -228,7 +273,7 @@
   },
   {
    "t": "h3",
-   "html": "Étape 3 - Optimisation on-page et structured data",
+   "html": "Étape 3 — Optimisation on-page et structured data",
    "groupe": "s3"
   },
   {
@@ -243,12 +288,12 @@
   },
   {
    "t": "h3",
-   "html": "Étape 4 - Amplification via médias propriétaires",
+   "html": "Étape 4 — Amplification via médias propriétaires",
    "groupe": "s3"
   },
   {
    "t": "p",
-   "html": "C'est l'étape qui nous différencie. Une fois les contenus optimisés sur votre domaine, nous amplifions votre visibilité en publiant des articles sur votre expertise dans nos 8 médias propriétaires - Yonder, Les Hardis, Le Journal de la Tech, et les autres selon votre secteur. Ces publications génèrent simultanément des backlinks de qualité pour votre <a href=\"/expertise-sea\">SEO technique</a> et des citations directes dans les réponses IA. Nous gérons aussi les mentions de marque, les partenariats éditoriaux et, si pertinent, la régie publicitaire complémentaire pour maximiser votre couverture.",
+   "html": "C'est l'étape qui nous différencie. Une fois les contenus optimisés sur votre domaine, nous amplifions votre visibilité en publiant des articles sur votre expertise dans nos 8 médias propriétaires — Yonder, Les Hardis, Le Journal de la Tech, et les autres selon votre secteur. Ces publications génèrent simultanément des backlinks de qualité pour votre <a href=\"/expertise-media\">réseau de médias propriétaires</a> et des citations directes dans les réponses IA. Nous gérons aussi les mentions de marque, les partenariats éditoriaux et, si pertinent, la régie publicitaire complémentaire pour maximiser votre couverture.",
    "groupe": "s3"
   },
   {
@@ -258,7 +303,7 @@
   },
   {
    "t": "h3",
-   "html": "Étape 5 - Monitoring et optimisation continue",
+   "html": "Étape 5 — Monitoring et optimisation continue",
    "groupe": "s3"
   },
   {
@@ -283,7 +328,7 @@
   },
   {
    "t": "h3",
-   "html": "Cas client #1 : SaaS B2B (secteur conseil) - 0 → 73 % de citations IA en 4 mois",
+   "html": "Cas client #1 : SaaS B2B (secteur conseil) — 0 → 73 % de citations IA en 4 mois",
    "groupe": "s4"
   },
   {
@@ -293,7 +338,7 @@
   },
   {
    "t": "p",
-   "html": "<strong>Actions menées :</strong> audit GEO complet en semaine 1-3 (taux de citation initial : 0 % sur 22 mots-clés cibles). Refonte de 8 pages de contenu existantes selon les critères GEO (structure, données, Schema.org). Création de 5 nouveaux articles longs (2 500 à 4 000 mots chacun) sur des requêtes conversationnelles identifiées lors de l'audit. Publication de 6 articles dans nos médias propriétaires (Yonder et Le Journal de la Tech). Optimisation des données structurées Organization et FAQPage sur le site client.",
+   "html": "<strong>Actions menées :</strong> audit GEO complet en semaine 1–3 (taux de citation initial : 0 % sur 22 mots-clés cibles). Refonte de 8 pages de contenu existantes selon les critères GEO (structure, données, Schema.org). Création de 5 nouveaux articles longs (2 500 à 4 000 mots chacun) sur des requêtes conversationnelles identifiées lors de l'audit. Publication de 6 articles dans nos médias propriétaires (Yonder et Le Journal de la Tech). Optimisation des données structurées Organization et FAQPage sur le site client.",
    "groupe": "s4"
   },
   {
@@ -303,7 +348,7 @@
   },
   {
    "t": "h3",
-   "html": "Cas client #2 : E-commerce niche - 0 → 90 % de citations IA en 6 mois",
+   "html": "Cas client #2 : E-commerce niche — 0 → 90 % de citations IA en 6 mois",
    "groupe": "s4"
   },
   {
@@ -334,11 +379,11 @@
   {
    "t": "table",
    "groupe": "s5",
-   "html": "<table><caption>Packages référencement IA Triaina - Tarifs 2026</caption><thead><tr><th>Package</th><th>Tarif</th><th>Ce qui est inclus</th><th>Pour qui ?</th></tr></thead><tbody><tr><td><strong>Audit GEO seul</strong></td><td><strong>1 700 €</strong> TTC (one-shot)</td><td>Analyse indexation IA (ChatGPT, Gemini, Perplexity, Claude) · Gap analysis concurrentielle · Cartographie sources citées · Évaluation E-E-A-T · Audit SEO technique · Rapport 40+ pages · Session restitution</td><td>Entreprises qui veulent comprendre leur situation avant d'investir</td></tr><tr><td><strong>Starter</strong></td><td><strong>500–750 €/mois</strong> (min. 3 mois)</td><td>Stratégie GEO personnalisée · 2 contenus optimisés/mois · 1 publication dans nos médias propriétaires/mois · Monitoring citations IA · Rapport mensuel</td><td>PME, startups, petits sites avec budget limité</td></tr><tr><td><strong>Growth</strong></td><td><strong>1 000 €/mois</strong> (min. 3 mois)</td><td>Stratégie GEO + SEO hybride · 4 contenus optimisés/mois · 2–3 publications dans nos médias propriétaires/mois · Optimisation on-page complète · Structured data · Monitoring citations IA · Rapport mensuel détaillé · Ajustements stratégiques</td><td>ETI, e-commerçants, scale-ups en croissance</td></tr><tr><td><strong>Premium</strong></td><td><strong>Sur devis</strong></td><td>Stratégie GEO + SEO + SEA intégrée · Volume de contenus sur mesure · Accès prioritaire à l'ensemble du réseau médias propriétaires · Régie publicitaire complémentaire · Monitoring avancé · Reporting personnalisé · Appels stratégiques mensuels</td><td>Grands comptes, secteurs très concurrentiels, stratégies multi-marchés</td></tr></tbody></table>"
+   "html": "<table><caption>Packages référencement IA Triaina — Tarifs 2026</caption><thead><tr><th>Package</th><th>Tarif</th><th>Ce qui est inclus</th><th>Pour qui ?</th></tr></thead><tbody><tr><td><strong>Audit GEO seul</strong></td><td><strong>1 700 €</strong> TTC (one-shot)</td><td>Analyse indexation IA (ChatGPT, Gemini, Perplexity, Claude) · Gap analysis concurrentielle · Cartographie sources citées · Évaluation E-E-A-T · Audit SEO technique · Rapport 40+ pages · Session restitution</td><td>Entreprises qui veulent comprendre leur situation avant d'investir</td></tr><tr><td><strong>Starter</strong></td><td><strong>500–750 €/mois</strong> (min. 3 mois)</td><td>Stratégie GEO personnalisée · 2 contenus optimisés/mois · 1 publication dans nos médias propriétaires/mois · Monitoring citations IA · Rapport mensuel</td><td>PME, startups, petits sites avec budget limité</td></tr><tr><td><strong>Growth</strong></td><td><strong>1 000 €/mois</strong> (min. 3 mois)</td><td>Stratégie GEO + SEO hybride · 4 contenus optimisés/mois · 2–3 publications dans nos médias propriétaires/mois · Optimisation on-page complète · Structured data · Monitoring citations IA · Rapport mensuel détaillé · Ajustements stratégiques</td><td>ETI, e-commerçants, scale-ups en croissance</td></tr><tr><td><strong>Premium</strong></td><td><strong>Sur devis</strong></td><td>Stratégie GEO + SEO + SEA intégrée · Volume de contenus sur mesure · Accès prioritaire à l'ensemble du réseau médias propriétaires · Régie publicitaire complémentaire · Monitoring avancé · Reporting personnalisé · Appels stratégiques mensuels</td><td>Grands comptes, secteurs très concurrentiels, stratégies multi-marchés</td></tr></tbody></table>"
   },
   {
    "t": "p",
-   "html": "Tous les packages incluent un accès à notre réseau de médias propriétaires. Le volume de publications varie selon le package. <a href=\"/contact\">Contactez-nous</a> pour un devis personnalisé ou pour démarrer par un pré-audit gratuit.",
+   "html": "Tous les packages incluent un accès à notre réseau de médias propriétaires. Le volume de publications varie selon le package.",
    "groupe": "s5"
   },
   {
@@ -378,7 +423,7 @@
   },
   {
    "t": "p",
-   "html": "Le référencement IA et le SEO ne couvrent pas tous les moments du parcours client. Triaina dispose aussi d'une expertise SEA (Google Ads, Meta Ads) pour couvrir les requêtes à forte intention d'achat immédiate. Cette complémentarité SEO + GEO + SEA permet de construire une stratégie d'acquisition digitale complète, sans angle mort.",
+   "html": "Le référencement IA et le SEO ne couvrent pas tous les moments du parcours client. Triaina dispose aussi d'une <a href=\"/expertise-sea\">expertise SEA</a> (Google Ads, Meta Ads) pour couvrir les requêtes à forte intention d'achat immédiate. Cette complémentarité SEO + GEO + SEA permet de construire une stratégie d'acquisition digitale complète, sans angle mort.",
    "groupe": "s6"
   },
   {
@@ -388,7 +433,7 @@
   },
   {
    "t": "p",
-   "html": "Nous mesurons ce que nous promettons. Chaque mois, vous recevez un rapport qui indique précisément combien de mots-clés cibles génèrent une citation de votre marque dans ChatGPT, Gemini, Perplexity et Claude, et comment ce chiffre évolue. Pas de métriques proxy floues : des citations trackées, des tendances claires, des actions concrètes pour le mois suivant. Consultez les <a href=\"/blog/agence-seo-france\">meilleures agences SEO France</a> pour comprendre ce qui différencie les acteurs sérieux.",
+   "html": "Nous mesurons ce que nous promettons. Chaque mois, vous recevez un rapport qui indique précisément combien de mots-clés cibles génèrent une citation de votre marque dans ChatGPT, Gemini, Perplexity et Claude, et comment ce chiffre évolue. Pas de métriques proxy floues : des citations trackées, des tendances claires, des actions concrètes pour le mois suivant.",
    "groupe": "s6"
   },
   {
@@ -398,173 +443,228 @@
   },
   {
    "t": "p",
-   "html": "Triaina est basée à Paris (50 quai Louis Blériot, 75016). Toutes nos missions sont gérées par des consultants seniors - pas de stagiaires, pas de sous-traitance offshore. Camille Rousseau, consultante senior GEO/SEO, supervise personnellement les audits et les stratégies. Nous travaillons avec un nombre limité de clients pour garantir la qualité de l'accompagnement. La <strong>visibilité IA</strong> de votre marque est une priorité, pas un produit standardisé.",
+   "html": "Triaina est basée à Paris (50 quai Louis Blériot, 75016). Toutes nos missions sont gérées par des consultants seniors — pas de stagiaires, pas de sous-traitance offshore. Camille Rousseau, consultante senior GEO/SEO, supervise personnellement les audits et les stratégies. Nous travaillons avec un nombre limité de clients pour garantir la qualité de l'accompagnement. La <strong>visibilité IA</strong> de votre marque est une priorité, pas un produit standardisé.",
    "groupe": "s6"
   },
   {
    "t": "h2",
-   "html": "FAQ - Agence référencement IA",
-   "groupe": "s7"
-  },
-  {
-   "t": "h3",
-   "html": "Qu'est-ce que le référencement IA et en quoi diffère-t-il du SEO classique ?",
+   "html": "Triaina vs les autres agences référencement IA : comparatif",
    "groupe": "s7"
   },
   {
    "t": "p",
-   "html": "Le <strong>référencement IA</strong> - aussi appelé <strong>GEO</strong> (Generative Engine Optimization) ou <strong>GSO</strong> - consiste à optimiser votre présence pour être cité comme source par les moteurs IA génératifs : ChatGPT, Gemini, Perplexity, Claude. Contrairement au SEO classique qui vise un classement dans les pages de résultats Google, le référencement IA vise à être sélectionné et paraphrasé dans les réponses synthétiques générées par les LLM.",
+   "html": "Le marché français des agences référencement IA est fragmenté. Certaines agences sont des spécialistes SEO classiques qui ont ajouté le GEO en surface. D'autres sont des agences IA généralistes sans expertise technique SEO. Triaina est l'une des rares à combiner expertise technique pointue, réseau médias propriétaires et approche full-funnel SEO + GEO + SEA. Voici un comparatif détaillé :",
    "groupe": "s7"
+  },
+  {
+   "t": "table",
+   "groupe": "s7",
+   "html": "<table><caption>Comparatif par catégorie d'agence — critères et délais observés</caption><thead><tr><th>Critère</th><th>Triaina</th><th>Agences SEO classiques</th><th>Agences IA généralistes</th></tr></thead><tbody><tr><td>Expertise SEO technique</td><td>Complète</td><td>Complète</td><td>Partielle</td></tr><tr><td>Optimisation GEO/ChatGPT/Perplexity</td><td>Spécialisée</td><td>Absente</td><td>Générique</td></tr><tr><td>Réseau médias propriétaires sources IA</td><td>8 médias actifs</td><td>Aucun</td><td>Aucun</td></tr><tr><td>Régie publicitaire intégrée</td><td>Oui</td><td>Non</td><td>Non</td></tr><tr><td>Expertise SEA/Google Ads</td><td>Complète</td><td>Partielle</td><td>Absente</td></tr><tr><td>Délai citations IA</td><td>4 à 8 semaines</td><td>6 à 12 mois</td><td>3 à 6 mois</td></tr><tr><td>Approche full-funnel SEO+GEO+SEA</td><td>Intégrée</td><td>Absente</td><td>Absente</td></tr></tbody></table>"
   },
   {
    "t": "p",
-   "html": "Les signaux de ranking sont différents : autorité de la source, fraîcheur du contenu, structured data Schema.org, E-E-A-T, et surtout présence dans des médias tiers déjà reconnus par les IA. Un site bien classé sur Google n'est pas automatiquement cité par ChatGPT. Et inversement, un site peu visible sur Google peut être cité par Perplexity s'il est publié dans des médias que Perplexity considère comme des sources fiables. Les deux disciplines sont complémentaires mais distinctes.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "En 2026, les IA génératives captent 30 à 40 % des requêtes informationnelles selon les données BrightEdge de mars 2026. Ne pas travailler son référencement IA, c'est laisser un tiers de son audience potentielle à ses concurrents.",
-   "groupe": "s7"
-  },
-  {
-   "t": "h3",
-   "html": "Combien coûte un audit référencement IA ?",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "L'audit référencement IA de Triaina est facturé <strong>1 700 € TTC</strong>, tarif fixe sans surprise. Il comprend l'analyse de votre indexation par ChatGPT, Gemini, Perplexity et Claude sur un panel de 30 à 50 requêtes cibles, la vérification de vos citations actuelles dans les réponses IA, un gap analysis concurrentiel complet, une cartographie des sources citées par les LLM dans votre secteur, l'évaluation de votre E-E-A-T, un audit SEO technique (on-page, structured data, vitesse, maillage), et un rapport de 40+ pages avec recommandations priorisées.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "La durée est de 2 à 3 semaines. Le livrable inclut une session de restitution avec votre équipe pour présenter les résultats et répondre à vos questions. Cet audit peut être réalisé de manière autonome (sans engagement d'accompagnement mensuel) ou servir de point de départ à un accompagnement GEO continu.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Pour comparaison, les audits GEO du marché varient généralement entre 1 500 € et 4 000 € selon la profondeur d'analyse et la notoriété de l'agence. Notre tarif de 1 700 € inclut un niveau de détail (40+ pages, cartographie des sources, gap analysis) que peu d'agences proposent à ce prix.",
-   "groupe": "s7"
-  },
-  {
-   "t": "h3",
-   "html": "Quel est le délai pour voir des résultats en référencement IA ?",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Avec notre réseau de médias propriétaires déjà sources actives pour les LLM, les premières citations peuvent apparaître en <strong>4 à 8 semaines</strong> - contre 6 à 12 mois avec une stratégie de netlinking classique. C'est notre avantage le plus concret : nous ne construisons pas l'autorité d'un nouveau domaine depuis zéro, nous publions dans des médias que les IA connaissent déjà.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Les résultats significatifs en termes de trafic et de leads se matérialisent généralement entre 3 et 6 mois. Le taux de citation IA (le KPI principal que nous trackons) progresse de manière continue : nos cas clients montrent des progressions de 0 % à 73 % en 4 mois (SaaS B2B) et de 0 % à 90 % en 6 mois (e-commerce niche).",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Le référencement IA est un investissement structurel, pas un levier d'activation immédiate. Plus votre autorité thématique est établie dans les LLM, plus les IA vous citent spontanément et fréquemment - y compris sur des requêtes que vous n'avez pas explicitement ciblées. C'est l'effet de halo de l'autorité thématique.",
-   "groupe": "s7"
-  },
-  {
-   "t": "h3",
-   "html": "Le référencement IA remplace-t-il le SEO traditionnel ?",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Non. Le SEO et le référencement IA sont complémentaires et se renforcent mutuellement. Google reste la source principale de trafic organique en 2026, et les IA génératives comme Gemini s'appuient directement sur l'index Google pour sélectionner leurs sources. Un bon classement SEO augmente mécaniquement vos chances d'être cité par les IA.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "En revanche, être bien classé sur Google ne suffit plus. Les IA privilégient aussi l'autorité de la source (est-ce que d'autres médias parlent de vous ?), la fraîcheur du contenu (un article de 2023 sera moins cité qu'un article de 2026 sur le même sujet), et la présence dans des médias tiers reconnus. Ces critères ne sont pas couverts par le SEO classique seul.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "La stratégie optimale en 2026 combine SEO technique (pour Google et Gemini) et GEO (pour ChatGPT, Perplexity, Claude et les autres moteurs IA). C'est exactement l'approche hybride que nous proposons chez Triaina. Consulter notre page <a href=\"/expertise-geo\">expertise GEO</a> pour comprendre en détail notre méthodologie.",
-   "groupe": "s7"
-  },
-  {
-   "t": "h3",
-   "html": "Comment Triaina mesure-t-elle les citations IA ?",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Nous utilisons une combinaison d'outils de monitoring spécialisés (dont des outils dédiés au tracking des citations LLM) et de requêtes manuelles systématiques sur ChatGPT, Gemini, Perplexity et Claude. Chaque mois, nous interrogeons les moteurs IA sur un panel de 30 à 50 mots-clés cibles définis en début de mission, et nous enregistrons si votre marque est citée, à quel rang dans la réponse, et avec quelle formulation.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Le rapport mensuel que nous livrons indique : le nombre de mots-clés sur lesquels votre marque est citée (taux de citation), la fréquence de citation par moteur IA, le rang de citation dans la réponse (être cité en premier ou en troisième n'a pas le même impact), et l'évolution par rapport au mois précédent. Ce reporting est la colonne vertébrale de notre accompagnement mensuel.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Nous trackons aussi les citations de vos concurrents directs sur les mêmes mots-clés, pour vous donner une vision comparative de votre positionnement GEO dans votre marché. La <strong>visibilité IA</strong> se mesure, s'analyse et s'optimise - comme le SEO, mais avec des métriques différentes.",
-   "groupe": "s7"
-  },
-  {
-   "t": "h3",
-   "html": "Faut-il choisir entre SEO et référencement IA ?",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Absolument pas. Chez Triaina, nous proposons une approche hybride SEO + GEO : une seule stratégie cohérente qui optimise simultanément pour Google et pour les moteurs IA génératifs. Les actions se renforcent mutuellement : un contenu bien structuré avec des données structurées Schema.org améliore à la fois le référencement naturel et la lisibilité par les LLM. Notre réseau de médias propriétaires génère des backlinks de qualité pour le SEO ET des citations directes pour les IA.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Choisir entre SEO et <strong>agence SEO IA</strong> serait une fausse dichotomie. Le vrai risque, c'est de ne faire ni l'un ni l'autre correctement. Une stratégie SEO sans dimension GEO vous rend invisible sur un tiers des requêtes informationnelles. Une stratégie GEO sans fondations SEO solides manque du levier le plus puissant pour être sélectionné par Gemini.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Notre package Growth à 1 000 €/mois intègre les deux dimensions. C'est plus efficace et plus rentable qu'une approche silotée avec deux agences différentes.",
-   "groupe": "s7"
-  },
-  {
-   "t": "h3",
-   "html": "Quels secteurs bénéficient le plus du référencement IA ?",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Les secteurs où les utilisateurs posent des questions complexes aux IA avant de décider sont les plus concernés en priorité. Le <strong>conseil et les services B2B</strong> : les décideurs interrogent ChatGPT sur les prestataires, les méthodologies, les tarifs. L'<strong>e-commerce de niche</strong> : Perplexity est massivement utilisé pour comparer des produits spécialisés avant achat. L'<strong>hôtellerie et la restauration</strong> : Gemini répond aux requêtes de recommandation de restaurants, hôtels et spas. Le <strong>secteur juridique et financier</strong> : les IA sont consultées pour des questions de conformité, de fiscalité, de contrats. La <strong>santé</strong> et la <strong>technologie</strong> sont aussi très concernées.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "En 2026, les IA génératives captent 30 à 40 % des requêtes informationnelles selon les données BrightEdge de mars 2026. Tous les secteurs sont donc concernés, mais l'urgence varie selon la maturité digitale de votre marché et le comportement de vos clients cibles. Notre audit GEO vous permet de mesurer précisément l'exposition de votre secteur aux IA et d'identifier les opportunités concrètes.",
-   "groupe": "s7"
-  },
-  {
-   "t": "p",
-   "html": "Notre réseau de médias propriétaires couvre des secteurs variés : tech (Le Journal de la Tech), gastronomie (Best Restaurants Paris, Le Journal du Vin), hôtellerie (Séminaire Hôtels, Les Meilleurs Hôtels Spa), voyage (Yonder), éducation (Le Journal des Écoles) et entrepreneuriat (Les Hardis). Quel que soit votre secteur, nous avons probablement un média pertinent pour amplifier votre visibilité IA.",
+   "html": "Le différenciateur clé est le réseau médias propriétaires. Triaina possède et exploite 8 médias éditorialisés : Yonder (voyage haut de gamme), Les Hardis (entrepreneuriat), Best Restaurants Paris (gastronomie), Séminaire Hôtels (événementiel), Les Meilleurs Hôtels Spa (tourisme), Le Journal du Vin (œnologie), Le Journal des Écoles (éducation), Le Journal de la Tech (tech). Ces médias ne sont pas des sites de spam : ce sont des publications avec du vrai contenu, des vrais lecteurs, et surtout — déjà sources actives dans ChatGPT, Gemini et Perplexity. Quand une agence référencement IA classique doit attendre 6 à 12 mois pour que ses clients soient cités organiquement par les IA, Triaina publie le contenu client dans ses médias et accélère les citations de +300 % en moyenne. Un client SaaS B2B qui aurait attendu 12 mois pour 50 citations IA en obtient 73 % en 4 mois. Un client e-commerce de niche passe de 0 à 90 % de citations IA en 6 mois. C'est un levier de GEO indisponible chez les concurrents.",
    "groupe": "s7"
   },
   {
    "t": "h2",
+   "html": "FAQ — Agence référencement IA",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Qu'est-ce que le référencement IA et en quoi diffère-t-il du SEO classique ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Le <strong>référencement IA</strong> — aussi appelé <strong>GEO</strong> (Generative Engine Optimization) ou <strong>GSO</strong> — consiste à optimiser votre présence pour être cité comme source par les moteurs IA génératifs : ChatGPT, Gemini, Perplexity, Claude. Contrairement au SEO classique qui vise un classement dans les pages de résultats Google, le référencement IA vise à être sélectionné et paraphrasé dans les réponses synthétiques générées par les LLM.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Les signaux de ranking sont différents : autorité de la source, fraîcheur du contenu, structured data Schema.org, E-E-A-T, et surtout présence dans des médias tiers déjà reconnus par les IA. Un site bien classé sur Google n'est pas automatiquement cité par ChatGPT. Et inversement, un site peu visible sur Google peut être cité par Perplexity s'il est publié dans des médias que Perplexity considère comme des sources fiables. Les deux disciplines sont complémentaires mais distinctes.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "En 2026, les IA génératives captent 30 à 40 % des requêtes informationnelles selon les données BrightEdge de mars 2026. Ne pas travailler son référencement IA, c'est laisser un tiers de son audience potentielle à ses concurrents.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Combien coûte un audit référencement IA ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "L'audit référencement IA de Triaina est facturé <strong>1 700 € TTC</strong>, tarif fixe sans surprise. Il comprend l'analyse de votre indexation par ChatGPT, Gemini, Perplexity et Claude sur un panel de 30 à 50 requêtes cibles, la vérification de vos citations actuelles dans les réponses IA, un gap analysis concurrentiel complet, une cartographie des sources citées par les LLM dans votre secteur, l'évaluation de votre E-E-A-T, un audit SEO technique (on-page, structured data, vitesse, maillage), et un rapport de 40+ pages avec recommandations priorisées.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "La durée est de 2 à 3 semaines. Le livrable inclut une session de restitution avec votre équipe pour présenter les résultats et répondre à vos questions. Cet audit peut être réalisé de manière autonome (sans engagement d'accompagnement mensuel) ou servir de point de départ à un accompagnement GEO continu.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Pour comparaison, les audits GEO du marché varient généralement entre 1 500 € et 4 000 € selon la profondeur d'analyse et la notoriété de l'agence. Notre tarif de 1 700 € inclut un niveau de détail (40+ pages, cartographie des sources, gap analysis) que peu d'agences proposent à ce prix.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Quel est le délai pour voir des résultats en référencement IA ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Avec notre réseau de médias propriétaires déjà sources actives pour les LLM, les premières citations peuvent apparaître en <strong>4 à 8 semaines</strong> — contre 6 à 12 mois avec une stratégie de netlinking classique. C'est notre avantage le plus concret : nous ne construisons pas l'autorité d'un nouveau domaine depuis zéro, nous publions dans des médias que les IA connaissent déjà.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Les résultats significatifs en termes de trafic et de leads se matérialisent généralement entre 3 et 6 mois. Le taux de citation IA (le KPI principal que nous trackons) progresse de manière continue : nos cas clients montrent des progressions de 0 % à 73 % en 4 mois (SaaS B2B) et de 0 % à 90 % en 6 mois (e-commerce niche).",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Le référencement IA est un investissement structurel, pas un levier d'activation immédiate. Plus votre autorité thématique est établie dans les LLM, plus les IA vous citent spontanément et fréquemment — y compris sur des requêtes que vous n'avez pas explicitement ciblées. C'est l'effet de halo de l'autorité thématique.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Le référencement IA remplace-t-il le SEO traditionnel ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Non. Le SEO et le référencement IA sont complémentaires et se renforcent mutuellement. Google reste la source principale de trafic organique en 2026, et les IA génératives comme Gemini s'appuient directement sur l'index Google pour sélectionner leurs sources. Un bon classement SEO augmente mécaniquement vos chances d'être cité par les IA.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "En revanche, être bien classé sur Google ne suffit plus. Les IA privilégient aussi l'autorité de la source (est-ce que d'autres médias parlent de vous ?), la fraîcheur du contenu (un article de 2023 sera moins cité qu'un article de 2026 sur le même sujet), et la présence dans des médias tiers reconnus. Ces critères ne sont pas couverts par le SEO classique seul.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "La stratégie optimale en 2026 combine SEO technique (pour Google et Gemini) et GEO (pour ChatGPT, Perplexity, Claude et les autres moteurs IA). C'est exactement l'approche hybride que nous proposons chez Triaina.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Comment Triaina mesure-t-elle les citations IA ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Nous utilisons une combinaison d'outils de monitoring spécialisés (dont des outils dédiés au tracking des citations LLM) et de requêtes manuelles systématiques sur ChatGPT, Gemini, Perplexity et Claude. Chaque mois, nous interrogeons les moteurs IA sur un panel de 30 à 50 mots-clés cibles définis en début de mission, et nous enregistrons si votre marque est citée, à quel rang dans la réponse, et avec quelle formulation.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Le rapport mensuel que nous livrons indique : le nombre de mots-clés sur lesquels votre marque est citée (taux de citation), la fréquence de citation par moteur IA, le rang de citation dans la réponse (être cité en premier ou en troisième n'a pas le même impact), et l'évolution par rapport au mois précédent. Ce reporting est la colonne vertébrale de notre accompagnement mensuel.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Nous trackons aussi les citations de vos concurrents directs sur les mêmes mots-clés, pour vous donner une vision comparative de votre positionnement GEO dans votre marché. La <strong>visibilité IA</strong> se mesure, s'analyse et s'optimise — comme le SEO, mais avec des métriques différentes.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Faut-il choisir entre SEO et référencement IA ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Absolument pas. Chez Triaina, nous proposons une approche hybride SEO + GEO : une seule stratégie cohérente qui optimise simultanément pour Google et pour les moteurs IA génératifs. Les actions se renforcent mutuellement : un contenu bien structuré avec des données structurées Schema.org améliore à la fois le référencement naturel et la lisibilité par les LLM. Notre réseau de médias propriétaires génère des backlinks de qualité pour le SEO ET des citations directes pour les IA.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Choisir entre SEO et <strong>agence SEO IA</strong> serait une fausse dichotomie. Le vrai risque, c'est de ne faire ni l'un ni l'autre correctement. Une stratégie SEO sans dimension GEO vous rend invisible sur un tiers des requêtes informationnelles. Une stratégie GEO sans fondations SEO solides manque du levier le plus puissant pour être sélectionné par Gemini.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Notre package Growth à 1 000 €/mois intègre les deux dimensions. C'est plus efficace et plus rentable qu'une approche silotée avec deux agences différentes.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Quels secteurs bénéficient le plus du référencement IA ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Les secteurs où les utilisateurs posent des questions complexes aux IA avant de décider sont les plus concernés en priorité. Le <strong>conseil et les services B2B</strong> : les décideurs interrogent ChatGPT sur les prestataires, les méthodologies, les tarifs. L'<strong>e-commerce de niche</strong> : Perplexity est massivement utilisé pour comparer des produits spécialisés avant achat. L'<strong>hôtellerie et la restauration</strong> : Gemini répond aux requêtes de recommandation de restaurants, hôtels et spas. Le <strong>secteur juridique et financier</strong> : les IA sont consultées pour des questions de conformité, de fiscalité, de contrats. La <strong>santé</strong> et la <strong>technologie</strong> sont aussi très concernées.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "En 2026, les IA génératives captent 30 à 40 % des requêtes informationnelles selon les données BrightEdge de mars 2026. Tous les secteurs sont donc concernés, mais l'urgence varie selon la maturité digitale de votre marché et le comportement de vos clients cibles. Notre audit GEO vous permet de mesurer précisément l'exposition de votre secteur aux IA et d'identifier les opportunités concrètes.",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Notre réseau de médias propriétaires couvre des secteurs variés : tech (Le Journal de la Tech), gastronomie (Best Restaurants Paris, Le Journal du Vin), hôtellerie (Séminaire Hôtels, Les Meilleurs Hôtels Spa), voyage (Yonder), éducation (Le Journal des Écoles) et entrepreneuriat (Les Hardis). Quel que soit votre secteur, nous avons probablement un média pertinent pour amplifier votre visibilité IA.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Quelles agences référencement IA sont reconnues en France ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Le marché français du référencement IA est encore jeune (2024–2026). Parmi les acteurs reconnus : Webconversion (spécialiste GEO), Eskimoz (agence SEO historique ayant intégré le GEO), Noiise (réseau national), et Triaina (expertise technique GEO, réseau médias propriétaires sources IA et SEA/Paid). La différence entre ces acteurs tient à leur capacité à agir sur les signaux de citation IA — pas seulement à optimiser le contenu. La particularité de Triaina est de posséder ses propres médias, déjà sources actives dans ChatGPT, Gemini et Perplexity : pour ses clients, le délai de première citation passe de 6 à 12 mois à 4 à 8 semaines.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h3",
+   "html": "Le référencement IA est-il adapté aux PME parisiennes ?",
+   "groupe": "s8"
+  },
+  {
+   "t": "p",
+   "html": "Oui — et c'est même un levier de différenciation majeur pour les PME parisiennes face aux grandes entreprises. Les IA génératives (ChatGPT, Perplexity, Gemini) sont massivement utilisées par les décideurs parisiens pour trouver des prestataires, comparer des services et prendre des décisions d'achat. Une PME bien positionnée dans les réponses IA capte une audience qualifiée que Google Search ne lui apporterait pas. Chez Triaina, l'accompagnement référencement IA démarre à 500–750 €/mois pour les petits sites — un investissement accessible pour une PME parisienne avec un ROI mesurable dès 6 à 8 semaines.",
+   "groupe": "s8"
+  },
+  {
+   "t": "h2",
    "html": "Prêt à transformer votre visibilité IA ?",
-   "groupe": "s8"
+   "groupe": "s9"
   },
   {
    "t": "p",
-   "html": "En 2026, les entreprises qui apparaissent dans les réponses de ChatGPT, Gemini et Perplexity ont un avantage compétitif structurel sur celles qui n'y sont pas. Cet avantage se construit maintenant - pas dans six mois, quand vos concurrents auront déjà pris de l'avance. Notre audit GEO à 1 700 € vous donne en 3 semaines une vision claire de votre situation et un plan d'action priorisé. C'est le point de départ le plus efficace pour toute stratégie de <strong>référencement IA</strong> sérieuse.",
-   "groupe": "s8"
+   "html": "En 2026, les entreprises qui apparaissent dans les réponses de ChatGPT, Gemini et Perplexity ont un avantage compétitif structurel sur celles qui n'y sont pas. Cet avantage se construit maintenant — pas dans six mois, quand vos concurrents auront déjà pris de l'avance. Notre audit GEO à 1 700 € vous donne en 3 semaines une vision claire de votre situation et un plan d'action priorisé. C'est le point de départ le plus efficace pour toute stratégie de <strong>référencement IA</strong> sérieuse.",
+   "groupe": "s9"
   },
   {
    "t": "p",
-   "html": "Triaina vous accompagne de l'audit à l'optimisation continue, avec un double levier que personne d'autre ne propose : expertise technique GEO + réseau de 8 médias propriétaires déjà sources actives pour les LLM. <a href=\"/contact\">Demandez votre audit</a> ou <a href=\"/contact\">contactez-nous</a> pour un échange sans engagement sur votre situation.",
-   "groupe": "s8"
+   "html": "Triaina vous accompagne de l'audit à l'optimisation continue, avec un double levier que personne d'autre ne propose : expertise technique GEO + réseau de 8 médias propriétaires déjà sources actives pour les LLM.",
+   "groupe": "s9"
   },
   {
    "t": "p",
-   "html": "Auteure de cette page : <strong>Camille Rousseau</strong> - Consultante Senior GEO/SEO chez Triaina - <a href=\"https://www.linkedin.com/in/camille-rousseau-a44488413/\" target=\"_blank\" rel=\"noopener noreferrer\">Profil LinkedIn</a>",
-   "groupe": "s8"
+   "html": "<a href=\"/contact\">Demandez votre pré-audit gratuit</a>",
+   "groupe": "s9"
+  },
+  {
+   "t": "h2",
+   "html": "Découvrez aussi",
+   "groupe": "s10"
+  },
+  {
+   "t": "ul",
+   "groupe": "s10",
+   "html": "<ul><li><a href=\"/expertise-geo\">Expertise GEO & GSO</a></li><li><a href=\"/expertise-media\">Réseau médias propriétaires</a></li><li><a href=\"/expertise-ai-overview\">Google AI Overview</a></li><li><a href=\"/expertise-seo\">Expertise SEO</a></li><li><a href=\"/expertise-sea\">Expertise SEA & Google Ads</a></li><li><a href=\"/blog/agence-seo-france\">Meilleures agences SEO en France</a></li><li><a href=\"/contact\">Nous contacter</a></li></ul>"
+  },
+  {
+   "t": "p",
+   "html": "Auteure de cette page : <strong>Camille Rousseau</strong> — Consultante Senior GEO/SEO chez Triaina — <a href=\"https://www.linkedin.com/in/camille-rousseau-a44488413/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>",
+   "groupe": "s10"
   }
  ]
 }

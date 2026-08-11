@@ -99,8 +99,10 @@ const BADGES = {
   'expertise-media': 'Autorité & Médias',
   'expertise-ai-overview': 'Google & Réponses IA',
   'expertise-automatisation-contenu': 'Production & Volume',
-  'agence-referencement-ia': 'Audit & Accompagnement IA',
   'agence-seo-paris': 'Référencement Naturel & GEO',
+  /* PAS de pastille pour agence-referencement-ia : depuis la v2 du 11/08, son
+     code porte lui-même « Audit & Accompagnement IA » en premier paragraphe.
+     En laisser une ici l'afficherait deux fois de suite. */
 };
 
 const ICONE_BADGE = '<svg viewBox="0 0 24 24" aria-hidden="true">'
