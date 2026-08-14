@@ -158,6 +158,8 @@ export const STYLE = `
   .g-s6{counter-reset:phase}
   .phase{counter-increment:phase; position:relative; padding-left:3.6rem;
     max-width:47rem; margin-top:2rem}
+  .phase h3{margin-top:0}
+  .phase p{margin-top:.5rem}
   .phase::before{content:counter(phase,decimal-leading-zero); position:absolute;
     left:0; top:0; width:2.5rem; height:2.5rem; display:grid; place-items:center;
     border:1px solid rgba(96,165,250,.45); border-radius:50%;
@@ -172,21 +174,42 @@ export const STYLE = `
   .phase.vu::after{transform:scaleY(1)}
   .phase:last-of-type::after{content:none}
   body:not(.xp-anim) .phase::after{transform:scaleY(1)}
-  .phase p{margin-top:0; font-size:.95rem}
-  .phase strong{display:block; font-family:var(--syne); color:#fff;
-    font-size:1.02rem; margin-bottom:.45rem}
-  .phase br{display:none}
 
   /* ── cas clients (s7) ── */
   .dossier{margin-top:1.5rem; padding:1.45rem 1.6rem; max-width:52rem;
     border:1px solid rgba(96,165,250,.18); border-left:3px solid rgba(255,233,184,.55);
     border-radius:14px; background:rgba(16,26,51,.42)}
-  .dossier p{margin-top:0; font-size:.95rem}
-  .dossier strong:first-child{display:block; font-family:var(--syne); color:var(--lueur);
-    font-size:1.02rem; margin-bottom:.5rem}
-  .dossier br{display:none}
+  .dossier h3{margin-top:0; color:var(--lueur); font-size:1.02rem}
+  .dossier p{margin-top:.5rem; font-size:.95rem}
 
-  /* ── FAQ (s8) ── */
+  /* ── comparatif (s8) : tableau défilant ── */
+  .defile{overflow-x:auto; margin-top:1.5rem; border:1px solid rgba(96,165,250,.16);
+    border-radius:14px; max-width:60rem}
+  .defile table{border-collapse:collapse; width:100%; min-width:44rem; font-size:.92rem}
+  .defile caption{caption-side:top; text-align:left; padding:.85rem 1rem .35rem;
+    font-family:ui-monospace,monospace; font-size:.62rem; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--brume)}
+  .defile th{font-family:ui-monospace,monospace; font-weight:400; font-size:.62rem;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--bleu-c);
+    text-align:left; padding:.9rem 1rem; border-bottom:1px solid rgba(96,165,250,.22)}
+  .defile td{padding:.85rem 1rem; border-bottom:1px solid rgba(96,165,250,.1);
+    color:var(--brume); vertical-align:top}
+  .defile tr:last-child td{border-bottom:0}
+  /* la colonne Triaina se détache */
+  .defile td:nth-child(2){color:var(--lueur); font-weight:600}
+  .defile th:nth-child(2){color:var(--lueur)}
+  .defile tbody tr{transition:background .25s}
+  .defile tbody tr:hover{background:rgba(37,99,235,.08)}
+  .xp-anim .defile tbody tr{opacity:0; transform:translateX(-8px);
+    transition:opacity .45s, transform .45s cubic-bezier(.22,.9,.24,1)}
+  .xp-anim .defile.vu tbody tr{opacity:1; transform:none}
+  .xp-anim .defile.vu tbody tr:nth-child(2){transition-delay:.09s}
+  .xp-anim .defile.vu tbody tr:nth-child(3){transition-delay:.18s}
+  .xp-anim .defile.vu tbody tr:nth-child(4){transition-delay:.27s}
+  .xp-anim .defile.vu tbody tr:nth-child(5){transition-delay:.36s}
+  .xp-anim .defile.vu tbody tr:nth-child(6){transition-delay:.45s}
+
+  /* ── FAQ (s9) ── */
   .qr{max-width:47rem; margin-top:1.9rem}
   .qr h3{position:relative; padding-left:1.7rem; margin-top:0; font-size:1.02rem;
     color:#E2E8F0}
@@ -195,29 +218,29 @@ export const STYLE = `
   .qr p{margin-top:.6rem; padding-left:1.7rem; font-size:.95rem}
 
   /* ── CTA (s9) + liens (s10) ── */
-  .g-s9{position:relative}
-  .g-s9::before{content:''; position:absolute; left:12%; top:0; width:24rem;
+  .g-s10{position:relative}
+  .g-s10::before{content:''; position:absolute; left:12%; top:0; width:24rem;
     height:13rem; pointer-events:none; opacity:0; transition:opacity 1s;
     background:radial-gradient(closest-side, rgba(255,233,184,.15), transparent 70%)}
-  .g-s9.allume::before, body:not(.xp-anim) .g-s9::before{opacity:1}
-  .g-s9 p:last-child a{display:inline-flex; align-items:center; gap:.6rem;
+  .g-s10.allume::before, body:not(.xp-anim) .g-s10::before{opacity:1}
+  .g-s10 p:last-child a{display:inline-flex; align-items:center; gap:.6rem;
     background:var(--bleu); color:#fff; font-weight:800; font-size:.8rem;
     letter-spacing:.13em; text-transform:uppercase; padding:1.05rem 2.1rem;
     border-radius:99px; text-decoration:none; margin-top:.6rem;
     transition:background .25s, color .25s, transform .2s}
-  .g-s9 p:last-child a:hover{background:var(--lueur); color:#0B1428; transform:translateY(-2px)}
-  .g-s10 ul{display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  .g-s10 p:last-child a:hover{background:var(--lueur); color:#0B1428; transform:translateY(-2px)}
+  .g-s11 ul{display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
     gap:.55rem; max-width:48rem; margin-top:1.2rem}
-  .g-s10 li{padding:.8rem 1rem; margin:0; border-radius:10px;
+  .g-s11 li{padding:.8rem 1rem; margin:0; border-radius:10px;
     border:1px solid rgba(96,165,250,.2); background:rgba(13,22,44,.5);
     transition:border-color .3s, transform .3s}
-  .g-s10 li::before{content:none}
-  .g-s10 li:hover{border-color:rgba(255,233,184,.45); transform:translateX(3px)}
-  .g-s10 li a{text-decoration:none; color:#DCE6FF}
-  .g-s10 li a:hover{color:var(--lueur)}
-  .g-s10 .signature{margin-top:2.2rem; padding-top:1.2rem; max-width:52rem;
+  .g-s11 li::before{content:none}
+  .g-s11 li:hover{border-color:rgba(255,233,184,.45); transform:translateX(3px)}
+  .g-s11 li a{text-decoration:none; color:#DCE6FF}
+  .g-s11 li a:hover{color:var(--lueur)}
+  .g-s11 .signature{margin-top:2.2rem; padding-top:1.2rem; max-width:52rem;
     border-top:1px solid rgba(148,163,184,.16); font-size:.9rem}
-  .g-s10 .signature strong{color:#EAF0FF}
+  .g-s11 .signature strong{color:#EAF0FF}
 
   /* arrivées */
   .xp-anim .ln:not(.vu){opacity:0; transform:translateY(12px)}
@@ -231,7 +254,7 @@ export const STYLE = `
     .quartiers{grid-template-columns:1fr}
   }
   @media(max-width:640px){
-    .g-s10 ul{grid-template-columns:1fr}
+    .g-s11 ul{grid-template-columns:1fr}
     .fiche, .quartier, .dossier{padding:1.15rem 1.1rem}
     .phase{padding-left:3.1rem}
   }
@@ -240,7 +263,7 @@ export const STYLE = `
     .arr{opacity:1; transform:none}
     .arr-or circle{animation:none}
     .phase::after{transform:scaleY(1)}
-    .g-s9::before{opacity:1}
+    .g-s10::before{opacity:1}
   }
 `;
 
@@ -253,6 +276,9 @@ const LUMIERES = [
 ];
 
 export function renduBloc(b, defaut, groupe) {
+  /* le comparatif : conteneur défilant, sinon il déborde sous 768 px */
+  if (b.t === 'table')
+    return `<div class="defile" tabindex="0" role="region" aria-label="Comparatif — défilement horizontal possible">${b.html}</div>`;
   if (b.t === 'p') {
     let html = b.html;
     for (const l of LUMIERES) {
@@ -295,24 +321,17 @@ export function renduSection(groupe, s) {
     return env(`${titre}\n<div class="quartiers">\n${grille}\n</div>`);
   }
 
-  /* les cinq phases : un paragraphe = une étape du rail */
-  if (groupe === 's6') {
-    return env(s.rendus.map((r, i) =>
-      s.blocs[i].t === 'p' ? `<div class="phase ln">${r}</div>` : r).join('\n'));
-  }
+  /* les cinq phases : un sous-titre + son texte = une étape du rail */
+  if (groupe === 's6') return env(cartes(s.rendus, s.blocs, ['h3'], 'phase'));
 
-  /* les cas clients : un paragraphe = un dossier */
-  if (groupe === 's7') {
-    return env(s.rendus.map((r, i) =>
-      s.blocs[i].t === 'p' && /^<strong>Cas /.test(s.blocs[i].html)
-        ? `<div class="dossier ln">${r}</div>` : r).join('\n'));
-  }
+  /* les cas clients : un sous-titre + son texte = un dossier */
+  if (groupe === 's7') return env(cartes(s.rendus, s.blocs, ['h3'], 'dossier'));
 
   /* FAQ : paires question/réponse */
-  if (groupe === 's8') return env(cartes(s.rendus, s.blocs, ['h3'], 'qr'));
+  if (groupe === 's9') return env(cartes(s.rendus, s.blocs, ['h3'], 'qr'));
 
   /* liens de fin + signature */
-  if (groupe === 's10') {
+  if (groupe === 's11') {
     return env(s.rendus.map((r, i) => {
       const b = s.blocs[i];
       if (b.t === 'p' && /^Auteure de cette page/.test(b.html.replace(/<[^>]*>/g, '').trim()))
@@ -327,7 +346,7 @@ export function renduSection(groupe, s) {
 export const JS = `
   var cibles = [].slice.call(document.querySelectorAll(
     '.plan, .xp-sec h2, .xp-sec h3, .xp-sec > p, .xp-sec > ul, ' +
-    '.fiche, .quartier, .phase, .dossier, .qr, .g-s10 .signature'));
+    '.fiche, .quartier, .phase, .dossier, .defile, .qr, .g-s11 .signature'));
   var io = new IntersectionObserver(function (entrees) {
     entrees.forEach(function (x) {
       if (!x.isIntersecting) return;
@@ -341,7 +360,7 @@ export const JS = `
   cibles.forEach(function (el) { el.classList.add('ln'); io.observe(el); });
 
   /* le halo du CTA s'allume à l'arrivée */
-  var cta = document.querySelector('.g-s9');
+  var cta = document.querySelector('.g-s10');
   if (cta) new IntersectionObserver(function (entrees) {
     entrees.forEach(function (x) { if (x.isIntersecting) cta.classList.add('allume'); });
   }, { threshold: .25 }).observe(cta);`;
