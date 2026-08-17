@@ -1,7 +1,7 @@
 {
  "/": {
-  "h": "b8a6ef5824a2cb85",
-  "d": "2026-08-14"
+  "h": "a8d3c9cd6334cd24",
+  "d": "2026-08-17"
  },
  "/agence": {
   "h": "16c82bf4f756ee30",
@@ -28,8 +28,8 @@
   "d": "2026-08-09"
  },
  "/blog": {
-  "h": "920d20307cfdc5cd",
-  "d": "2026-08-14"
+  "h": "25dce47de87f2a04",
+  "d": "2026-08-17"
  },
  "/blog/10-conseils-marque-visible-chatgpt": {
   "h": "27ede061d7a22e3b",
@@ -166,6 +166,10 @@
  "/blog/agence-seo-vs-agence-gso": {
   "h": "7465242dc67e9e6f",
   "d": "2026-07-30"
+ },
+ "/blog/agence-seo-wordpress-2026": {
+  "h": "5c5458e8be95288a",
+  "d": "2026-08-17"
  },
  "/blog/ai-overview-ecommerce-france-2026": {
   "h": "f5d895fec36c4d28",

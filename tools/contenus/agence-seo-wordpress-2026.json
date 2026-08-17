@@ -1,0 +1,208 @@
+{
+ "id": "agence-seo-wordpress-2026",
+ "url": "/blog/agence-seo-wordpress-2026",
+ "titre": "Agence SEO WordPress : comment choisir en 2026 ?",
+ "excerpt": "Spécificités techniques de WordPress, 5 critères pour évaluer une agence, 4 profils de prestataires, tarifs réels du marché français et étude de cas documentée.",
+ "date": "17 AOÛT 2026",
+ "tag": "SEO WORDPRESS",
+ "source": "Agences SEO WordPress",
+ "image": "/images/articles/agence-seo-wordpress-2026.jpg",
+ "seo": {
+  "title": "Agence SEO WordPress : comment choisir en 2026 ? | Triaina",
+  "description": "Agence SEO WordPress : spécificités techniques du CMS, 5 critères d'évaluation, 4 profils d'agences, tarifs du marché français et étude de cas documentée.",
+  "canonical": "https://www.triaina.fr/blog/agence-seo-wordpress-2026",
+  "image": "https://www.triaina.fr/images/articles/agence-seo-wordpress-2026.jpg",
+  "geoRegion": "FR-75",
+  "geoPlacename": "Paris",
+  "geoPosition": "48.8464;2.2758",
+  "metas": {
+   "robots": "index, follow",
+   "author": "Camille Rousseau",
+   "language": "French",
+   "article:section": "SEO WordPress",
+   "article:tag": "agence seo wordpress, seo wordpress, référencement wordpress, woocommerce, Core Web Vitals, GEO",
+   "topic": "Agence SEO WordPress",
+   "category": "SEO WordPress",
+   "coverage": "France",
+   "target": "Dirigeants, responsables marketing et e-commerçants sur WordPress",
+   "rating": "General",
+   "revisit-after": "30 days"
+  },
+  "schemas": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Agence SEO WordPress : comment choisir en 2026 ?",
+    "description": "Comment choisir une agence SEO WordPress en 2026 : spécificités techniques du CMS, 5 critères d'évaluation, 4 profils d'agences, tarifs du marché et étude de cas documentée.",
+    "image": "https://www.triaina.fr/images/articles/agence-seo-wordpress-2026.jpg",
+    "url": "https://www.triaina.fr/blog/agence-seo-wordpress-2026",
+    "datePublished": "2026-08-17T09:00:00+02:00",
+    "dateModified": "2026-08-17T09:00:00+02:00",
+    "inLanguage": "fr-FR",
+    "articleSection": "SEO WordPress",
+    "author": {
+     "@type": "Person",
+     "name": "Camille Rousseau",
+     "jobTitle": "Consultante Senior GEO/SEO",
+     "url": "https://www.linkedin.com/in/camille-rousseau-a44488413/",
+     "worksFor": {
+      "@type": "Organization",
+      "name": "Triaina",
+      "url": "https://www.triaina.fr"
+     },
+     "sameAs": [
+      "https://www.linkedin.com/in/camille-rousseau-a44488413/"
+     ]
+    },
+    "publisher": {
+     "@type": "Organization",
+     "name": "Triaina",
+     "url": "https://www.triaina.fr",
+     "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.triaina.fr/logo.svg"
+     }
+    },
+    "mainEntityOfPage": {
+     "@type": "WebPage",
+     "@id": "https://www.triaina.fr/blog/agence-seo-wordpress-2026"
+    },
+    "keywords": [
+     "agence seo wordpress",
+     "seo wordpress",
+     "référencement wordpress",
+     "agence wordpress",
+     "woocommerce seo",
+     "GEO wordpress"
+    ],
+    "about": [
+     {
+      "@type": "Thing",
+      "name": "WordPress"
+     },
+     {
+      "@type": "Thing",
+      "name": "SEO"
+     },
+     {
+      "@type": "Thing",
+      "name": "Generative Engine Optimization"
+     },
+     {
+      "@type": "Thing",
+      "name": "Core Web Vitals"
+     }
+    ],
+    "mentions": [
+     {
+      "@type": "Organization",
+      "name": "Triaina",
+      "url": "https://www.triaina.fr"
+     },
+     {
+      "@type": "SoftwareApplication",
+      "name": "WordPress",
+      "applicationCategory": "Content Management System"
+     },
+     {
+      "@type": "SoftwareApplication",
+      "name": "WooCommerce",
+      "applicationCategory": "E-commerce"
+     }
+    ],
+    "isPartOf": {
+     "@type": "Blog",
+     "name": "Blog Triaina",
+     "url": "https://www.triaina.fr/blog"
+    }
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Pourquoi choisir une agence SEO spécialisée WordPress plutôt qu'une généraliste ?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "WordPress représente plus de 43 % du web mondial, mais sa flexibilité est aussi sa principale source de vulnérabilités SEO. Hooks et filtres, requêtes WP_Query, architecture des custom post types, arbitrage entre Yoast SEO, Rank Math et SEOPress : ces sujets n'ont pas d'équivalent sur les autres CMS. Une agence généraliste risque de recommander des optimisations inadaptées à l'architecture WordPress, voire d'empiler des extensions SEO qui entrent en conflit et dégradent l'indexation. La question à poser au premier rendez-vous est simple : avez-vous un développeur WordPress senior en interne ?"
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Quel plugin SEO WordPress choisir en 2026 : Yoast, Rank Math ou SEOPress ?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Les trois sont solides et activement maintenus. Rank Math est aujourd'hui le plus complet en version gratuite : données structurées intégrées, suivi de plusieurs mots-clés, gestionnaire de redirections. Yoast SEO reste la référence pour les équipes éditoriales habituées à son interface et à ses flux de relecture. SEOPress convient aux développeurs qui veulent une extension légère, sans surcouche marketing et avec une API propre. Le choix dépend de votre équipe et de votre pile technique — et une agence compétente doit savoir travailler avec les trois, pas installer par défaut la plus populaire."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Combien coûte une agence SEO WordPress en France en 2026 ?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Les fourchettes observées vont de 500 à 2 500 €/mois pour un accompagnement de PME chez une boutique technique spécialisée, et de 2 500 à 25 000 €/mois pour un projet complexe — WooCommerce à fort catalogue, site multilingue, réseau multi-sites. Un audit ponctuel se situe entre 1 500 et 8 000 € selon la profondeur. Sous 500 €/mois, la prestation ne peut couvrir sérieusement l'audit, les optimisations, la production de contenu et le reporting à la fois. À l'inverse, un tarif élevé ne garantit rien : ce sont les références WordPress documentées qui font foi."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Une agence SEO WordPress peut-elle aussi optimiser WooCommerce ?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Oui, à condition qu'elle en maîtrise les spécificités : structure des URLs produits et catégories, canonicalisation des pages de filtres à facettes, données structurées Product pour les résultats enrichis, gestion de la pagination et des archives. WooCommerce étant une extension WordPress, une agence réellement spécialisée doit naturellement le couvrir. Vérifiez toutefois qu'elle dispose de références e-commerce concrètes avec des résultats chiffrés : optimiser un site vitrine et un catalogue de plusieurs milliers de références ne demandent pas les mêmes compétences."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Comment une agence intègre-t-elle le GEO sur un site WordPress ?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Le GEO consiste à optimiser vos contenus pour être cité par les moteurs génératifs — ChatGPT, Gemini, Perplexity, Aperçus IA de Google. Sur WordPress, cela passe par la structuration du contenu pour l'extraction (réponses directes en tête de paragraphe, listes, tableaux), le déploiement de données structurées JSON-LD complètes, et surtout la présence dans des sources que ces moteurs consultent déjà. C'est ce dernier point qui distingue réellement les approches : optimiser son propre site ne suffit pas s'il faut être cité ailleurs pour être jugé fiable."
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://www.triaina.fr"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.triaina.fr/blog"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Agence SEO WordPress : comment choisir en 2026 ?",
+      "item": "https://www.triaina.fr/blog/agence-seo-wordpress-2026"
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.triaina.fr/#camille-rousseau",
+    "name": "Camille Rousseau",
+    "jobTitle": "Consultante Senior GEO/SEO",
+    "url": "https://www.linkedin.com/in/camille-rousseau-a44488413/",
+    "worksFor": {
+     "@type": "Organization",
+     "name": "Triaina",
+     "url": "https://www.triaina.fr"
+    },
+    "sameAs": [
+     "https://www.linkedin.com/in/camille-rousseau-a44488413/"
+    ]
+   }
+  ]
+ },
+ "html": "<h2>L'essentiel en 30 secondes</h2>\n\n<ul>\n<li><strong>WordPress équipe plus de 43 % du web mondial</strong> (W3Techs, 2026) : c'est le CMS le plus déployé, toutes catégories confondues.</li>\n<li><strong>Mais seuls 43 à 44 % des sites WordPress passent l'ensemble des Core Web Vitals sur mobile</strong> (données HTTP Archive relayées par Search Engine Journal, 2025-2026), contre 75 % pour Shopify et 83 % pour Duda. Cet écart de performance se paie en positions.</li>\n<li><strong>Le mot-clé « agence seo wordpress » affiche un coût par clic estimé autour de 12,92 €</strong> par les outils de recherche de mots-clés — un indicateur de l'intensité concurrentielle du segment et de la valeur commerciale perçue de la prestation.</li>\n</ul>\n\n<table>\n<caption>Comparatif rapide des profils d'agences SEO WordPress</caption>\n<thead>\n<tr><th scope=\"col\">Profil d'agence</th><th scope=\"col\">Idéal pour</th><th scope=\"col\">Fourchette mensuelle</th></tr>\n</thead>\n<tbody>\n<tr><td>Boutique technique spécialisée WordPress</td><td>PME, SaaS, sites éditoriaux complexes</td><td>1 500 – 6 000 €</td></tr>\n<tr><td>Agence full-service SEO &amp; GEO</td><td>Marques visant Google et les moteurs IA</td><td>2 500 – 15 000 €</td></tr>\n<tr><td>Agence digitale multi-leviers</td><td>E-commerce, scale-ups, grands comptes</td><td>3 000 – 25 000 €</td></tr>\n<tr><td>Freelance SEO WordPress</td><td>Startups, budgets serrés, missions ponctuelles</td><td>500 – 3 000 €</td></tr>\n</tbody>\n</table>\n\n<h2>Pourquoi WordPress demande une expertise SEO dédiée</h2>\n\n<p>Choisir une <strong>agence SEO WordPress</strong> compétente commence par comprendre pourquoi WordPress n'est pas un CMS comme les autres du point de vue du référencement. Sa flexibilité extrême — qui fait sa force — est aussi la source de ses vulnérabilités les plus fréquentes. Une agence qui installe une extension SEO et coche quelques cases ne fait pas du SEO WordPress : elle fait du SEO de surface.</p>\n\n<h3>Les spécificités techniques de la plateforme</h3>\n\n<ul>\n<li><strong>Les extensions SEO ne sont pas interchangeables.</strong> Yoast SEO, Rank Math et SEOPress gèrent différemment les balises canoniques, les sitemaps XML, les données structurées et les redirections. Un mauvais paramétrage produit des doublons ou des canoniques erronées à l'échelle de centaines de pages — et personne ne s'en aperçoit avant la chute de trafic.</li>\n<li><strong>WP_Query et la base de données.</strong> Sur les sites à fort volume — médias, catalogues WooCommerce — des requêtes mal optimisées allongent le temps de réponse serveur, ce qui dégrade le LCP et donc le classement.</li>\n<li><strong>Hooks et filtres.</strong> Modifier le comportement natif de WordPress via <code>add_filter</code> et <code>add_action</code> est indispensable aux optimisations avancées : injection de hreflang, personnalisation des sitemaps, contrôle fin de l'indexation des archives.</li>\n<li><strong>Custom post types et taxonomies.</strong> Une architecture de contenu mal pensée — taxonomies redondantes, archives inutiles laissées indexables — génère des milliers de pages sans valeur qui diluent le budget d'exploration.</li>\n<li><strong>Core Web Vitals.</strong> Le taux de passage de WordPress sur mobile plafonne autour de 43 à 44 %, loin derrière Shopify (75 %) et Duda (83 %). Redresser le LCP, l'INP et le CLS demande une maîtrise du cache, de l'hébergement et de la chaîne de rendu du thème.</li>\n</ul>\n\n<h3>WordPress en 2026 : domination et nouveaux défis</h3>\n\n<p>Avec plus de 43 % de parts de marché, WordPress reste hégémonique. Mais deux ruptures redéfinissent ce qu'on attend d'une agence spécialisée.</p>\n\n<p>La première est l'adoption progressive du <strong>Full Site Editing</strong> et de l'éditeur de blocs comme standard. Les thèmes de blocs remplacent les thèmes classiques, ce qui modifie en profondeur la gestion des balises sémantiques, la hiérarchie des titres et les performances de rendu — autant de paramètres critiques pour le référencement.</p>\n\n<p>La seconde est l'émergence des moteurs génératifs comme canal d'acquisition. Un site WordPress bien positionné sur Google mais absent des réponses IA perd une part croissante de sa visibilité potentielle, sans que rien ne le signale dans ses tableaux de bord. C'est le périmètre de l'<a href=\"/expertise-geo\">optimisation GEO</a>.</p>\n\n<h2>Les 5 critères pour évaluer une agence</h2>\n\n<p>Le marché français compte des centaines de prestataires qui se revendiquent « agence SEO WordPress ». Beaucoup n'ont ni développeur WordPress en interne, ni référence mesurable, ni méthode de mesure des citations IA. Voici comment trancher.</p>\n\n<h3>1. Une maîtrise technique native, pas seulement les extensions</h3>\n\n<p>La question à poser d'emblée : avez-vous des développeurs WordPress senior en interne ? Une agence qui délègue systématiquement les modifications techniques à des freelances externes ne peut pas garantir la cohérence des optimisations dans la durée. La maîtrise native suppose d'intervenir directement sur le thème, de créer des types de contenu sur mesure, d'optimiser les requêtes générées par WP_Query et de configurer un cache serveur adapté à l'architecture.</p>\n\n<p>Testez aussi la connaissance des extensions : une agence compétente argumente son choix entre Yoast, Rank Math et SEOPress avec des critères techniques — pas en installant la plus populaire par défaut. Voir aussi notre page <a href=\"/expertise-seo\">expertise SEO</a>.</p>\n\n<h3>2. Une expérience réelle sur les Core Web Vitals</h3>\n\n<p>Demandez des rapports PageSpeed Insights ou des données de terrain avant et après, sur des projets WordPress réels. Une agence sérieuse sait expliquer comment elle a redressé un LCP : passage d'un hébergement mutualisé à un hébergement managé, chargement différé, optimisation de la chaîne critique CSS, configuration du cache. Sans cette compétence, le référencement restera plafonné quelle que soit la qualité éditoriale.</p>\n\n<h3>3. Des références WordPress avec des résultats chiffrés</h3>\n\n<p>Exigez des données : évolution du trafic organique sur 6 à 12 mois, mots-clés gagnés en première page, impact sur le chiffre d'affaires pour un WooCommerce. Vérifiez aussi la diversité sectorielle — une agence qui n'a traité que des sites vitrines locaux n'est pas nécessairement armée pour un SaaS B2B ou un média à fort volume.</p>\n\n<h3>4. Une capacité GEO, ou l'aveu qu'elle n'existe pas</h3>\n\n<p>Contrairement à ce qu'on lit souvent, l'offre GEO est loin d'être généralisée : dans notre <a href=\"/blog/agence-seo-shopify-2026\">comparatif des agences SEO Shopify</a>, quatre des cinq agences les plus qualifiées n'en publient aucune. Le sujet est donc un vrai facteur de différenciation, pas une case cochée par tout le monde.</p>\n\n<p>Sur WordPress, l'intégration passe par des données structurées JSON-LD complètes, une structuration du contenu pensée pour l'extraction, et surtout une présence dans les sources que les moteurs consultent. C'est sur ce dernier point que le <a href=\"/expertise-media\">réseau de médias propriétaires</a> de Triaina agit directement — un levier hors de portée d'une agence limitée au volet technique. Voir notre page <a href=\"/agence-referencement-ia\">référencement IA</a>.</p>\n\n<h3>5. La transparence sur la stratégie et le reporting</h3>\n\n<p>Le reporting révèle la maturité d'une agence. Exigez un accès direct à Search Console et à votre outil d'analyse, des rapports mensuels avec des indicateurs définis en amont, et une feuille de route trimestrielle justifiant les actions planifiées. Une agence qui refuse de partager l'accès aux outils de mesure vous demande de la croire sur parole.</p>\n\n<h2>Les 4 profils d'agences en 2026</h2>\n\n<h3>La boutique technique spécialisée</h3>\n\n<p>Deux à dix personnes, entièrement focalisées sur WordPress et WooCommerce, avec des développeurs en interne et une expertise profonde sur les sujets avancés — requêtes, hooks, performance, sécurité.</p>\n\n<p><strong>Forces :</strong> expertise technique difficile à égaler, interlocuteur unique, réactivité. <strong>Limites :</strong> capacité de production éditoriale réduite, réseau de netlinking souvent restreint. <strong>Pour qui :</strong> PME au site complexe, SaaS B2B, sites éditoriaux à fort volume, projets WooCommerce techniques. <strong>Budget :</strong> 1 500 à 6 000 €/mois.</p>\n\n<h3>L'agence full-service SEO et GEO</h3>\n\n<p>Dix à cinquante personnes, combinant expertise WordPress, production de contenu, netlinking et — différenciant réel en 2026 — une offre de visibilité dans les moteurs génératifs. C'est le profil de Triaina.</p>\n\n<p><strong>Forces :</strong> vision d'ensemble, action simultanée sur la technique et sur les sources citées, reporting consolidé. <strong>Limites :</strong> ticket d'entrée supérieur à celui d'une boutique technique, surdimensionné pour une intervention ponctuelle. <strong>Pour qui :</strong> marques visant une visibilité durable sur Google et dans les réponses IA. <strong>Budget :</strong> 2 500 à 15 000 €/mois.</p>\n\n<h3>L'agence digitale multi-leviers</h3>\n\n<p>Cinquante à plus de deux cents personnes, offre complète : SEO, publicité search et sociale, parfois optimisation de la conversion et data. L'expertise WordPress existe mais se partage avec d'autres CMS et d'autres leviers.</p>\n\n<p><strong>Forces :</strong> gestion de budgets marketing globaux, synergies entre organique et payant. <strong>Limites :</strong> expertise WordPress souvent moins profonde, risque de dilution sur les projets moyens. <strong>Pour qui :</strong> e-commerce à fort volume, scale-ups, grands comptes multi-canaux. <strong>Budget :</strong> 3 000 à 25 000 €/mois, hors budgets médias.</p>\n\n<h3>Le freelance</h3>\n\n<p>Consultant indépendant, souvent issu d'une agence, à l'expertise WordPress variable : certains sont d'excellents techniciens, d'autres sont surtout orientés contenu ou stratégie.</p>\n\n<p><strong>Forces :</strong> coût inférieur, flexibilité, interlocuteur direct. <strong>Limites :</strong> capacité de production bornée, pas de continuité en cas d'indisponibilité, réseau de citations généralement absent. <strong>Pour qui :</strong> startups, sites de taille modeste, audits ponctuels, renfort d'une équipe interne. <strong>Budget :</strong> 500 à 3 000 €/mois.</p>\n\n<h2>Tarifs en France en 2026</h2>\n\n<table>\n<caption>Tarifs des agences SEO WordPress en France, 2026</caption>\n<thead>\n<tr><th scope=\"col\">Prestation</th><th scope=\"col\">Fourchette basse</th><th scope=\"col\">Fourchette haute</th><th scope=\"col\">Ce qui est généralement inclus</th></tr>\n</thead>\n<tbody>\n<tr><td><strong>Audit ponctuel</strong></td><td>1 500 €</td><td>8 000 €</td><td>Audit technique, analyse sémantique, audit des extensions, Core Web Vitals, feuille de route priorisée</td></tr>\n<tr><td><strong>Accompagnement mensuel PME</strong></td><td>500 €/mois</td><td>2 500 €/mois</td><td>Optimisations récurrentes, production de contenu, suivi de positions, reporting</td></tr>\n<tr><td><strong>Projet complexe</strong></td><td>2 500 €/mois</td><td>25 000 €/mois</td><td>Équipe pluridisciplinaire, analyse de logs, gestion multilingue, catalogue produits, netlinking</td></tr>\n<tr><td><strong>Refonte</strong></td><td>5 000 €</td><td>80 000 €</td><td>Architecture SEO native, plan de redirections, migration sans perte de trafic, GEO dès la conception</td></tr>\n</tbody>\n</table>\n\n<p>Deux signaux d'alerte. Sous 500 €/mois, un accompagnement ne peut pas couvrir sérieusement l'audit, les optimisations, le contenu et le reporting. À l'inverse, un tarif élevé ne garantit aucune profondeur d'expertise WordPress : ce sont les références documentées qui tranchent.</p>\n\n<p>Pour un e-commerce WooCommerce, prévoyez un budget de netlinking distinct — de 800 à 5 000 €/mois selon la concurrence du secteur. Le référencement d'un catalogue ne repose jamais sur les seules optimisations internes.</p>\n\n<h2>Les erreurs à éviter</h2>\n\n<ul>\n<li><strong>Choisir une agence généraliste sans référence WordPress documentée.</strong> Une agence qui « fait du SEO sur tous les CMS » n'a généralement pas de développeur WordPress en interne. Les optimisations avancées seront absentes, ou sous-traitées sans cohérence méthodologique.</li>\n<li><strong>Accepter une promesse de résultats garantis.</strong> Aucune agence sérieuse ne garantit une position. Une promesse de « top 3 en 3 mois » est soit un argument commercial creux, soit le signe d'une stratégie risquée pour votre domaine.</li>\n<li><strong>Signer sans reporting structuré.</strong> L'absence d'indicateurs définis en amont est le signe d'une agence qui ne veut pas être tenue à ses résultats.</li>\n<li><strong>Négliger l'arbitrage entre extensions SEO.</strong> Une agence qui installe plusieurs extensions SEO simultanément — source de conflits majeurs — n'a pas la compétence technique requise.</li>\n<li><strong>Écarter la question du GEO.</strong> Ne pas demander à une agence comment elle traite la visibilité dans les moteurs génératifs revient à optimiser pour un écosystème de recherche partiellement dépassé.</li>\n</ul>\n\n<h2>Étude de cas : un SaaS B2B sur WordPress</h2>\n\n<p><em>Cas documenté par Triaina, client anonymisé : plateforme SaaS B2B du secteur du conseil.</em></p>\n\n<h3>Situation initiale</h3>\n\n<p>Le client était bien positionné sur Google — première page sur plusieurs requêtes métier — mais <strong>totalement absent des réponses de ChatGPT et Gemini</strong> sur ses 22 mots-clés cibles, où ses concurrents directs étaient cités régulièrement. Des prospects qui auraient dû lui revenir partaient vers des concurrents recommandés par les assistants.</p>\n\n<h3>La remédiation type sur WordPress</h3>\n\n<p>Le déroulé ci-dessous est celui qu'un audit WordPress déclenche dans la grande majorité des cas. Il n'est pas propre à ce client : c'est la séquence standard.</p>\n\n<ul>\n<li><strong>Assainir l'existant :</strong> résolution des conflits entre extensions SEO — l'empilement est le défaut le plus fréquent —, suppression des pages passées en noindex par inadvertance, plan de redirections pour les erreurs 404 accumulées.</li>\n<li><strong>Redresser les Core Web Vitals :</strong> hébergement managé, cache correctement configuré, chargement différé, images au format moderne aux dimensions natives, élimination du CSS bloquant le rendu.</li>\n<li><strong>Déployer les données structurées :</strong> Article, FAQPage, HowTo et, selon le cas, SoftwareApplication — avec une structuration du contenu pensée pour l'extraction : réponses directes en tête de paragraphe, listes, tableaux.</li>\n<li><strong>Restructurer le maillage :</strong> regroupement des pages par grappes sémantiques, liens internes revus, titres et méta-descriptions repris sur l'ensemble du site.</li>\n</ul>\n\n<h3>Résultats à 4 mois</h3>\n\n<ul>\n<li><strong>0 → 73 % de taux de citation IA</strong> sur les 22 mots-clés cibles : seize d'entre eux génèrent désormais une citation dans au moins un moteur génératif</li>\n<li><strong>Trafic organique en hausse de 45 %</strong></li>\n<li><strong>Leads entrants en hausse de 28 %</strong> sur la période</li>\n</ul>\n\n<p>Ce type de résultat n'est atteignable ni par une approche purement technique, ni par une approche purement éditoriale. C'est la combinaison — optimisation WordPress native et action sur les sources via le <a href=\"/expertise-media\">réseau de médias propriétaires</a> — qui produit l'accélération. Pour évaluer votre site, vous pouvez <a href=\"/contact\">demander un pré-audit gratuit</a>.</p>\n\n<h2>FAQ - Agence SEO WordPress</h2>\n\n<h3>Pourquoi choisir une agence SEO spécialisée WordPress plutôt qu'une généraliste ?</h3>\n<p>WordPress représente plus de 43 % du web mondial, mais sa flexibilité est aussi sa principale source de vulnérabilités SEO. Hooks et filtres, requêtes WP_Query, architecture des custom post types, arbitrage entre Yoast SEO, Rank Math et SEOPress : ces sujets n'ont pas d'équivalent sur les autres CMS. Une agence généraliste risque de recommander des optimisations inadaptées à l'architecture WordPress, voire d'empiler des extensions SEO qui entrent en conflit et dégradent l'indexation. La question à poser au premier rendez-vous est simple : avez-vous un développeur WordPress senior en interne ?</p>\n\n<h3>Quel plugin SEO WordPress choisir en 2026 : Yoast, Rank Math ou SEOPress ?</h3>\n<p>Les trois sont solides et activement maintenus. Rank Math est aujourd'hui le plus complet en version gratuite : données structurées intégrées, suivi de plusieurs mots-clés, gestionnaire de redirections. Yoast SEO reste la référence pour les équipes éditoriales habituées à son interface et à ses flux de relecture. SEOPress convient aux développeurs qui veulent une extension légère, sans surcouche marketing et avec une API propre. Le choix dépend de votre équipe et de votre pile technique — et une agence compétente doit savoir travailler avec les trois, pas installer par défaut la plus populaire.</p>\n\n<h3>Combien coûte une agence SEO WordPress en France en 2026 ?</h3>\n<p>Les fourchettes observées vont de 500 à 2 500 €/mois pour un accompagnement de PME chez une boutique technique spécialisée, et de 2 500 à 25 000 €/mois pour un projet complexe — WooCommerce à fort catalogue, site multilingue, réseau multi-sites. Un audit ponctuel se situe entre 1 500 et 8 000 € selon la profondeur. Sous 500 €/mois, la prestation ne peut couvrir sérieusement l'audit, les optimisations, la production de contenu et le reporting à la fois. À l'inverse, un tarif élevé ne garantit rien : ce sont les références WordPress documentées qui font foi.</p>\n\n<h3>Une agence SEO WordPress peut-elle aussi optimiser WooCommerce ?</h3>\n<p>Oui, à condition qu'elle en maîtrise les spécificités : structure des URLs produits et catégories, canonicalisation des pages de filtres à facettes, données structurées Product pour les résultats enrichis, gestion de la pagination et des archives. WooCommerce étant une extension WordPress, une agence réellement spécialisée doit naturellement le couvrir. Vérifiez toutefois qu'elle dispose de références e-commerce concrètes avec des résultats chiffrés : optimiser un site vitrine et un catalogue de plusieurs milliers de références ne demandent pas les mêmes compétences.</p>\n\n<h3>Comment une agence intègre-t-elle le GEO sur un site WordPress ?</h3>\n<p>Le GEO consiste à optimiser vos contenus pour être cité par les moteurs génératifs — ChatGPT, Gemini, Perplexity, Aperçus IA de Google. Sur WordPress, cela passe par la structuration du contenu pour l'extraction (réponses directes en tête de paragraphe, listes, tableaux), le déploiement de données structurées JSON-LD complètes, et surtout la présence dans des sources que ces moteurs consultent déjà. C'est ce dernier point qui distingue réellement les approches : optimiser son propre site ne suffit pas s'il faut être cité ailleurs pour être jugé fiable.</p>\n\n<h2>Sources</h2>\n\n<ul>\n<li>W3Techs, parts de marché des systèmes de gestion de contenu, 2026.</li>\n<li>Données HTTP Archive sur le passage des Core Web Vitals par CMS, relayées par Search Engine Journal (2025-2026).</li>\n<li>Documentation Google Developers sur les Core Web Vitals et le référencement.</li>\n<li>Estimations de coût par clic issues des outils de recherche de mots-clés, à considérer comme des ordres de grandeur.</li>\n</ul>"
+}
