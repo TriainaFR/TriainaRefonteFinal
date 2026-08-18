@@ -25,3 +25,13 @@ Deux photos de nuit ont été retenues pour Strasbourg et Montpellier : elles
 s'accordent au fond sombre du site, comme les visuels de ville déjà en place
 (Bordeaux, Lyon, Lille, Marseille). Une première sélection pour Montpellier —
 une carte postale ancienne de tramway — a été écartée : elle datait l'article.
+
+## Ajout du 18/08/2026
+
+| Fichier | Sujet | Licence | Source |
+|---|---|---|---|
+| `agence-seo-drupal-2026.jpg` | Grille régulière de fenêtres carrées sur façade grise, quelques ouvrants désalignés | CC0 | commons.wikimedia.org — *Square windows in gray facade (Unsplash)*, Loic Djim |
+
+Métaphore de l'architecture modulaire de Drupal : une trame rigoureuse où les
+quelques modules mal réglés sont les seuls qui se voient. Recadrée en 1200 × 675,
+JPEG qualité 82, 235 ko.
