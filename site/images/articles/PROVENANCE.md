@@ -35,3 +35,14 @@ une carte postale ancienne de tramway — a été écartée : elle datait l'arti
 Métaphore de l'architecture modulaire de Drupal : une trame rigoureuse où les
 quelques modules mal réglés sont les seuls qui se voient. Recadrée en 1200 × 675,
 JPEG qualité 82, 235 ko.
+
+## Ajout du 19/08/2026
+
+| Fichier | Sujet | Licence | Source |
+|---|---|---|---|
+| `agence-seo-woocommerce-2026.jpg` | Mur de casiers postaux numérotés | CC0 | commons.wikimedia.org — *Numbered boxes detail (Unsplash)*, Tim Evans |
+
+Métaphore du catalogue e-commerce : des centaines de références quasi identiques,
+numérotées, dont chacune doit pourtant se distinguer — c'est exactement le
+problème SEO que traite l'article (descriptions fournisseur dupliquées, pages de
+filtres, canonicalisation). Recadrée en 1200 × 675, JPEG qualité 82, 285 ko.
