@@ -23,7 +23,7 @@
  */
 import { createServer } from 'node:http';
 import { createReadStream, existsSync } from 'node:fs';
-import { stat } from 'node:fs/promises';
+import { stat, readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, normalize, extname, sep } from 'node:path';
 import { createGzip, createBrotliCompress, constants as zlibConstantes } from 'node:zlib';
@@ -140,6 +140,49 @@ const REDIRECTIONS = {
      depuis le rendu réel de la production (voir tools/expertises/recrutement.mjs). */
 };
 
+/* ══ en-tête HTTP `Link: rel="canonical"` ══
+ *
+ * Demandé le 19/08/2026 à la suite d'un audit. Deux précisions, parce que la
+ * recommandation d'origine aurait dégradé le référencement si elle avait été
+ * appliquée telle quelle :
+ *
+ *  1. l'audit proposait de déclarer `https://triaina.fr/...` (sans www). Or
+ *     l'apex répond 301 vers www — vérifié en production. Déclarer comme
+ *     canonique une URL qui redirige revient à dire « la version de référence
+ *     de cette page est une adresse qui vous renvoie ailleurs » : Google
+ *     documente ce cas comme une erreur. Pire, cela contredirait le
+ *     `<link rel="canonical">` du HTML, qui est en www sur les 102 pages.
+ *     Deux canonicals divergents, c'est le signal que l'on cherchait à éviter.
+ *
+ *  2. « le HTML seul ne suffit pas » ne vaut pas pour une page HTML : l'en-tête
+ *     Link existe pour les ressources où l'on ne peut PAS poser de balise
+ *     (PDF, images). Pour du HTML, la balise est la méthode de référence et
+ *     Google la traite intégralement. L'en-tête est donc une redondance utile
+ *     (certains agents lisent les en-têtes sans parser le HTML), pas un
+ *     correctif.
+ *
+ * D'où cette implémentation : la valeur n'est jamais devinée depuis l'URL
+ * demandée — elle est LUE dans le `<link rel="canonical">` de la page servie.
+ * C'est la seule façon de garantir qu'elle ne diverge pas, et c'est
+ * indispensable ici : deux pages ont un canonical qui pointe ailleurs
+ * qu'elles-mêmes (/blog/meilleure-agence-geo-france-2026 et /expertise-gso).
+ * Une valeur déduite du chemin les aurait déclarées canoniques d'elles-mêmes,
+ * en contradiction directe avec leur HTML. */
+const CANONIQUES = new Map();
+
+async function indexeCanonicals(dir = racine) {
+  for (const e of await readdir(dir, { withFileTypes: true })) {
+    if (e.name.startsWith('.') || e.name === 'assets' || e.name === 'images') continue;
+    const chemin = join(dir, e.name);
+    if (e.isDirectory()) { await indexeCanonicals(chemin); continue; }
+    if (!e.name.endsWith('.html')) continue;
+    const html = await readFile(chemin, 'utf8');
+    const m = /<link\s+rel="canonical"\s+href="([^"]+)"/i.exec(html);
+    if (m) CANONIQUES.set(chemin, m[1]);
+  }
+  return CANONIQUES;
+}
+
 /** Compresse si le client le demande ET si le type de contenu y gagne. */
 function envoie(req, res, chemin, code) {
   const type = TYPES[extname(chemin).toLowerCase()] || 'application/octet-stream';
@@ -148,6 +191,9 @@ function envoie(req, res, chemin, code) {
     'Cache-Control': cacheControl(chemin),
     ...(PROD ? SECURITE : {}),
   };
+  /* Uniquement sur un 200 : une page d'erreur ne déclare pas de canonique. */
+  const canonique = code === 200 ? CANONIQUES.get(chemin) : undefined;
+  if (canonique) entetes.Link = `<${canonique}>; rel="canonical"`;
   const accepte = String(req.headers['accept-encoding'] || '');
   const flux = createReadStream(chemin);
 
@@ -217,7 +263,9 @@ createServer(async (req, res) => {
   envoie(req, res, chemin, 200);
 /* écoute explicite sur 0.0.0.0 : dans un conteneur, se lier à la seule
    boucle locale rend le service injoignable depuis l'extérieur. */
-}).listen(port, '0.0.0.0', () => {
+}).listen(port, '0.0.0.0', async () => {
+  await indexeCanonicals();
+  console.log(`  ${CANONIQUES.size} canonical(s) indexé(s) pour l'en-tête Link`);
   console.log(PROD
     ? `Site Triaina servi en production sur le port ${port}`
     : `Nouveau site (DA-31) servi sur http://localhost:${port}`);
