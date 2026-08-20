@@ -46,3 +46,13 @@ Métaphore du catalogue e-commerce : des centaines de références quasi identiq
 numérotées, dont chacune doit pourtant se distinguer — c'est exactement le
 problème SEO que traite l'article (descriptions fournisseur dupliquées, pages de
 filtres, canonicalisation). Recadrée en 1200 × 675, JPEG qualité 82, 285 ko.
+
+## Ajout du 20/08/2026
+
+| Fichier | Sujet | Licence | Source |
+|---|---|---|---|
+| `formation-seo-en-ligne-2026.jpg` | Escalier d'amphithéâtre, marches et gradins | CC0 | commons.wikimedia.org — *Lecture Room Stairs (Unsplash)*, Markus Birner |
+
+Métaphore de la progression par paliers, qui est la structure même de l'article
+(gratuit → payant, débutant → intermédiaire → avancé, recommandation par profil).
+Recadrée en 1200 × 675, JPEG qualité 82, 233 ko.
