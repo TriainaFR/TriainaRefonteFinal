@@ -56,3 +56,13 @@ filtres, canonicalisation). Recadrée en 1200 × 675, JPEG qualité 82, 285 ko.
 Métaphore de la progression par paliers, qui est la structure même de l'article
 (gratuit → payant, débutant → intermédiaire → avancé, recommandation par profil).
 Recadrée en 1200 × 675, JPEG qualité 82, 233 ko.
+
+## Ajout du 21/08/2026
+
+| Fichier | Sujet | Licence | Source |
+|---|---|---|---|
+| `roi-seo-2026.jpg` | Balance de marché à cadran, aiguille au zéro | CC0 | commons.wikimedia.org — *Old scales at a store (Unsplash)*, Maria Molinero |
+
+Métaphore de la mesure : un instrument gradué, une transaction en cours, et
+l'aiguille au zéro — c'est exactement le sujet de l'article, peser les gains
+contre les coûts. Recadrée en 1200 × 675, JPEG qualité 82, 94 ko.
